@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}" SchemaVersion="94">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="MusicCrusher" ID="{705745F8-6F6D-4967-B24C-A9404C5BA734}" PluginName="BitCrusher" CompanyID="64" PluginID="399" PluginType="3">
+					<PropertyList>
+						<Property Name="SampleRateDivision" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{6A9BB673-96A2-4F1E-B0B1-55B828FF7FEA}" ShortID="958691138">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{16E73DF3-D126-4613-9AD3-450A44BE09C2}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{8162A5B7-70FB-4328-B8E5-B72A5108E648}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>24000</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>400</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

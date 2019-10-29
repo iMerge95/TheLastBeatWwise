@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{237F6000-BBF4-4B1C-A4BA-719FD5871F3F}" SchemaVersion="94">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{237F6000-BBF4-4B1C-A4BA-719FD5871F3F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{237F6000-BBF4-4B1C-A4BA-719FD5871F3F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="TheLastBank" ID="{42C044BA-39CE-4222-AF9F-D5C1BEB6DE48}">
+					<ObjectInclusionList>
+						<ObjectRef Name="DashFX" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

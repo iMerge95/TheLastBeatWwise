@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{16E73DF3-D126-4613-9AD3-450A44BE09C2}" SchemaVersion="94">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{16E73DF3-D126-4613-9AD3-450A44BE09C2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{16E73DF3-D126-4613-9AD3-450A44BE09C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

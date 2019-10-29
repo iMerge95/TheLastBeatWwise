@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2AB11A8C-DE79-463A-9109-0AB9860382B9}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{2AB11A8C-DE79-463A-9109-0AB9860382B9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2AB11A8C-DE79-463A-9109-0AB9860382B9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{A8E7D8C5-6DE1-4540-8506-869CD7FBFF95}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Music" ID="{FBE64E00-71F9-48E1-B42D-EABCF58E7DCB}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

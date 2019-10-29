@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	416687607	DashFX			\Default Work Unit\DashFX	
+	3991942870	Music			\Default Work Unit\Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1445037870	MusicSwitch			\Default Work Unit\MusicSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	3991942870	Music	MusicSwitch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	389537110	TheLastBeatTestLoop	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeatTestLoop_D79FB2B7.wem		\Interactive Music Hierarchy\MUSIC\Music\Test\TheLastBeatTestLoop\TheLastBeatTestLoop		9031744
+	598512056	TheLastBeatTestIntro	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeatTestIntro_D79FB2B7.wem		\Interactive Music Hierarchy\MUSIC\Music\Test\TheLastBeatTestIntro\TheLastBeatTestIntro		9596228
+

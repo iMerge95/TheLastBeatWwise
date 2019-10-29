@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}">
+					<ChildrenList>
+						<Action Name="" ID="{7CCA15BA-20F1-4ABE-89FF-CD74FF961B78}" ShortID="33331983">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Test" ID="{285901B9-1635-4AEF-8973-E5474BAF3AD7}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DashFX" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}">
+					<ChildrenList>
+						<Action Name="" ID="{7892A587-A12D-479C-A559-3C018E9745C0}" ShortID="307193803">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{16E73DF3-D126-4613-9AD3-450A44BE09C2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{23B9B7B6-D295-44AA-98D0-0B21E8AD179E}" ShortID="307952096">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{16E73DF3-D126-4613-9AD3-450A44BE09C2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

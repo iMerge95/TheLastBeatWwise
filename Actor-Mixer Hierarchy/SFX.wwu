@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{13271B2F-8D41-480D-8B8B-0E984A47CE6A}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="SFX" ID="{13271B2F-8D41-480D-8B8B-0E984A47CE6A}" PersistMode="Standalone">
+		<WorkUnit Name="SFX" ID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="ENVIRO" ID="{FF7F86C4-9C7C-4797-A128-39A78E4CD3A9}" ShortID="308498604">
 					<ReferenceList>
@@ -35,6 +35,16 @@
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="NPC" ID="{53133465-BA24-4C94-B87C-EBDA58A47717}" ShortID="373851894">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{2ADF46B0-F5DF-45C9-982E-53A1CC6ED28D}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
 				<ActorMixer Name="UI" ID="{8C697ED2-F1BE-4029-A976-AD4380CEC313}" ShortID="581846516">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -46,16 +56,6 @@
 					</ReferenceList>
 				</ActorMixer>
 				<ActorMixer Name="CHARACTER" ID="{82B777F3-B70D-41A5-855A-5F4021303DE3}" ShortID="315501490">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{2ADF46B0-F5DF-45C9-982E-53A1CC6ED28D}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-						</Reference>
-					</ReferenceList>
-				</ActorMixer>
-				<ActorMixer Name="NPC" ID="{53133465-BA24-4C94-B87C-EBDA58A47717}" ShortID="373851894">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
