@@ -9,13 +9,11 @@
 							<ObjectRef Name="System" ID="{4647B9A8-AF4B-4E27-A247-824B1333E203}" WorkUnitID="{3DF673C1-9239-4C70-9D40-392BB4C9AACB}"/>
 						</Reference>
 					</ReferenceList>
-				</Bus>
-				<Bus Name="SFX" ID="{2ADF46B0-F5DF-45C9-982E-53A1CC6ED28D}">
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="System" ID="{4647B9A8-AF4B-4E27-A247-824B1333E203}" WorkUnitID="{3DF673C1-9239-4C70-9D40-392BB4C9AACB}"/>
-						</Reference>
-					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}">
+							<ReferenceList/>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

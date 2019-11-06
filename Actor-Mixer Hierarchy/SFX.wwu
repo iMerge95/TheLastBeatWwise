@@ -4,12 +4,15 @@
 		<WorkUnit Name="SFX" ID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="ENVIRO" ID="{FF7F86C4-9C7C-4797-A128-39A78E4CD3A9}" ShortID="308498604">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{2ADF46B0-F5DF-45C9-982E-53A1CC6ED28D}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+							<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -22,16 +25,1005 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 								</Reference>
 							</ReferenceList>
-						</ActorMixer>
-						<ActorMixer Name="SPOT" ID="{04AADA29-810E-44E2-A816-E6E5C4AD315F}" ShortID="669439501">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-								</Reference>
-							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Desert" ID="{2E35556F-C34F-4B73-AA8A-DC0AFBC27CF9}" ShortID="901688202">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="DesertBlend" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" ShortID="256286646">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="RWind" ID="{965F5573-33AF-46FF-8D73-BAF40AF868D5}" ShortID="897918294">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{350133D1-751B-4EBA-B3D3-A70CE1E0B86B}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{CC1E9FC7-5150-409C-94F3-99E4BCC37E21}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Desert_RWind_01" ID="{433DEC77-AD33-4F44-B237-A338C9BD62CD}" ShortID="745596949">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Desert_RWind_01" ID="{4E51D89B-19F5-490D-9AB0-2574E022F096}" ShortID="447676650">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Desert_RWind_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Desert_RWind_01" ID="{4E51D89B-19F5-490D-9AB0-2574E022F096}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Desert_RWind_02" ID="{FBEE7CA3-978C-4929-A18A-6D538A127DA3}" ShortID="1073070308">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Desert_RWind_02" ID="{A4FBA0BE-1AA1-4040-A509-E3C3F0730214}" ShortID="63282434">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Desert_RWind_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Desert_RWind_02" ID="{A4FBA0BE-1AA1-4040-A509-E3C3F0730214}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Desert_RWind_03" ID="{131824F3-395B-44D0-9F03-1933D57E1383}" ShortID="67057531">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Desert_RWind_03" ID="{7BED829A-FFC8-4AE8-9921-209045691D5C}" ShortID="335079225">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Desert_RWind_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Desert_RWind_03" ID="{7BED829A-FFC8-4AE8-9921-209045691D5C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Desert_RWind_04" ID="{3B435E87-1EFF-4448-AFC2-C5B1E8ACD5F0}" ShortID="28524124">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Desert_RWind_04" ID="{2FB44883-B39C-4418-A7AC-7FCCA3B82485}" ShortID="141019759">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Desert_RWind_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Desert_RWind_04" ID="{2FB44883-B39C-4418-A7AC-7FCCA3B82485}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Desert_RWind_05" ID="{B33778EF-CF3D-41DD-A791-7ABCAD5533E2}" ShortID="477673553">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Desert_RWind_05" ID="{841A5D3A-A1B7-4E42-9E1F-248D95BA76F9}" ShortID="915633297">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Desert_RWind_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Desert_RWind_05" ID="{841A5D3A-A1B7-4E42-9E1F-248D95BA76F9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Desert_RWind_06" ID="{8E24ABC9-2055-4EEE-81B0-4729BC01C6C6}" ShortID="22199512">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Desert_RWind_06" ID="{257D3FA0-84EF-4D6E-8556-1DACABB842D9}" ShortID="249965315">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Desert_RWind_06.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Desert_RWind_06" ID="{257D3FA0-84EF-4D6E-8556-1DACABB842D9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Desert_RWind_07" ID="{6762C445-A5B4-427F-A843-3236C2887008}" ShortID="544098828">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Desert_RWind_07" ID="{30838509-7DA5-4B39-A2F9-3DA3EF46A709}" ShortID="603408749">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Desert_RWind_07.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Desert_RWind_07" ID="{30838509-7DA5-4B39-A2F9-3DA3EF46A709}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{84A0C767-4843-41CC-BB74-2AC46A2DB8BC}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RWind_Path" ID="{CF7CD2DA-82C9-440A-93AF-0E779C0DDB33}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="10000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>32.91139</XPos>
+																			<YPos>-50.63694</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-39.24051</XPos>
+																			<YPos>-30.57325</YPos>
+																			<Flags>0</Flags>
+																			<Time>10000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_01" ID="{506FD9B7-33C1-4D3B-84C2-44AD9121DEBD}">
+																	<PropertyList>
+																		<Property Name="AppendOffset" Type="int32" Value="1"/>
+																		<Property Name="Duration" Type="int32" Value="12000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>43.03797</XPos>
+																			<YPos>47.45223</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-76.58228</XPos>
+																			<YPos>-66.87898</YPos>
+																			<Flags>0</Flags>
+																			<Time>12000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_02" ID="{B126B7E2-619E-4037-B088-FB91AD47313D}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="15000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>22.1519</XPos>
+																			<YPos>-21.70063</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-40.50633</XPos>
+																			<YPos>25.47771</YPos>
+																			<Flags>0</Flags>
+																			<Time>15000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_03" ID="{BBC128E7-AB03-49E2-A6BF-AEE2B129038C}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="8000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>1.26582</XPos>
+																			<YPos>28.98089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-1.89873</XPos>
+																			<YPos>-32.21019</YPos>
+																			<Flags>0</Flags>
+																			<Time>8000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_04" ID="{FA678AF0-ED0C-4F83-BD6F-E811DA73E836}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="9000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-40.50634</XPos>
+																			<YPos>28.98089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>40.50633</XPos>
+																			<YPos>31.84713</YPos>
+																			<Flags>0</Flags>
+																			<Time>9000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_05" ID="{8895ECCA-0588-4209-AE1A-35CA0CBDAF42}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-56.96203</XPos>
+																			<YPos>-43.63058</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.96203</XPos>
+																			<YPos>-12.10191</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RHowl" ID="{04B42B36-ECDB-46BD-9A18-8EA302ECD3FF}" ShortID="601427605">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{44EF1AA8-7A70-4D6E-83B8-B08AF279692C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<BlendContainer Name="HowLong1" ID="{A5FA3A89-29F7-49B7-AB9D-C70E6343573D}" ShortID="52131955">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlLongA_01" ID="{17A3C02E-FFC0-49F0-9F4B-21BAD427386E}" ShortID="604441381">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlLongA_01" ID="{44F63431-1565-41AC-A82B-A38F75D7D3E3}" ShortID="1062671059">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlLongA_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlLongA_01" ID="{44F63431-1565-41AC-A82B-A38F75D7D3E3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlLongB_01" ID="{88D399BF-D20E-4AC2-B195-4793F91F6C61}" ShortID="978394544">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlLongB_01" ID="{99D08714-45AF-48A0-89FA-3CF2BCB8881C}" ShortID="337362431">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlLongB_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlLongB_01" ID="{99D08714-45AF-48A0-89FA-3CF2BCB8881C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="HowlShort1" ID="{3FC6860E-655F-4982-A7EF-FD90F8F0A159}" ShortID="886092545">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlShortA_01" ID="{A3E2011B-4083-4203-820D-F4119B7C3798}" ShortID="960154723">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlShortA_01" ID="{A8626DE9-CFA0-4C1C-A995-86F232280037}" ShortID="82368658">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlShortA_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlShortA_01" ID="{A8626DE9-CFA0-4C1C-A995-86F232280037}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlShortB_01" ID="{8F5E4139-DF1F-4C33-A622-007B7C024BFD}" ShortID="1036217590">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlShortB_01" ID="{F505238B-6155-4E2C-A0F3-864BF59E3E9A}" ShortID="506682447">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlShortB_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlShortB_01" ID="{F505238B-6155-4E2C-A0F3-864BF59E3E9A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="HowLong2" ID="{A9E87BEC-F466-43E1-8F6F-FFA8F1183B83}" ShortID="302728520">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlLongB_02" ID="{1FAFF1BC-F26B-4E79-B5FA-3A622A5D80E9}" ShortID="219155303">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlLongB_02" ID="{54CE1089-48DB-45FF-80B7-07B7F889CD47}" ShortID="151833563">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlLongB_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlLongB_02" ID="{54CE1089-48DB-45FF-80B7-07B7F889CD47}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlLongA_02" ID="{90EBBD37-C096-4872-9860-90D9362B62C4}" ShortID="1067479237">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlLongA_02" ID="{B8683CDF-B295-4BF1-BBBF-A9BA59C8D3B0}" ShortID="13944903">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlLongA_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlLongA_02" ID="{B8683CDF-B295-4BF1-BBBF-A9BA59C8D3B0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="HowLong3" ID="{D1D71624-7249-4BC5-A70E-5655535B85D4}" ShortID="680053438">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlLongA_03" ID="{59DC77EB-CD10-4ED0-BF77-9C6FF665A3AB}" ShortID="734571774">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlLongA_03" ID="{B0D52011-967B-46EE-8960-484D6A52C5CF}" ShortID="543873349">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlLongA_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlLongA_03" ID="{B0D52011-967B-46EE-8960-484D6A52C5CF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlLongB_03" ID="{50E327E5-9790-4EC3-93D8-C46EF9918F25}" ShortID="843197437">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlLongB_03" ID="{A6963D74-9ACD-4477-A35C-6C2E53D4E417}" ShortID="586999048">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlLongB_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlLongB_03" ID="{A6963D74-9ACD-4477-A35C-6C2E53D4E417}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="HowlShort2" ID="{0E12777B-F2A4-43F8-94BF-BDAD442D4990}" ShortID="891823696">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlShortA_02" ID="{B2B3B7DE-CFD8-42D2-800E-277E4DB9C948}" ShortID="376062471">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlShortA_02" ID="{75A800D4-C3DE-477E-9F6B-649627EC0CE2}" ShortID="260786839">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlShortA_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="371081650"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlShortA_02" ID="{75A800D4-C3DE-477E-9F6B-649627EC0CE2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlShortB_02" ID="{8897FC6B-F1FF-4ED7-A530-32FED0D4F834}" ShortID="609496935">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlShortB_02" ID="{8CC93941-5AC4-452A-BB15-D13E5FA923E6}" ShortID="980127134">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlShortB_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="233352832"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlShortB_02" ID="{8CC93941-5AC4-452A-BB15-D13E5FA923E6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="HowlShort3" ID="{88090EC1-BA24-4199-957E-C8B6B849040E}" ShortID="1055447738">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlShortA_03" ID="{BFF73076-9218-4F2D-97B5-1CAAC24B50FB}" ShortID="490666783">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlShortA_03" ID="{FABCE101-8757-4848-85AA-C606442C9C4E}" ShortID="92571630">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlShortA_03.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="644476924"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlShortA_03" ID="{FABCE101-8757-4848-85AA-C606442C9C4E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_RHowl_HowlShortB_03" ID="{D043ED58-8D04-4EFC-B068-AE1748A04F32}" ShortID="705008351">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_RHowl_HowlShortB_03" ID="{7BD18B0C-1678-40C9-BCD4-9628FBE5654F}" ShortID="433168052">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_RHowl_HowlShortB_03.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="176425962"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_RHowl_HowlShortB_03" ID="{7BD18B0C-1678-40C9-BCD4-9628FBE5654F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</BlendContainer>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{0408DA14-7E69-45A4-9ADB-0254EB61C6DF}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RHowl_Path" ID="{63508B0C-98DF-4FA2-A8B0-C10B3BB89CF4}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="50"/>
+																		<Property Name="RandomY" Type="Real64" Value="50"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+												</RandomSequenceContainer>
+												<BlendContainer Name="AmbLoop" ID="{E36681F3-17B2-4B6E-B2BB-BA137577E0CC}" ShortID="1034823455">
+													<PropertyList>
+														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="LowAmb" ID="{5299A7E3-F9AE-48D5-B720-84CC5F788D06}" ShortID="392345950">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{327C4BA9-4880-404B-B442-90DFEAA81A4E}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																					<Property Name="Min" Type="Real64" Value="-300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{13DA5692-77D7-428B-A3DE-042DFF72B4E4}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="5"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{2B551572-EF42-47E4-9D0F-A891992254F4}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="1"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_AMB_Desert_LowWind_01" ID="{D60375AB-1742-4EAC-87C3-20AAF435EA4D}" ShortID="679319107">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_LowWind_01" ID="{731207F5-944F-449A-AF07-5D9183E71A54}" ShortID="979206716">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_LowWind_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_LowWind_01" ID="{731207F5-944F-449A-AF07-5D9183E71A54}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_LowWind_02" ID="{6E436A96-BA60-4FBF-86CF-4F860EFE17E3}" ShortID="678971373">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_LowWind_02" ID="{396B2B73-8B74-48D3-94E5-0165427274F4}" ShortID="459766620">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_LowWind_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_LowWind_02" ID="{396B2B73-8B74-48D3-94E5-0165427274F4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_LowWind_03" ID="{340C8F85-77D6-4BC2-B1DD-CCD9FC885925}" ShortID="915755839">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_LowWind_03" ID="{54036239-F144-4AF4-B5D9-0C1A25E0238F}" ShortID="796615516">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_LowWind_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_LowWind_03" ID="{54036239-F144-4AF4-B5D9-0C1A25E0238F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="HighAmb" ID="{01850FDA-8D61-4824-AFC5-5B85A5A707D3}" ShortID="329555402">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{6C26A111-4EA2-48B7-8120-11FCDEA2C66C}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																					<Property Name="Min" Type="Real64" Value="-300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{CC111C50-B957-4EBB-B1D6-81629874F71F}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="5"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{B7A839EC-1E53-4316-ADC0-D5A340C587DE}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="1"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_AMB_Desert_HighWind_01" ID="{3C7B04E2-1B94-4740-8C04-70D68FB6CFBD}" ShortID="995279576">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_HighWind_01" ID="{174E6AF3-66F6-469E-AFDB-92A30A516DEF}" ShortID="828054436">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_HighWind_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_HighWind_01" ID="{174E6AF3-66F6-469E-AFDB-92A30A516DEF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_HighWind_02" ID="{35F5616A-E2BA-4556-9A5B-8E90346E9F0B}" ShortID="185365745">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_HighWind_02" ID="{A4BBDCFD-F703-4138-B4EF-303066A3347B}" ShortID="330102856">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_HighWind_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_HighWind_02" ID="{A4BBDCFD-F703-4138-B4EF-303066A3347B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_AMB_Desert_HighWind_03" ID="{B3E39BEF-01C7-4D23-9A8A-9E79A8CEB0C8}" ShortID="334736503">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_AMB_Desert_HighWind_03" ID="{347D80D7-809B-433B-8635-50B5D3A18674}" ShortID="715830890">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_AMB_Desert_HighWind_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_AMB_Desert_HighWind_03" ID="{347D80D7-809B-433B-8635-50B5D3A18674}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</BlendContainer>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
@@ -41,7 +1033,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{2ADF46B0-F5DF-45C9-982E-53A1CC6ED28D}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 						</Reference>
 					</ReferenceList>
 				</ActorMixer>
@@ -61,7 +1053,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{2ADF46B0-F5DF-45C9-982E-53A1CC6ED28D}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+							<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 						</Reference>
 					</ReferenceList>
 				</ActorMixer>

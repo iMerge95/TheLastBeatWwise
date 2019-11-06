@@ -36,6 +36,11 @@
 						</Property>
 					</PropertyList>
 				</Effect>
+				<Effect Name="RecordAmb" ID="{875313F3-FCA4-45EF-9328-71AB3CFCD15D}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+					<PropertyList>
+						<Property Name="AuthoringFilename" Type="string" Value="AmbWwiseMockUp.wav"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

@@ -6,6 +6,14 @@
 				<SoundcasterSession Name="Test" ID="{A8E7D8C5-6DE1-4540-8506-869CD7FBFF95}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="Play_Amb" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="1" Y="0"/>
 						</Module>

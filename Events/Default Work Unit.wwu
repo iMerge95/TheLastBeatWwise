@@ -42,6 +42,35 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Amb" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
+					<ChildrenList>
+						<Action Name="" ID="{E11A1A78-7F36-471D-ADBB-3F1E5CE9777F}" ShortID="102322380">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DesertBlend" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}">
+					<ChildrenList>
+						<Action Name="" ID="{8E5896BB-01BB-4EE4-B98C-393CE7124273}" ShortID="1023807830">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DesertBlend" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
