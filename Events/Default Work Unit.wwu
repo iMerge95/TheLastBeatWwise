@@ -42,7 +42,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Amb" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
+				<Event Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
 					<ChildrenList>
 						<Action Name="" ID="{E11A1A78-7F36-471D-ADBB-3F1E5CE9777F}" ShortID="102322380">
 							<PropertyList>
@@ -50,7 +50,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="DesertBlend" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+									<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -65,7 +65,29 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="DesertBlend" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+									<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_WildlifeDesert_1" ID="{CE2105B7-7B17-48D5-AD39-C9A76A41B44E}">
+					<ChildrenList>
+						<Action Name="" ID="{3C39D9DF-00C4-4258-929B-8A4A51B0CF14}" ShortID="97106739">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cryspets" ID="{56EDAE85-837D-4C08-AA07-BBEE1B7A472E}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_WildlifeDesert_2" ID="{380D2BAE-6D6F-476C-85FE-2961FC6278D7}">
+					<ChildrenList>
+						<Action Name="" ID="{B268E4D1-950F-45FB-89FE-9279BA4FACA8}" ShortID="588061106">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Glasshoppers" ID="{918BA606-921D-4042-BF10-890D4825FDC8}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

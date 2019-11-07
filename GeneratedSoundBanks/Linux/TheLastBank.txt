@@ -1,0 +1,62 @@
+Event	ID	Name			Wwise Object Path	Notes
+	92132220	Play_WildlifeDesert_2			\Default Work Unit\Play_WildlifeDesert_2	
+	92132223	Play_WildlifeDesert_1			\Default Work Unit\Play_WildlifeDesert_1	
+	416687607	DashFX			\Default Work Unit\DashFX	
+	435770000	Stop_Amb			\Default Work Unit\Stop_Amb	
+	3681445093	Play_AmbDesert			\Default Work Unit\Play_AmbDesert	
+	3991942870	Music			\Default Work Unit\Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1445037870	MusicSwitch			\Default Work Unit\MusicSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	3991942870	Music	MusicSwitch			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3946755902	MusicCrusher			\Default Work Unit\MusicCrusher	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3946755902	MusicCrusher	BitCrusher			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	13944903	TLB_AMB_Desert_RHowl_HowlLongA_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongA_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowLong2\TLB_AMB_Desert_RHowl_HowlLongA_02		162289
+	82368658	TLB_AMB_Desert_RHowl_HowlShortA_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowlShort1\TLB_AMB_Desert_RHowl_HowlShortA_01		77858
+	127311965	TLB_AMB_Desert_Wildlife_GlassHopper_06	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_06_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_06		49577
+	151833563	TLB_AMB_Desert_RHowl_HowlLongB_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongB_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowLong2\TLB_AMB_Desert_RHowl_HowlLongB_02		256835
+	176425962	TLB_AMB_Desert_RHowl_HowlShortB_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortB_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowlShort3\TLB_AMB_Desert_RHowl_HowlShortB_03		169956
+	204464047	TLB_AMB_Desert_Wildlife_GlassHopper_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_02		44346
+	233352832	TLB_AMB_Desert_RHowl_HowlShortB_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortB_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowlShort2\TLB_AMB_Desert_RHowl_HowlShortB_02		108424
+	337362431	TLB_AMB_Desert_RHowl_HowlLongB_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongB_01_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowLong1\TLB_AMB_Desert_RHowl_HowlLongB_01		254489
+	371081650	TLB_AMB_Desert_RHowl_HowlShortA_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortA_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowlShort2\TLB_AMB_Desert_RHowl_HowlShortA_02		67532
+	384910229	TLB_AMB_Desert_Wildlife_GlassHopper_07	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_07_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_07		40900
+	389537110	TheLastBeatTestLoop	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeatTestLoop_D79FB2B7.wem		\Interactive Music Hierarchy\MUSIC\Music\Test\TheLastBeatTestLoop\TheLastBeatTestLoop		9031744
+	506682447	TLB_AMB_Desert_RHowl_HowlShortB_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortB_01_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowlShort1\TLB_AMB_Desert_RHowl_HowlShortB_01		127629
+	543873349	TLB_AMB_Desert_RHowl_HowlLongA_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongA_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowLong3\TLB_AMB_Desert_RHowl_HowlLongA_03		189653
+	554091354	TLB_AMB_Desert_Wildlife_GlassHopper_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_01_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_01		43186
+	586999048	TLB_AMB_Desert_RHowl_HowlLongB_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongB_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowLong3\TLB_AMB_Desert_RHowl_HowlLongB_03		380426
+	598512056	TheLastBeatTestIntro	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeatTestIntro_D79FB2B7.wem		\Interactive Music Hierarchy\MUSIC\Music\Test\TheLastBeatTestIntro\TheLastBeatTestIntro		9596228
+	644476924	TLB_AMB_Desert_RHowl_HowlShortA_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortA_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowlShort3\TLB_AMB_Desert_RHowl_HowlShortA_03		91853
+	785438933	TLB_AMB_Desert_Wildlife_GlassHopper_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_03		31864
+	995308825	TLB_AMB_Desert_Wildlife_GlassHopper_05	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_05_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_05		38264
+	1036646483	TLB_AMB_Desert_Wildlife_GlassHopper_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_04_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_04		37112
+	1062671059	TLB_AMB_Desert_RHowl_HowlLongA_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongA_01_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowLong1\TLB_AMB_Desert_RHowl_HowlLongA_01		161870
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	11159091	TLB_AMB_Desert_Wildlife_Crypets_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_Crypets_02_D90B92A5.wem	11159091.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Cryspets\TLB_AMB_Desert_Wildlife_Crypets_02	
+	63282434	TLB_AMB_Desert_RWind_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RWind_02_D90B92A5.wem	63282434.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_02	
+	125119891	TLB_AMB_Desert_Wildlife_Crypets_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_Crypets_03_D90B92A5.wem	125119891.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Cryspets\TLB_AMB_Desert_Wildlife_Crypets_03	
+	141019759	TLB_AMB_Desert_RWind_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RWind_04_D90B92A5.wem	141019759.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_04	
+	249965315	TLB_AMB_Desert_RWind_06	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RWind_06_D90B92A5.wem	249965315.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_06	
+	330102856	TLB_AMB_Desert_HighWind_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_HighWind_02_D90B92A5.wem	330102856.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\AmbLoop\HighAmb\TLB_AMB_Desert_HighWind_02	
+	335079225	TLB_AMB_Desert_RWind_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RWind_03_D90B92A5.wem	335079225.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_03	
+	375337560	TLB_AMB_Desert_Wildlife_Crypets_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_Crypets_04_D90B92A5.wem	375337560.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Cryspets\TLB_AMB_Desert_Wildlife_Crypets_04	
+	447676650	TLB_AMB_Desert_RWind_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RWind_01_D90B92A5.wem	447676650.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_01	
+	459766620	TLB_AMB_Desert_LowWind_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_LowWind_02_D90B92A5.wem	459766620.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\AmbLoop\LowAmb\TLB_AMB_Desert_LowWind_02	
+	603408749	TLB_AMB_Desert_RWind_07	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RWind_07_D90B92A5.wem	603408749.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_07	
+	715830890	TLB_AMB_Desert_HighWind_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_HighWind_03_D90B92A5.wem	715830890.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\AmbLoop\HighAmb\TLB_AMB_Desert_HighWind_03	
+	796615516	TLB_AMB_Desert_LowWind_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_LowWind_03_D90B92A5.wem	796615516.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\AmbLoop\LowAmb\TLB_AMB_Desert_LowWind_03	
+	828054436	TLB_AMB_Desert_HighWind_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_HighWind_01_D90B92A5.wem	828054436.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\AmbLoop\HighAmb\TLB_AMB_Desert_HighWind_01	
+	889974946	TLB_AMB_Desert_Wildlife_Crypets_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_Crypets_01_D90B92A5.wem	889974946.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Cryspets\TLB_AMB_Desert_Wildlife_Crypets_01	
+	915633297	TLB_AMB_Desert_RWind_05	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RWind_05_D90B92A5.wem	915633297.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_05	
+	979206716	TLB_AMB_Desert_LowWind_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_LowWind_01_D90B92A5.wem	979206716.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\AmbLoop\LowAmb\TLB_AMB_Desert_LowWind_01	
+

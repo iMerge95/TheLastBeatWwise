@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="11159091" Language="SFX">
+			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_Wildlife_Crypets_02_D90B92A5.wem</Path>
+		</File>
+		<File Id="63282434" Language="SFX">
+			<ShortName>TLB_AMB_Desert_RWind_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_RWind_02_D90B92A5.wem</Path>
+		</File>
+		<File Id="125119891" Language="SFX">
+			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_Wildlife_Crypets_03_D90B92A5.wem</Path>
+		</File>
+		<File Id="141019759" Language="SFX">
+			<ShortName>TLB_AMB_Desert_RWind_04.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_RWind_04_D90B92A5.wem</Path>
+		</File>
+		<File Id="249965315" Language="SFX">
+			<ShortName>TLB_AMB_Desert_RWind_06.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_RWind_06_D90B92A5.wem</Path>
+		</File>
+		<File Id="330102856" Language="SFX">
+			<ShortName>TLB_AMB_Desert_HighWind_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_HighWind_02_D90B92A5.wem</Path>
+		</File>
+		<File Id="335079225" Language="SFX">
+			<ShortName>TLB_AMB_Desert_RWind_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_RWind_03_D90B92A5.wem</Path>
+		</File>
+		<File Id="375337560" Language="SFX">
+			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_04.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_Wildlife_Crypets_04_D90B92A5.wem</Path>
+		</File>
+		<File Id="447676650" Language="SFX">
+			<ShortName>TLB_AMB_Desert_RWind_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_RWind_01_D90B92A5.wem</Path>
+		</File>
+		<File Id="459766620" Language="SFX">
+			<ShortName>TLB_AMB_Desert_LowWind_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_LowWind_02_D90B92A5.wem</Path>
+		</File>
+		<File Id="603408749" Language="SFX">
+			<ShortName>TLB_AMB_Desert_RWind_07.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_RWind_07_D90B92A5.wem</Path>
+		</File>
+		<File Id="715830890" Language="SFX">
+			<ShortName>TLB_AMB_Desert_HighWind_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_HighWind_03_D90B92A5.wem</Path>
+		</File>
+		<File Id="796615516" Language="SFX">
+			<ShortName>TLB_AMB_Desert_LowWind_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_LowWind_03_D90B92A5.wem</Path>
+		</File>
+		<File Id="828054436" Language="SFX">
+			<ShortName>TLB_AMB_Desert_HighWind_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_HighWind_01_D90B92A5.wem</Path>
+		</File>
+		<File Id="889974946" Language="SFX">
+			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_Wildlife_Crypets_01_D90B92A5.wem</Path>
+		</File>
+		<File Id="915633297" Language="SFX">
+			<ShortName>TLB_AMB_Desert_RWind_05.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_RWind_05_D90B92A5.wem</Path>
+		</File>
+		<File Id="979206716" Language="SFX">
+			<ShortName>TLB_AMB_Desert_LowWind_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_LowWind_01_D90B92A5.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="177400472" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\TheLastBank</ObjectPath>
+			<ShortName>TheLastBank</ShortName>
+			<Path>TheLastBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="416687607" Name="DashFX" ObjectPath="\Events\Default Work Unit\DashFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite"/>
+				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\Play_AmbDesert" DurationType="Infinite"/>
+				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\Stop_Amb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="11159091"/>
+				<File Id="63282434"/>
+				<File Id="125119891"/>
+				<File Id="141019759"/>
+				<File Id="249965315"/>
+				<File Id="330102856"/>
+				<File Id="335079225"/>
+				<File Id="375337560"/>
+				<File Id="447676650"/>
+				<File Id="459766620"/>
+				<File Id="603408749"/>
+				<File Id="715830890"/>
+				<File Id="796615516"/>
+				<File Id="828054436"/>
+				<File Id="889974946"/>
+				<File Id="915633297"/>
+				<File Id="979206716"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="13944903" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_02.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongA_02_D90B92A5.wem</Path>
+				</File>
+				<File Id="82368658" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_01.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_D90B92A5.wem</Path>
+				</File>
+				<File Id="127311965" Language="SFX">
+					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_06_D90B92A5.wem</Path>
+				</File>
+				<File Id="151833563" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_02.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongB_02_D90B92A5.wem</Path>
+				</File>
+				<File Id="176425962" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_03.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_03_D90B92A5.wem</Path>
+				</File>
+				<File Id="204464047" Language="SFX">
+					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_02.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_02_D90B92A5.wem</Path>
+				</File>
+				<File Id="233352832" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_02.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_02_D90B92A5.wem</Path>
+				</File>
+				<File Id="337362431" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_01.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongB_01_D90B92A5.wem</Path>
+				</File>
+				<File Id="371081650" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_02.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_02_D90B92A5.wem</Path>
+				</File>
+				<File Id="384910229" Language="SFX">
+					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_07.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_07_D90B92A5.wem</Path>
+				</File>
+				<File Id="389537110" Language="SFX">
+					<ShortName>TheLastBeatTestLoop.wav</ShortName>
+					<Path>SFX\TheLastBeatTestLoop_D79FB2B7.wem</Path>
+				</File>
+				<File Id="506682447" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_01.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_01_D90B92A5.wem</Path>
+				</File>
+				<File Id="543873349" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_03.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongA_03_D90B92A5.wem</Path>
+				</File>
+				<File Id="554091354" Language="SFX">
+					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_01.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_01_D90B92A5.wem</Path>
+				</File>
+				<File Id="586999048" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_03.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongB_03_D90B92A5.wem</Path>
+				</File>
+				<File Id="598512056" Language="SFX">
+					<ShortName>TheLastBeatTestIntro.wav</ShortName>
+					<Path>SFX\TheLastBeatTestIntro_D79FB2B7.wem</Path>
+				</File>
+				<File Id="644476924" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_03.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_03_D90B92A5.wem</Path>
+				</File>
+				<File Id="785438933" Language="SFX">
+					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_03.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_03_D90B92A5.wem</Path>
+				</File>
+				<File Id="995308825" Language="SFX">
+					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_05.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_05_D90B92A5.wem</Path>
+				</File>
+				<File Id="1036646483" Language="SFX">
+					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_04.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_04_D90B92A5.wem</Path>
+				</File>
+				<File Id="1062671059" Language="SFX">
+					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_01.wav</ShortName>
+					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongA_01_D90B92A5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
