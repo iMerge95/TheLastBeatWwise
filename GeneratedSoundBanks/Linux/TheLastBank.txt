@@ -1,8 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	92132220	Play_WildlifeDesert_2			\Default Work Unit\Play_WildlifeDesert_2	
 	92132223	Play_WildlifeDesert_1			\Default Work Unit\Play_WildlifeDesert_1	
-	416687607	DashFX			\Default Work Unit\DashFX	
 	435770000	Stop_Amb			\Default Work Unit\Stop_Amb	
+	996118318	SloMoMusicFX			\Default Work Unit\SloMoMusicFX	
+	1530518599	HitMusicFX			\Default Work Unit\HitMusicFX	
+	2129184572	DashFXOnBeat			\Default Work Unit\DashFXOnBeat	
+	2318329526	DashFXOffBeat			\Default Work Unit\DashFXOffBeat	
+	3260481321	Reverse			\Default Work Unit\Reverse	
 	3681445093	Play_AmbDesert			\Default Work Unit\Play_AmbDesert	
 	3991942870	Music			\Default Work Unit\Music	
 
@@ -14,13 +18,25 @@ Switch	ID	Name	Switch Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3946755902	MusicCrusher			\Default Work Unit\MusicCrusher	
+	4098383957	MusicSlowMo			\Default Work Unit\MusicSlowMo	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	280213685	Modulator Envelope (Custom)				
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	1813808854	OnBeat			\Default Work Unit\OnBeat	
 
 Effect plug-ins	ID	Name	Type				Notes
 	3946755902	MusicCrusher	BitCrusher			
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	237569232	SoundSeed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\SFX\MFX\TestGrainMusic\SoundSeed Grain	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	13944903	TLB_AMB_Desert_RHowl_HowlLongA_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongA_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowLong2\TLB_AMB_Desert_RHowl_HowlLongA_02		162289
 	82368658	TLB_AMB_Desert_RHowl_HowlShortA_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowlShort1\TLB_AMB_Desert_RHowl_HowlShortA_01		77858
+	102108892	TLB_Chara_SFX_SFX_Chara_PH_DashFX_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_Chara_SFX_SFX_Chara_PH_DashFX_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Skills\Dash\TLB_Chara_SFX_SFX_Chara_PH_DashFX_01		192064
+	102332519	SoundSeed Grain	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\Plugins\SoundSeed Grain\TLB_SFX_MUSIC_MarkedTest_7B39DDF4.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\SFX\MFX\TestGrainMusic\SoundSeed Grain		4496980
 	127311965	TLB_AMB_Desert_Wildlife_GlassHopper_06	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_06_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_06		49577
 	151833563	TLB_AMB_Desert_RHowl_HowlLongB_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongB_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowLong2\TLB_AMB_Desert_RHowl_HowlLongB_02		256835
 	176425962	TLB_AMB_Desert_RHowl_HowlShortB_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortB_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Desert\Desert_Ambiance\RHowl\HowlShort3\TLB_AMB_Desert_RHowl_HowlShortB_03		169956

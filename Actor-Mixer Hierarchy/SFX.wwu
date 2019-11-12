@@ -1483,6 +1483,205 @@
 							<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Skills" ID="{6C9F393D-9C37-49D7-8D9F-F1AC2B4AA907}" ShortID="857317061">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Dash" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" ShortID="64923741">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DDE5677B-7BAB-4CFA-881C-018AC8C1662C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{07219479-EC2C-4CCD-8AB2-649A124307EC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TLB_Chara_SFX_SFX_Chara_PH_DashFX_01" ID="{34116F76-36C7-4C0A-9153-9684D0C403B5}" ShortID="510904389">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TLB_Chara_SFX_SFX_Chara_PH_DashFX_01" ID="{E709591B-5764-4B80-9C19-6986D57547EF}" ShortID="102108892">
+													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_Chara_SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>TLB_Chara_SFX_SFX_Chara_PH_DashFX_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TLB_Chara_SFX_SFX_Chara_PH_DashFX_01" ID="{E709591B-5764-4B80-9C19-6986D57547EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="MFX" ID="{D046255F-F791-453A-BBCE-803D3CBB8FC8}" ShortID="603886249">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="TestGrainMusic" ID="{30D14836-FC82-4ACF-976D-576A34B99588}" ShortID="220551796">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" ShortID="237569232" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+									<PropertyList>
+										<Property Name="Attack" Type="Real32" Value="0"/>
+										<Property Name="Duration" Type="Real32" Value="1250"/>
+										<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+										<Property Name="EnvelopeType" Type="int32" Value="1"/>
+										<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+										<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+										<Property Name="GrainTime" Type="Real32" Value="1250"/>
+										<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+										<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+										<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+										<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+										<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+										<Property Name="ModRate2" Type="Real32" Value="5"/>
+										<Property Name="ModSelect2" Type="int32" Value="0"/>
+										<Property Name="ModWaveform2" Type="int32" Value="11"/>
+										<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+										<Property Name="OutputLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{29E0B4AC-4364-4C8D-A092-4E95995EC2EC}" ShortID="469731031">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E6DD8338-24A2-41F1-A6F8-2A1BDB4AD635}" ShortID="280213685">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{01E62BF0-9D25-4FCE-ACBA-79ED0E83AB9F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+										<Property Name="Release" Type="Real32" Value="625"/>
+										<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
+										<Property Name="Speed" Type="Real32" Value="-1"/>
+										<Property Name="WindowMode" Type="int32" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<AudioFileSource Name="TLB_SFX_MUSIC_MarkedTest" ID="{3B564906-81AF-4A02-8A00-68B143B93AD0}" ShortID="102332519">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.86149612226128"/>
+												<Property Name="TrimEnd" Type="Real64" Value="34.3508707252012"/>
+											</PropertyList>
+											<Language>SoundSeed Grain</Language>
+											<AudioFile>TLB_SFX_MUSIC_MarkedTest.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<Language>SFX</Language>
+									<PluginInnerObjectList>
+										<List Name="ParameterModulatorAssociation">
+											<PluginInnerObject Name="" ID="{DABF7013-3F74-4A92-8942-E383118CB917}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+												<PropertyList>
+													<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+													<Property Name="ModID" Type="int32" Value="151"/>
+													<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+													<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+													<Property Name="ParamID" Type="int32" Value="150"/>
+													<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+												</PropertyList>
+											</PluginInnerObject>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

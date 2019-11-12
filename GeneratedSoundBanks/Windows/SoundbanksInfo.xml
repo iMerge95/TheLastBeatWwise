@@ -85,11 +85,15 @@
 			<ShortName>TheLastBank</ShortName>
 			<Path>TheLastBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="416687607" Name="DashFX" ObjectPath="\Events\Default Work Unit\DashFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2318329526" Name="DashFXOffBeat" ObjectPath="\Events\Default Work Unit\DashFXOffBeat" DurationType="OneShot" DurationMin="1.681793" DurationMax="2.378414"/>
+				<Event Id="2129184572" Name="DashFXOnBeat" ObjectPath="\Events\Default Work Unit\DashFXOnBeat" DurationType="OneShot" DurationMin="1.681793" DurationMax="2.378414"/>
+				<Event Id="1530518599" Name="HitMusicFX" ObjectPath="\Events\Default Work Unit\HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite"/>
 				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\Play_AmbDesert" DurationType="Infinite"/>
 				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="3260481321" Name="Reverse" ObjectPath="\Events\Default Work Unit\Reverse" DurationType="Unknown"/>
+				<Event Id="996118318" Name="SloMoMusicFX" ObjectPath="\Events\Default Work Unit\SloMoMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\Stop_Amb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
@@ -119,6 +123,14 @@
 				<File Id="82368658" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_D90B92A5.wem</Path>
+				</File>
+				<File Id="102108892" Language="SFX">
+					<ShortName>TLB_Chara_SFX_SFX_Chara_PH_DashFX_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_SFX_Chara_PH_DashFX_01_10C4C929.wem</Path>
+				</File>
+				<File Id="102332519" Language="SFX">
+					<ShortName>TLB_SFX_MUSIC_MarkedTest.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TLB_SFX_MUSIC_MarkedTest_7B39DDF4.wem</Path>
 				</File>
 				<File Id="127311965" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</ShortName>
