@@ -369,121 +369,6 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
-						<MusicSegment Name="OnBeat" ID="{D8751DA4-0AAC-4B03-B156-D639F5C7E088}" ShortID="320382565">
-							<PropertyList>
-								<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-								<Property Name="Tempo" Type="Real64" Value="75"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-								</Reference>
-								<Reference Name="Effect0" PluginName="BitCrusher" CompanyID="64" PluginID="399" PluginType="3">
-									<ObjectRef Name="MusicCrusher" ID="{705745F8-6F6D-4967-B24C-A9404C5BA734}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="TLB_SFX_MUSIC_PH_OnBeat_01" ID="{E7A1C341-B4CF-47B6-BDD6-686BFFCB584C}" ShortID="569544604">
-									<PropertyList>
-										<Property Name="MusicTrackType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TLB_SFX_MUSIC_PH_OnBeat_01" ID="{1957EB7B-1748-4967-9A4A-0DC040E97FE1}" ShortID="589393951">
-											<Language>SFX</Language>
-											<AudioFile>TLB_SFX_MUSIC_PH_OnBeat_01.wav</AudioFile>
-										</AudioFileSource>
-										<AudioFileSource Name="TLB_SFX_MUSIC_PH_OnBeat_04" ID="{4C06979C-A759-44FC-8371-5BA76A870B8B}" ShortID="867119572">
-											<Language>SFX</Language>
-											<AudioFile>TLB_SFX_MUSIC_PH_OnBeat_04.wav</AudioFile>
-										</AudioFileSource>
-										<AudioFileSource Name="TLB_SFX_MUSIC_PH_OnBeat_03" ID="{B3328B60-9372-4810-870D-C497CFDA1065}" ShortID="513064159">
-											<Language>SFX</Language>
-											<AudioFile>TLB_SFX_MUSIC_PH_OnBeat_03.wav</AudioFile>
-										</AudioFileSource>
-										<AudioFileSource Name="TLB_SFX_MUSIC_PH_OnBeat_02" ID="{65016958-F006-4B9B-A2B2-822B76D8F542}" ShortID="1072462606">
-											<Language>SFX</Language>
-											<AudioFile>TLB_SFX_MUSIC_PH_OnBeat_02.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{FCFB58D9-5145-4860-9584-2BA43C785474}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<SequenceList>
-										<MusicTrackSequence Name="" ID="{82AD12B8-CBDC-4A04-94CD-2A87ECD4F583}">
-											<ClipList>
-												<MusicClip Name="TLB_SFX_MUSIC_PH_OnBeat_01" ID="{E3A4D8B3-9EF7-4618-93E6-D72E02DE963E}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="800"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="TLB_SFX_MUSIC_PH_OnBeat_01" ID="{1957EB7B-1748-4967-9A4A-0DC040E97FE1}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{75D5B641-2E25-4108-B9C6-6D02D19F7EED}">
-											<ClipList>
-												<MusicClip Name="TLB_SFX_MUSIC_PH_OnBeat_02" ID="{2C396747-BB6D-4780-BEB0-53CE707D598E}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="800"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="TLB_SFX_MUSIC_PH_OnBeat_02" ID="{65016958-F006-4B9B-A2B2-822B76D8F542}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{4C35F336-636D-4454-9A96-F242449695E9}">
-											<ClipList>
-												<MusicClip Name="TLB_SFX_MUSIC_PH_OnBeat_03" ID="{351B478F-3E1B-4A00-A0B9-548652AA4920}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="800"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="TLB_SFX_MUSIC_PH_OnBeat_03" ID="{B3328B60-9372-4810-870D-C497CFDA1065}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{B084CB21-D277-4907-B746-16F888212AE7}">
-											<ClipList>
-												<MusicClip Name="TLB_SFX_MUSIC_PH_OnBeat_04" ID="{A3649DF6-39D0-4873-A742-62DA2F308936}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="800"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="TLB_SFX_MUSIC_PH_OnBeat_04" ID="{4C06979C-A759-44FC-8371-5BA76A870B8B}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-									</SequenceList>
-								</MusicTrack>
-							</ChildrenList>
-							<CueList>
-								<MusicCue Name="Entry Cue" ID="{656062A0-B485-4EBF-B890-E7AAE29A0382}"/>
-								<MusicCue Name="Exit Cue" ID="{0DFABD98-6870-40B3-AF31-0FC83C8528A5}">
-									<PropertyList>
-										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="1000"/>
-									</PropertyList>
-								</MusicCue>
-							</CueList>
-						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{72CBC7C3-0150-44B7-9E37-23C30200CDE8}">
@@ -529,6 +414,126 @@
 						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
+				<MusicSegment Name="OnBeat" ID="{D8751DA4-0AAC-4B03-B156-D639F5C7E088}" ShortID="320382565">
+					<PropertyList>
+						<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="Tempo" Type="Real64" Value="75"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="BitCrusher" CompanyID="64" PluginID="399" PluginType="3">
+							<ObjectRef Name="MusicCrusher" ID="{705745F8-6F6D-4967-B24C-A9404C5BA734}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="TLB_SFX_MUSIC_PH_OnBeat_01" ID="{E7A1C341-B4CF-47B6-BDD6-686BFFCB584C}" ShortID="569544604">
+							<PropertyList>
+								<Property Name="MusicTrackType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TLB_SFX_MUSIC_PH_OnBeat_01" ID="{1957EB7B-1748-4967-9A4A-0DC040E97FE1}" ShortID="589393951">
+									<Language>SFX</Language>
+									<AudioFile>TLB_SFX_MUSIC_PH_OnBeat_01.wav</AudioFile>
+								</AudioFileSource>
+								<AudioFileSource Name="TLB_SFX_MUSIC_PH_OnBeat_04" ID="{4C06979C-A759-44FC-8371-5BA76A870B8B}" ShortID="867119572">
+									<Language>SFX</Language>
+									<AudioFile>TLB_SFX_MUSIC_PH_OnBeat_04.wav</AudioFile>
+								</AudioFileSource>
+								<AudioFileSource Name="TLB_SFX_MUSIC_PH_OnBeat_03" ID="{B3328B60-9372-4810-870D-C497CFDA1065}" ShortID="513064159">
+									<Language>SFX</Language>
+									<AudioFile>TLB_SFX_MUSIC_PH_OnBeat_03.wav</AudioFile>
+								</AudioFileSource>
+								<AudioFileSource Name="TLB_SFX_MUSIC_PH_OnBeat_02" ID="{65016958-F006-4B9B-A2B2-822B76D8F542}" ShortID="1072462606">
+									<Language>SFX</Language>
+									<AudioFile>TLB_SFX_MUSIC_PH_OnBeat_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{FCFB58D9-5145-4860-9584-2BA43C785474}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{82AD12B8-CBDC-4A04-94CD-2A87ECD4F583}">
+									<ClipList>
+										<MusicClip Name="TLB_SFX_MUSIC_PH_OnBeat_01" ID="{E3A4D8B3-9EF7-4618-93E6-D72E02DE963E}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="800"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="TLB_SFX_MUSIC_PH_OnBeat_01" ID="{1957EB7B-1748-4967-9A4A-0DC040E97FE1}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+								<MusicTrackSequence Name="" ID="{75D5B641-2E25-4108-B9C6-6D02D19F7EED}">
+									<ClipList>
+										<MusicClip Name="TLB_SFX_MUSIC_PH_OnBeat_02" ID="{2C396747-BB6D-4780-BEB0-53CE707D598E}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="800"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="TLB_SFX_MUSIC_PH_OnBeat_02" ID="{65016958-F006-4B9B-A2B2-822B76D8F542}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+								<MusicTrackSequence Name="" ID="{4C35F336-636D-4454-9A96-F242449695E9}">
+									<ClipList>
+										<MusicClip Name="TLB_SFX_MUSIC_PH_OnBeat_03" ID="{351B478F-3E1B-4A00-A0B9-548652AA4920}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="800"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="TLB_SFX_MUSIC_PH_OnBeat_03" ID="{B3328B60-9372-4810-870D-C497CFDA1065}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+								<MusicTrackSequence Name="" ID="{B084CB21-D277-4907-B746-16F888212AE7}">
+									<ClipList>
+										<MusicClip Name="TLB_SFX_MUSIC_PH_OnBeat_04" ID="{A3649DF6-39D0-4873-A742-62DA2F308936}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="800"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="TLB_SFX_MUSIC_PH_OnBeat_04" ID="{4C06979C-A759-44FC-8371-5BA76A870B8B}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{656062A0-B485-4EBF-B890-E7AAE29A0382}"/>
+						<MusicCue Name="Exit Cue" ID="{0DFABD98-6870-40B3-AF31-0FC83C8528A5}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="1000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

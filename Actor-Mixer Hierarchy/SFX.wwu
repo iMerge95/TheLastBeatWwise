@@ -1594,12 +1594,13 @@
 								<SourcePlugin Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" ShortID="237569232" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 									<PropertyList>
 										<Property Name="Attack" Type="Real32" Value="0"/>
-										<Property Name="Duration" Type="Real32" Value="1250"/>
+										<Property Name="Duration" Type="Real32" Value="1600"/>
+										<Property Name="DurationLink" Type="int32" Value="1"/>
 										<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
 										<Property Name="EnvelopeType" Type="int32" Value="1"/>
 										<Property Name="FilterQ" Type="Real32" Value="0.91"/>
 										<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-										<Property Name="GrainTime" Type="Real32" Value="1250"/>
+										<Property Name="GrainTime" Type="Real32" Value="800"/>
 										<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
 										<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
 										<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
@@ -1644,10 +1645,8 @@
 											</RTPCList>
 										</Property>
 										<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
-										<Property Name="Release" Type="Real32" Value="625"/>
-										<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
+										<Property Name="Release" Type="Real32" Value="0"/>
 										<Property Name="Speed" Type="Real32" Value="-1"/>
-										<Property Name="WindowMode" Type="int32" Value="0"/>
 									</PropertyList>
 									<ChildrenList>
 										<AudioFileSource Name="TLB_SFX_MUSIC_MarkedTest" ID="{3B564906-81AF-4A02-8A00-68B143B93AD0}" ShortID="102332519">
