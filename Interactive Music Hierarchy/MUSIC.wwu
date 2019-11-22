@@ -1671,7 +1671,7 @@
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="1"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
@@ -1757,11 +1757,11 @@
 					<EntryList>
 						<Entry>
 							<Path>
-								<PathElementRef Name="MusicSwitch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}"/>
-								<PathElementRef Name="Rewind" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}"/>
+								<PathElementRef Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
+								<PathElementRef Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="Calm" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+								<AudioNodeRef Name="Reverse" ID="{6CDB17AA-CEDA-4957-AEB9-A7B4E63F04BC}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
@@ -1843,6 +1843,24 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Reverse" ID="{6CDB17AA-CEDA-4957-AEB9-A7B4E63F04BC}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
+								<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Calm" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
+								<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Calm" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>
