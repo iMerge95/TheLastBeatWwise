@@ -1,6 +1,38 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1439182312	RewindSwitch			\TheLastBeat\RewindSwitch	
+	1445037870	MusicSwitch			\TheLastBeat\MusicSwitch	
+	1673109572	Rewind			\TheLastBeat\Rewind	
+
+State	ID	Name	State Group			Notes
+	0	None	RewindSwitch			
+	225293556	LoopA	RewindSwitch			
+	225293558	LoopC	RewindSwitch			
+	225293559	LoopB	RewindSwitch			
+	0	None	MusicSwitch			
+	2523672974	Limit	MusicSwitch			
+	3753286132	Calm	MusicSwitch			
+	3814499265	Explo	MusicSwitch			
+	0	None	Rewind			
+	1160234136	Normal	Rewind			
+	1673109572	Rewind	Rewind			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	887277441	CriticLevel			\TheLastBeat\CriticLevel	
+	4060985797	SyncDucking			\TheLastBeat\SyncDucking	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	176430053	SyncFeedBack			\Default Work Unit\Master Audio Bus\MFX\SyncFeedBack	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	931006280	MFX			\Default Work Unit\Master Audio Bus\MFX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	731829278	MFXRewindVerb			\Default Work Unit\Master Audio Bus\MFX\MFXRewindVerb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2038996943	Plate_Sizzle	Wwise RoomVerb			
+	2245320997	MFXDucking	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

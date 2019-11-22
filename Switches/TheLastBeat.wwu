@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8DDCF73A-5180-439E-AA87-A0E9A3E8AFDB}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="TheLastBeat" ID="{8DDCF73A-5180-439E-AA87-A0E9A3E8AFDB}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

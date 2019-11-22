@@ -6,19 +6,23 @@
 				<SoundcasterSession Name="Test" ID="{A8E7D8C5-6DE1-4540-8506-869CD7FBFF95}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Play_Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Test_HitSwitch" ID="{58C3E9E4-B7EF-453C-B239-CCB8DC88C1FD}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Play_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_DashFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Reverse" ID="{CE03CC97-7D3D-4C7F-9936-3F176E1AB104}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Play_DashFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
@@ -26,24 +30,20 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_WildlifeDesert_1" ID="{CE2105B7-7B17-48D5-AD39-C9A76A41B44E}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Play_WildlifeDesert_1" ID="{CE2105B7-7B17-48D5-AD39-C9A76A41B44E}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_WildlifeDesert_2" ID="{380D2BAE-6D6F-476C-85FE-2961FC6278D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="DashFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="DashFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-							<Position X="3" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -52,14 +52,24 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="CriticLevel" ID="{9634F387-DCC2-4A29-8D77-77C67F712F73}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Music" ID="{FBE64E00-71F9-48E1-B42D-EABCF58E7DCB}"/>
-					</CurrentSwitchList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+						<CurrentStateRef Name="Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

@@ -2,10 +2,16 @@
 <WwiseDocument Type="WorkUnit" ID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}" SchemaVersion="94">
 	<AudioObjects>
 		<WorkUnit Name="SFX" ID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="5"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<ActorMixer Name="ENVIRO" ID="{FF7F86C4-9C7C-4797-A128-39A78E4CD3A9}" ShortID="308498604">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
 						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -16,26 +22,396 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="Desert" ID="{2E35556F-C34F-4B73-AA8A-DC0AFBC27CF9}" ShortID="901688202">
+						<ActorMixer Name="Emitters" ID="{D7F432ED-5AD4-498A-A2C7-789E401E2015}" ShortID="821289854">
 							<PropertyList>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="WildlifeAttenuation" ID="{D0EB1DFA-C26F-4780-8241-176BCE4703D7}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+									<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<BlendContainer Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" ShortID="256286646">
+								<ActorMixer Name="Desert_Wildlife" ID="{F19AD3CE-FA4A-4602-844A-EAB98209A3BE}" ShortID="681302694">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="WildlifeAttenuation" ID="{D0EB1DFA-C26F-4780-8241-176BCE4703D7}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+										</Reference>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+											<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Cryspets" ID="{56EDAE85-837D-4C08-AA07-BBEE1B7A472E}" ShortID="864016842">
+											<PropertyList>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{37BC4FC5-EA0E-49FE-B68D-D3C0572A634D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="TLB_AMB_Desert_Wildlife_Crypets_01" ID="{A42156F7-57BA-440C-B636-2696A2BD2936}" ShortID="500670156">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_Crypets_01" ID="{ADC053EE-C46A-47C7-B808-01A51196D2EF}" ShortID="889974946">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_Crypets_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_Crypets_01" ID="{ADC053EE-C46A-47C7-B808-01A51196D2EF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_Crypets_02" ID="{6D4C0F63-CFF6-4479-BAE4-3ABE4EB414A6}" ShortID="586978613">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_Crypets_02" ID="{457B5BA8-E698-4FD0-9C52-2DBB6D517841}" ShortID="11159091">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_Crypets_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_Crypets_02" ID="{457B5BA8-E698-4FD0-9C52-2DBB6D517841}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_Crypets_03" ID="{30A9F0EE-9D22-4F6D-90BF-E3C2207696CC}" ShortID="148918330">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_Crypets_03" ID="{C349156F-4F76-4933-9107-27233031EA08}" ShortID="125119891">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_Crypets_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_Crypets_03" ID="{C349156F-4F76-4933-9107-27233031EA08}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_Crypets_04" ID="{5732EF1A-BB5D-4335-8E1B-EA60A73946E3}" ShortID="517727392">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_Crypets_04" ID="{AD7AF0BA-316C-4B99-8A1E-1BD68C88F1F8}" ShortID="375337560">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_Crypets_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_Crypets_04" ID="{AD7AF0BA-316C-4B99-8A1E-1BD68C88F1F8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Glasshoppers" ID="{918BA606-921D-4042-BF10-890D4825FDC8}" ShortID="193118724">
+											<PropertyList>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{754BDDDD-7326-4BBF-B2EB-DC90C3A46C9B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{12304093-8812-4295-93B9-037E0FA742A2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_01" ID="{1A5BA0BB-A03C-43EA-AA84-4BB8871964C7}" ShortID="182219710">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_01" ID="{AC3B60EB-B029-48DE-B143-BE5EB8674BC3}" ShortID="554091354">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_01" ID="{AC3B60EB-B029-48DE-B143-BE5EB8674BC3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_02" ID="{38683A07-D2CE-4820-B301-989EB9D92293}" ShortID="384274423">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_02" ID="{6D082A6C-1FDA-4828-9DF9-194ED7FC1EA2}" ShortID="204464047">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_02" ID="{6D082A6C-1FDA-4828-9DF9-194ED7FC1EA2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_03" ID="{5636F265-BEFB-4B7A-9666-F466E000FE95}" ShortID="1052809229">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_03" ID="{28010629-6CFD-4B0E-ACE2-69E17DCECA3D}" ShortID="785438933">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_03" ID="{28010629-6CFD-4B0E-ACE2-69E17DCECA3D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_04" ID="{F5105552-C49C-4AF0-8FE6-60A8C80987B7}" ShortID="748552912">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_04" ID="{41645049-985F-43C0-9AE5-497EA371B905}" ShortID="1036646483">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_04" ID="{41645049-985F-43C0-9AE5-497EA371B905}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_05" ID="{B304B4AE-7C76-4303-9666-DB20B84B97A4}" ShortID="232981770">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_05" ID="{367F31D3-9515-4FBF-9002-C7B57DB1D35B}" ShortID="995308825">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_05" ID="{367F31D3-9515-4FBF-9002-C7B57DB1D35B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_06" ID="{C08F2025-8E3D-4265-A69C-F9F0754AADFD}" ShortID="291788923">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_06" ID="{2CD1B223-F5DF-4255-B980-0C686CBE1CA0}" ShortID="127311965">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_06" ID="{2CD1B223-F5DF-4255-B980-0C686CBE1CA0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_07" ID="{C2C31C12-7672-4D4B-B6A6-A02FAE1CF78D}" ShortID="329788977">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_07" ID="{2E57E275-5225-4C09-BFDF-A8C4D2B5E63D}" ShortID="384910229">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_07" ID="{2E57E275-5225-4C09-BFDF-A8C4D2B5E63D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="AmbianceBeds" ID="{B9EB56C6-1494-4C74-923F-DCB8EBC54171}" ShortID="468953344">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" ShortID="256286646">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1105,356 +1481,14 @@
 										</BlendContainer>
 									</ChildrenList>
 								</BlendContainer>
-								<ActorMixer Name="Desert_Wildlife" ID="{F19AD3CE-FA4A-4602-844A-EAB98209A3BE}" ShortID="681302694">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="WildlifeAttenuation" ID="{D0EB1DFA-C26F-4780-8241-176BCE4703D7}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Cryspets" ID="{56EDAE85-837D-4C08-AA07-BBEE1B7A472E}" ShortID="864016842">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{37BC4FC5-EA0E-49FE-B68D-D3C0572A634D}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-50"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="TLB_AMB_Desert_Wildlife_Crypets_01" ID="{A42156F7-57BA-440C-B636-2696A2BD2936}" ShortID="500670156">
-													<PropertyList>
-														<Property Name="IsStreamingEnabled" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_Crypets_01" ID="{ADC053EE-C46A-47C7-B808-01A51196D2EF}" ShortID="889974946">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_Crypets_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_Crypets_01" ID="{ADC053EE-C46A-47C7-B808-01A51196D2EF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_Crypets_02" ID="{6D4C0F63-CFF6-4479-BAE4-3ABE4EB414A6}" ShortID="586978613">
-													<PropertyList>
-														<Property Name="IsStreamingEnabled" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_Crypets_02" ID="{457B5BA8-E698-4FD0-9C52-2DBB6D517841}" ShortID="11159091">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_Crypets_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_Crypets_02" ID="{457B5BA8-E698-4FD0-9C52-2DBB6D517841}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_Crypets_03" ID="{30A9F0EE-9D22-4F6D-90BF-E3C2207696CC}" ShortID="148918330">
-													<PropertyList>
-														<Property Name="IsStreamingEnabled" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_Crypets_03" ID="{C349156F-4F76-4933-9107-27233031EA08}" ShortID="125119891">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_Crypets_03.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_Crypets_03" ID="{C349156F-4F76-4933-9107-27233031EA08}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_Crypets_04" ID="{5732EF1A-BB5D-4335-8E1B-EA60A73946E3}" ShortID="517727392">
-													<PropertyList>
-														<Property Name="IsStreamingEnabled" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_Crypets_04" ID="{AD7AF0BA-316C-4B99-8A1E-1BD68C88F1F8}" ShortID="375337560">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_Crypets_04.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_Crypets_04" ID="{AD7AF0BA-316C-4B99-8A1E-1BD68C88F1F8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Glasshoppers" ID="{918BA606-921D-4042-BF10-890D4825FDC8}" ShortID="193118724">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{754BDDDD-7326-4BBF-B2EB-DC90C3A46C9B}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="100"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{12304093-8812-4295-93B9-037E0FA742A2}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="5"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_01" ID="{1A5BA0BB-A03C-43EA-AA84-4BB8871964C7}" ShortID="182219710">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_01" ID="{AC3B60EB-B029-48DE-B143-BE5EB8674BC3}" ShortID="554091354">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_01" ID="{AC3B60EB-B029-48DE-B143-BE5EB8674BC3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_02" ID="{38683A07-D2CE-4820-B301-989EB9D92293}" ShortID="384274423">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_02" ID="{6D082A6C-1FDA-4828-9DF9-194ED7FC1EA2}" ShortID="204464047">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_02" ID="{6D082A6C-1FDA-4828-9DF9-194ED7FC1EA2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_03" ID="{5636F265-BEFB-4B7A-9666-F466E000FE95}" ShortID="1052809229">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_03" ID="{28010629-6CFD-4B0E-ACE2-69E17DCECA3D}" ShortID="785438933">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_03.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_03" ID="{28010629-6CFD-4B0E-ACE2-69E17DCECA3D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_04" ID="{F5105552-C49C-4AF0-8FE6-60A8C80987B7}" ShortID="748552912">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_04" ID="{41645049-985F-43C0-9AE5-497EA371B905}" ShortID="1036646483">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_04.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_04" ID="{41645049-985F-43C0-9AE5-497EA371B905}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_05" ID="{B304B4AE-7C76-4303-9666-DB20B84B97A4}" ShortID="232981770">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_05" ID="{367F31D3-9515-4FBF-9002-C7B57DB1D35B}" ShortID="995308825">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_05.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_05" ID="{367F31D3-9515-4FBF-9002-C7B57DB1D35B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_06" ID="{C08F2025-8E3D-4265-A69C-F9F0754AADFD}" ShortID="291788923">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_06" ID="{2CD1B223-F5DF-4255-B980-0C686CBE1CA0}" ShortID="127311965">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_06" ID="{2CD1B223-F5DF-4255-B980-0C686CBE1CA0}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_AMB_Desert_Wildlife_GlassHopper_07" ID="{C2C31C12-7672-4D4B-B6A6-A02FAE1CF78D}" ShortID="329788977">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_07" ID="{2E57E275-5225-4C09-BFDF-A8C4D2B5E63D}" ShortID="384910229">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_AMB_Desert_Wildlife_GlassHopper_07.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_AMB_Desert_Wildlife_GlassHopper_07" ID="{2E57E275-5225-4C09-BFDF-A8C4D2B5E63D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="NPC" ID="{53133465-BA24-4C94-B87C-EBDA58A47717}" ShortID="373851894">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1475,9 +1509,14 @@
 					</ReferenceList>
 				</ActorMixer>
 				<ActorMixer Name="CHARACTER" ID="{82B777F3-B70D-41A5-855A-5F4021303DE3}" ShortID="315501490">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="20"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -1528,6 +1567,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1560,126 +1604,888 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" ShortID="613458410">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E1843C02-A039-4476-AA4B-78BB648E286B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8F23B9CF-A0E7-4E32-AA6E-3FE5A50734D5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01" ID="{2FD95847-7338-4522-89D0-E3CF98A9BDC1}" ShortID="334000541">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01" ID="{AE707A84-97B2-47D5-864A-1725E84AD861}" ShortID="519364720">
+													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01" ID="{AE707A84-97B2-47D5-864A-1725E84AD861}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="MFX" ID="{D046255F-F791-453A-BBCE-803D3CBB8FC8}" ShortID="603886249">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="13"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+							<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+							<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="TestGrainMusic" ID="{30D14836-FC82-4ACF-976D-576A34B99588}" ShortID="220551796">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						<SwitchContainer Name="CalmLimitSwitch" ID="{2B09B21E-2B99-4351-BBC8-0F4F7BB0AA18}" ShortID="217673187">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="MusicSwitch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SourcePlugin Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" ShortID="237569232" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+								<SwitchContainer Name="RewindSwitchCalm" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}" ShortID="114725975">
 									<PropertyList>
-										<Property Name="Attack" Type="Real32" Value="0"/>
-										<Property Name="Duration" Type="Real32" Value="1600"/>
-										<Property Name="DurationLink" Type="int32" Value="1"/>
-										<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
-										<Property Name="EnvelopeType" Type="int32" Value="1"/>
-										<Property Name="FilterQ" Type="Real32" Value="0.91"/>
-										<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-										<Property Name="GrainTime" Type="Real32" Value="800"/>
-										<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
-										<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
-										<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
-										<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
-										<Property Name="ModRate1" Type="Real32" Value="2.5"/>
-										<Property Name="ModRate2" Type="Real32" Value="5"/>
-										<Property Name="ModSelect2" Type="int32" Value="0"/>
-										<Property Name="ModWaveform2" Type="int32" Value="11"/>
-										<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
-										<Property Name="OutputLevel" Type="Real32">
-											<RTPCList>
-												<RTPC Name="" ID="{29E0B4AC-4364-4C8D-A092-4E95995EC2EC}" ShortID="469731031">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E6DD8338-24A2-41F1-A6F8-2A1BDB4AD635}" ShortID="280213685">
-																	<PropertyList>
-																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
-																	</PropertyList>
-																</ModulatorEnvelope>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{01E62BF0-9D25-4FCE-ACBA-79ED0E83AB9F}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-96</YPos>
-																<Flags>21</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>0</YPos>
-																<Flags>53</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
+										<Property Name="Color" Type="int16" Value="13"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
 										</Property>
-										<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
-										<Property Name="Release" Type="Real32" Value="0"/>
-										<Property Name="Speed" Type="Real32" Value="-1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{A3C11ADD-8A0C-4053-9CDD-E609630991B4}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="RewindSwitch" ID="{40CD7EC0-1E9C-40A9-9220-E3C18B25B534}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TLB_SFX_MUSIC_MarkedTest" ID="{3B564906-81AF-4A02-8A00-68B143B93AD0}" ShortID="102332519">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="8.86149612226128"/>
-												<Property Name="TrimEnd" Type="Real64" Value="34.3508707252012"/>
-											</PropertyList>
-											<Language>SoundSeed Grain</Language>
-											<AudioFile>TLB_SFX_MUSIC_MarkedTest.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="Rewind_LoopA_Calm" ID="{30D14836-FC82-4ACF-976D-576A34B99588}" ShortID="220551796">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" ShortID="237569232" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+													<Comment>BPM76 : beatduration = 789</Comment>
+													<PropertyList>
+														<Property Name="Attack" Type="Real32" Value="0"/>
+														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="DurationLink" Type="int32" Value="1"/>
+														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+														<Property Name="EnvelopeType" Type="int32" Value="1"/>
+														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+														<Property Name="GrainTime" Type="Real32" Value="789"/>
+														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+														<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+														<Property Name="ModRate2" Type="Real32" Value="5"/>
+														<Property Name="ModSelect2" Type="int32" Value="0"/>
+														<Property Name="ModWaveform2" Type="int32" Value="11"/>
+														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+														<Property Name="OutputLevel" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{29E0B4AC-4364-4C8D-A092-4E95995EC2EC}" ShortID="469731031">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom>
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E6DD8338-24A2-41F1-A6F8-2A1BDB4AD635}" ShortID="280213685">
+																					<PropertyList>
+																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																					</PropertyList>
+																				</ModulatorEnvelope>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{01E62BF0-9D25-4FCE-ACBA-79ED0E83AB9F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+														<Property Name="Release" Type="Real32" Value="0"/>
+														<Property Name="Speed" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Combat_Lands_Calm_LoopA_1Pre4Post_WIP_Marked" ID="{3B564906-81AF-4A02-8A00-68B143B93AD0}" ShortID="102332519">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SoundSeed Grain</Language>
+															<AudioFile>TheLastBeat_Mus_Combat_Lands_Calm_LoopA_1Pre4Post_WIP_Marked.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<Language>SFX</Language>
+													<PluginInnerObjectList>
+														<List Name="ParameterModulatorAssociation">
+															<PluginInnerObject Name="" ID="{DABF7013-3F74-4A92-8942-E383118CB917}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+																<PropertyList>
+																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+																	<Property Name="ModID" Type="int32" Value="151"/>
+																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+																	<Property Name="ParamID" Type="int32" Value="150"/>
+																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rewind_LoopB_Calm" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}" ShortID="580658983">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="SoundSeed Grain" ID="{99E3C57D-F712-4FF2-AEBF-A9E3D65ECD51}" ShortID="182675873" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+													<PropertyList>
+														<Property Name="Attack" Type="Real32" Value="0"/>
+														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="DurationLink" Type="int32" Value="1"/>
+														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+														<Property Name="EnvelopeType" Type="int32" Value="1"/>
+														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+														<Property Name="GrainTime" Type="Real32" Value="789"/>
+														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+														<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+														<Property Name="ModRate2" Type="Real32" Value="5"/>
+														<Property Name="ModSelect2" Type="int32" Value="0"/>
+														<Property Name="ModWaveform2" Type="int32" Value="11"/>
+														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+														<Property Name="OutputLevel" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{6863588C-899A-4818-B938-6907337119FC}" ShortID="535988639">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom>
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A10264E0-DD1C-4106-A93F-8061C7CA0277}" ShortID="883300022">
+																					<PropertyList>
+																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																					</PropertyList>
+																				</ModulatorEnvelope>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{8FD2C791-DEBC-4C18-B7E0-68B06BEDC280}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+														<Property Name="Release" Type="Real32" Value="0"/>
+														<Property Name="Speed" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Combat_Lands_Calm_LoopB_1Pre4Post_WIP_Marked" ID="{DB4EE075-F1FC-4A6E-8F12-C120B6C870E1}" ShortID="569031140">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SoundSeed Grain</Language>
+															<AudioFile>TheLastBeat_Mus_Combat_Lands_Calm_LoopB_1Pre4Post_WIP_Marked.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<Language>SFX</Language>
+													<PluginInnerObjectList>
+														<List Name="ParameterModulatorAssociation">
+															<PluginInnerObject Name="" ID="{4A11E22C-945E-4569-BC9E-DE9721674EFF}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+																<PropertyList>
+																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+																	<Property Name="ModID" Type="int32" Value="151"/>
+																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+																	<Property Name="ParamID" Type="int32" Value="150"/>
+																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SoundSeed Grain" ID="{99E3C57D-F712-4FF2-AEBF-A9E3D65ECD51}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rewind_LoopC_Calm" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}" ShortID="947305448">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="SoundSeed Grain" ID="{4A688137-681C-467E-B8EA-8735FDB583C3}" ShortID="26519407" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+													<PropertyList>
+														<Property Name="Attack" Type="Real32" Value="0"/>
+														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="DurationLink" Type="int32" Value="1"/>
+														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+														<Property Name="EnvelopeType" Type="int32" Value="1"/>
+														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+														<Property Name="GrainTime" Type="Real32" Value="789"/>
+														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+														<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+														<Property Name="ModRate2" Type="Real32" Value="5"/>
+														<Property Name="ModSelect2" Type="int32" Value="0"/>
+														<Property Name="ModWaveform2" Type="int32" Value="11"/>
+														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+														<Property Name="OutputLevel" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{FA5A376A-45A3-4CB3-9CFF-419883635266}" ShortID="1066034709">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom>
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E47AA59E-812B-4891-8887-C29E938D4CBE}" ShortID="803350503">
+																					<PropertyList>
+																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																					</PropertyList>
+																				</ModulatorEnvelope>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{6EFDDABA-5CB0-48EF-AA35-5642BE57E311}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+														<Property Name="Release" Type="Real32" Value="0"/>
+														<Property Name="Speed" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Combat_Lands_Calm_LoopC_1Pre4Post_WIP_Marked" ID="{BE39FCFF-AA24-44DF-995F-84CE12A62927}" ShortID="850052255">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SoundSeed Grain</Language>
+															<AudioFile>TheLastBeat_Mus_Combat_Lands_Calm_LoopC_1Pre4Post_WIP_Marked.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<Language>SFX</Language>
+													<PluginInnerObjectList>
+														<List Name="ParameterModulatorAssociation">
+															<PluginInnerObject Name="" ID="{1E748E72-C6C0-4944-941E-F282D62DF3A7}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+																<PropertyList>
+																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+																	<Property Name="ModID" Type="int32" Value="151"/>
+																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+																	<Property Name="ParamID" Type="int32" Value="150"/>
+																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SoundSeed Grain" ID="{4A688137-681C-467E-B8EA-8735FDB583C3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<Language>SFX</Language>
-									<PluginInnerObjectList>
-										<List Name="ParameterModulatorAssociation">
-											<PluginInnerObject Name="" ID="{DABF7013-3F74-4A92-8942-E383118CB917}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
-												<PropertyList>
-													<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
-													<Property Name="ModID" Type="int32" Value="151"/>
-													<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
-													<Property Name="ParamDisplayName" Type="string" Value="Position"/>
-													<Property Name="ParamID" Type="int32" Value="150"/>
-													<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
-												</PropertyList>
-											</PluginInnerObject>
-										</List>
-									</PluginInnerObjectList>
-								</SourcePlugin>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Rewind_LoopA_Calm" ID="{30D14836-FC82-4ACF-976D-576A34B99588}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Rewind_LoopC_Calm" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Rewind_LoopB_Calm" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
+												<ItemList>
+													<ItemRef Name="Rewind_LoopB_Calm" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+												<ItemList>
+													<ItemRef Name="Rewind_LoopA_Calm" ID="{30D14836-FC82-4ACF-976D-576A34B99588}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
+												<ItemList>
+													<ItemRef Name="Rewind_LoopC_Calm" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="RewindSwitchLimit" ID="{BF46139D-C6E0-42C1-800E-883FA1338E10}" ShortID="965181819">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="13"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{A3C11ADD-8A0C-4053-9CDD-E609630991B4}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="RewindSwitch" ID="{40CD7EC0-1E9C-40A9-9220-E3C18B25B534}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rewind_LoopA_Limit" ID="{164694E2-D37B-4865-8BF0-FA3F93721F74}" ShortID="523753091">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="SoundSeed Grain" ID="{EF005250-78F6-4E0C-8D62-A1984A1DEE54}" ShortID="38625801" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+													<PropertyList>
+														<Property Name="Attack" Type="Real32" Value="0"/>
+														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="DurationLink" Type="int32" Value="1"/>
+														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+														<Property Name="EnvelopeType" Type="int32" Value="1"/>
+														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+														<Property Name="GrainTime" Type="Real32" Value="789"/>
+														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+														<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+														<Property Name="ModRate2" Type="Real32" Value="5"/>
+														<Property Name="ModSelect2" Type="int32" Value="0"/>
+														<Property Name="ModWaveform2" Type="int32" Value="11"/>
+														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+														<Property Name="OutputLevel" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{8C260121-3427-41DE-A9E0-96E9F3582C8D}" ShortID="319025079">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom>
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{7BFD54FE-AF92-415B-AE44-0A41BBBB3B6E}" ShortID="965651793">
+																					<PropertyList>
+																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																					</PropertyList>
+																				</ModulatorEnvelope>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{BD01F9D5-56CD-4FA1-A1E4-410A23453745}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+														<Property Name="Release" Type="Real32" Value="0"/>
+														<Property Name="Speed" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Combat_Lands_Limit_LoopA_1Pre4Post_WIP_Marked" ID="{476ED74A-6D8D-4BD7-A837-537C6EB61CF1}" ShortID="832934138">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SoundSeed Grain</Language>
+															<AudioFile>TheLastBeat_Mus_Combat_Lands_Limit_LoopA_1Pre4Post_WIP_Marked.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="283485336"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<Language>SFX</Language>
+													<PluginInnerObjectList>
+														<List Name="ParameterModulatorAssociation">
+															<PluginInnerObject Name="" ID="{9C90BFAB-24C2-449A-B4FB-4CB7A1F9ADC7}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+																<PropertyList>
+																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+																	<Property Name="ModID" Type="int32" Value="151"/>
+																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+																	<Property Name="ParamID" Type="int32" Value="150"/>
+																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SoundSeed Grain" ID="{EF005250-78F6-4E0C-8D62-A1984A1DEE54}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rewind_LoopB_Limit" ID="{7F532D8A-8CBC-4676-AB10-D2AC95EFD84F}" ShortID="239896628">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="SoundSeed Grain" ID="{BBD7832B-D8BD-44E6-A952-92A7BAFBE9AD}" ShortID="538797185" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+													<PropertyList>
+														<Property Name="Attack" Type="Real32" Value="0"/>
+														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="DurationLink" Type="int32" Value="1"/>
+														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+														<Property Name="EnvelopeType" Type="int32" Value="1"/>
+														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+														<Property Name="GrainTime" Type="Real32" Value="789"/>
+														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+														<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+														<Property Name="ModRate2" Type="Real32" Value="5"/>
+														<Property Name="ModSelect2" Type="int32" Value="0"/>
+														<Property Name="ModWaveform2" Type="int32" Value="11"/>
+														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+														<Property Name="OutputLevel" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{B24135A4-5F87-4D48-8911-1463B1FBAC61}" ShortID="562718501">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom>
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{42A8DB69-8345-4168-9A68-FAB38DEE2168}" ShortID="243785714">
+																					<PropertyList>
+																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																					</PropertyList>
+																				</ModulatorEnvelope>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{A9581D83-9A6E-4A71-ACF7-33922ED467F7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+														<Property Name="Release" Type="Real32" Value="0"/>
+														<Property Name="Speed" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_Marked" ID="{6C2DD98B-B986-429D-997A-4EF55EBE1E0B}" ShortID="453391844">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SoundSeed Grain</Language>
+															<AudioFile>TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_Marked.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="542878355"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<Language>SFX</Language>
+													<PluginInnerObjectList>
+														<List Name="ParameterModulatorAssociation">
+															<PluginInnerObject Name="" ID="{BBF7469C-793C-49A1-A9F0-5177688D6CC2}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+																<PropertyList>
+																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+																	<Property Name="ModID" Type="int32" Value="151"/>
+																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+																	<Property Name="ParamID" Type="int32" Value="150"/>
+																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SoundSeed Grain" ID="{BBD7832B-D8BD-44E6-A952-92A7BAFBE9AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rewind_LoopC_Limit" ID="{FDD1601B-4479-4818-9885-3C3F54A6BE4A}" ShortID="261744867">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="SoundSeed Grain" ID="{AABF6608-EA26-4034-B448-5E2A5A8353D6}" ShortID="970998418" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+													<PropertyList>
+														<Property Name="Attack" Type="Real32" Value="0"/>
+														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="DurationLink" Type="int32" Value="1"/>
+														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+														<Property Name="EnvelopeType" Type="int32" Value="1"/>
+														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+														<Property Name="GrainTime" Type="Real32" Value="789"/>
+														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+														<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+														<Property Name="ModRate2" Type="Real32" Value="5"/>
+														<Property Name="ModSelect2" Type="int32" Value="0"/>
+														<Property Name="ModWaveform2" Type="int32" Value="11"/>
+														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+														<Property Name="OutputLevel" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{CC0E7208-CF57-4B71-87AD-0C68C25B2754}" ShortID="759556322">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom>
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{D143FD86-DCA4-4730-80F6-68CB712687A1}" ShortID="997799379">
+																					<PropertyList>
+																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																					</PropertyList>
+																				</ModulatorEnvelope>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{C3B2A484-4E74-424E-91C0-B2E6E370BC7D}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+														<Property Name="Release" Type="Real32" Value="0"/>
+														<Property Name="Speed" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked" ID="{13FDF668-B719-4A30-9077-66C632D1D5CD}" ShortID="265153136">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SoundSeed Grain</Language>
+															<AudioFile>TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="266651572"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<Language>SFX</Language>
+													<PluginInnerObjectList>
+														<List Name="ParameterModulatorAssociation">
+															<PluginInnerObject Name="" ID="{2121C845-0420-4B9B-86B7-D0EA7E0568F4}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+																<PropertyList>
+																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+																	<Property Name="ModID" Type="int32" Value="151"/>
+																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+																	<Property Name="ParamID" Type="int32" Value="150"/>
+																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SoundSeed Grain" ID="{AABF6608-EA26-4034-B448-5E2A5A8353D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Rewind_LoopC_Limit" ID="{FDD1601B-4479-4818-9885-3C3F54A6BE4A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Rewind_LoopB_Limit" ID="{7F532D8A-8CBC-4676-AB10-D2AC95EFD84F}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Rewind_LoopA_Limit" ID="{164694E2-D37B-4865-8BF0-FA3F93721F74}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
+												<ItemList>
+													<ItemRef Name="Rewind_LoopB_Limit" ID="{7F532D8A-8CBC-4676-AB10-D2AC95EFD84F}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+												<ItemList>
+													<ItemRef Name="Rewind_LoopA_Limit" ID="{164694E2-D37B-4865-8BF0-FA3F93721F74}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
+												<ItemList>
+													<ItemRef Name="Rewind_LoopC_Limit" ID="{FDD1601B-4479-4818-9885-3C3F54A6BE4A}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="RewindSwitchCalm" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RewindSwitchLimit" ID="{BF46139D-C6E0-42C1-800E-883FA1338E10}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}"/>
+										<ItemList>
+											<ItemRef Name="RewindSwitchLimit" ID="{BF46139D-C6E0-42C1-800E-883FA1338E10}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+										<ItemList>
+											<ItemRef Name="RewindSwitchCalm" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

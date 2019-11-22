@@ -21,22 +21,6 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjYwODciIG1hc2s9IkRKU1A1OTM0IiBlbmM9IjAiPjxsaWNl
-bnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMs
-NCwxMCwxMywxNCIgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PGxpY2Vuc2UgaWQ9
-IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0i
-MiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNl
-IGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0i
-MiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNl
-IGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhw
-aXJlcz0iMjAyMC0wNy0zMSIgIC8+PC9wcm9qZWN0Pg==|ulwgDZwuzLhZ50CpyME
-Ld3TO6ElzQ6C14FyK9RPYexy/k1H0aqKWLjCKJFhOqkamk0giX1hkoZPI1lDSZNG
-1h13bYyIyJzXnMOz2zvQKgeLNH8Lj4AtZWOLk9XOUwhGCnfCPq+nTLPqcstv1sFC
-1jmFWlxANWR7YWN54hqRolb0Hydl1XQ+K20LfTRYp17dFy/5yStmOe1pc0m87smw
-twiNa/ktb1D4UYHK2uaVRl+iFuAKM+QUN2RRJfNhceep6baF6tKSP/pFLjhzrgbQ
-c053v6O2B0pkczDf0mwdNwcoL7vrwkAisJUIRDjFVGjYUOjOUnJgBgsht+K+/HrO
-vUQ==
-"/>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
 						<Value Platform="Linux">GeneratedSoundBanks\Linux\</Value>
@@ -44,6 +28,7 @@ vUQ==
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjYwODciIG1hc2s9IkRKU1A1OTM0IiBlbmM9IjAiPjxsaWNl bnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMs NCwxMCwxMywxNCIgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PGxpY2Vuc2UgaWQ9 IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0i MiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNl IGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0i MiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNl IGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhw aXJlcz0iMjAyMC0wNy0zMSIgIC8+PC9wcm9qZWN0Pg==|ulwgDZwuzLhZ50CpyME Ld3TO6ElzQ6C14FyK9RPYexy/k1H0aqKWLjCKJFhOqkamk0giX1hkoZPI1lDSZNG 1h13bYyIyJzXnMOz2zvQKgeLNH8Lj4AtZWOLk9XOUwhGCnfCPq+nTLPqcstv1sFC 1jmFWlxANWR7YWN54hqRolb0Hydl1XQ+K20LfTRYp17dFy/5yStmOe1pc0m87smw twiNa/ktb1D4UYHK2uaVRl+iFuAKM+QUN2RRJfNhceep6baF6tKSP/pFLjhzrgbQ c053v6O2B0pkczDf0mwdNwcoL7vrwkAisJUIRDjFVGjYUOjOUnJgBgsht+K+/HrO vUQ== "/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}" SchemaVersion="94">
+	<Triggers>
+		<WorkUnit Name="TheLastBeat" ID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Trigger Name="OnBeat" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

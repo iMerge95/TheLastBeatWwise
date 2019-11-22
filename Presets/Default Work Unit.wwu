@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B407ADEA-21E3-4639-9D70-319C01771E9E}" SchemaVersion="94">
 	<Presets>
-		<WorkUnit Name="Default Work Unit" ID="{B407ADEA-21E3-4639-9D70-319C01771E9E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B407ADEA-21E3-4639-9D70-319C01771E9E}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Emmiters_Base" ID="{5AB44E8F-1C3E-40F4-BF06-E5D8F32DA188}">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="WildlifeAttenuation" ID="{D0EB1DFA-C26F-4780-8241-176BCE4703D7}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<SourcePlugin Name="BPM76" ID="{662C1E17-374D-486F-9919-726462FBCDA8}" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+					<PropertyList>
+						<Property Name="Attack" Type="Real32" Value="0"/>
+						<Property Name="Duration" Type="Real32" Value="1578"/>
+						<Property Name="DurationLink" Type="int32" Value="1"/>
+						<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+						<Property Name="EnvelopeType" Type="int32" Value="1"/>
+						<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+						<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+						<Property Name="GrainTime" Type="Real32" Value="789"/>
+						<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+						<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+						<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+						<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+						<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+						<Property Name="ModRate2" Type="Real32" Value="5"/>
+						<Property Name="ModSelect2" Type="int32" Value="0"/>
+						<Property Name="ModWaveform2" Type="int32" Value="11"/>
+						<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+						<Property Name="OutputLevel" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{9DBD2CB3-C38D-45A3-8979-C2EC7D21914A}" ShortID="420672782">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<Custom>
+												<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{DE34189E-1E89-4D73-9AFE-869E8085609D}" ShortID="231281560">
+													<PropertyList>
+														<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+													</PropertyList>
+												</ModulatorEnvelope>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F92B33D8-B0D2-4A12-B17D-8E103EC846DC}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-96</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+						<Property Name="Release" Type="Real32" Value="0"/>
+						<Property Name="Speed" Type="Real32" Value="-1"/>
+					</PropertyList>
+					<Language>SFX</Language>
+					<PluginInnerObjectList>
+						<List Name="ParameterModulatorAssociation">
+							<PluginInnerObject Name="" ID="{9F9BC098-F29C-45B1-9AEE-14A2BC919BD6}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+								<PropertyList>
+									<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+									<Property Name="ModID" Type="int32" Value="151"/>
+									<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+									<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+									<Property Name="ParamID" Type="int32" Value="150"/>
+									<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+								</PropertyList>
+							</PluginInnerObject>
+						</List>
+					</PluginInnerObjectList>
+				</SourcePlugin>
+			</ChildrenList>
+		</WorkUnit>
 	</Presets>
 </WwiseDocument>
