@@ -13,6 +13,7 @@
 						<ObjectRef Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_WildlifeDesert_2" ID="{380D2BAE-6D6F-476C-85FE-2961FC6278D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_All" ID="{27729540-6585-48A7-8D30-6C5160C2D643}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_WildlifeDesert_1" ID="{CE2105B7-7B17-48D5-AD39-C9A76A41B44E}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopB" ID="{BE79EF32-E2D4-4C05-822A-7BD390259C8C}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopC" ID="{33D6E2D8-B399-4C0D-A248-B3F7AB5E9A67}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
