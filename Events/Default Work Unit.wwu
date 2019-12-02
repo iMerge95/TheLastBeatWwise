@@ -286,7 +286,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+									<ObjectRef Name="Combat_Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

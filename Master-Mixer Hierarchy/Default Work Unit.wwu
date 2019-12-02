@@ -78,7 +78,7 @@
 													</Point>
 													<Point>
 														<XPos>-20</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log3</SegmentShape>
 													</Point>
@@ -101,7 +101,6 @@
 								<Property Name="Color" Type="int16" Value="13"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}">
 									<ReferenceList>

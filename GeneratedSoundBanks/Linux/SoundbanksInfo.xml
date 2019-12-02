@@ -98,6 +98,7 @@
 				<Event Id="4276712659" Name="SetRewind_LoopB" ObjectPath="\Events\Default Work Unit\Internal_RewindState\SetRewind_LoopB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4276712658" Name="SetRewind_LoopC" ObjectPath="\Events\Default Work Unit\Internal_RewindState\SetRewind_LoopC" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="996118318" Name="SloMoMusicFX" ObjectPath="\Events\Default Work Unit\SloMoMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\Stop_Amb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="564679353" Name="Stop_Rewind" ObjectPath="\Events\Default Work Unit\Internal_RewindState\Stop_Rewind" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>

@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	92132223	Play_WildlifeDesert_1			\Default Work Unit\Play_WildlifeDesert_1	
 	228228455	Play_DashFXOffBeat			\Default Work Unit\Play_DashFXOffBeat	
 	435770000	Stop_Amb			\Default Work Unit\Stop_Amb	
+	452547817	Stop_All			\Default Work Unit\Stop_All	
 	564679353	Stop_Rewind			\Default Work Unit\Internal_RewindState\Stop_Rewind	
 	869704911	Play_Rewind			\Default Work Unit\Internal_RewindState\Play_Rewind	
 	996118318	SloMoMusicFX			\Default Work Unit\SloMoMusicFX	

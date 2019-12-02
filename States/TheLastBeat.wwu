@@ -26,9 +26,10 @@
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
-						<State Name="Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
-						<State Name="Explo" ID="{C5F062AE-2253-45E5-9431-6C61695AFC7C}"/>
-						<State Name="Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}"/>
+						<State Name="Combat_Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+						<State Name="Explo_Calm" ID="{C5F062AE-2253-45E5-9431-6C61695AFC7C}"/>
+						<State Name="Combat_Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}"/>
+						<State Name="Explo_Rhytm" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Rewind" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}">

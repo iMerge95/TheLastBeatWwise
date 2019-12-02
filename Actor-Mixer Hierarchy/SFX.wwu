@@ -1696,7 +1696,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+									<ObjectRef Name="Combat_Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -2472,13 +2472,13 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}"/>
+										<SwitchRef Name="Combat_Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}"/>
 										<ItemList>
 											<ItemRef Name="RewindSwitchLimit" ID="{BF46139D-C6E0-42C1-800E-883FA1338E10}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+										<SwitchRef Name="Combat_Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 										<ItemList>
 											<ItemRef Name="RewindSwitchCalm" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
 										</ItemList>

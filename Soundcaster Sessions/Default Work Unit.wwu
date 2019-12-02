@@ -67,7 +67,7 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
 						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-						<CurrentStateRef Name="Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+						<CurrentStateRef Name="Combat_Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
