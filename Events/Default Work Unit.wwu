@@ -18,7 +18,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_DashFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}">
+				<Event Name="Play_RushFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="23"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -27,6 +27,7 @@
 						<Action Name="" ID="{4F0062F1-0DF8-4FB1-AD82-E5058B379ED2}" ShortID="881746154">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
@@ -45,6 +46,11 @@
 						<Action Name="" ID="{DD1D6DDE-5958-4F22-9B31-15F187347361}" ShortID="935586665">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="41"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -131,44 +137,21 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="38"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+									<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{601657FD-D70F-485E-A109-CBB80916D744}" ShortID="621827593">
+						<Action Name="" ID="{70A4028D-8AE7-4D3A-AD3B-BC74F83F0991}" ShortID="417463096">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MusicSlowMo" ID="{83073D26-3CE8-436F-98AC-B9A0393994A2}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{0C761290-8EDB-441F-8322-279D3328144E}" ShortID="455345296">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="Delay" Type="Real64" Value="0.1"/>
-								<Property Name="FadeInCurve" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{50902D03-1A4B-4930-8CE4-411C835C8A69}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MusicSlowMo" ID="{83073D26-3CE8-436F-98AC-B9A0393994A2}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+									<ObjectRef Name="Int_MusicSloMo" ID="{A01185C7-A70D-4BAC-8AD6-C83EF9DD161F}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -177,17 +160,28 @@
 								<Property Name="ActionType" Type="int16" Value="38"/>
 								<Property Name="Delay" Type="Real64" Value="0.1"/>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+									<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BC8DAA51-C57D-4B22-B720-9CE2ED54CE69}" ShortID="18299689">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Int_MusicSloMo" ID="{A01185C7-A70D-4BAC-8AD6-C83EF9DD161F}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_DashFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}">
+				<Event Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="23"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -211,9 +205,9 @@
 						<Action Name="" ID="{E0995B1C-E89A-42C0-B0DC-0BFB2516A67B}" ShortID="542162969">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="26"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-								<Property Name="Lowpass" Type="int16" Value="50"/>
+								<Property Name="Lowpass" Type="int16" Value="40"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -226,7 +220,7 @@
 								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="FadeInCurve" Type="int16" Value="8"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
 								<Property Name="Volume" Type="Real64" Value="6"/>
 							</PropertyList>
 							<ReferenceList>
@@ -239,9 +233,9 @@
 							<PropertyList>
 								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 								<Property Name="ActionType" Type="int16" Value="12"/>
-								<Property Name="Delay" Type="Real64" Value="0.4"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
 								<Property Name="FadeInCurve" Type="int16" Value="0"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
 								<Property Name="Volume" Type="Real64" Value="-6"/>
 							</PropertyList>
 							<ReferenceList>
@@ -254,39 +248,11 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="26"/>
 								<Property Name="Delay" Type="Real64" Value="0.4"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Music" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Test_HitSwitch" ID="{58C3E9E4-B7EF-453C-B239-CCB8DC88C1FD}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="23"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{E609DB01-3584-4005-91BC-DE3FE46C1FD6}" ShortID="805665322">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Play_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{930151B9-EC3E-465A-B2EA-B06744D77140}" ShortID="173660798">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Combat_Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -401,7 +367,6 @@
 						<Action Name="" ID="{920A36EA-26B0-4235-A7ED-7FF123003173}" ShortID="906471273">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList/>
 						</Action>

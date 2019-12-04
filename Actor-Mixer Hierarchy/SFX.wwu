@@ -1691,12 +1691,19 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="CalmLimitSwitch" ID="{2B09B21E-2B99-4351-BBC8-0F4F7BB0AA18}" ShortID="217673187">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Combat_Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+									<ObjectRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -1759,15 +1766,41 @@
 												<SourcePlugin Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" ShortID="237569232" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<Comment>BPM76 : beatduration = 789</Comment>
 													<PropertyList>
-														<Property Name="Attack" Type="Real32" Value="0"/>
-														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="Attack" Type="Real32" Value="0.0001"/>
+														<Property Name="Duration" Type="Real32" Value="3156"/>
 														<Property Name="DurationLink" Type="int32" Value="1"/>
 														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
-														<Property Name="EnvelopeType" Type="int32" Value="1"/>
 														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
 														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-														<Property Name="GrainTime" Type="Real32" Value="789"/>
-														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="GrainTime" Type="Real32" Value="3156"/>
+														<Property Name="MarkerSelect" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{0CA35633-85F4-4539-B21E-71CAB0C89F90}" ShortID="886653663">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{0E930225-B4FA-4EE4-B173-9DCE547F9E34}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>55</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
@@ -1824,20 +1857,6 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<Language>SFX</Language>
-													<PluginInnerObjectList>
-														<List Name="ParameterModulatorAssociation">
-															<PluginInnerObject Name="" ID="{DABF7013-3F74-4A92-8942-E383118CB917}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
-																<PropertyList>
-																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
-																	<Property Name="ModID" Type="int32" Value="151"/>
-																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
-																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
-																	<Property Name="ParamID" Type="int32" Value="150"/>
-																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1860,14 +1879,41 @@
 												<SourcePlugin Name="SoundSeed Grain" ID="{99E3C57D-F712-4FF2-AEBF-A9E3D65ECD51}" ShortID="182675873" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
 														<Property Name="Attack" Type="Real32" Value="0"/>
-														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="Duration" Type="Real32" Value="3156"/>
 														<Property Name="DurationLink" Type="int32" Value="1"/>
 														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
 														<Property Name="EnvelopeType" Type="int32" Value="1"/>
 														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
 														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-														<Property Name="GrainTime" Type="Real32" Value="789"/>
-														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="GrainTime" Type="Real32" Value="3156"/>
+														<Property Name="MarkerSelect" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{2FF7FCF7-B517-4CE3-BD67-4829552DEB35}" ShortID="501385313">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{21BAF737-4C26-455F-82F7-C442A87C886D}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>55</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
@@ -1878,11 +1924,11 @@
 														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 														<Property Name="OutputLevel" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{6863588C-899A-4818-B938-6907337119FC}" ShortID="535988639">
+																<RTPC Name="" ID="{BC8FF5C0-9C7B-4272-8948-DBEB7AB944F5}" ShortID="200715375">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<Custom>
-																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A10264E0-DD1C-4106-A93F-8061C7CA0277}" ShortID="883300022">
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A51DDEDD-5FF5-42C8-A5B5-2D5034C19B83}" ShortID="661497843">
 																					<PropertyList>
 																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 																					</PropertyList>
@@ -1890,7 +1936,7 @@
 																			</Custom>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{8FD2C791-DEBC-4C18-B7E0-68B06BEDC280}">
+																	<Curve Name="" ID="{2321B214-BCD8-47A5-A89A-621C7A3910A9}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -1924,20 +1970,6 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<Language>SFX</Language>
-													<PluginInnerObjectList>
-														<List Name="ParameterModulatorAssociation">
-															<PluginInnerObject Name="" ID="{4A11E22C-945E-4569-BC9E-DE9721674EFF}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
-																<PropertyList>
-																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
-																	<Property Name="ModID" Type="int32" Value="151"/>
-																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
-																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
-																	<Property Name="ParamID" Type="int32" Value="150"/>
-																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1960,14 +1992,41 @@
 												<SourcePlugin Name="SoundSeed Grain" ID="{4A688137-681C-467E-B8EA-8735FDB583C3}" ShortID="26519407" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
 														<Property Name="Attack" Type="Real32" Value="0"/>
-														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="Duration" Type="Real32" Value="3156"/>
 														<Property Name="DurationLink" Type="int32" Value="1"/>
 														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
 														<Property Name="EnvelopeType" Type="int32" Value="1"/>
 														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
 														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-														<Property Name="GrainTime" Type="Real32" Value="789"/>
-														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="GrainTime" Type="Real32" Value="3156"/>
+														<Property Name="MarkerSelect" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{812A2F69-72CB-4447-A57F-C17B7507D5C8}" ShortID="286640087">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{788EEDCE-438F-4930-BE26-73839FF0FB54}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>55</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
@@ -1978,11 +2037,11 @@
 														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 														<Property Name="OutputLevel" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{FA5A376A-45A3-4CB3-9CFF-419883635266}" ShortID="1066034709">
+																<RTPC Name="" ID="{40ACA0D2-D51A-40D9-8D21-8C14DE4FB337}" ShortID="359622285">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<Custom>
-																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E47AA59E-812B-4891-8887-C29E938D4CBE}" ShortID="803350503">
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A53113BE-0A7A-423E-8440-B0C8F92C6580}" ShortID="1062868308">
 																					<PropertyList>
 																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 																					</PropertyList>
@@ -1990,7 +2049,7 @@
 																			</Custom>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{6EFDDABA-5CB0-48EF-AA35-5642BE57E311}">
+																	<Curve Name="" ID="{A9B7A5D0-0207-48BD-903C-ADD5C2D445AE}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -2024,20 +2083,6 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<Language>SFX</Language>
-													<PluginInnerObjectList>
-														<List Name="ParameterModulatorAssociation">
-															<PluginInnerObject Name="" ID="{1E748E72-C6C0-4944-941E-F282D62DF3A7}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
-																<PropertyList>
-																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
-																	<Property Name="ModID" Type="int32" Value="151"/>
-																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
-																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
-																	<Property Name="ParamID" Type="int32" Value="150"/>
-																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2132,14 +2177,41 @@
 												<SourcePlugin Name="SoundSeed Grain" ID="{EF005250-78F6-4E0C-8D62-A1984A1DEE54}" ShortID="38625801" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
 														<Property Name="Attack" Type="Real32" Value="0"/>
-														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="Duration" Type="Real32" Value="3156"/>
 														<Property Name="DurationLink" Type="int32" Value="1"/>
 														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
 														<Property Name="EnvelopeType" Type="int32" Value="1"/>
 														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
 														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-														<Property Name="GrainTime" Type="Real32" Value="789"/>
-														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="GrainTime" Type="Real32" Value="3156"/>
+														<Property Name="MarkerSelect" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{89D61DA0-79B2-4CB5-93C7-1DC80D78F936}" ShortID="490005209">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{F3560677-2C00-4779-9AEE-26DC9285A091}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>55</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
@@ -2150,11 +2222,11 @@
 														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 														<Property Name="OutputLevel" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{8C260121-3427-41DE-A9E0-96E9F3582C8D}" ShortID="319025079">
+																<RTPC Name="" ID="{954CC04F-1738-494C-B9D1-0A715555F6FE}" ShortID="461492081">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<Custom>
-																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{7BFD54FE-AF92-415B-AE44-0A41BBBB3B6E}" ShortID="965651793">
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{727AD6F1-520B-4953-958D-8C9290FB07BB}" ShortID="44593175">
 																					<PropertyList>
 																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 																					</PropertyList>
@@ -2162,7 +2234,7 @@
 																			</Custom>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{BD01F9D5-56CD-4FA1-A1E4-410A23453745}">
+																	<Curve Name="" ID="{D5E2D9D1-17C1-407D-8234-4808107986CC}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -2199,20 +2271,6 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<Language>SFX</Language>
-													<PluginInnerObjectList>
-														<List Name="ParameterModulatorAssociation">
-															<PluginInnerObject Name="" ID="{9C90BFAB-24C2-449A-B4FB-4CB7A1F9ADC7}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
-																<PropertyList>
-																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
-																	<Property Name="ModID" Type="int32" Value="151"/>
-																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
-																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
-																	<Property Name="ParamID" Type="int32" Value="150"/>
-																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2235,14 +2293,41 @@
 												<SourcePlugin Name="SoundSeed Grain" ID="{BBD7832B-D8BD-44E6-A952-92A7BAFBE9AD}" ShortID="538797185" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
 														<Property Name="Attack" Type="Real32" Value="0"/>
-														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="Duration" Type="Real32" Value="3156"/>
 														<Property Name="DurationLink" Type="int32" Value="1"/>
 														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
 														<Property Name="EnvelopeType" Type="int32" Value="1"/>
 														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
 														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-														<Property Name="GrainTime" Type="Real32" Value="789"/>
-														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="GrainTime" Type="Real32" Value="3156"/>
+														<Property Name="MarkerSelect" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{E153A108-5E56-4948-9B60-C026C899634A}" ShortID="624778683">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{10A75F04-2EA7-42E3-B023-60A303941CED}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>55</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
@@ -2253,11 +2338,11 @@
 														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 														<Property Name="OutputLevel" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{B24135A4-5F87-4D48-8911-1463B1FBAC61}" ShortID="562718501">
+																<RTPC Name="" ID="{40575964-2DA5-4D06-94E4-3C0C6F818315}" ShortID="211602697">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<Custom>
-																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{42A8DB69-8345-4168-9A68-FAB38DEE2168}" ShortID="243785714">
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{3057A97F-4196-480A-8933-95DC0AAC066F}" ShortID="389424930">
 																					<PropertyList>
 																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 																					</PropertyList>
@@ -2265,7 +2350,7 @@
 																			</Custom>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{A9581D83-9A6E-4A71-ACF7-33922ED467F7}">
+																	<Curve Name="" ID="{9FCEE96A-4E94-47A4-9F08-A099766D7E05}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -2302,20 +2387,6 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<Language>SFX</Language>
-													<PluginInnerObjectList>
-														<List Name="ParameterModulatorAssociation">
-															<PluginInnerObject Name="" ID="{BBF7469C-793C-49A1-A9F0-5177688D6CC2}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
-																<PropertyList>
-																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
-																	<Property Name="ModID" Type="int32" Value="151"/>
-																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
-																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
-																	<Property Name="ParamID" Type="int32" Value="150"/>
-																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2338,14 +2409,41 @@
 												<SourcePlugin Name="SoundSeed Grain" ID="{AABF6608-EA26-4034-B448-5E2A5A8353D6}" ShortID="970998418" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
 														<Property Name="Attack" Type="Real32" Value="0"/>
-														<Property Name="Duration" Type="Real32" Value="1578"/>
+														<Property Name="Duration" Type="Real32" Value="3156"/>
 														<Property Name="DurationLink" Type="int32" Value="1"/>
 														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
 														<Property Name="EnvelopeType" Type="int32" Value="1"/>
 														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
 														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-														<Property Name="GrainTime" Type="Real32" Value="789"/>
-														<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+														<Property Name="GrainTime" Type="Real32" Value="3156"/>
+														<Property Name="MarkerSelect" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{C53FAA36-3DC9-42F7-9AD8-5AE8DD5E01F2}" ShortID="807927124">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{9C158335-632D-4C3E-83B4-AD0980F320E0}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>55</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
 														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
@@ -2356,11 +2454,11 @@
 														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 														<Property Name="OutputLevel" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{CC0E7208-CF57-4B71-87AD-0C68C25B2754}" ShortID="759556322">
+																<RTPC Name="" ID="{6D7326EF-BCE5-4E58-A98B-9D708B666AE6}" ShortID="547190722">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<Custom>
-																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{D143FD86-DCA4-4730-80F6-68CB712687A1}" ShortID="997799379">
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{168940F7-538D-4A9E-8F75-35F55D5740DB}" ShortID="101186710">
 																					<PropertyList>
 																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 																					</PropertyList>
@@ -2368,7 +2466,7 @@
 																			</Custom>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{C3B2A484-4E74-424E-91C0-B2E6E370BC7D}">
+																	<Curve Name="" ID="{F2D111A7-5412-478C-A689-9A7623BD3D8A}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -2405,20 +2503,6 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<Language>SFX</Language>
-													<PluginInnerObjectList>
-														<List Name="ParameterModulatorAssociation">
-															<PluginInnerObject Name="" ID="{2121C845-0420-4B9B-86B7-D0EA7E0568F4}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
-																<PropertyList>
-																	<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
-																	<Property Name="ModID" Type="int32" Value="151"/>
-																	<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
-																	<Property Name="ParamDisplayName" Type="string" Value="Position"/>
-																	<Property Name="ParamID" Type="int32" Value="150"/>
-																	<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
-																</PropertyList>
-															</PluginInnerObject>
-														</List>
-													</PluginInnerObjectList>
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2472,13 +2556,7 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Combat_Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}"/>
-										<ItemList>
-											<ItemRef Name="RewindSwitchLimit" ID="{BF46139D-C6E0-42C1-800E-883FA1338E10}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Combat_Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+										<SwitchRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 										<ItemList>
 											<ItemRef Name="RewindSwitchCalm" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
 										</ItemList>

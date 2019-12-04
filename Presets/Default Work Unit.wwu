@@ -41,11 +41,11 @@
 						<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 						<Property Name="OutputLevel" Type="Real32">
 							<RTPCList>
-								<RTPC Name="" ID="{9DBD2CB3-C38D-45A3-8979-C2EC7D21914A}" ShortID="420672782">
+								<RTPC Name="" ID="{9DBD2CB3-C38D-45A3-8979-C2EC7D21914A}">
 									<ReferenceList>
 										<Reference Name="ControlInput">
 											<Custom>
-												<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{DE34189E-1E89-4D73-9AFE-869E8085609D}" ShortID="231281560">
+												<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{DE34189E-1E89-4D73-9AFE-869E8085609D}">
 													<PropertyList>
 														<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 													</PropertyList>
@@ -92,6 +92,92 @@
 							</PluginInnerObject>
 						</List>
 					</PluginInnerObjectList>
+				</SourcePlugin>
+				<SourcePlugin Name="MapToMusic" ID="{D6EC90B2-6D4A-42B3-9FBA-73987C40A9A8}" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+					<PropertyList>
+						<Property Name="Attack" Type="Real32" Value="0"/>
+						<Property Name="Duration" Type="Real32" Value="3156"/>
+						<Property Name="DurationLink" Type="int32" Value="1"/>
+						<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+						<Property Name="EnvelopeType" Type="int32" Value="1"/>
+						<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+						<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+						<Property Name="GrainTime" Type="Real32" Value="3156"/>
+						<Property Name="MarkerSelect" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{25AE3B54-8179-4411-B8E7-95CF36867A42}" ShortID="409674745">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{8268207C-77AD-404F-8264-BA0861203BBD}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>55</XPos>
+												<YPos>100</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+						<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+						<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+						<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+						<Property Name="ModRate2" Type="Real32" Value="5"/>
+						<Property Name="ModSelect2" Type="int32" Value="0"/>
+						<Property Name="ModWaveform2" Type="int32" Value="11"/>
+						<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+						<Property Name="OutputLevel" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{06DDBA11-1BFD-4171-9008-EF719BE783BD}" ShortID="433967899">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<Custom>
+												<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{58144023-D380-4973-B0EF-53A077833E14}" ShortID="334436645">
+													<PropertyList>
+														<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+													</PropertyList>
+												</ModulatorEnvelope>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{CFF0D4F1-4C1F-4C7A-ABDF-2A15FFCDA139}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-96</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+						<Property Name="Release" Type="Real32" Value="0"/>
+						<Property Name="Speed" Type="Real32" Value="-1"/>
+					</PropertyList>
+					<Language>SFX</Language>
 				</SourcePlugin>
 			</ChildrenList>
 		</WorkUnit>

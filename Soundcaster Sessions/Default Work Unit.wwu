@@ -10,19 +10,15 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Test_HitSwitch" ID="{58C3E9E4-B7EF-453C-B239-CCB8DC88C1FD}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Play_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_DashFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Play_RushFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_DashFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<ObjectRef Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
@@ -48,26 +44,29 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="MusicSlowMo" ID="{83073D26-3CE8-436F-98AC-B9A0393994A2}"/>
+							<GameParameterRef Name="Int_SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}"/>
+							<GameParameterRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="CriticLevel" ID="{9634F387-DCC2-4A29-8D77-77C67F712F73}"/>
+							<GameParameterRef Name="Int_MusicSloMo" ID="{A01185C7-A70D-4BAC-8AD6-C83EF9DD161F}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}"/>
+							<GameParameterRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{C6CE410E-83E5-4A7D-94EC-7B743FC16D68}"/>
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
-						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-						<CurrentStateRef Name="Combat_Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+						<CurrentStateRef Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
+						<CurrentStateRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+						<CurrentStateRef Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
+						<CurrentStateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

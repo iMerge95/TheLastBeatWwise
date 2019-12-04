@@ -6,7 +6,7 @@
 				<SoundBank Name="TheLastBank" ID="{42C044BA-39CE-4222-AF9F-D5C1BEB6DE48}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Blink" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_DashFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RushFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopA" ID="{EAC9C663-5374-42ED-BB97-5919131A7612}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SloMoMusicFX" ID="{75992F13-954A-4544-BFE9-74BC0983221F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
@@ -18,7 +18,7 @@
 						<ObjectRef Name="SetRewind_LoopB" ID="{BE79EF32-E2D4-4C05-822A-7BD390259C8C}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopC" ID="{33D6E2D8-B399-4C0D-A248-B3F7AB5E9A67}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Rewind" ID="{CE03CC97-7D3D-4C7F-9936-3F176E1AB104}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_DashFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Rewind" ID="{AB2C8862-A024-4FB1-A765-97235054B940}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

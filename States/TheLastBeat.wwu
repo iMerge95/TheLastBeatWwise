@@ -26,10 +26,8 @@
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
-						<State Name="Combat_Calm" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
-						<State Name="Explo_Calm" ID="{C5F062AE-2253-45E5-9431-6C61695AFC7C}"/>
-						<State Name="Combat_Limit" ID="{A5F85012-0A47-46EC-9801-79F2A843D505}"/>
-						<State Name="Explo_Rhytm" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+						<State Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+						<State Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Rewind" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}">
@@ -41,6 +39,35 @@
 						<State Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
 						<State Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
 						<State Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="MusicCombatSwitch" ID="{2B2DB7C9-CB1E-4537-9C8B-6D2D7E8D30F6}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{17AAB246-3100-4F6B-9705-CD1A133A1E2F}"/>
+						<State Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
+						<State Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="MusicExploSwitch" ID="{F2567F1A-2CA6-4019-9805-55D30E042150}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C6CE410E-83E5-4A7D-94EC-7B743FC16D68}"/>
+						<State Name="Explo_Rhytm" ID="{3AF7BA20-0985-4B8E-94BC-22785717A772}"/>
+						<State Name="Explo_Calm" ID="{94CFA2BD-E49A-4205-903B-EC5975CF90BE}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}">
+					<ChildrenList>
+						<State Name="None" ID="{F2A0C503-2FC4-450F-A65F-539C23CC0B88}"/>
+						<State Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
+						<State Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

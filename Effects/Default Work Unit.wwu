@@ -10,7 +10,7 @@
 								<RTPC Name="" ID="{6A9BB673-96A2-4F1E-B0B1-55B828FF7FEA}" ShortID="958691138">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+											<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{8162A5B7-70FB-4328-B8E5-B72A5108E648}">
@@ -42,7 +42,7 @@
 						<Property Name="Min" Type="Real32" Value="-96.3"/>
 					</PropertyList>
 					<PluginData>
-	<GameParameter Name="SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}"/>
+	<GameParameter Name="Int_SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}"/>
 </PluginData>
 				</Effect>
 			</ChildrenList>

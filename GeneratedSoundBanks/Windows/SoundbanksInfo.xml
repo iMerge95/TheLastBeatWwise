@@ -87,11 +87,11 @@
 			<IncludedEvents>
 				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\Play_AmbDesert" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="3106918468" Name="Play_Blink" ObjectPath="\Events\Default Work Unit\Play_Blink" DurationType="OneShot" DurationMin="1.535004" DurationMax="2.170823"/>
-				<Event Id="228228455" Name="Play_DashFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_DashFXOffBeat" DurationType="OneShot" DurationMin="1.681793" DurationMax="2.378414"/>
-				<Event Id="1840739059" Name="Play_DashFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_DashFXOnBeat" DurationType="OneShot" DurationMin="1.681793" DurationMax="2.378414"/>
 				<Event Id="4266628140" Name="Play_HitMusicFX" ObjectPath="\Events\Default Work Unit\Play_HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\Internal_RewindState\Play_Rewind" DurationType="Unknown"/>
+				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOffBeat" DurationType="OneShot" DurationMin="1.681793" DurationMax="2.378414"/>
+				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOnBeat" DurationType="OneShot" DurationMin="1.681793" DurationMax="2.378414"/>
 				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\Internal_RewindState\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -170,14 +170,6 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_02_D90B92A5.wem</Path>
 				</File>
-				<File Id="266651572" Language="SFX">
-					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked_45A62633.wem</Path>
-				</File>
-				<File Id="283485336" Language="SFX">
-					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopA_1Pre4Post_WIP_Marked.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Combat_Lands_Limit_LoopA_1Pre4Post_WIP_Marked_45A62633.wem</Path>
-				</File>
 				<File Id="337362431" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongB_01_D90B92A5.wem</Path>
@@ -208,15 +200,11 @@
 				</File>
 				<File Id="513064159" Language="SFX">
 					<ShortName>TLB_SFX_MUSIC_PH_OnBeat_03.wav</ShortName>
-					<Path>SFX\TLB_SFX_MUSIC_PH_OnBeat_03_D79FB2B7.wem</Path>
+					<Path>SFX\TLB_SFX_MUSIC_PH_OnBeat_03_BD442783.wem</Path>
 				</File>
 				<File Id="519364720" Language="SFX">
 					<ShortName>TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01_D90B92A5.wem</Path>
-				</File>
-				<File Id="542878355" Language="SFX">
-					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_Marked.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_Marked_45A62633.wem</Path>
 				</File>
 				<File Id="543873349" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_03.wav</ShortName>
@@ -240,7 +228,7 @@
 				</File>
 				<File Id="589393951" Language="SFX">
 					<ShortName>TLB_SFX_MUSIC_PH_OnBeat_01.wav</ShortName>
-					<Path>SFX\TLB_SFX_MUSIC_PH_OnBeat_01_D79FB2B7.wem</Path>
+					<Path>SFX\TLB_SFX_MUSIC_PH_OnBeat_01_BD442783.wem</Path>
 				</File>
 				<File Id="644476924" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_03.wav</ShortName>
@@ -272,7 +260,7 @@
 				</File>
 				<File Id="867119572" Language="SFX">
 					<ShortName>TLB_SFX_MUSIC_PH_OnBeat_04.wav</ShortName>
-					<Path>SFX\TLB_SFX_MUSIC_PH_OnBeat_04_D79FB2B7.wem</Path>
+					<Path>SFX\TLB_SFX_MUSIC_PH_OnBeat_04_BD442783.wem</Path>
 				</File>
 				<File Id="870738170" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Calm_LoopC_1Pre4Post_WIP.wav</ShortName>
@@ -292,7 +280,7 @@
 				</File>
 				<File Id="1072462606" Language="SFX">
 					<ShortName>TLB_SFX_MUSIC_PH_OnBeat_02.wav</ShortName>
-					<Path>SFX\TLB_SFX_MUSIC_PH_OnBeat_02_D79FB2B7.wem</Path>
+					<Path>SFX\TLB_SFX_MUSIC_PH_OnBeat_02_BD442783.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

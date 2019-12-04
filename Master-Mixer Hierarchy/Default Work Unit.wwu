@@ -4,46 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{538FF353-F748-4409-93A6-6F9C8647D632}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
-					<PropertyList>
-						<Property Name="Lowpass" Type="int16">
-							<RTPCList>
-								<RTPC Name="" ID="{ED5C1011-91B7-43CE-BC1E-804221E19B3E}" ShortID="306836245">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="CriticLevel" ID="{9634F387-DCC2-4A29-8D77-77C67F712F73}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{49320488-1954-4CBB-B677-99C80F4C2DC4}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>0</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>1</XPos>
-												<YPos>30</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>2</XPos>
-												<YPos>40</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>3</XPos>
-												<YPos>45</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{4647B9A8-AF4B-4E27-A247-824B1333E203}" WorkUnitID="{3DF673C1-9239-4C70-9D40-392BB4C9AACB}"/>
@@ -63,7 +23,7 @@
 										<RTPC Name="" ID="{EB2D1463-D7C1-4E92-8A5F-EB214B3026E7}" ShortID="323113604">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+													<ObjectRef Name="Int_SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{1571BC81-627C-46DB-BBE1-6F51DC4D1177}">
@@ -119,6 +79,27 @@
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
+								<CustomState Name="" ID="{AA1475CC-E5A5-4641-AEA7-C592EF7D08D3}" ShortID="976172901">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="40"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
+								<CustomState Name="" ID="{0D322DDF-BFEF-46D2-B3FF-3474BECAB17D}" ShortID="710773587"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
