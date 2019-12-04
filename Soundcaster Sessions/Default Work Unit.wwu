@@ -64,8 +64,8 @@
 						<CurrentStateRef Name="None" ID="{C6CE410E-83E5-4A7D-94EC-7B743FC16D68}"/>
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
 						<CurrentStateRef Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
-						<CurrentStateRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-						<CurrentStateRef Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
+						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 						<CurrentStateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

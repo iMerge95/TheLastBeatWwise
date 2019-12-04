@@ -70,6 +70,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<MusicSwitchContainer Name="Combat" ID="{8A59AF12-1618-4DEB-A4C5-B305CBAB71C0}" ShortID="281546153">
+							<PropertyList>
+								<Property Name="GridFrequencyPreset" Type="int16" Value="67"/>
+								<Property Name="Tempo" Type="Real64" Value="76"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -173,7 +177,7 @@
 										<MusicSegment Name="TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP" ID="{0C3B7256-FEDB-4571-B847-9C59B8A95BAE}" ShortID="200960406">
 											<PropertyList>
 												<Property Name="EndPosition" Type="Real64" Value="33157.8958333333"/>
-												<Property Name="GridFrequencyPreset" Type="int16" Value="64"/>
+												<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 												<Property Name="Tempo" Type="Real64" Value="76"/>
 												<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
@@ -516,7 +520,7 @@
 										<MusicSegment Name="TheLastBeat_Mus_Combat_Lands_Calm_LoopB_1Pre4Post_WIP" ID="{D4337DD6-6DBF-45C2-B193-2D8E01384E77}" ShortID="273020517">
 											<PropertyList>
 												<Property Name="EndPosition" Type="Real64" Value="31578.9791666667"/>
-												<Property Name="GridFrequencyPreset" Type="int16" Value="64"/>
+												<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 												<Property Name="Tempo" Type="Real64" Value="76"/>
 												<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
@@ -2519,6 +2523,7 @@
 							<PropertyList>
 								<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="75"/>
 							</PropertyList>
 							<ReferenceList>
