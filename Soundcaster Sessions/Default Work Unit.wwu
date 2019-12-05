@@ -61,12 +61,12 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{C6CE410E-83E5-4A7D-94EC-7B743FC16D68}"/>
+						<CurrentStateRef Name="Explo_Rhytm" ID="{3AF7BA20-0985-4B8E-94BC-22785717A772}"/>
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
-						<CurrentStateRef Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
+						<CurrentStateRef Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
 						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
-						<CurrentStateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
+						<CurrentStateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
