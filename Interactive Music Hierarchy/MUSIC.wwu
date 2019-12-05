@@ -2498,7 +2498,7 @@
 										<PathElementRef Name="MusicExploSwitch" ID="{F2567F1A-2CA6-4019-9805-55D30E042150}"/>
 									</Path>
 									<AudioNodeInfo>
-										<AudioNodeRef Name="Explo_Calm" ID="{285901B9-1635-4AEF-8973-E5474BAF3AD7}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+										<AudioNodeRef Name="Explo_Rhythm" ID="{BED0912A-54B9-4ACC-942B-D9A6F991E308}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
 								<Entry>
