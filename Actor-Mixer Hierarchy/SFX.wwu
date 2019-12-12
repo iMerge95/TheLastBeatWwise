@@ -1540,7 +1540,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Dash" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" ShortID="64923741">
+								<RandomSequenceContainer Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" ShortID="64923741">
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
@@ -1567,11 +1567,6 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1582,7 +1577,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="TLB_Chara_SFX_SFX_Chara_PH_DashFX_01" ID="{34116F76-36C7-4C0A-9153-9684D0C403B5}" ShortID="510904389">
+										<Sound Name="TLB_Chara_SFX_PH_RushFX" ID="{BDB4A389-FC95-4C22-AC79-772469F9C43A}" ShortID="720925770">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1592,14 +1587,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_Chara_SFX_SFX_Chara_PH_DashFX_01" ID="{E709591B-5764-4B80-9C19-6986D57547EF}" ShortID="102108892">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_Chara_SFX.rpp"</Comment>
+												<AudioFileSource Name="TLB_Chara_SFX_PH_RushFX" ID="{41F4B5A7-4AA3-4223-9D7A-FAC629DB70F0}" ShortID="620974178">
+													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
 													<Language>SFX</Language>
-													<AudioFile>TLB_Chara_SFX_SFX_Chara_PH_DashFX_01.wav</AudioFile>
+													<AudioFile>TLB_Chara_SFX_PH_RushFX.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_Chara_SFX_SFX_Chara_PH_DashFX_01" ID="{E709591B-5764-4B80-9C19-6986D57547EF}" Platform="Linked"/>
+												<ActiveSource Name="TLB_Chara_SFX_PH_RushFX" ID="{41F4B5A7-4AA3-4223-9D7A-FAC629DB70F0}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1634,7 +1629,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1647,7 +1642,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01" ID="{2FD95847-7338-4522-89D0-E3CF98A9BDC1}" ShortID="334000541">
+										<Sound Name="TLB_Chara_SFX_PH_BlinkFX" ID="{98F25F54-0424-474C-B65B-966BDE8ADC4B}" ShortID="206869638">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1657,14 +1652,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01" ID="{AE707A84-97B2-47D5-864A-1725E84AD861}" ShortID="519364720">
+												<AudioFileSource Name="TLB_Chara_SFX_PH_BlinkFX" ID="{0B6A8AB6-ED34-46E4-AB85-089B8A13395E}" ShortID="963709821">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
 													<Language>SFX</Language>
-													<AudioFile>TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01.wav</AudioFile>
+													<AudioFile>TLB_Chara_SFX_PH_BlinkFX.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_Chara_SFX_SFX_Chara_PH_BlinkFX_01" ID="{AE707A84-97B2-47D5-864A-1725E84AD861}" Platform="Linked"/>
+												<ActiveSource Name="TLB_Chara_SFX_PH_BlinkFX" ID="{0B6A8AB6-ED34-46E4-AB85-089B8A13395E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
