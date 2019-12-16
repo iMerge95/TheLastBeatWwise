@@ -2539,6 +2539,118 @@
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
+								<Sound Name="ExploCombat" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}" ShortID="51842842">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="SoundSeed Grain" ID="{6EA005D4-3E5E-48A3-94D4-093EA0555EDF}" ShortID="744873505" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+											<PropertyList>
+												<Property Name="Attack" Type="Real32" Value="0"/>
+												<Property Name="Duration" Type="Real32" Value="3156"/>
+												<Property Name="DurationLink" Type="int32" Value="1"/>
+												<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+												<Property Name="EnvelopeType" Type="int32" Value="1"/>
+												<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+												<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+												<Property Name="GrainTime" Type="Real32" Value="3156"/>
+												<Property Name="MarkerSelect" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{537194E5-0755-4DD4-84CF-6D60E001F5A8}" ShortID="1003520847">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{8B82CE87-2285-4D03-880F-24C634C0029B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>55</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+												<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+												<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+												<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+												<Property Name="ModRate2" Type="Real32" Value="5"/>
+												<Property Name="ModSelect2" Type="int32" Value="0"/>
+												<Property Name="ModWaveform2" Type="int32" Value="11"/>
+												<Property Name="Offset" Type="Real32" Value="7.769145"/>
+												<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{E32C3B9F-A84D-4010-871C-C4821F3806A1}" ShortID="935362010">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{3A0E86B3-4224-47E0-BD44-D37762E7BDCF}" ShortID="188989972">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{D9E76C2C-4D21-42CF-9862-AEDD4F519C20}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
+												<Property Name="Release" Type="Real32" Value="0"/>
+												<Property Name="Speed" Type="Real32" Value="-1"/>
+											</PropertyList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_Lands_Test_Combat" ID="{2DDD993C-A2B2-4107-9ED6-5681850ED54D}" ShortID="18741063">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.15789"/>
+													</PropertyList>
+													<Language>SoundSeed Grain</Language>
+													<AudioFile>TheLastBeat_Mus_Lands_Test_Combat.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SoundSeed Grain" ID="{6EA005D4-3E5E-48A3-94D4-093EA0555EDF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
@@ -2548,12 +2660,21 @@
 									<GroupingBehavior>
 										<ItemRef Name="RewindSwitchLimit" ID="{BF46139D-C6E0-42C1-800E-883FA1338E10}"/>
 									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ExploCombat" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}"/>
+									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 										<ItemList>
-											<ItemRef Name="RewindSwitchCalm" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
+											<ItemRef Name="ExploCombat" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+										<ItemList>
+											<ItemRef Name="ExploCombat" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

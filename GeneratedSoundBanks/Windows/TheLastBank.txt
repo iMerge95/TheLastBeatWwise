@@ -19,6 +19,8 @@ Event	ID	Name			Wwise Object Path	Notes
 State Group	ID	Name			Wwise Object Path	Notes
 	1439182312	RewindSwitch			\TheLastBeat\RewindSwitch	
 	1445037870	MusicSwitch			\TheLastBeat\MusicSwitch	
+	1673109572	Rewind			\TheLastBeat\Rewind	
+	2511127250	MusicCombatSwitch			\TheLastBeat\MusicCombatSwitch	
 
 State	ID	Name	State Group			Notes
 	0	None	RewindSwitch			
@@ -28,6 +30,12 @@ State	ID	Name	State Group			Notes
 	0	None	MusicSwitch			
 	2764240573	Combat	MusicSwitch			
 	3814499265	Explo	MusicSwitch			
+	0	None	Rewind			
+	1160234136	Normal	Rewind			
+	1673109572	Rewind	Rewind			
+	0	None	MusicCombatSwitch			
+	2894236345	Combat_Calm	MusicCombatSwitch			
+	2902872313	Combat_Limit	MusicCombatSwitch			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	807022328	Int_MusicCrusher			\TheLastBeat\Int_MusicCrusher	
@@ -35,6 +43,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3149782607	MusicPosition			\TheLastBeat\MusicPosition	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	188989972	Modulator Envelope (Custom)				
 	280213685	Modulator Envelope (Custom)				
 	661497843	Modulator Envelope (Custom)				
 	1062868308	Modulator Envelope (Custom)				
@@ -50,9 +59,11 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	26519407	SoundSeed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\SFX\MFX\CalmLimitSwitch\RewindSwitchCalm\Rewind_LoopC_Calm\SoundSeed Grain	
 	182675873	SoundSeed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\SFX\MFX\CalmLimitSwitch\RewindSwitchCalm\Rewind_LoopB_Calm\SoundSeed Grain	
 	237569232	SoundSeed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\SFX\MFX\CalmLimitSwitch\RewindSwitchCalm\Rewind_LoopA_Calm\SoundSeed Grain	BPM76 : beatduration = 789
+	744873505	SoundSeed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\SFX\MFX\CalmLimitSwitch\ExploCombat\SoundSeed Grain	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	13944903	TLB_AMB_Desert_RHowl_HowlLongA_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlLongA_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowLong2\TLB_AMB_Desert_RHowl_HowlLongA_02		162289
+	18741063	SoundSeed Grain	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\Plugins\SoundSeed Grain\TheLastBeat_Mus_Lands_Test_Combat_88F1A3DB.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\SFX\MFX\CalmLimitSwitch\ExploCombat\SoundSeed Grain		1741151
 	82368658	TLB_AMB_Desert_RHowl_HowlShortA_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowlShort1\TLB_AMB_Desert_RHowl_HowlShortA_01		77858
 	102332519	SoundSeed Grain	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\Plugins\SoundSeed Grain\TheLastBeat_Mus_Combat_Lands_Calm_LoopA_1Pre4Post_WIP_Marked_45A62633.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\SFX\MFX\CalmLimitSwitch\RewindSwitchCalm\Rewind_LoopA_Calm\SoundSeed Grain	BPM76 : beatduration = 789	1631016
 	127311965	TLB_AMB_Desert_Wildlife_GlassHopper_06	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_06_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_06		49577
@@ -60,7 +71,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	176425962	TLB_AMB_Desert_RHowl_HowlShortB_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlShortB_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowlShort3\TLB_AMB_Desert_RHowl_HowlShortB_03		169956
 	204464047	TLB_AMB_Desert_Wildlife_GlassHopper_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_02		44346
 	233352832	TLB_AMB_Desert_RHowl_HowlShortB_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlShortB_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowlShort2\TLB_AMB_Desert_RHowl_HowlShortB_02		108424
-	254047906	TheLastBeat_Mus_Lands_Test_Combat	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Lands_Test_Combat_BD442783.wem		\Interactive Music Hierarchy\MUSIC\Music\TestCombat\TheLastBeat_Mus_Lands_Test_Combat\TheLastBeat_Mus_Lands_Test_Combat		1752309
+	254047906	TheLastBeat_Mus_Lands_Test_Combat	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Lands_Test_Combat_BD442783.wem		\Interactive Music Hierarchy\MUSIC\Music\CombatTest\TestCombat\TheLastBeat_Mus_Lands_Test_Combat\TheLastBeat_Mus_Lands_Test_Combat		1752309
 	337362431	TLB_AMB_Desert_RHowl_HowlLongB_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlLongB_01_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowLong1\TLB_AMB_Desert_RHowl_HowlLongB_01		254489
 	371081650	TLB_AMB_Desert_RHowl_HowlShortA_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlShortA_02_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowlShort2\TLB_AMB_Desert_RHowl_HowlShortA_02		67532
 	384910229	TLB_AMB_Desert_Wildlife_GlassHopper_07	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_07_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_07		40900
@@ -74,6 +85,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	620974178	TLB_Chara_SFX_PH_RushFX	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFX_PH_RushFX_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Skills\Rush\TLB_Chara_SFX_PH_RushFX		10548
 	635050158	TheLastBeat_Mus_Lands_Test_Explo	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Lands_Test_Explo_BD442783.wem		\Interactive Music Hierarchy\MUSIC\Music\TestExplo\TheLastBeat_Mus_Lands_Test_Explo\TheLastBeat_Mus_Lands_Test_Explo		1608755
 	644476924	TLB_AMB_Desert_RHowl_HowlShortA_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlShortA_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowlShort3\TLB_AMB_Desert_RHowl_HowlShortA_03		91853
+	781263669	ReverseEvent	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_BD442783.wem		\Interactive Music Hierarchy\MUSIC\Music\CombatTest\Reverse_Stop\ReverseEvent		140676
 	785438933	TLB_AMB_Desert_Wildlife_GlassHopper_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_03_D90B92A5.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_03		31864
 	850052255	SoundSeed Grain	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\Plugins\SoundSeed Grain\TheLastBeat_Mus_Combat_Lands_Calm_LoopC_1Pre4Post_WIP_Marked_45A62633.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\SFX\MFX\CalmLimitSwitch\RewindSwitchCalm\Rewind_LoopC_Calm\SoundSeed Grain		1617114
 	867119572	TLB_SFX_MUSIC_PH_OnBeat_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_SFX_MUSIC_PH_OnBeat_04_BD442783.wem		\Interactive Music Hierarchy\MUSIC\Music\OnBeat\TLB_SFX_MUSIC_PH_OnBeat_01		22275

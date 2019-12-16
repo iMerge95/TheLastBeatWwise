@@ -345,6 +345,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SetRewind_ExploCombat" ID="{1FBACA87-9964-4BA9-B483-7725F6C6A88B}"/>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_Blink" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}">

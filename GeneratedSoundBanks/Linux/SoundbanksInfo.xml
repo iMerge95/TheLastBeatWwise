@@ -126,6 +126,10 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongA_02_D90B92A5.wem</Path>
 				</File>
+				<File Id="18741063" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Lands_Test_Combat.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Lands_Test_Combat_88F1A3DB.wem</Path>
+				</File>
 				<File Id="82368658" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_D90B92A5.wem</Path>
@@ -209,6 +213,10 @@
 				<File Id="644476924" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_03.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_03_D90B92A5.wem</Path>
+				</File>
+				<File Id="781263669" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Combat_Lands_Trans_WIP.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_BD442783.wem</Path>
 				</File>
 				<File Id="785438933" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_03.wav</ShortName>
