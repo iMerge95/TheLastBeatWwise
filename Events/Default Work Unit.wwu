@@ -12,7 +12,7 @@
 						<Action Name="" ID="{7CCA15BA-20F1-4ABE-89FF-CD74FF961B78}" ShortID="33331983">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+									<ObjectRef Name="Music_Switch" ID="{99BBEE6E-EAB7-408B-8A7E-7BBEBEF60EE0}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -215,7 +215,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+									<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -229,7 +229,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+									<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -244,7 +244,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+									<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -256,7 +256,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+									<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -349,7 +349,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SetRewind_ExploCombat" ID="{1FBACA87-9964-4BA9-B483-7725F6C6A88B}"/>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_Blink" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}">

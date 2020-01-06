@@ -82,7 +82,7 @@
 					<StateInfo>
 						<StateGroupList>
 							<StateGroupInfo>
-								<StateGroupRef Name="CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
+								<StateGroupRef Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
