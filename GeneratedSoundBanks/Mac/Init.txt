@@ -1,34 +1,34 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	426116888	MusicExploSwitch			\TheLastBeat\MusicExploSwitch	
-	887277441	CriticLevel			\TheLastBeat\CriticLevel	
-	1439182312	RewindSwitch			\TheLastBeat\RewindSwitch	
-	1445037870	MusicSwitch			\TheLastBeat\MusicSwitch	
-	1673109572	Rewind			\TheLastBeat\Rewind	
-	2511127250	MusicCombatSwitch			\TheLastBeat\MusicCombatSwitch	
+	960036381	Music_Limit_Switch			\TheLastBeat\Music_Limit_Switch	
+	1082318473	Music_CriticLevel			\TheLastBeat\Music_CriticLevel	
+	2305855220	Rewind_Combat_Loop			\TheLastBeat\Rewind_Combat_Loop	
+	2355547200	Music_CombatExplo_Switch			\TheLastBeat\Music_CombatExplo_Switch	
+	2724869341	Music_Switch			\TheLastBeat\Music_Switch	
+	2996289134	Rewind_State			\TheLastBeat\Rewind_State	
 
 State	ID	Name	State Group			Notes
-	0	None	MusicExploSwitch			
-	314074733	Explo_Calm	MusicExploSwitch			
-	1899308558	Explo_Rhytm	MusicExploSwitch			
-	0	None	CriticLevel			
-	2938985745	Critic	CriticLevel			
-	3922556052	NotCritic	CriticLevel			
-	0	None	RewindSwitch			
-	225293556	LoopA	RewindSwitch			
-	225293558	LoopC	RewindSwitch			
-	225293559	LoopB	RewindSwitch			
-	0	None	MusicSwitch			
-	2764240573	Combat	MusicSwitch			
-	3814499265	Explo	MusicSwitch			
-	0	None	Rewind			
-	1160234136	Normal	Rewind			
-	1673109572	Rewind	Rewind			
-	0	None	MusicCombatSwitch			
-	2894236345	Combat_Calm	MusicCombatSwitch			
-	2902872313	Combat_Limit	MusicCombatSwitch			
+	0	None	Music_Limit_Switch			
+	2894236345	Combat_Calm	Music_Limit_Switch			
+	2902872313	Combat_Limit	Music_Limit_Switch			
+	0	None	Music_CriticLevel			
+	2938985745	Critic	Music_CriticLevel			
+	3922556052	NotCritic	Music_CriticLevel			
+	0	None	Rewind_Combat_Loop			
+	225293556	LoopA	Rewind_Combat_Loop			
+	225293558	LoopC	Rewind_Combat_Loop			
+	225293559	LoopB	Rewind_Combat_Loop			
+	0	None	Music_CombatExplo_Switch			
+	2764240573	Combat	Music_CombatExplo_Switch			
+	3814499265	Explo	Music_CombatExplo_Switch			
+	0	None	Music_Switch			
+	674522502	Land	Music_Switch			
+	1993352646	Final_Combat	Music_Switch			
+	0	None	Rewind_State			
+	1160234136	Normal	Rewind_State			
+	1673109572	Rewind	Rewind_State			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	976172901	Critic	CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+	976172901	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	758808735	Int_SyncDucking			\TheLastBeat\Int_SyncDucking	

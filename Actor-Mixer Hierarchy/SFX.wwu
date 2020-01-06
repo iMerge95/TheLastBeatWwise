@@ -2777,6 +2777,13 @@
 									</GroupingInfo>
 								</SwitchContainer>
 								<Sound Name="RewindLand" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}" ShortID="51842842">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2834,7 +2841,7 @@
 												<Property Name="ModRate2" Type="Real32" Value="5"/>
 												<Property Name="ModSelect2" Type="int32" Value="0"/>
 												<Property Name="ModWaveform2" Type="int32" Value="11"/>
-												<Property Name="Offset" Type="Real32" Value="7.769145"/>
+												<Property Name="Offset" Type="Real32" Value="5.563725"/>
 												<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 												<Property Name="OutputLevel" Type="Real32">
 													<RTPCList>
@@ -2878,7 +2885,6 @@
 												<AudioFileSource Name="TheLastBeat_Mus_Lands_Test_Combat" ID="{2DDD993C-A2B2-4107-9ED6-5681850ED54D}" ShortID="18741063">
 													<PropertyList>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="3.15789"/>
 													</PropertyList>
 													<Language>SoundSeed Grain</Language>
 													<AudioFile>TheLastBeat_Mus_Lands_Test_Combat.wav</AudioFile>

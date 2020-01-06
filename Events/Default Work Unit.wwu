@@ -323,7 +323,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="CalmLimitSwitch" ID="{2B09B21E-2B99-4351-BBC8-0F4F7BB0AA18}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+											<ObjectRef Name="Rewind_MusicSwitch" ID="{7007FD91-5CF0-42E6-BDCD-FAFE6E8C39BA}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -343,7 +343,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="CalmLimitSwitch" ID="{2B09B21E-2B99-4351-BBC8-0F4F7BB0AA18}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+											<ObjectRef Name="Rewind_MusicSwitch" ID="{7007FD91-5CF0-42E6-BDCD-FAFE6E8C39BA}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

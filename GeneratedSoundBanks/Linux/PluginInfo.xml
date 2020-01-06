@@ -6,6 +6,5 @@
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
 		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
 		<Plugin Name="SoundSeed Grain" ID="11993090" DLL="AkSoundSeedGrain"/>
-		<Plugin Name="BitCrusher" ID="26149891" DLL="HV_BitCrusher_WwiseFXPlugin"/>
 	</Plugins>
 </PluginInfo>
