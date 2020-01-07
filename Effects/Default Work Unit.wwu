@@ -42,7 +42,7 @@
 						<Property Name="Min" Type="Real32" Value="-96.3"/>
 					</PropertyList>
 					<PluginData>
-	<GameParameter Name="Int_SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}"/>
+	<GameParameter Name="Int_SyncDucking" ID="{2D151634-A0B6-48A2-9777-0CE68C1A0E43}"/>
 </PluginData>
 				</Effect>
 			</ChildrenList>

@@ -1,4 +1,5 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	291463486	FeedBackLevel			\TheLastBeat\FeedBackLevel	
 	960036381	Music_Limit_Switch			\TheLastBeat\Music_Limit_Switch	
 	1082318473	Music_CriticLevel			\TheLastBeat\Music_CriticLevel	
 	2305855220	Rewind_Combat_Loop			\TheLastBeat\Rewind_Combat_Loop	
@@ -7,6 +8,12 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2996289134	Rewind_State			\TheLastBeat\Rewind_State	
 
 State	ID	Name	State Group			Notes
+	0	None	FeedBackLevel			
+	2678230378	Level5	FeedBackLevel			
+	2678230379	Level4	FeedBackLevel			
+	2678230380	Level3	FeedBackLevel			
+	2678230381	Level2	FeedBackLevel			
+	2678230382	Level1	FeedBackLevel			
 	0	None	Music_Limit_Switch			
 	2894236345	Combat_Calm	Music_Limit_Switch			
 	2902872313	Combat_Limit	Music_Limit_Switch			

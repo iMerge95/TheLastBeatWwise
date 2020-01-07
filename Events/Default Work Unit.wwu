@@ -43,21 +43,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{DD1D6DDE-5958-4F22-9B31-15F187347361}" ShortID="935586665">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SloMoMusicFX" ID="{75992F13-954A-4544-BFE9-74BC0983221F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
@@ -170,68 +155,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="SloMoMusicFX" ID="{75992F13-954A-4544-BFE9-74BC0983221F}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="23"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{E0995B1C-E89A-42C0-B0DC-0BFB2516A67B}" ShortID="542162969">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="26"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-								<Property Name="Lowpass" Type="int16" Value="40"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{FD4EC3EF-E4DB-48C9-8542-B31490F538AE}" ShortID="161402058">
-							<PropertyList>
-								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-								<Property Name="ActionType" Type="int16" Value="12"/>
-								<Property Name="FadeInCurve" Type="int16" Value="8"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-								<Property Name="Volume" Type="Real64" Value="6"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{67F62FB0-2A0B-4A78-AAE4-9FDFE0A56ECB}" ShortID="31670618">
-							<PropertyList>
-								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-								<Property Name="ActionType" Type="int16" Value="12"/>
-								<Property Name="Delay" Type="Real64" Value="0.5"/>
-								<Property Name="FadeInCurve" Type="int16" Value="0"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-								<Property Name="Volume" Type="Real64" Value="-6"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4FC36B38-EF17-4B7B-B80C-CE5725432A5D}" ShortID="1014075022">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="26"/>
-								<Property Name="Delay" Type="Real64" Value="0.4"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

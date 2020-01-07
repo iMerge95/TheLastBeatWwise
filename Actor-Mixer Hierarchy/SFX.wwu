@@ -1784,6 +1784,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Hit" ID="{03631A26-5B87-4A1A-8ABC-17A9F2822138}" ShortID="245829564">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-4</Value>
@@ -1795,7 +1796,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+											<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1818,11 +1819,6 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>

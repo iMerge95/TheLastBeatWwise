@@ -26,10 +26,6 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="SloMoMusicFX" ID="{75992F13-954A-4544-BFE9-74BC0983221F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-							<Position X="1" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -52,7 +48,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="Int_SyncDucking" ID="{A46AEE4B-028B-4961-98E7-5A7DCC105556}"/>
+							<GameParameterRef Name="Int_SyncDucking" ID="{2D151634-A0B6-48A2-9777-0CE68C1A0E43}"/>
 							<Value>-96</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -66,8 +62,9 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
-						<CurrentStateRef Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
+						<CurrentStateRef Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
 						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+						<CurrentStateRef Name="Level1" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
 						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
