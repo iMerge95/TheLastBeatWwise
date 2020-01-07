@@ -15,10 +15,21 @@
 								<Property Name="Color" Type="int16" Value="5"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}">
 							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{EB2D1463-D7C1-4E92-8A5F-EB214B3026E7}" ShortID="323113604">
 											<ReferenceList>
@@ -37,14 +48,14 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>-20</XPos>
-														<YPos>0</YPos>
+														<XPos>-40</XPos>
+														<YPos>-0</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Log3</SegmentShape>
+														<SegmentShape>Exp2</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-3</YPos>
+														<YPos>-9</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -52,9 +63,12 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
-								<Property Name="Color" Type="int16" Value="24"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="BitCrusher" CompanyID="64" PluginID="399" PluginType="3">
+									<ObjectRef Name="MusicCrusher" ID="{705745F8-6F6D-4967-B24C-A9404C5BA734}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+								</Reference>
+							</ReferenceList>
 						</Bus>
 						<Bus Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}">
 							<PropertyList>

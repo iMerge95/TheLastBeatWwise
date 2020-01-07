@@ -32,6 +32,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	758808735	Int_SyncDucking			\TheLastBeat\Int_SyncDucking	
+	807022328	Int_MusicCrusher			\TheLastBeat\Int_MusicCrusher	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	176430053	SyncFeedBack			\Default Work Unit\Master Audio Bus\MFX\SyncFeedBack	
@@ -39,6 +40,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	931006280	MFX			\Default Work Unit\Master Audio Bus\MFX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4065441226	GameplaySFX			\Default Work Unit\Master Audio Bus\SFX\GameplaySFX	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	731829278	MFXRewindVerb			\Default Work Unit\Master Audio Bus\MFX\MFXRewindVerb	
@@ -46,6 +48,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	2038996943	Plate_Sizzle	Wwise RoomVerb			
 	2245320997	MFXDucking	Wwise Meter			
+	3946755902	MusicCrusher	BitCrusher			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
