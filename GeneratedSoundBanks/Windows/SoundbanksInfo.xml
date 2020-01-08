@@ -96,12 +96,12 @@
 				<Event Id="3191278813" Name="Int_HitMusicFX" ObjectPath="\Events\Default Work Unit\Int_HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\Play_AmbDesert" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="3106918468" Name="Play_Blink" ObjectPath="\Events\Default Work Unit\Play_Blink" DurationType="OneShot" DurationMin="0.880646" DurationMax="1.245422"/>
-				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\Play_Hit_Enemy" DurationType="OneShot" DurationMin="0.512772" DurationMax="0.725169"/>
+				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\Play_Hit_Enemy" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\Internal_RewindState\Play_Rewind" DurationType="Unknown"/>
-				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOffBeat" DurationType="OneShot" DurationMin="0.457917" DurationMax="0.513994"/>
-				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOnBeat" DurationType="OneShot" DurationMin="0.457917" DurationMax="0.513994"/>
+				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOffBeat" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOnBeat" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\Internal_RewindState\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -133,10 +133,6 @@
 				<File Id="979206716"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
-				<File Id="3324818" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Hit_02.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Hit_02_D90B92A5.wem</Path>
-				</File>
 				<File Id="6942090" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level3_01.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level3_01_D79FB2B7.wem</Path>
@@ -157,6 +153,10 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_D90B92A5.wem</Path>
 				</File>
+				<File Id="94329137" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Hit_04.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Hit_04_D90B92A5.wem</Path>
+				</File>
 				<File Id="96808444" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level3_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level3_04_D79FB2B7.wem</Path>
@@ -169,6 +169,10 @@
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_D79FB2B7.wem</Path>
 				</File>
+				<File Id="124960818" Language="SFX">
+					<ShortName>TLB_Chara_SFX_BlinkFX_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_BlinkFX_01_D90B92A5.wem</Path>
+				</File>
 				<File Id="127311965" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_06_D90B92A5.wem</Path>
@@ -176,6 +180,10 @@
 				<File Id="127525520" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level1_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level1_03_D79FB2B7.wem</Path>
+				</File>
+				<File Id="132776513" Language="SFX">
+					<ShortName>TLB_Chara_SFX_RushFX_02.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_RushFX_02_D90B92A5.wem</Path>
 				</File>
 				<File Id="135732489" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopA_1Pre4Post_WIP.wav</ShortName>
@@ -185,13 +193,13 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongB_02_D90B92A5.wem</Path>
 				</File>
+				<File Id="163597197" Language="SFX">
+					<ShortName>TLB_Chara_SFX_RushFX_03.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_RushFX_03_D90B92A5.wem</Path>
+				</File>
 				<File Id="176425962" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_03.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_03_D90B92A5.wem</Path>
-				</File>
-				<File Id="198810154" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Hit_01.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Hit_01_D90B92A5.wem</Path>
 				</File>
 				<File Id="200178934" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Calm_LoopB_1Pre4Post_WIP.wav</ShortName>
@@ -209,10 +217,6 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_02_D90B92A5.wem</Path>
 				</File>
-				<File Id="245774470" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Hit_03.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Hit_03_D90B92A5.wem</Path>
-				</File>
 				<File Id="266651572" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked_45A62633.wem</Path>
@@ -225,6 +229,10 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongB_01_D90B92A5.wem</Path>
 				</File>
+				<File Id="366134666" Language="SFX">
+					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_04.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_04_D90B92A5.wem</Path>
+				</File>
 				<File Id="371081650" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_02_D90B92A5.wem</Path>
@@ -233,13 +241,21 @@
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_07.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_07_D90B92A5.wem</Path>
 				</File>
-				<File Id="438519710" Language="SFX">
-					<ShortName>TLB_NME_SFX_PH_Hit.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_PH_Hit_D90B92A5.wem</Path>
+				<File Id="405503307" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Hit_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Hit_01_D90B92A5.wem</Path>
+				</File>
+				<File Id="455365614" Language="SFX">
+					<ShortName>TLB_Chara_SFX_RushFX_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_RushFX_01_D90B92A5.wem</Path>
 				</File>
 				<File Id="506682447" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_01_D90B92A5.wem</Path>
+				</File>
+				<File Id="520365903" Language="SFX">
+					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_02.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_02_D90B92A5.wem</Path>
 				</File>
 				<File Id="542878355" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_Marked.wav</ShortName>
@@ -261,6 +277,10 @@
 					<ShortName>TheLastBeat_Mus_FB_Level2_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level2_04_D79FB2B7.wem</Path>
 				</File>
+				<File Id="575072205" Language="SFX">
+					<ShortName>TLB_Chara_SFX_RushFX_04.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_RushFX_04_D90B92A5.wem</Path>
+				</File>
 				<File Id="581114488" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level2_01.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level2_01_D79FB2B7.wem</Path>
@@ -272,10 +292,6 @@
 				<File Id="595950998" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level1_02.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level1_02_D79FB2B7.wem</Path>
-				</File>
-				<File Id="620974178" Language="SFX">
-					<ShortName>TLB_Chara_SFX_PH_RushFX.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_PH_RushFX_D90B92A5.wem</Path>
 				</File>
 				<File Id="644476924" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_03.wav</ShortName>
@@ -289,9 +305,9 @@
 					<ShortName>TheLastBeat_Mus_FB_Level1_01.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level1_01_D79FB2B7.wem</Path>
 				</File>
-				<File Id="773606954" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Hit_04.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Hit_04_D90B92A5.wem</Path>
+				<File Id="737093795" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Hit_02.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Hit_02_D90B92A5.wem</Path>
 				</File>
 				<File Id="785438933" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_03.wav</ShortName>
@@ -301,9 +317,17 @@
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Calm_LoopA_1Pre4Post_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Calm_LoopA_1Pre4Post_WIP_D79FB2B7.wem</Path>
 				</File>
+				<File Id="797154347" Language="SFX">
+					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_03.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_03_D90B92A5.wem</Path>
+				</File>
 				<File Id="819073492" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_D79FB2B7.wem</Path>
+				</File>
+				<File Id="819641697" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Hit_03.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Hit_03_D90B92A5.wem</Path>
 				</File>
 				<File Id="850052255" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Calm_LoopC_1Pre4Post_WIP_Marked.wav</ShortName>
@@ -317,13 +341,13 @@
 					<ShortName>TheLastBeat_Mus_FB_Level1_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level1_04_D79FB2B7.wem</Path>
 				</File>
-				<File Id="963709821" Language="SFX">
-					<ShortName>TLB_Chara_SFX_PH_BlinkFX.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_PH_BlinkFX_D90B92A5.wem</Path>
-				</File>
 				<File Id="995308825" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_05.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_05_D90B92A5.wem</Path>
+				</File>
+				<File Id="1031277549" Language="SFX">
+					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_01.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_01_D90B92A5.wem</Path>
 				</File>
 				<File Id="1036646483" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_04.wav</ShortName>
