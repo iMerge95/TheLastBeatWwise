@@ -5,14 +5,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	452547817	Stop_All			\Default Work Unit\Stop_All	
 	564679353	Stop_Rewind			\Default Work Unit\Internal_RewindState\Stop_Rewind	
 	869704911	Play_Rewind			\Default Work Unit\Internal_RewindState\Play_Rewind	
-	1378886504	Play_Hit_NME			\Default Work Unit\Play_Hit_NME	
-	2556472188	Play_Hit_MC			\Default Work Unit\Play_Hit_MC	
+	2257378511	Play_Hit_Player			\Default Work Unit\Play_Hit_Player	
 	2567002569	Play_RushFXOnBeat			\Default Work Unit\Play_RushFXOnBeat	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	3106918468	Play_Blink			\Default Work Unit\Play_Blink	
 	3191278813	Int_HitMusicFX			\Default Work Unit\Int_HitMusicFX	
 	3681445093	Play_AmbDesert			\Default Work Unit\Play_AmbDesert	
 	3852757989	Play_RushFXOffBeat			\Default Work Unit\Play_RushFXOffBeat	
+	3889018732	Play_Hit_Enemy			\Default Work Unit\Play_Hit_Enemy	
 	4276712656	SetRewind_LoopA			\Default Work Unit\Internal_RewindState\SetRewind_LoopA	
 	4276712658	SetRewind_LoopC			\Default Work Unit\Internal_RewindState\SetRewind_LoopC	
 	4276712659	SetRewind_LoopB			\Default Work Unit\Internal_RewindState\SetRewind_LoopB	
