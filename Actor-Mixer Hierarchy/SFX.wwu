@@ -1511,6 +1511,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="MC" ID="{D9ECE4F2-5114-4462-B1E6-9AA37878631C}" ShortID="541370862">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1522,11 +1525,12 @@
 							<ChildrenList>
 								<ActorMixer Name="Skills" ID="{6C9F393D-9C37-49D7-8D9F-F1AC2B4AA907}" ShortID="857317061">
 									<PropertyList>
-										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1559,8 +1563,8 @@
 															<Modifier Name="" ID="{07219479-EC2C-4CCD-8AB2-649A124307EC}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="300"/>
-																	<Property Name="Min" Type="Real64" Value="-300"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -1672,7 +1676,9 @@
 								</ActorMixer>
 								<RandomSequenceContainer Name="Hit" ID="{34A80574-0D81-40B6-8978-667CE3ABC9A2}" ShortID="475112535">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>3</Value>
@@ -1770,6 +1776,23 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<ActorMixer Name="Foley" ID="{EF1DAE4F-E757-4874-9C2B-D8AA3D3114EC}" ShortID="1051870870">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="MC_Foley" ID="{6566BBAB-B9B7-499A-96FB-58D69713326C}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="NME" ID="{338C1D4A-3D8C-44A4-9200-9B5074DB5AA8}" ShortID="133303973">
@@ -1787,7 +1810,7 @@
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2764,6 +2787,16 @@
 								</SwitchContainer>
 								<Sound Name="RewindLand" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}" ShortID="51842842">
 									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-1</Value>
@@ -2827,7 +2860,6 @@
 												<Property Name="ModRate2" Type="Real32" Value="5"/>
 												<Property Name="ModSelect2" Type="int32" Value="0"/>
 												<Property Name="ModWaveform2" Type="int32" Value="11"/>
-												<Property Name="Offset" Type="Real32" Value="5.563725"/>
 												<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 												<Property Name="OutputLevel" Type="Real32">
 													<RTPCList>
@@ -2863,17 +2895,16 @@
 														</RTPC>
 													</RTPCList>
 												</Property>
-												<Property Name="QuantizeToMarkers" Type="bool" Value="True"/>
 												<Property Name="Release" Type="Real32" Value="0"/>
 												<Property Name="Speed" Type="Real32" Value="-1"/>
 											</PropertyList>
 											<ChildrenList>
-												<AudioFileSource Name="TheLastBeat_Mus_Lands_Test_Combat" ID="{2DDD993C-A2B2-4107-9ED6-5681850ED54D}" ShortID="18741063">
+												<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_1Pre_2Post_Cut" ID="{2DDD993C-A2B2-4107-9ED6-5681850ED54D}" ShortID="18741063">
 													<PropertyList>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 													</PropertyList>
 													<Language>SoundSeed Grain</Language>
-													<AudioFile>TheLastBeat_Mus_Lands_Test_Combat.wav</AudioFile>
+													<AudioFile>TheLastBeat_Mus_Land_Combat_1Pre_2Post_Cut.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<Language>SFX</Language>

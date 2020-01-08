@@ -25,6 +25,10 @@
 			<ShortName>TLB_AMB_Desert_RWind_04.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_RWind_04_D90B92A5.wem</Path>
 		</File>
+		<File Id="203889058" Language="SFX">
+			<ShortName>TheLastBeat_Mus_Land_Combat_1Pre_2Post.wav</ShortName>
+			<Path>SFX\TheLastBeat_Mus_Land_Combat_1Pre_2Post_D79FB2B7.wem</Path>
+		</File>
 		<File Id="249965315" Language="SFX">
 			<ShortName>TLB_AMB_Desert_RWind_06.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_RWind_06_D90B92A5.wem</Path>
@@ -36,6 +40,10 @@
 		<File Id="335079225" Language="SFX">
 			<ShortName>TLB_AMB_Desert_RWind_03.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_RWind_03_D90B92A5.wem</Path>
+		</File>
+		<File Id="359854272" Language="SFX">
+			<ShortName>TheLastBeat_Mus_Land_Explo_1Pre_2Post.wav</ShortName>
+			<Path>SFX\TheLastBeat_Mus_Land_Explo_1Pre_2Post_D79FB2B7.wem</Path>
 		</File>
 		<File Id="375337560" Language="SFX">
 			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_04.wav</ShortName>
@@ -92,8 +100,8 @@
 				<Event Id="1378886504" Name="Play_Hit_NME" ObjectPath="\Events\Default Work Unit\Play_Hit_NME" DurationType="OneShot" DurationMin="0.512772" DurationMax="0.725169"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\Internal_RewindState\Play_Rewind" DurationType="Unknown"/>
-				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOffBeat" DurationType="OneShot" DurationMin="0.407957" DurationMax="0.576939"/>
-				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOnBeat" DurationType="OneShot" DurationMin="0.407957" DurationMax="0.576939"/>
+				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOffBeat" DurationType="OneShot" DurationMin="0.457917" DurationMax="0.513994"/>
+				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOnBeat" DurationType="OneShot" DurationMin="0.457917" DurationMax="0.513994"/>
 				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\Internal_RewindState\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -108,9 +116,11 @@
 				<File Id="63282434"/>
 				<File Id="125119891"/>
 				<File Id="141019759"/>
+				<File Id="203889058"/>
 				<File Id="249965315"/>
 				<File Id="330102856"/>
 				<File Id="335079225"/>
+				<File Id="359854272"/>
 				<File Id="375337560"/>
 				<File Id="447676650"/>
 				<File Id="459766620"/>
@@ -136,8 +146,8 @@
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongA_02_D90B92A5.wem</Path>
 				</File>
 				<File Id="18741063" Language="SFX">
-					<ShortName>TheLastBeat_Mus_Lands_Test_Combat.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Lands_Test_Combat_45A62633.wem</Path>
+					<ShortName>TheLastBeat_Mus_Land_Combat_1Pre_2Post_Cut.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Land_Combat_1Pre_2Post_Cut_45A62633.wem</Path>
 				</File>
 				<File Id="23909745" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level3_03.wav</ShortName>
@@ -203,10 +213,6 @@
 					<ShortName>TLB_Chara_SFX_Hit_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Hit_03_D90B92A5.wem</Path>
 				</File>
-				<File Id="254047906" Language="SFX">
-					<ShortName>TheLastBeat_Mus_Lands_Test_Combat.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_Lands_Test_Combat_D79FB2B7.wem</Path>
-				</File>
 				<File Id="266651572" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked_45A62633.wem</Path>
@@ -270,10 +276,6 @@
 				<File Id="620974178" Language="SFX">
 					<ShortName>TLB_Chara_SFX_PH_RushFX.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_PH_RushFX_D90B92A5.wem</Path>
-				</File>
-				<File Id="635050158" Language="SFX">
-					<ShortName>TheLastBeat_Mus_Lands_Test_Explo.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_Lands_Test_Explo_D79FB2B7.wem</Path>
 				</File>
 				<File Id="644476924" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_03.wav</ShortName>
