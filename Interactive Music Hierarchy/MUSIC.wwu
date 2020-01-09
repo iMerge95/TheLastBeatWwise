@@ -67,7 +67,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicSegment Name="TheLastBeat_Mus_Lands_Test_Explo" ID="{74579306-D61A-4341-B684-E840E9FC21DD}" ShortID="205230817">
+										<MusicSegment Name="TheLastBeat_Mus_Land_Explo_1Pre_2Post" ID="{74579306-D61A-4341-B684-E840E9FC21DD}" ShortID="205230817">
 											<PropertyList>
 												<Property Name="EndPosition" Type="Real64" Value="60000"/>
 												<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
@@ -165,7 +165,7 @@
 														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
-													<SegmentRef Name="TheLastBeat_Mus_Lands_Test_Explo" ID="{74579306-D61A-4341-B684-E840E9FC21DD}"/>
+													<SegmentRef Name="TheLastBeat_Mus_Land_Explo_1Pre_2Post" ID="{74579306-D61A-4341-B684-E840E9FC21DD}"/>
 												</MusicPlaylistItem>
 											</ChildrenList>
 										</MusicPlaylistItem>
@@ -196,7 +196,7 @@
 												<Property Name="Tempo" Type="Real64" Value="76"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -212,7 +212,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicSegment Name="TheLastBeat_Mus_Lands_Test_Combat" ID="{8C35C149-227E-4FC4-939C-A69B4F299F63}" ShortID="926937536">
+												<MusicSegment Name="TheLastBeat_Mus_Land_Combat_1Pre_2Post" ID="{8C35C149-227E-4FC4-939C-A69B4F299F63}" ShortID="926937536">
 													<PropertyList>
 														<Property Name="EndPosition" Type="Real64" Value="60000"/>
 														<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
@@ -310,7 +310,7 @@
 																<Property Name="LoopCount" Type="int16" Value="0"/>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 															</PropertyList>
-															<SegmentRef Name="TheLastBeat_Mus_Lands_Test_Combat" ID="{8C35C149-227E-4FC4-939C-A69B4F299F63}"/>
+															<SegmentRef Name="TheLastBeat_Mus_Land_Combat_1Pre_2Post" ID="{8C35C149-227E-4FC4-939C-A69B4F299F63}"/>
 														</MusicPlaylistItem>
 													</ChildrenList>
 												</MusicPlaylistItem>

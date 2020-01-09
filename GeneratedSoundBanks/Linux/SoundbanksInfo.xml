@@ -95,8 +95,8 @@
 			<IncludedEvents>
 				<Event Id="3191278813" Name="Int_HitMusicFX" ObjectPath="\Events\Default Work Unit\Int_HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\Play_AmbDesert" MaxAttenuation="100.000000" DurationType="Infinite"/>
-				<Event Id="3106918468" Name="Play_Blink" ObjectPath="\Events\Default Work Unit\Play_Blink" DurationType="OneShot" DurationMin="0.880646" DurationMax="1.245422"/>
-				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\Play_Hit_Enemy" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
+				<Event Id="3106918468" Name="Play_Blink" ObjectPath="\Events\Default Work Unit\Play_Blink" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\Play_Hit_Enemy" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\Internal_RewindState\Play_Rewind" DurationType="Unknown"/>
@@ -149,6 +149,10 @@
 					<ShortName>TheLastBeat_Mus_FB_Level3_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level3_03_D79FB2B7.wem</Path>
 				</File>
+				<File Id="51801871" Language="SFX">
+					<ShortName>TLB_Chara_SFX_BlinkFX_03.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_BlinkFX_03_D90B92A5.wem</Path>
+				</File>
 				<File Id="82368658" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_D90B92A5.wem</Path>
@@ -168,10 +172,6 @@
 				<File Id="117998040" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_D79FB2B7.wem</Path>
-				</File>
-				<File Id="124960818" Language="SFX">
-					<ShortName>TLB_Chara_SFX_BlinkFX_01.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_BlinkFX_01_D90B92A5.wem</Path>
 				</File>
 				<File Id="127311965" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</ShortName>
@@ -249,6 +249,10 @@
 					<ShortName>TLB_Chara_SFX_RushFX_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_RushFX_01_D90B92A5.wem</Path>
 				</File>
+				<File Id="506043198" Language="SFX">
+					<ShortName>TLB_Chara_SFX_BlinkFX_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_BlinkFX_01_D90B92A5.wem</Path>
+				</File>
 				<File Id="506682447" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_01_D90B92A5.wem</Path>
@@ -309,6 +313,10 @@
 					<ShortName>TLB_Chara_SFX_Hit_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Hit_02_D90B92A5.wem</Path>
 				</File>
+				<File Id="737147085" Language="SFX">
+					<ShortName>TLB_Chara_SFX_BlinkFX_02.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_BlinkFX_02_D90B92A5.wem</Path>
+				</File>
 				<File Id="785438933" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_03.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_03_D90B92A5.wem</Path>
@@ -324,6 +332,10 @@
 				<File Id="819073492" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_D79FB2B7.wem</Path>
+				</File>
+				<File Id="819369873" Language="SFX">
+					<ShortName>TLB_Chara_SFX_BlinkFX_04.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_BlinkFX_04_D90B92A5.wem</Path>
 				</File>
 				<File Id="819641697" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Hit_03.wav</ShortName>

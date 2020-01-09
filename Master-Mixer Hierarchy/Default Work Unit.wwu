@@ -48,10 +48,10 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>-40</XPos>
+														<XPos>-30</XPos>
 														<YPos>0</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Exp2</SegmentShape>
+														<SegmentShape>Log2</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>0</XPos>

@@ -1527,7 +1527,6 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1546,7 +1545,7 @@
 															<Modifier Name="" ID="{DDE5677B-7BAB-4CFA-881C-018AC8C1662C}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="20"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -1567,7 +1566,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>3</Value>
+														<Value>-1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1671,7 +1670,7 @@
 															<Modifier Name="" ID="{E1843C02-A039-4476-AA4B-78BB648E286B}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="20"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -1683,8 +1682,8 @@
 															<Modifier Name="" ID="{8F23B9CF-A0E7-4E32-AA6E-3FE5A50734D5}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="300"/>
-																	<Property Name="Min" Type="Real64" Value="-300"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -1705,14 +1704,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="TLB_Chara_SFX_BlinkFX_01" ID="{2B701516-3314-4E8B-AC80-23E38CA370A5}" ShortID="542572845">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
+												<Sound Name="TLB_Chara_SFX_BlinkFX_01" ID="{5B4BD35B-377A-4013-8AA5-325553AE70C4}" ShortID="784584403">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1722,14 +1714,74 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_01" ID="{F25D07A8-B9D3-43B5-B162-C0047F712D56}" ShortID="124960818">
+														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_01" ID="{9B632F3E-E7DB-4CCD-993F-ED3549ADF9C7}" ShortID="506043198">
 															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
 															<Language>SFX</Language>
 															<AudioFile>TLB_Chara_SFX_BlinkFX_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_01" ID="{F25D07A8-B9D3-43B5-B162-C0047F712D56}" Platform="Linked"/>
+														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_01" ID="{9B632F3E-E7DB-4CCD-993F-ED3549ADF9C7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_BlinkFX_02" ID="{B6DF10D0-3D79-4F7E-BB92-466CC1864E37}" ShortID="866430393">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_02" ID="{ED2C6BD4-BEA3-421B-9A17-7DDA452D2FB6}" ShortID="737147085">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_BlinkFX_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_02" ID="{ED2C6BD4-BEA3-421B-9A17-7DDA452D2FB6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_BlinkFX_03" ID="{7B348D26-CFB1-4F39-9DA5-D9CFFAC5D271}" ShortID="538874977">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_03" ID="{DC4FD65B-F0B4-4FAB-A29B-B9E98F75135C}" ShortID="51801871">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_BlinkFX_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_03" ID="{DC4FD65B-F0B4-4FAB-A29B-B9E98F75135C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_BlinkFX_04" ID="{51E0145C-A26B-494D-8712-CD57D3EA3CB1}" ShortID="507085163">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_04" ID="{32A014F5-882F-4C08-9CBC-4941052F1530}" ShortID="819369873">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_BlinkFX_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_04" ID="{32A014F5-882F-4C08-9CBC-4941052F1530}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -1841,7 +1893,6 @@
 								<ActorMixer Name="Foley" ID="{EF1DAE4F-E757-4874-9C2B-D8AA3D3114EC}" ShortID="1051870870">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1879,7 +1930,7 @@
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
