@@ -1691,7 +1691,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>5</Value>
+														<Value>4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1927,10 +1927,12 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Hit_Enemy" ID="{03631A26-5B87-4A1A-8ABC-17A9F2822138}" ShortID="245829564">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

@@ -96,7 +96,7 @@
 				<Event Id="3191278813" Name="Int_HitMusicFX" ObjectPath="\Events\Default Work Unit\Int_HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\Play_AmbDesert" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="3106918468" Name="Play_Blink" ObjectPath="\Events\Default Work Unit\Play_Blink" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
-				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\Play_Hit_Enemy" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
+				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\Play_Hit_Enemy" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\Internal_RewindState\Play_Rewind" DurationType="Unknown"/>
