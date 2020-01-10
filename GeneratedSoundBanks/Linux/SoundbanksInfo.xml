@@ -95,7 +95,8 @@
 			<IncludedEvents>
 				<Event Id="3191278813" Name="Int_HitMusicFX" ObjectPath="\Events\Default Work Unit\Int_HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\Play_AmbDesert" MaxAttenuation="100.000000" DurationType="Infinite"/>
-				<Event Id="3106918468" Name="Play_Blink" ObjectPath="\Events\Default Work Unit\Play_Blink" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_BlinkFXOffBeat" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_BlinkFXOnBeat" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\Play_Hit_Enemy" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
@@ -217,6 +218,10 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_02_D90B92A5.wem</Path>
 				</File>
+				<File Id="233889917" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FB_Blink_03.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_FB_Blink_03_D79FB2B7.wem</Path>
+				</File>
 				<File Id="266651572" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP_Marked_45A62633.wem</Path>
@@ -260,6 +265,10 @@
 				<File Id="520365903" Language="SFX">
 					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_02.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_02_D90B92A5.wem</Path>
+				</File>
+				<File Id="531001905" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FB_Blink_04.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_FB_Blink_04_D79FB2B7.wem</Path>
 				</File>
 				<File Id="542878355" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_Marked.wav</ShortName>
@@ -329,6 +338,10 @@
 					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_03.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_03_D90B92A5.wem</Path>
 				</File>
+				<File Id="812632468" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FB_Blink_02.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_FB_Blink_02_D79FB2B7.wem</Path>
+				</File>
 				<File Id="819073492" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post_WIP_D79FB2B7.wem</Path>
@@ -356,6 +369,10 @@
 				<File Id="995308825" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_05.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_05_D90B92A5.wem</Path>
+				</File>
+				<File Id="1011572249" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FB_Blink_01.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_FB_Blink_01_D79FB2B7.wem</Path>
 				</File>
 				<File Id="1031277549" Language="SFX">
 					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_01.wav</ShortName>

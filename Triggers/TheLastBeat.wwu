@@ -7,7 +7,8 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Trigger Name="OnBeat" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}"/>
+				<Trigger Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}"/>
+				<Trigger Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

@@ -39,7 +39,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="OnBeat" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+									<ObjectRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -249,7 +249,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Blink" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}">
+				<Event Name="Play_BlinkFXOnBeat" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="20"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -259,6 +259,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FE54E8F0-17CB-4AF7-97FE-A5DEF217BCF9}" ShortID="525074958">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -311,6 +322,21 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Hit_Enemy" ID="{03631A26-5B87-4A1A-8ABC-17A9F2822138}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BlinkFXOffBeat" ID="{1778D619-6AD0-41F1-BBD5-F7AE21258A4F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="20"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{5DE350FC-0208-44AE-B973-3F8215635BF3}" ShortID="54807480">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

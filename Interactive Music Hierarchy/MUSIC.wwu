@@ -584,7 +584,7 @@
 													<PropertyList>
 														<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 													</PropertyList>
-													<TriggerRef Name="OnBeat" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+													<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 												</MusicStinger>
 											</StingerList>
 											<CueList>
@@ -832,8 +832,15 @@
 									<PropertyList>
 										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
-									<TriggerRef Name="OnBeat" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
-									<SegmentRef Name="OnBeatFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+									<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+									<SegmentRef Name="OnBeatRushFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+								</MusicStinger>
+								<MusicStinger Name="" ID="{73A6F836-873F-47C2-8D2E-152EAF82B8EA}">
+									<PropertyList>
+										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+									</PropertyList>
+									<TriggerRef Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+									<SegmentRef Name="OnBeatBlinkFB" ID="{F0492A56-2E91-4968-B1EB-A18374508037}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</MusicStinger>
 							</StingerList>
 							<ArgumentList>
@@ -2302,7 +2309,7 @@
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="OnBeat" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+											<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 										</MusicStinger>
 									</StingerList>
 									<CueList>
@@ -2612,8 +2619,12 @@
 									<PropertyList>
 										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
-									<TriggerRef Name="OnBeat" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
-									<SegmentRef Name="OnBeatFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+									<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+									<SegmentRef Name="OnBeatRushFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+								</MusicStinger>
+								<MusicStinger Name="" ID="{5A0B4E8F-96F8-4B6A-9E95-3BE8136FB914}">
+									<TriggerRef Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+									<SegmentRef Name="OnBeatBlinkFB" ID="{F0492A56-2E91-4968-B1EB-A18374508037}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</MusicStinger>
 							</StingerList>
 							<ArgumentList>
@@ -2718,12 +2729,17 @@
 								</MusicTransition>
 							</TransitionList>
 						</MusicSwitchContainer>
-						<MusicSegment Name="OnBeatFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" ShortID="105484335">
+						<MusicSegment Name="OnBeatRushFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" ShortID="105484335">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="12631.6666666667"/>
 								<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="76"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3089,6 +3105,127 @@
 							<CueList>
 								<MusicCue Name="Entry Cue" ID="{A7415229-CBD4-4AC9-86AA-33DEEADA5F39}"/>
 								<MusicCue Name="Exit Cue" ID="{EC6CEA3C-071B-484D-99E4-35B55E431BE5}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="OnBeatBlinkFB" ID="{F0492A56-2E91-4968-B1EB-A18374508037}" ShortID="92135397">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="12631.6666666667"/>
+								<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="76"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="TheLastBeat_Mus_FB_Blink" ID="{1874E0E1-965B-4E68-95E5-07AFD4ECBB57}" ShortID="901918248">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TheLastBeat_Mus_FB_Blink_01" ID="{8A27246D-F0FB-4B42-B4F6-85D2A17FD75A}" ShortID="1011572249">
+											<Language>SFX</Language>
+											<AudioFile>TheLastBeat_Mus_FB_Blink_01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_FB_Blink_02" ID="{3F0EF0A3-9B93-480B-8820-8CE09834671A}" ShortID="812632468">
+											<Language>SFX</Language>
+											<AudioFile>TheLastBeat_Mus_FB_Blink_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_FB_Blink_03" ID="{D686BAAA-6E87-4F7D-B4F8-EF18B47E4C66}" ShortID="233889917">
+											<Language>SFX</Language>
+											<AudioFile>TheLastBeat_Mus_FB_Blink_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_FB_Blink_04" ID="{B6E2693C-92C0-416C-99AE-558DF9E40B7F}" ShortID="531001905">
+											<Language>SFX</Language>
+											<AudioFile>TheLastBeat_Mus_FB_Blink_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{6110917F-CB2E-41EA-8F0E-BF8FD1590762}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{A758EB9A-B3AC-42DA-B99B-57D9D5DB0566}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_FB_Blink_01" ID="{2D9AAE39-A23C-4C2C-ADD1-2AE1088D1E62}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_FB_Blink_01" ID="{8A27246D-F0FB-4B42-B4F6-85D2A17FD75A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{4CB11041-26CA-426C-B774-48DC560A236C}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_FB_Blink_02" ID="{C0C85D92-C5F3-45D6-AEFC-FFFB15987DEA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_FB_Blink_02" ID="{3F0EF0A3-9B93-480B-8820-8CE09834671A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2A162976-21EE-4876-95A9-A2087E872B88}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_FB_Blink_03" ID="{B2861930-8287-4003-AB4E-87627615A042}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_FB_Blink_03" ID="{D686BAAA-6E87-4F7D-B4F8-EF18B47E4C66}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A8D048B4-B8D2-45EC-87EB-D557862BCF26}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_FB_Blink_04" ID="{F5DB6BCC-1285-4A79-9726-6C8E2B0D1592}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_FB_Blink_04" ID="{B6E2693C-92C0-416C-99AE-558DF9E40B7F}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{7464247E-999A-4AE9-AFF0-3EFA38A78BF8}"/>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{DE3547E3-F9F6-49D2-9A48-954E0C6B2CBA}"/>
+								<MusicCue Name="Exit Cue" ID="{BE8B2C22-B44D-4AFF-8C0B-512871106465}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
 									</PropertyList>
