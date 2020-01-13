@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B75E9170-CF67-455A-A945-3B17BC995E5A}" SchemaVersion="94">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{B75E9170-CF67-455A-A945-3B17BC995E5A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B75E9170-CF67-455A-A945-3B17BC995E5A}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Mix" ID="{93861A16-65B0-4111-B8BA-E4375A5750F9}">
+					<ObjectList>
+						<ObjectRef Name="Skills" ID="{6C9F393D-9C37-49D7-8D9F-F1AC2B4AA907}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+						<ObjectRef Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+						<ObjectRef Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+						<ObjectRef Name="Hit_Player" ID="{34A80574-0D81-40B6-8978-667CE3ABC9A2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+						<ObjectRef Name="Hit_Enemy" ID="{03631A26-5B87-4A1A-8ABC-17A9F2822138}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+						<ObjectRef Name="Rewind_MusicSwitch" ID="{7007FD91-5CF0-42E6-BDCD-FAFE6E8C39BA}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+						<ObjectRef Name="Music_Final_Combat" ID="{8A59AF12-1618-4DEB-A4C5-B305CBAB71C0}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+						<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+						<ObjectRef Name="OnBeatBlinkFB" ID="{F0492A56-2E91-4968-B1EB-A18374508037}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+						<ObjectRef Name="OnBeatRushFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

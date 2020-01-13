@@ -1489,6 +1489,27 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+								<CustomState Name="" ID="{F99140E3-30CA-4009-BC27-7D935C8F1319}" ShortID="66924752"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
+								<CustomState Name="" ID="{A3C01C02-924F-4F81-A31B-4C3F51F386C5}" ShortID="181353029">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="40"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{8C697ED2-F1BE-4029-A976-AD4380CEC313}" ShortID="581846516">
 					<ReferenceList>
@@ -1568,11 +1589,6 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-1</Value>
-													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -1800,7 +1816,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1935,11 +1951,6 @@
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2035,6 +2046,27 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+								<CustomState Name="" ID="{A9A0C043-A594-4FE8-A273-01DB754013B9}" ShortID="5651391"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
+								<CustomState Name="" ID="{520A46F2-FD7A-483F-908C-BE0683D6F49E}" ShortID="658004266">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="40"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="MFX" ID="{D046255F-F791-453A-BBCE-803D3CBB8FC8}" ShortID="603886249">
 					<PropertyList>
