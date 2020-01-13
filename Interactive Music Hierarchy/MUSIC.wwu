@@ -228,6 +228,11 @@
 																		<Value>True</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="IsZeroLantency" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="OutputBus">
@@ -913,6 +918,18 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="TheLastBeat_Mus_Combat_Lands_Limit_LoopA_1Pre4Post" ID="{7275D46A-19B6-4265-B3FE-CA47BBE9C678}" ShortID="690086800">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsZeroLantency" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -990,6 +1007,18 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="TheLastBeat_Mus_Combat_Lands_Limit_LoopB_1Pre4Post" ID="{DBB05261-43F4-406A-B709-71C737738BD9}" ShortID="655177074">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsZeroLantency" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -1063,6 +1092,18 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="TheLastBeat_Mus_Combat_Lands_Limit_LoopC_1Pre4Post_WIP" ID="{C5BBCB6F-9ECA-4406-A6BD-768B3B9D824B}" ShortID="244471455">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsZeroLantency" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -1190,6 +1231,18 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="TheLastBeat_Mus_Combat_Lands_Calm_LoopA_1Pre4Post_WIP" ID="{820B39C0-57E8-49A7-B22D-15D774AEF2D4}" ShortID="794918481">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsZeroLantency" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -1267,6 +1320,18 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="TheLastBeat_Mus_Combat_Lands_Calm_LoopB_1Pre4Post" ID="{AC8BAFBD-D0EB-4CB4-A1F3-F91992156CE4}" ShortID="494431818">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsZeroLantency" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -1340,6 +1405,18 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="TheLastBeat_Mus_Combat_Lands_Calm_LoopC_1Pre4Post" ID="{650D5438-CCBB-4C0D-9810-A501EDF1871C}" ShortID="534664567">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsZeroLantency" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -2105,7 +2182,6 @@
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo>
 												<TransitionObjectRef Name="TheLastBeat_Mus_Combat_Lands_Trans_Short" ID="{523D5A21-53C0-4C71-B7F9-2318EF33AD57}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 												<SourceFadeOut>
@@ -2125,7 +2201,6 @@
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo>
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{1FED35CC-2B9E-4DA7-A429-229309DB5117}">
