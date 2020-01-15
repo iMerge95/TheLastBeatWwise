@@ -2496,6 +2496,11 @@
 								<MusicTrack Name="TheLastBeat_Mus_FB_Level1" ID="{18046712-6E99-4802-BD77-ABD29521948F}" ShortID="178346896">
 									<PropertyList>
 										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
@@ -2528,15 +2533,7 @@
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="Level3" ID="{1DFDBE8A-2FA8-42CA-9982-6CB062CC40CF}"/>
-												<CustomState Name="" ID="{27F203C1-9681-4C8D-A4AE-A2A115FDDE84}" ShortID="443217042">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-108"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level2" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
+												<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
 												<CustomState Name="" ID="{BF02C009-AD8B-47F5-84B1-1A3068D42481}" ShortID="350765265">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
@@ -2544,7 +2541,7 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="Level1" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
+												<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
 												<CustomState Name="" ID="{4CE572C8-D19E-468F-8257-41F851818B7B}" ShortID="589125146"/>
 											</CustomState>
 										</CustomStateList>
@@ -2608,124 +2605,6 @@
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
-								<MusicTrack Name="TheLastBeat_Mus_FB_Level2" ID="{A7BA3698-D98F-45CF-802F-E35B335CD3AE}" ShortID="643228374">
-									<PropertyList>
-										<Property Name="MusicTrackType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TheLastBeat_Mus_FB_Level2_01" ID="{EE890E56-83C8-49F8-8CDE-45E73DEDA076}" ShortID="581114488">
-											<Language>SFX</Language>
-											<AudioFile>TheLastBeat_Mus_FB_Level2_01.wav</AudioFile>
-										</AudioFileSource>
-										<AudioFileSource Name="TheLastBeat_Mus_FB_Level2_02" ID="{61390BEE-C446-40B2-8C35-A543EB9DB4E0}" ShortID="1063391264">
-											<Language>SFX</Language>
-											<AudioFile>TheLastBeat_Mus_FB_Level2_02.wav</AudioFile>
-										</AudioFileSource>
-										<AudioFileSource Name="TheLastBeat_Mus_FB_Level2_03" ID="{3F880B36-CD4D-44C6-AFCB-2DAD6CD87092}" ShortID="229172958">
-											<Language>SFX</Language>
-											<AudioFile>TheLastBeat_Mus_FB_Level2_03.wav</AudioFile>
-										</AudioFileSource>
-										<AudioFileSource Name="TheLastBeat_Mus_FB_Level2_04" ID="{82A68F97-133C-4952-92BC-B0D638949757}" ShortID="569297699">
-											<Language>SFX</Language>
-											<AudioFile>TheLastBeat_Mus_FB_Level2_04.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="FeedBackLevel" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="Level3" ID="{1DFDBE8A-2FA8-42CA-9982-6CB062CC40CF}"/>
-												<CustomState Name="" ID="{3CAD2082-486A-4B58-8FBB-BED0878357AC}" ShortID="354060769">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-108"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level2" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-												<CustomState Name="" ID="{2D70FF36-1A37-4E47-B15D-5EB4FBC48E03}" ShortID="570874492"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level1" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-												<CustomState Name="" ID="{5913923C-7335-4CB0-8DEA-6FBFD72C02A4}" ShortID="809238915">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-108"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{F400BA1F-B694-4809-A350-769D2E24D979}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<SequenceList>
-										<MusicTrackSequence Name="" ID="{64671219-D513-434F-BC18-DFD3FA50110B}">
-											<ClipList>
-												<MusicClip Name="TheLastBeat_Mus_FB_Level2_01" ID="{FC952C4D-C92C-41F0-B444-467453C6AF56}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="TheLastBeat_Mus_FB_Level2_01" ID="{EE890E56-83C8-49F8-8CDE-45E73DEDA076}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{BB85F02C-1657-44F1-A403-0EC5B2390421}">
-											<ClipList>
-												<MusicClip Name="TheLastBeat_Mus_FB_Level2_02" ID="{978304F2-204C-4DF9-B98D-2CD70F954AFF}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="TheLastBeat_Mus_FB_Level2_02" ID="{61390BEE-C446-40B2-8C35-A543EB9DB4E0}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{ABA1C4B0-61C5-4292-AE92-647504635347}">
-											<ClipList>
-												<MusicClip Name="TheLastBeat_Mus_FB_Level2_03" ID="{A80A5C42-D0D7-418F-BF9A-FD1312DF5B93}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="TheLastBeat_Mus_FB_Level2_03" ID="{3F880B36-CD4D-44C6-AFCB-2DAD6CD87092}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{8CB2199D-98AD-4455-A7B3-4177662A3177}">
-											<ClipList>
-												<MusicClip Name="TheLastBeat_Mus_FB_Level2_04" ID="{E1D186AD-CA38-4A31-AD9E-4BD7B1E02A4E}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="TheLastBeat_Mus_FB_Level2_04" ID="{82A68F97-133C-4952-92BC-B0D638949757}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-									</SequenceList>
-								</MusicTrack>
 								<MusicTrack Name="TheLastBeat_Mus_FB_Level3" ID="{53D20EBF-55BA-407F-9C6C-30CF8185E949}" ShortID="190876292">
 									<PropertyList>
 										<Property Name="MusicTrackType" Type="int16" Value="1"/>
@@ -2764,19 +2643,11 @@
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="Level3" ID="{1DFDBE8A-2FA8-42CA-9982-6CB062CC40CF}"/>
-												<CustomState Name="" ID="{1B751B1C-ADAA-4268-A167-F2585A10AF06}" ShortID="562648266"/>
+												<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
+												<CustomState Name="" ID="{79488F1E-A7F9-4A01-83B6-56C7DB056B83}" ShortID="339309801"/>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="Level2" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-												<CustomState Name="" ID="{79488F1E-A7F9-4A01-83B6-56C7DB056B83}" ShortID="339309801">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-108"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level1" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
+												<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
 												<CustomState Name="" ID="{A3A96532-5D6B-4736-B142-2FB54EFB38E2}" ShortID="717332398">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
