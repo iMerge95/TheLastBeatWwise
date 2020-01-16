@@ -117,24 +117,26 @@
 			<ShortName>TheLastBank</ShortName>
 			<Path>TheLastBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3191278813" Name="Int_HitMusicFX" ObjectPath="\Events\Default Work Unit\Int_HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\Play_AmbDesert" MaxAttenuation="100.000000" DurationType="Infinite"/>
-				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_BlinkFXOffBeat" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
-				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_BlinkFXOnBeat" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
-				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\Play_Hit_Enemy" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
-				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
+				<Event Id="3191278813" Name="Int_HitMusicFX" ObjectPath="\Events\Default Work Unit\00_Internal\Int_HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3681445093" Name="Play_AmbDesert" ObjectPath="\Events\Default Work Unit\01_AMB\Play_AmbDesert" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.491708" DurationMax="0.538813"/>
+				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="3.924625" DurationMax="5.003250"/>
+				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
+				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
-				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\Internal_RewindState\Play_Rewind" DurationType="Unknown"/>
-				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOffBeat" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
-				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\Play_RushFXOnBeat" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
-				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
-				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\Play_WildlifeDesert_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
-				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\Internal_RewindState\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="4276712659" Name="SetRewind_LoopB" ObjectPath="\Events\Default Work Unit\Internal_RewindState\SetRewind_LoopB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="4276712658" Name="SetRewind_LoopC" ObjectPath="\Events\Default Work Unit\Internal_RewindState\SetRewind_LoopC" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Play_Rewind" DurationType="Unknown"/>
+				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOffBeat" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\00_Internal\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4276712659" Name="SetRewind_LoopB" ObjectPath="\Events\Default Work Unit\00_Internal\SetRewind_LoopB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4276712658" Name="SetRewind_LoopC" ObjectPath="\Events\Default Work Unit\00_Internal\SetRewind_LoopC" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\Stop_Amb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="564679353" Name="Stop_Rewind" ObjectPath="\Events\Default Work Unit\Internal_RewindState\Stop_Rewind" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\01_AMB\Stop_Amb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="564679353" Name="Stop_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Stop_Rewind" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="11159091"/>
@@ -196,9 +198,21 @@
 					<ShortName>TheLastBeat_Mus_FB_Level3_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level3_04_D79FB2B7.wem</Path>
 				</File>
+				<File Id="100723046" Language="SFX">
+					<ShortName>TLB_NME_SFX_Bounce_Shield_03.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Bounce_Shield_03_D90B92A5.wem</Path>
+				</File>
 				<File Id="102332519" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopA_Rewind_45A62633.wem</Path>
+				</File>
+				<File Id="105120328" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_01.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_01_D90B92A5.wem</Path>
+				</File>
+				<File Id="105274701" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_02.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_02_D90B92A5.wem</Path>
 				</File>
 				<File Id="127311965" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</ShortName>
@@ -215,6 +229,10 @@
 				<File Id="151833563" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongB_02_D90B92A5.wem</Path>
+				</File>
+				<File Id="156557215" Language="SFX">
+					<ShortName>TLB_NME_SFX_Bounce_Shield_04.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Bounce_Shield_04_D90B92A5.wem</Path>
 				</File>
 				<File Id="163597197" Language="SFX">
 					<ShortName>TLB_Chara_SFX_RushFX_03.wav</ShortName>
@@ -233,10 +251,6 @@
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_02_D90B92A5.wem</Path>
 				</File>
-				<File Id="229172958" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FB_Level2_03.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_FB_Level2_03_D79FB2B7.wem</Path>
-				</File>
 				<File Id="233352832" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_02_D90B92A5.wem</Path>
@@ -248,6 +262,10 @@
 				<File Id="265153136" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Limit_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopC_Limit_Rewind_45A62633.wem</Path>
+				</File>
+				<File Id="270382259" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_03.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_03_D90B92A5.wem</Path>
 				</File>
 				<File Id="337362431" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_01.wav</ShortName>
@@ -274,6 +292,10 @@
 					<ShortName>TLB_Chara_SFX_Hit_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Hit_01_D90B92A5.wem</Path>
 				</File>
+				<File Id="431518000" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_04.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_04_D90B92A5.wem</Path>
+				</File>
 				<File Id="453391844" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Limit_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopB_Limit_Rewind_45A62633.wem</Path>
@@ -286,6 +308,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_Limit_LoopB_1Pre4Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_Limit_LoopB_1Pre4Post_D79FB2B7.wem</Path>
 					<PrefetchSize>19264</PrefetchSize>
+				</File>
+				<File Id="483767187" Language="SFX">
+					<ShortName>TLB_NME_SFX_Bounce_Shield_01.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Bounce_Shield_01_D90B92A5.wem</Path>
 				</File>
 				<File Id="506043198" Language="SFX">
 					<ShortName>TLB_Chara_SFX_BlinkFX_01.wav</ShortName>
@@ -315,17 +341,9 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopB_Rewind_45A62633.wem</Path>
 				</File>
-				<File Id="569297699" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FB_Level2_04.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_FB_Level2_04_D79FB2B7.wem</Path>
-				</File>
 				<File Id="575072205" Language="SFX">
 					<ShortName>TLB_Chara_SFX_RushFX_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_RushFX_04_D90B92A5.wem</Path>
-				</File>
-				<File Id="581114488" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FB_Level2_01.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_FB_Level2_01_D79FB2B7.wem</Path>
 				</File>
 				<File Id="586999048" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_03.wav</ShortName>
@@ -342,6 +360,10 @@
 				<File Id="654735048" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Trans_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_D79FB2B7.wem</Path>
+				</File>
+				<File Id="703900704" Language="SFX">
+					<ShortName>TLB_NME_SFX_Bounce_Shield_02.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Bounce_Shield_02_D90B92A5.wem</Path>
 				</File>
 				<File Id="708259722" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level1_01.wav</ShortName>
@@ -430,10 +452,6 @@
 				<File Id="1062671059" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongA_01_D90B92A5.wem</Path>
-				</File>
-				<File Id="1063391264" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FB_Level2_02.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_FB_Level2_02_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

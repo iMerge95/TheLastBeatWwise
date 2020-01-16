@@ -18,149 +18,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_RushFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="23"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{6ED53B28-938E-477B-B9C9-60E7FE761CAC}" ShortID="659922905">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4F0062F1-0DF8-4FB1-AD82-E5058B379ED2}" ShortID="881746154">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="35"/>
-								<Property Name="Delay" Type="Real64" Value="0.2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="17"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{E11A1A78-7F36-471D-ADBB-3F1E5CE9777F}" ShortID="102322380">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="17"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{8E5896BB-01BB-4EE4-B98C-393CE7124273}" ShortID="1023807830">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_WildlifeDesert_1" ID="{CE2105B7-7B17-48D5-AD39-C9A76A41B44E}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="17"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{3C39D9DF-00C4-4258-929B-8A4A51B0CF14}" ShortID="97106739">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Cryspets" ID="{56EDAE85-837D-4C08-AA07-BBEE1B7A472E}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_WildlifeDesert_2" ID="{380D2BAE-6D6F-476C-85FE-2961FC6278D7}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="17"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{B268E4D1-950F-45FB-89FE-9279BA4FACA8}" ShortID="588061106">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Glasshoppers" ID="{918BA606-921D-4042-BF10-890D4825FDC8}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Int_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="23"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{086660A5-424F-446E-8882-C6896C5D8A40}" ShortID="1029298005">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{45B98434-CE99-4061-A1CD-32E21454D917}" ShortID="799435402">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="Delay" Type="Real64" Value="0.2"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="23"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{FE25D268-B9BD-420E-B621-5C20D4715D8B}" ShortID="991483423">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Folder Name="Internal_RewindState" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" ShortID="624468541">
+				<Folder Name="00_Internal" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" ShortID="624468541">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="13"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -247,34 +105,41 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Int_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="23"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{086660A5-424F-446E-8882-C6896C5D8A40}" ShortID="1029298005">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{45B98434-CE99-4061-A1CD-32E21454D917}" ShortID="799435402">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_BlinkFXOnBeat" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="20"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{B1D49062-27DD-4F7E-A638-090C32DE1071}" ShortID="812486334">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{FE54E8F0-17CB-4AF7-97FE-A5DEF217BCF9}" ShortID="525074958">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="35"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Stop_All" ID="{27729540-6585-48A7-8D30-6C5160C2D643}">
 					<ChildrenList>
 						<Action Name="" ID="{920A36EA-26B0-4235-A7ED-7FF123003173}" ShortID="906471273">
@@ -287,61 +152,250 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="19"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{64692AB3-FBD9-4E8B-9CAD-83DAA2142CAC}" ShortID="1014192907">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Hit_Player" ID="{34A80574-0D81-40B6-8978-667CE3ABC9A2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4F74B0CA-48E3-40FD-99E1-A73EDCE15F6E}" ShortID="567054315">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Int_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Hit_Enemy" ID="{135DBD0F-E0DD-4F9C-A735-5C82E7DE1AD9}">
+				<Folder Name="03_NME" ID="{869AB398-6F59-4E88-B023-410917D1AAD0}" ShortID="335288087">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="10"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{B9BB16E0-DA81-477A-81B2-F19CA9DEBA53}" ShortID="128613451">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Hit_Enemy" ID="{03631A26-5B87-4A1A-8ABC-17A9F2822138}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_Hit_Enemy" ID="{135DBD0F-E0DD-4F9C-A735-5C82E7DE1AD9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B9BB16E0-DA81-477A-81B2-F19CA9DEBA53}" ShortID="128613451">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hit_Enemy" ID="{03631A26-5B87-4A1A-8ABC-17A9F2822138}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Explosion" ID="{BE6C7B0C-65C9-4BA5-A94C-673DA4258F75}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{F1E1E895-75CF-44A0-8C62-C73F5842ABB6}" ShortID="378465790">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Explosion" ID="{49405CB2-3803-464F-8335-4575475A47E0}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Bounce_Shield" ID="{B6B39820-C319-4633-A229-29719AD2FF68}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B3158341-D1F8-4A0C-B479-B8B2DCB3ACDD}" ShortID="374066148">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bounce_Shield" ID="{EEB2E350-3A0F-41C4-8825-7AB775B70AC6}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_BlinkFXOffBeat" ID="{1778D619-6AD0-41F1-BBD5-F7AE21258A4F}">
+				</Folder>
+				<Folder Name="02_Player" ID="{A32702FF-811B-4538-BD1A-D641BDBDE609}" ShortID="615356457">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="20"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{5DE350FC-0208-44AE-B973-3F8215635BF3}" ShortID="54807480">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_BlinkFXOnBeat" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B1D49062-27DD-4F7E-A638-090C32DE1071}" ShortID="812486334">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FE54E8F0-17CB-4AF7-97FE-A5DEF217BCF9}" ShortID="525074958">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{64692AB3-FBD9-4E8B-9CAD-83DAA2142CAC}" ShortID="1014192907">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hit_Player" ID="{34A80574-0D81-40B6-8978-667CE3ABC9A2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4F74B0CA-48E3-40FD-99E1-A73EDCE15F6E}" ShortID="567054315">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Int_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BlinkFXOffBeat" ID="{1778D619-6AD0-41F1-BBD5-F7AE21258A4F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{5DE350FC-0208-44AE-B973-3F8215635BF3}" ShortID="54807480">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_RushFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{6ED53B28-938E-477B-B9C9-60E7FE761CAC}" ShortID="659922905">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4F0062F1-0DF8-4FB1-AD82-E5058B379ED2}" ShortID="881746154">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{FE25D268-B9BD-420E-B621-5C20D4715D8B}" ShortID="991483423">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="01_AMB" ID="{7F75DAE9-21AC-469E-B725-97F7BB94CC54}" ShortID="766203885">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{E11A1A78-7F36-471D-ADBB-3F1E5CE9777F}" ShortID="102322380">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{8E5896BB-01BB-4EE4-B98C-393CE7124273}" ShortID="1023807830">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_WildlifeDesert_2" ID="{380D2BAE-6D6F-476C-85FE-2961FC6278D7}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B268E4D1-950F-45FB-89FE-9279BA4FACA8}" ShortID="588061106">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Glasshoppers" ID="{918BA606-921D-4042-BF10-890D4825FDC8}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_WildlifeDesert_1" ID="{CE2105B7-7B17-48D5-AD39-C9A76A41B44E}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{3C39D9DF-00C4-4258-929B-8A4A51B0CF14}" ShortID="97106739">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cryspets" ID="{56EDAE85-837D-4C08-AA07-BBEE1B7A472E}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
