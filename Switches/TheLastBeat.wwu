@@ -6,6 +6,71 @@
 				<Property Name="Color" Type="int16" Value="10"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="MusicLayer" ID="{A68067E3-F81D-4852-9BF9-09C33CE5A862}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Pal1_Part1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
+						<Switch Name="Pal1_Part2" ID="{9B1F44F8-8DF1-481C-8538-5D74AE65AE74}"/>
+						<Switch Name="Pal1_Part3" ID="{AFE8E263-DBE8-4184-95FA-46BFD5AC9422}"/>
+						<Switch Name="Pal2_Part1" ID="{B54FF7A4-3D01-4341-8A6C-D5E0FD91FC74}"/>
+						<Switch Name="Pal2_Part2" ID="{6CE90F8A-E8CE-4FC3-8577-AA2076C14162}"/>
+						<Switch Name="Pal2_Part3" ID="{009E99D4-18F5-4157-887B-3E16D202238A}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}"/>
+						<Curve Name="" ID="{815B5361-5E1C-42FA-A13B-2BA3649D6AD8}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>7</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>13</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>16</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>18</XPos>
+									<YPos>6</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
 		</WorkUnit>
 	</Switches>
 </WwiseDocument>

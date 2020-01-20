@@ -1,17 +1,24 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2074789557	MusicLayer			\TheLastBeat\MusicLayer	
+
+Switch	ID	Name	Switch Group			Notes
+	1464426232	Pal1_Part1	MusicLayer			
+	1464426234	Pal1_Part3	MusicLayer			
+	1464426235	Pal1_Part2	MusicLayer			
+	3082199788	Pal2_Part2	MusicLayer			
+	3082199789	Pal2_Part3	MusicLayer			
+	3082199791	Pal2_Part1	MusicLayer			
+
 State Group	ID	Name			Wwise Object Path	Notes
-	291463486	FeedBackLevel			\TheLastBeat\FeedBackLevel	
-	960036381	Music_Limit_Switch			\TheLastBeat\Music_Limit_Switch	
-	1082318473	Music_CriticLevel			\TheLastBeat\Music_CriticLevel	
-	2305855220	Rewind_Combat_Loop			\TheLastBeat\Rewind_Combat_Loop	
-	2355547200	Music_CombatExplo_Switch			\TheLastBeat\Music_CombatExplo_Switch	
-	2724869341	Music_Switch			\TheLastBeat\Music_Switch	
-	2996289134	Rewind_State			\TheLastBeat\Rewind_State	
+	960036381	Music_Limit_Switch			\TheLastBeat\MusicState\Music_Limit_Switch	
+	1082318473	Music_CriticLevel			\TheLastBeat\FeedbackState\Music_CriticLevel	
+	2305855220	Rewind_Combat_Loop			\TheLastBeat\RewindState\Rewind_Combat_Loop	
+	2355547200	Music_CombatExplo_Switch			\TheLastBeat\MusicState\Music_CombatExplo_Switch	
+	2724869341	Music_Switch			\TheLastBeat\MusicState\Music_Switch	
+	2836345082	InputState			\TheLastBeat\FeedbackState\InputState	
+	2996289134	Rewind_State			\TheLastBeat\RewindState\Rewind_State	
 
 State	ID	Name	State Group			Notes
-	0	None	FeedBackLevel			
-	2678230380	Level3	FeedBackLevel			
-	2678230381	Level2	FeedBackLevel			
-	2678230382	Level1	FeedBackLevel			
 	0	None	Music_Limit_Switch			
 	2894236345	Combat_Calm	Music_Limit_Switch			
 	2902872313	Combat_Limit	Music_Limit_Switch			
@@ -28,6 +35,9 @@ State	ID	Name	State Group			Notes
 	0	None	Music_Switch			
 	674522502	Land	Music_Switch			
 	1993352646	Final_Combat	Music_Switch			
+	0	None	InputState			
+	1160234136	Normal	InputState			
+	2161557176	Perfect	InputState			
 	0	None	Rewind_State			
 	1160234136	Normal	Rewind_State			
 	1673109572	Rewind	Rewind_State			

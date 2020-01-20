@@ -13,6 +13,35 @@
 						<Bus Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="5"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{2A430B72-A7A9-4DCF-A37A-92F348637381}" ShortID="14466761">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{0CEB3706-38D8-4C17-8758-FB16776527DE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>45</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>

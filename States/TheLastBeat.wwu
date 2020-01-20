@@ -7,76 +7,96 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<StateGroup Name="Rewind_Combat_Loop" ID="{40CD7EC0-1E9C-40A9-9220-E3C18B25B534}">
+				<Folder Name="MusicState" ID="{E296618D-96D6-48DD-9D8E-096FD9AA5930}" ShortID="933802369">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<StateGroup Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
+								<State Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+								<State Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Music_Limit_Switch" ID="{2B2DB7C9-CB1E-4537-9C8B-6D2D7E8D30F6}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{17AAB246-3100-4F6B-9705-CD1A133A1E2F}"/>
+								<State Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
+								<State Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Music_Switch" ID="{CFEC8EF1-66D0-4F1A-A2CF-4790CE6EE7C2}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{0DC44D38-B177-4C3F-AB4E-EC1E6D8D0868}"/>
+								<State Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
+								<State Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="FeedbackState" ID="{E702C584-13F3-4447-BBDB-4F7272687C77}" ShortID="1001932425">
+					<ChildrenList>
+						<StateGroup Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}">
+							<ChildrenList>
+								<State Name="None" ID="{07C1ED1F-2FF9-42CF-A229-98F44C43BC1F}"/>
+								<State Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
+								<State Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}">
+							<ChildrenList>
+								<State Name="None" ID="{F2A0C503-2FC4-450F-A65F-539C23CC0B88}"/>
+								<State Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
+								<State Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="RewindState" ID="{EF4C8057-6547-4D4E-A8BB-AC7BBA5DCDC2}" ShortID="141619004">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="13"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<State Name="None" ID="{A3C11ADD-8A0C-4053-9CDD-E609630991B4}"/>
-						<State Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
-						<State Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
-						<State Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
+						<StateGroup Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="13"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+								<State Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
+								<State Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Rewind_Combat_Loop" ID="{40CD7EC0-1E9C-40A9-9220-E3C18B25B534}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="13"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{A3C11ADD-8A0C-4053-9CDD-E609630991B4}"/>
+								<State Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+								<State Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
+								<State Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="24"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<State Name="None" ID="{F967BDB8-53FD-4CF1-A9BE-32222E84D807}"/>
-						<State Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
-						<State Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="13"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<State Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-						<State Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
-						<State Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Music_Limit_Switch" ID="{2B2DB7C9-CB1E-4537-9C8B-6D2D7E8D30F6}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="24"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<State Name="None" ID="{17AAB246-3100-4F6B-9705-CD1A133A1E2F}"/>
-						<State Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
-						<State Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}">
-					<ChildrenList>
-						<State Name="None" ID="{F2A0C503-2FC4-450F-A65F-539C23CC0B88}"/>
-						<State Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
-						<State Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Music_Switch" ID="{CFEC8EF1-66D0-4F1A-A2CF-4790CE6EE7C2}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="24"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<State Name="None" ID="{0DC44D38-B177-4C3F-AB4E-EC1E6D8D0868}"/>
-						<State Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
-						<State Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="FeedBackLevel" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}">
-					<ChildrenList>
-						<State Name="None" ID="{07C1ED1F-2FF9-42CF-A229-98F44C43BC1F}"/>
-						<State Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-						<State Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-					</ChildrenList>
-				</StateGroup>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
