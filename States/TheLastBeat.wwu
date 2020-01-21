@@ -64,6 +64,19 @@
 								<State Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 							</ChildrenList>
 						</StateGroup>
+						<StateGroup Name="Int_Land_Chord" ID="{620CA30A-4340-455E-A7A3-6F62C52DB2F0}">
+							<ChildrenList>
+								<State Name="None" ID="{737E1B5D-E785-402B-ABB8-E0F636EE3224}"/>
+								<State Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
+								<State Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
+								<State Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
+								<State Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+								<State Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
+								<State Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
+								<State Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
+								<State Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="RewindState" ID="{EF4C8057-6547-4D4E-A8BB-AC7BBA5DCDC2}" ShortID="141619004">

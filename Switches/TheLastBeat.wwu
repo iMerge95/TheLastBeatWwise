@@ -38,32 +38,32 @@
 								</Point>
 								<Point>
 									<XPos>4</XPos>
-									<YPos>2</YPos>
+									<YPos>1</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>7</XPos>
-									<YPos>3</YPos>
+									<YPos>1</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>10</XPos>
-									<YPos>4</YPos>
+									<YPos>1</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>13</XPos>
-									<YPos>5</YPos>
+									<XPos>13.03041</XPos>
+									<YPos>1</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>16</XPos>
-									<YPos>6</YPos>
+									<YPos>1</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>18</XPos>
-									<YPos>6</YPos>
+									<YPos>1</YPos>
 									<Flags>37</Flags>
 								</Point>
 							</PointList>

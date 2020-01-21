@@ -354,6 +354,18 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{E3471A76-05AC-4F76-A4A1-AA5C9BB85DED}" ShortID="985787362">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MusicFeedback" ID="{E44C583A-FB4D-4523-A827-8DAA62360197}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}">
@@ -490,6 +502,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Int_Chord01" ID="{C735EEEA-D908-47EB-B66F-D56D667BC9EB}">
+					<ChildrenList>
+						<Action Name="" ID="{FB9A3BBD-46C7-4D54-AC3A-C44524445A1A}" ShortID="89146633">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Int_Chord02" ID="{812DAD5A-670F-4F6F-8108-4D3BF6171787}">
+					<ChildrenList>
+						<Action Name="" ID="{84C57805-0EFF-4F2F-B2B3-0F14A1D80B5B}" ShortID="737575526">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

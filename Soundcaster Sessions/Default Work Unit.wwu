@@ -33,7 +33,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}"/>
-							<Value>8.21581650328365E-312</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Int_SyncDucking" ID="{2D151634-A0B6-48A2-9777-0CE68C1A0E43}"/>
@@ -51,6 +51,7 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
 						<CurrentStateRef Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
+						<CurrentStateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
 						<CurrentStateRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
 						<CurrentStateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
 						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
