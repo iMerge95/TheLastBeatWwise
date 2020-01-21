@@ -24,87 +24,6 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="SetRewind_LoopA" ID="{EAC9C663-5374-42ED-BB97-5919131A7612}">
-							<ChildrenList>
-								<Action Name="" ID="{01C58362-31ED-4EC5-9360-5F5A4FF8604A}" ShortID="81857076">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="SetRewind_LoopB" ID="{BE79EF32-E2D4-4C05-822A-7BD390259C8C}">
-							<ChildrenList>
-								<Action Name="" ID="{7FE31418-0117-4EFB-8634-61F9E32396E7}" ShortID="673422201">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="SetRewind_LoopC" ID="{33D6E2D8-B399-4C0D-A248-B3F7AB5E9A67}">
-							<ChildrenList>
-								<Action Name="" ID="{064D7576-0D46-4ADC-91A9-929C6ECEBB53}" ShortID="786792395">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Rewind" ID="{CE03CC97-7D3D-4C7F-9936-3F176E1AB104}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="13"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<Action Name="" ID="{8EBB8487-9733-4250-832E-5E95B204E0A5}" ShortID="17686823">
-									<PropertyList>
-										<Property Name="FadeInCurve" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Rewind_MusicSwitch" ID="{7007FD91-5CF0-42E6-BDCD-FAFE6E8C39BA}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_Rewind" ID="{AB2C8862-A024-4FB1-A765-97235054B940}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="13"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<Action Name="" ID="{F04FCA18-E071-47B1-958B-7CACD97DD342}" ShortID="424234285">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="8"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Rewind_MusicSwitch" ID="{7007FD91-5CF0-42E6-BDCD-FAFE6E8C39BA}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Int_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="23"/>
@@ -138,6 +57,207 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Rewind" ID="{D0927E92-F5E7-4775-B675-188212C37624}" ShortID="235913115">
+							<ChildrenList>
+								<Event Name="Play_Rewind" ID="{CE03CC97-7D3D-4C7F-9936-3F176E1AB104}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="13"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Action Name="" ID="{8EBB8487-9733-4250-832E-5E95B204E0A5}" ShortID="17686823">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Rewind_MusicSwitch" ID="{7007FD91-5CF0-42E6-BDCD-FAFE6E8C39BA}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Rewind" ID="{AB2C8862-A024-4FB1-A765-97235054B940}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="13"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Action Name="" ID="{F04FCA18-E071-47B1-958B-7CACD97DD342}" ShortID="424234285">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="8"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Rewind_MusicSwitch" ID="{7007FD91-5CF0-42E6-BDCD-FAFE6E8C39BA}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SetRewind_LoopA" ID="{EAC9C663-5374-42ED-BB97-5919131A7612}">
+									<ChildrenList>
+										<Action Name="" ID="{01C58362-31ED-4EC5-9360-5F5A4FF8604A}" ShortID="81857076">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SetRewind_LoopC" ID="{33D6E2D8-B399-4C0D-A248-B3F7AB5E9A67}">
+									<ChildrenList>
+										<Action Name="" ID="{064D7576-0D46-4ADC-91A9-929C6ECEBB53}" ShortID="786792395">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SetRewind_LoopB" ID="{BE79EF32-E2D4-4C05-822A-7BD390259C8C}">
+									<ChildrenList>
+										<Action Name="" ID="{7FE31418-0117-4EFB-8634-61F9E32396E7}" ShortID="673422201">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Chord" ID="{F9657FB4-F7A5-49EB-82CF-174FA511F145}" ShortID="922564194">
+							<ChildrenList>
+								<Event Name="Int_Chord02" ID="{812DAD5A-670F-4F6F-8108-4D3BF6171787}">
+									<ChildrenList>
+										<Action Name="" ID="{84C57805-0EFF-4F2F-B2B3-0F14A1D80B5B}" ShortID="737575526">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Int_Chord01" ID="{C735EEEA-D908-47EB-B66F-D56D667BC9EB}">
+									<ChildrenList>
+										<Action Name="" ID="{FB9A3BBD-46C7-4D54-AC3A-C44524445A1A}" ShortID="89146633">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Int_Chord03" ID="{A50F16F1-A568-4CE1-8690-9C1C59F041D6}">
+									<ChildrenList>
+										<Action Name="" ID="{708304F5-6B42-40CF-ACD0-0A3A8FF5036B}" ShortID="675675899">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Int_Chord04" ID="{3C9B8E03-6812-4BCA-9F59-F4962DF22C9E}">
+									<ChildrenList>
+										<Action Name="" ID="{DCD8FF49-107A-480E-B0B9-BD798A42797E}" ShortID="711402708">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Int_Chord05" ID="{274F4914-28B7-435E-90CA-2855371437A7}">
+									<ChildrenList>
+										<Action Name="" ID="{A459755A-3017-44CD-93C7-CD799D49B46E}" ShortID="834656650">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Int_Chord06" ID="{8AD81EA4-4B06-4A35-8A5D-6F6BD5DEDB26}">
+									<ChildrenList>
+										<Action Name="" ID="{3F79729C-4B0F-4A47-A1E3-5BBA73894474}" ShortID="252777066">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Int_Chord07" ID="{8AFA47A6-84AE-42B8-94DD-A6E02DA0BB0D}">
+									<ChildrenList>
+										<Action Name="" ID="{0BA38FF6-E4BA-4DD6-AEBA-00E8D9AD4DC4}" ShortID="984503797">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Int_Chord08" ID="{8FA0C2F9-266C-4506-840F-C06398E7D75F}">
+									<ChildrenList>
+										<Action Name="" ID="{38158AEE-34DC-452B-B5A6-086154D18E08}" ShortID="382984686">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Stop_All" ID="{27729540-6585-48A7-8D30-6C5160C2D643}">
@@ -502,34 +622,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Int_Chord01" ID="{C735EEEA-D908-47EB-B66F-D56D667BC9EB}">
-					<ChildrenList>
-						<Action Name="" ID="{FB9A3BBD-46C7-4D54-AC3A-C44524445A1A}" ShortID="89146633">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Int_Chord02" ID="{812DAD5A-670F-4F6F-8108-4D3BF6171787}">
-					<ChildrenList>
-						<Action Name="" ID="{84C57805-0EFF-4F2F-B2B3-0F14A1D80B5B}" ShortID="737575526">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

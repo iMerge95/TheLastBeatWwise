@@ -20,7 +20,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -171,11 +171,6 @@
 										<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -343,11 +338,71 @@
 																		</MusicEventCue>
 																		<MusicEventCue Name="" ID="{8ACEBDC8-C32D-471B-BEE5-D024C30B7CF8}" ShortID="1002153159">
 																			<PropertyList>
-																				<Property Name="PlayAt" Type="Real64" Value="9473.68421052632"/>
+																				<Property Name="PlayAt" Type="Real64" Value="8684.2105263158"/>
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="PostEventTarget">
 																					<ObjectRef Name="Int_Chord02" ID="{812DAD5A-670F-4F6F-8108-4D3BF6171787}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																		<MusicEventCue Name="" ID="{2E1655C2-0D49-40F1-AA4B-8E3D7502DCAD}" ShortID="289266672">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="15000"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Int_Chord03" ID="{A50F16F1-A568-4CE1-8690-9C1C59F041D6}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																		<MusicEventCue Name="" ID="{432179B3-E51D-4807-AE03-244F4AF042A4}" ShortID="944110450">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="21315.7894736842"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Int_Chord04" ID="{3C9B8E03-6812-4BCA-9F59-F4962DF22C9E}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																		<MusicEventCue Name="" ID="{93E9FDD5-AC0E-4CBB-BC93-2A6460EA1BE5}" ShortID="430285612">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="27631.5789473684"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Int_Chord05" ID="{274F4914-28B7-435E-90CA-2855371437A7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																		<MusicEventCue Name="" ID="{2341A672-5BEA-4B87-A9BF-F39AFDE36398}" ShortID="943957845">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="33947.3684210526"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Int_Chord06" ID="{8AD81EA4-4B06-4A35-8A5D-6F6BD5DEDB26}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																		<MusicEventCue Name="" ID="{AD4A45F2-9A35-4E49-ABBA-0F0B1B3B640C}" ShortID="323226540">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="40263.1578947368"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Int_Chord07" ID="{8AFA47A6-84AE-42B8-94DD-A6E02DA0BB0D}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																		<MusicEventCue Name="" ID="{7BFC86A4-5140-4154-A81A-1F4B858B1ADE}" ShortID="744091739">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="46578.9473684211"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Int_Chord08" ID="{8FA0C2F9-266C-4506-840F-C06398E7D75F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 																				</Reference>
 																			</ReferenceList>
 																		</MusicEventCue>
@@ -433,7 +488,7 @@
 														<MusicCue Name="Exit Cue" ID="{228DB53A-F353-47D5-AF2F-2F83272BD38E}">
 															<PropertyList>
 																<Property Name="CueType" Type="int16" Value="1"/>
-																<Property Name="TimeMs" Type="Real64" Value="15789.4736842105"/>
+																<Property Name="TimeMs" Type="Real64" Value="53684.2105263158"/>
 															</PropertyList>
 														</MusicCue>
 													</CueList>
@@ -446,9 +501,6 @@
 													</PropertyList>
 													<ChildrenList>
 														<MusicTransition Name="Transition" ID="{923E16E8-50AB-42CA-BD1D-E9C0DD6A62BE}">
-															<PropertyList>
-																<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
-															</PropertyList>
 															<TransitionInfo/>
 														</MusicTransition>
 													</ChildrenList>
@@ -2465,7 +2517,7 @@
 												<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 											</PropertyList>
 											<TriggerRef Name="MusicFeedback" ID="{E44C583A-FB4D-4523-A827-8DAA62360197}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
-											<SegmentRef Name="Land_Feeback" ID="{BB48DAA0-8CAC-4CCC-9B59-A50021A0947E}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+											<SegmentRef Name="Land_Feeback_Pal1_Part1" ID="{BB48DAA0-8CAC-4CCC-9B59-A50021A0947E}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 										</MusicStinger>
 									</StingerList>
 									<ArgumentList>
@@ -2637,8 +2689,8 @@
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{CE15B99D-4435-435D-811B-AD59C6DA3579}">
 														<PropertyList>
-															<Property Name="FadeOffset" Type="Real64" Value="0.4"/>
-															<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+															<Property Name="FadeOffset" Type="Real64" Value="0.8"/>
+															<Property Name="FadeTime" Type="Real64" Value="1.6"/>
 															<Property Name="FadeType" Type="int16" Value="1"/>
 														</PropertyList>
 													</MusicFade>
@@ -4859,8 +4911,9 @@
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
-						<MusicSegment Name="Land_Feeback" ID="{BB48DAA0-8CAC-4CCC-9B59-A50021A0947E}" ShortID="308217024">
+						<MusicSegment Name="Land_Feeback_Pal1_Part1" ID="{BB48DAA0-8CAC-4CCC-9B59-A50021A0947E}" ShortID="308217024">
 							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="4773.28951828474"/>
 								<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="Tempo" Type="Real64" Value="76"/>
@@ -4879,30 +4932,45 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01" ID="{825614B4-584D-42F4-9899-C792712AFAE7}" ShortID="685835811">
+								<MusicTrack Name="Chord1" ID="{8C0AAFC9-3368-44A0-A5BB-4BDD7DE7EB4E}" ShortID="417379835">
 									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="MusicTrackType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>6</Value>
+												<Value>-96</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01" ID="{112E83E4-FB56-4B3D-A484-3D34964A39B7}" ShortID="161056953">
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01" ID="{E7773B7A-E14A-44FE-BDC2-23F0A93FD25F}" ShortID="494011537">
 											<Language>SFX</Language>
-											<AudioFile>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01.wav</AudioFile>
+											<AudioFile>MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01.wav</AudioFile>
 										</AudioFileSource>
-										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02" ID="{C9253F1D-8ADB-40E5-BA55-9BA80B076C2A}" ShortID="451833532">
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02" ID="{F97641A7-27AE-47C3-9153-9846F7D7AD0A}" ShortID="969093831">
 											<Language>SFX</Language>
-											<AudioFile>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02.wav</AudioFile>
+											<AudioFile>MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_03" ID="{27BD9DC2-3E48-42C0-AF87-DAD013833085}" ShortID="644232250">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_04" ID="{96BAF95F-F022-4430-9144-D4318A02B2AA}" ShortID="221589163">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_04.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{F3AB19B5-C364-4C11-A032-35368C079423}"/>
+									</PositioningInfo>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -4912,7 +4980,7 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
-												<CustomState Name="" ID="{9064CA76-F5AE-41EB-88D5-EA7844044D39}" ShortID="199735647">
+												<CustomState Name="" ID="{99BF7A18-6B31-4D88-8C38-11A56570E7D3}" ShortID="964645560">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -4920,7 +4988,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
-												<CustomState Name="" ID="{44C00349-AE4A-4111-A5B0-EE0EE7105F7B}" ShortID="116022549">
+												<CustomState Name="" ID="{925BE5CC-3134-45F9-A700-A1030940DDB5}" ShortID="513674968">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -4928,11 +4996,15 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
-												<CustomState Name="" ID="{50B560A0-F7B0-4C5A-9015-0AB93D62D2C8}" ShortID="372002179"/>
+												<CustomState Name="" ID="{EDF70942-6144-4CF8-B9D6-DBFE3CE58806}" ShortID="218023715">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="96"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
-												<CustomState Name="" ID="{0D956236-DE0B-4803-87F6-6FE3E04E3242}" ShortID="262417068">
+												<CustomState Name="" ID="{E58768BE-B683-4A2A-82B5-D78529DB06DC}" ShortID="401629997">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -4940,7 +5012,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
-												<CustomState Name="" ID="{129BF5BC-98B7-402D-BBAB-14F0A653E381}" ShortID="965289856">
+												<CustomState Name="" ID="{8D968499-C6C6-4552-A91A-7FD602684221}" ShortID="158006031">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -4948,7 +5020,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
-												<CustomState Name="" ID="{40C2861F-248D-4310-8949-B90136392327}" ShortID="838836229">
+												<CustomState Name="" ID="{6FE0D8CE-A636-40E0-8590-6651E17E7A53}" ShortID="202899575">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -4956,7 +5028,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
-												<CustomState Name="" ID="{7B30308E-FFC9-43DE-B2BC-A26289E23A9A}" ShortID="487998965">
+												<CustomState Name="" ID="{002E9949-CD07-4A2A-ABEF-5A94D0D8239F}" ShortID="990624827">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -4964,7 +5036,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
-												<CustomState Name="" ID="{0073D522-38A7-45D8-947D-A4CC072A3D29}" ShortID="768462946">
+												<CustomState Name="" ID="{68ABD598-6174-4E57-B4A2-5BB02E1176FA}" ShortID="109259860">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -4973,7 +5045,7 @@
 										</CustomStateList>
 									</StateInfo>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{DB815B95-61FE-4153-A737-567DD514552F}">
+										<MusicTransition Name="Root" ID="{3099FDD5-A435-4B15-9C20-ADE8D2183DBB}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -4981,38 +5053,976 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{356849A9-645D-42FA-9B43-1AD3A9DC61C1}">
+										<MusicTrackSequence Name="" ID="{54E2AF2F-8E7A-41FD-8914-2003366A86BC}">
 											<ClipList>
-												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01" ID="{A1602FF7-1218-497B-AF76-45DC2166C01C}">
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01" ID="{B5DD20BC-F784-4F09-B316-9AA41209BE1D}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="3157.89583333333"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1945.94594594594"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01" ID="{112E83E4-FB56-4B3D-A484-3D34964A39B7}"/>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_01" ID="{E7773B7A-E14A-44FE-BDC2-23F0A93FD25F}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{AB5FC36B-2ECD-441D-A342-55D70ADD22EF}">
+										<MusicTrackSequence Name="" ID="{C59CE489-F95D-46B6-9BE2-834C3F0BC0A7}">
 											<ClipList>
-												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02" ID="{B1BB27D4-0D5C-4DBA-9E97-E98B851C0BBB}">
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02" ID="{AEB5258A-41FA-44D1-9511-156F2E926CEF}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="2397.60416666667"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1155.04978662873"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02" ID="{C9253F1D-8ADB-40E5-BA55-9BA80B076C2A}"/>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02" ID="{F97641A7-27AE-47C3-9153-9846F7D7AD0A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{43C47DFD-836F-479A-A5B9-DE2339B51EBD}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_03" ID="{693D9674-9FF5-4191-B10D-C21DF1300283}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3258.25"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_03" ID="{27BD9DC2-3E48-42C0-AF87-DAD013833085}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{BC04781C-09A1-4983-A4EB-CAA0C53DFB63}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_04" ID="{AF88AED5-4119-4D15-B35A-5703D717BEC4}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3264.41666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_04" ID="{96BAF95F-F022-4430-9144-D4318A02B2AA}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
-								<MusicTrack Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01" ID="{A54DAE5A-A1D4-4B5A-AD97-14A8D2A1B401}" ShortID="61931788">
+								<MusicTrack Name="Chord2" ID="{C38C3A1E-D2C6-43B3-A3F7-E8FF6AC8080F}" ShortID="23207628">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01" ID="{221D29D1-D9D3-4818-9A86-961EFA9172A1}" ShortID="805811859">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_02" ID="{1E64CC75-B048-4D54-9C72-9F5763B71AA3}" ShortID="740423790">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_03" ID="{48E5D352-E8C2-414E-A3D9-9F7B15D03ABF}" ShortID="262637672">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_04" ID="{65F74ACB-F6E5-4457-8FAE-0CC7AC7EC768}" ShortID="422602480">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{B6C5EDCF-1259-43D8-A49C-1545A93A6E06}"/>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Int_Land_Chord" ID="{620CA30A-4340-455E-A7A3-6F62C52DB2F0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
+												<CustomState Name="" ID="{E2BCAF31-39CB-4271-8947-7ECA77343AD4}" ShortID="731652340">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+												<CustomState Name="" ID="{7D209444-959A-470F-806B-F4D116C43C27}" ShortID="1039330152">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
+												<CustomState Name="" ID="{AD97B4FA-B7C6-4459-82F4-7EF66A1824BD}" ShortID="243315114">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
+												<CustomState Name="" ID="{5396979A-1947-4BDA-BF4C-92F8B6C134C7}" ShortID="819563059">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
+												<CustomState Name="" ID="{E27808D5-833E-4F46-B029-4879C2895FB7}" ShortID="961140767">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
+												<CustomState Name="" ID="{0378C07E-1218-40CB-82E5-259DE840AE3B}" ShortID="680687072">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
+												<CustomState Name="" ID="{FA73F106-2984-48E6-B31F-5A539CF10398}" ShortID="879646779">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="96"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
+												<CustomState Name="" ID="{89254C10-6C7D-4B53-B818-BF832CEE4D54}" ShortID="378475663">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D3113EAC-8375-4096-9473-47DF4E26F766}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{6DB5955E-D5A2-440E-8417-FE04B2EC1895}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01" ID="{0042F7FF-FE29-4E23-B99B-C128877AEE38}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3283.5"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01" ID="{221D29D1-D9D3-4818-9A86-961EFA9172A1}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F485F938-15D8-4707-A515-86DEE35FDFE3}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_02" ID="{89C905E9-2A3D-44D5-9680-86F40DB62000}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3180.75"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_02" ID="{1E64CC75-B048-4D54-9C72-9F5763B71AA3}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C3B0FF3D-74EA-4B61-9B40-458308B2CF89}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_03" ID="{97406E6D-AB84-4AD4-9B00-307BC8FCCD50}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3287.0625"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_03" ID="{48E5D352-E8C2-414E-A3D9-9F7B15D03ABF}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{518BF427-25DE-49A1-94C3-168EB383E5F6}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_04" ID="{CADD11E8-2867-488C-82A7-7969FD78C868}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3237.60416666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_04" ID="{65F74ACB-F6E5-4457-8FAE-0CC7AC7EC768}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Chord3" ID="{55CDD693-9331-4431-8C47-F37D0797849E}" ShortID="998928948">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_01" ID="{4C70EC49-67FD-412B-8060-9A58234D9E70}" ShortID="350921418">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord3\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_02" ID="{B7FAF23C-1264-4F0C-822B-53172D5AB6DA}" ShortID="1022370848">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord3\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_03" ID="{A505A7A7-60C8-470D-AE35-AEE9125D24A0}" ShortID="644930609">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord3\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_04" ID="{9812AC6B-C291-4339-BAE7-0034AC6B2D1D}" ShortID="653150944">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord3\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{2B5EAFF9-D8B4-4AF5-ACBA-40955D8F6307}"/>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Int_Land_Chord" ID="{620CA30A-4340-455E-A7A3-6F62C52DB2F0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
+												<CustomState Name="" ID="{B7B858D2-B15A-4444-BDE4-370E67BCC277}" ShortID="373360498">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="96"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+												<CustomState Name="" ID="{04D76563-DA89-4B2D-9F88-AEDFEBEF4CC6}" ShortID="966434997">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
+												<CustomState Name="" ID="{D18789FE-D75A-4A95-9E75-99C17033C1F9}" ShortID="779961613">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
+												<CustomState Name="" ID="{6F4873D4-6748-4A38-9A1E-7CEC49195C16}" ShortID="636728643">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
+												<CustomState Name="" ID="{B95418D1-42A6-4934-A501-70C59AD924FC}" ShortID="891485793">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
+												<CustomState Name="" ID="{224EFF2D-B728-45CE-BE02-7202319A3ED6}" ShortID="61938746">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
+												<CustomState Name="" ID="{B5B1E75A-C333-4187-AF49-3AC0D336ABAE}" ShortID="166789778">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
+												<CustomState Name="" ID="{A0AFD899-8447-4A02-BB05-919E54A12469}" ShortID="75223728">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7411C0AC-5FAD-4DBF-A77C-BC0159C7AB8B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{9021ABBE-8A93-43DD-8350-EAFB7314B360}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_01" ID="{41E06DEE-31DB-44E7-94D5-E23A53B4EB88}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3209.89583333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_01" ID="{4C70EC49-67FD-412B-8060-9A58234D9E70}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{DE54E78B-8E0A-48A8-90B1-B4BA36A7018B}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_02" ID="{7FF0CB9C-B3CE-4037-88D8-037C4758C9E0}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3161.39583333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_02" ID="{B7FAF23C-1264-4F0C-822B-53172D5AB6DA}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{DD16B953-81DC-49C1-A89E-8FD5FA784FD7}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_03" ID="{DD90547C-2B46-40A8-A2D9-BB2029415E40}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3247.8125"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_03" ID="{A505A7A7-60C8-470D-AE35-AEE9125D24A0}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C00584CE-3089-4BA2-AA44-A072B0960DCA}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_04" ID="{5B79E6CA-8B38-452A-AE97-C7EF0B3B23CE}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3282.8536874065"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_04" ID="{9812AC6B-C291-4339-BAE7-0034AC6B2D1D}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{AFFA845C-33C6-4886-9C9E-61A86569611E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.28285</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{5311847A-B344-47ED-BD31-AA4D074C3979}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.28285</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{B58B358F-E936-4BAE-8B73-C73984C207E1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.28285</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Chord4" ID="{C49966CE-B34C-4EC3-9C95-B77AE90F0B98}" ShortID="865699083">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_01" ID="{E65F6FF5-2F18-4EC4-91B4-1A7EAD7A4453}" ShortID="139332409">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord4\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_02" ID="{24132CBC-89B0-4166-BD37-36D3C75D856E}" ShortID="1051988164">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord4\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_03" ID="{8BF99B02-62E1-4256-8FF3-92924F747F2C}" ShortID="215866095">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord4\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_04" ID="{6ECE50FB-FB86-41A4-99C7-3933E2C7982F}" ShortID="884722837">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord4\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{01B0C729-0405-472D-B6EE-49B3E5E30D55}"/>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Int_Land_Chord" ID="{620CA30A-4340-455E-A7A3-6F62C52DB2F0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
+												<CustomState Name="" ID="{477054CB-C9C3-45DE-9980-6C3F48072F14}" ShortID="246696856">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+												<CustomState Name="" ID="{5FDFD9F0-DB35-4724-8F88-81FEEE7D39CD}" ShortID="671261950">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="96"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
+												<CustomState Name="" ID="{D717D31D-B569-4979-B637-05C81727AFE8}" ShortID="202551109">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
+												<CustomState Name="" ID="{E29B79AC-48BD-4B7C-B420-B7D18D572C0B}" ShortID="531071441">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
+												<CustomState Name="" ID="{685FA2BA-DD27-41F8-BF5C-23DD5246144A}" ShortID="750550579">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
+												<CustomState Name="" ID="{D6DFA571-8F2D-42A4-A46D-721EFB773DEE}" ShortID="473354407">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
+												<CustomState Name="" ID="{D517405F-B285-4F1A-B8B5-D0515B4BF19A}" ShortID="502255201">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
+												<CustomState Name="" ID="{223E7B37-0356-4540-9A9D-06D8AFF8D51F}" ShortID="343566888">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{28935196-1946-4CD0-B41E-BA70D7450C00}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E032B664-7886-4B40-B008-08B922BCE10D}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_01" ID="{B7A99CF1-9446-442C-A68D-DF3368FC9A19}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3173.72916666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_01" ID="{E65F6FF5-2F18-4EC4-91B4-1A7EAD7A4453}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{BD39CFC3-CE73-44F4-AC3D-2ADD1AC2E894}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_02" ID="{DB0AE268-CE11-45D9-B08D-B31BA0DADE99}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3236.89583333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_02" ID="{24132CBC-89B0-4166-BD37-36D3C75D856E}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FEFCF897-368B-4CD4-98E1-D63D5FD7F170}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_03" ID="{EE17DF91-663B-4796-8B7E-C83CF69BE493}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3199.54166666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_03" ID="{8BF99B02-62E1-4256-8FF3-92924F747F2C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{82B2A772-BB59-489E-8205-DDAD9BFE65FA}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_04" ID="{51F447E8-8678-4179-B2F0-7C6AB1AF8625}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3215.60416666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_04" ID="{6ECE50FB-FB86-41A4-99C7-3933E2C7982F}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Chord5" ID="{DA977DBF-2800-4928-B9A1-35CBF4FCAABC}" ShortID="549161462">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_01" ID="{527F580F-52B0-4B19-85B3-C6C28EF86165}" ShortID="418317501">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_02" ID="{F815204B-FDF5-4C2E-AF79-DD3D8ECC6026}" ShortID="574603556">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_03" ID="{7F42E250-949D-4053-BAE6-F9E88326042B}" ShortID="203918802">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_04" ID="{48D9DAA4-EF12-4F75-B46D-F36461BB88C5}" ShortID="859450251">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{34887F61-80CC-4684-BA37-FF033E37E39A}"/>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Int_Land_Chord" ID="{620CA30A-4340-455E-A7A3-6F62C52DB2F0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
+												<CustomState Name="" ID="{649958A6-1064-41BE-B7E7-042E8C6907B1}" ShortID="100406226">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+												<CustomState Name="" ID="{DE07CEDA-2099-4997-B71D-656470133E44}" ShortID="676711052">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
+												<CustomState Name="" ID="{FDF3AE16-1BC1-4400-A105-24725476F1F6}" ShortID="413564771">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
+												<CustomState Name="" ID="{DB012F33-9C44-4368-987C-9701C0563242}" ShortID="423821938">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="96"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
+												<CustomState Name="" ID="{AE712646-9883-430D-9B0B-ACF5D7E2A278}" ShortID="405034500">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
+												<CustomState Name="" ID="{61FC7EC7-9A88-4C8C-A606-B6AB7BEEBD83}" ShortID="953383676">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
+												<CustomState Name="" ID="{6E5326FE-0CAE-45B4-8D44-C4F6322A4A35}" ShortID="863133085">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
+												<CustomState Name="" ID="{C3DFE9A6-BB79-4928-8F7D-A9C0DC925245}" ShortID="956062401">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{2C2A9E33-D371-4CAE-98CE-785D45A01E5A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{7D633C79-F956-4326-AB06-4ECB1AA7D51C}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_01" ID="{5B299C56-4BBB-480D-B159-BEEE5A65B876}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3182.8125"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_01" ID="{527F580F-52B0-4B19-85B3-C6C28EF86165}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5E258741-D667-43B1-A222-29783C3F1709}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_02" ID="{56CD7F92-123B-42DA-8661-5C9E0062D658}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3242.16666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_02" ID="{F815204B-FDF5-4C2E-AF79-DD3D8ECC6026}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{DC7BE9E6-E26E-4024-95B2-C14708BB5B0C}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_03" ID="{99C9FA84-40C3-45DC-A85A-AC895313205B}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3171.60416666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_03" ID="{7F42E250-949D-4053-BAE6-F9E88326042B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{37D17676-89C1-4FFA-B995-AD2D7FD58948}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_04" ID="{3051C49C-10FA-49EF-A43C-80514D68FD43}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3225.33333333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_04" ID="{48D9DAA4-EF12-4F75-B46D-F36461BB88C5}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Chord6" ID="{4EA899EF-2816-48D8-B881-1B6955C7AB32}" ShortID="229859883">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_01" ID="{BF1E11D2-0A6E-416C-9B9D-832E8CD9C4F4}" ShortID="706004158">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord6\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_02" ID="{BD104764-36B9-4B91-935C-416884994E6D}" ShortID="535501717">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord6\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_03" ID="{9F5C5565-2A26-49F6-AD4A-8134ED52327D}" ShortID="194562293">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord6\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_04" ID="{913D4D85-A0B0-452A-8BBC-72B2F2E482DA}" ShortID="1042447278">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord6\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{7A8497BF-E378-4DD0-85D5-7F0679AC7F08}"/>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Int_Land_Chord" ID="{620CA30A-4340-455E-A7A3-6F62C52DB2F0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
+												<CustomState Name="" ID="{9B93BE44-67F9-425E-A1A1-669D60409B62}" ShortID="730814818">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+												<CustomState Name="" ID="{98996165-7307-4C28-9040-74C209128B05}" ShortID="427890935">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
+												<CustomState Name="" ID="{C789B065-EAB9-4D69-91D5-EF7EDC44EF07}" ShortID="676379034">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
+												<CustomState Name="" ID="{C656C089-9993-4CE7-BFB2-315BA6971624}" ShortID="114949249">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
+												<CustomState Name="" ID="{1AB84999-E1E6-4623-BBD2-44DB086AF071}" ShortID="618619241">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
+												<CustomState Name="" ID="{790D419D-3BCB-45CD-9FD0-B06F46A320E3}" ShortID="964402957">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="96"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
+												<CustomState Name="" ID="{40235F9D-FD7C-45E0-8FD0-A8C5D692DF1F}" ShortID="151600733">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
+												<CustomState Name="" ID="{DC9AF24E-4538-4E11-9341-CC07625EDC31}" ShortID="367569704">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{295670B2-2AA6-4BCA-BAF2-80E11ECFEA8A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{73C8EE70-B15B-4D2B-AC07-F2A0B979C0A1}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_01" ID="{CA6A769C-0902-432E-8EDF-5139614040B5}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3222.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_01" ID="{BF1E11D2-0A6E-416C-9B9D-832E8CD9C4F4}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0087A192-7BD3-4E1E-B34F-FC594AD36B3F}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_02" ID="{666A9AB0-6E42-47A4-B490-8B39E77C3BC9}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3293.125"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_02" ID="{BD104764-36B9-4B91-935C-416884994E6D}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{591CA7E8-4D1A-4AE3-A092-FD5CE34024DD}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_03" ID="{6CED78E8-3447-4071-92C4-5C37F503E768}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3202.27083333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_03" ID="{9F5C5565-2A26-49F6-AD4A-8134ED52327D}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{025C6BF6-6097-457B-A414-E1A470EFC428}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_04" ID="{ED7341BF-B1CA-479E-A646-7A05CD4BAAC2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3201.10416666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord6_04" ID="{913D4D85-A0B0-452A-8BBC-72B2F2E482DA}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Chord7" ID="{D4EF7867-2AE6-45EA-B1E4-D12A9D6212D6}" ShortID="587154446">
 									<PropertyList>
 										<Property Name="MusicTrackType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>6</Value>
+												<Value>-96</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5022,13 +6032,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01" ID="{356EEFE1-DBE4-47FE-83B1-4AF54522A8F2}" ShortID="244511460">
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_01" ID="{D972CB48-DF27-47AA-AA2B-2863E34609DD}" ShortID="915179081">
 											<Language>SFX</Language>
-											<AudioFile>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01.wav</AudioFile>
+											<AudioFile>MusicalFeedback\Chord7\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_01.wav</AudioFile>
 										</AudioFileSource>
-										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_02" ID="{7E51FAD4-FE25-42F5-B8FA-A6E78B889C28}" ShortID="901796133">
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_02" ID="{7E50BB89-3968-4F48-8944-C219E48E976E}" ShortID="1005333771">
 											<Language>SFX</Language>
-											<AudioFile>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_02.wav</AudioFile>
+											<AudioFile>MusicalFeedback\Chord7\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_03" ID="{D4F37F92-0AF6-40A5-8AD8-5A1CB33B831C}" ShortID="876628623">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord7\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_04" ID="{495922B6-FDA3-4BDC-90C6-FD4EEF75E70B}" ShortID="1048900540">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord7\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_04.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<StateInfo>
@@ -5040,7 +6058,7 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
-												<CustomState Name="" ID="{9CFC4F5D-4F3F-4E37-B0ED-3C29675F6F97}" ShortID="101674082">
+												<CustomState Name="" ID="{DE0B13B5-B915-459D-A975-5200BF9A825A}" ShortID="819357334">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -5048,7 +6066,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
-												<CustomState Name="" ID="{730F5C08-F89C-453C-9641-8633E6A1B1E6}" ShortID="478358746">
+												<CustomState Name="" ID="{8057B023-6CBB-428B-A382-C114C535E9A4}" ShortID="884330871">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -5056,7 +6074,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
-												<CustomState Name="" ID="{DC5AAF11-BDBB-4D48-9257-3010134F045D}" ShortID="1053555454">
+												<CustomState Name="" ID="{7264CD12-619D-40CB-876A-0A033EE5F0B3}" ShortID="594793920">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -5064,7 +6082,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
-												<CustomState Name="" ID="{46F59936-CB56-405B-899D-CF57457B68AC}" ShortID="848196338">
+												<CustomState Name="" ID="{EAD4C382-9B22-4373-9852-B3CE22329DEC}" ShortID="256213052">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -5072,15 +6090,15 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
-												<CustomState Name="" ID="{DF980808-58E8-4356-995A-16D161CC8FDC}" ShortID="234015109">
+												<CustomState Name="" ID="{FBECC1FB-F011-48AD-AD27-F6E331D455E6}" ShortID="86916141">
 													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-108"/>
+														<Property Name="Volume" Type="Real64" Value="96"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
-												<CustomState Name="" ID="{FE911A53-3FB7-43F3-B7CD-AB2443A3BCFA}" ShortID="448942261">
+												<CustomState Name="" ID="{FAB89539-A469-411F-AB5E-041E475203E7}" ShortID="978639032">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -5088,11 +6106,15 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
-												<CustomState Name="" ID="{D0E40F47-095A-44CB-95DB-2A74B06A0513}" ShortID="1046504602"/>
+												<CustomState Name="" ID="{1598F593-ABD7-493D-973A-4F49F40EA7F8}" ShortID="244925824">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
-												<CustomState Name="" ID="{16056CC0-0D73-407C-8AFE-06040B12DE5E}" ShortID="889029423">
+												<CustomState Name="" ID="{F5EEFFB6-4BC4-4326-A7C2-FA80EAF0937E}" ShortID="1031964761">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -5101,7 +6123,7 @@
 										</CustomStateList>
 									</StateInfo>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{F5FDE99D-BCF7-460F-BF90-CE8CB2113EE0}">
+										<MusicTransition Name="Root" ID="{892FEEF7-829D-4E5D-9505-95D13979A865}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -5109,27 +6131,281 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{2E082BAC-11A3-4A8A-9844-0E0D3C188F04}">
+										<MusicTrackSequence Name="" ID="{90715A8C-79FC-4877-AC00-5A2BB6CE3B18}">
 											<ClipList>
-												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01" ID="{078D1E59-B195-46B3-859F-58BF38470018}">
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_01" ID="{52143FF0-C181-43E7-BC09-70093C0839AB}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="3283.5"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3229.02083333333"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1997.15504978663"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01" ID="{356EEFE1-DBE4-47FE-83B1-4AF54522A8F2}"/>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_01" ID="{D972CB48-DF27-47AA-AA2B-2863E34609DD}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{DDA1056C-0A23-4AA1-91DC-8F536DF75998}">
+										<MusicTrackSequence Name="" ID="{66476764-1504-4B40-BE18-36C793DB7810}">
 											<ClipList>
-												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_02" ID="{3927F28C-B87E-4E98-B9FF-CA36ED93A563}">
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_02" ID="{8E8960C0-FC38-4C3E-8B34-21E8DFDFF610}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="3180.75"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3282.93345844003"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1923.18634423898"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_02" ID="{7E51FAD4-FE25-42F5-B8FA-A6E78B889C28}"/>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_02" ID="{7E50BB89-3968-4F48-8944-C219E48E976E}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{139B8477-8E1D-431C-A767-F0C150205E7C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.28293</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{BCFBF302-700F-43DA-9DF6-505242B19DE4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.28293</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{78E93B8A-E456-42FC-8DCC-9907BBBC7303}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.28293</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{DF18F1C8-3AD8-489D-AC93-78439A730576}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_03" ID="{C0A391C2-EC22-49E8-ABB9-7F801F950D25}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3195.3125"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_03" ID="{D4F37F92-0AF6-40A5-8AD8-5A1CB33B831C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{57722629-88D8-469F-A239-A13860D8D01A}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_04" ID="{FE028505-609F-4FD7-9BF9-581B2D171851}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3205.625"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_04" ID="{495922B6-FDA3-4BDC-90C6-FD4EEF75E70B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Chord8" ID="{7D80E2B9-E9D5-493A-800E-56CAA4A0A2B8}" ShortID="689612946">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_01" ID="{D83D93B9-15DF-47BF-BDEC-96B3577AEC91}" ShortID="739282049">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord8\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_02" ID="{BDFD3EE5-B620-454E-A165-0BADD425DB78}" ShortID="54556587">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord8\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_03" ID="{AE6EDA07-4CD6-4C82-99F2-C077CBEB9D85}" ShortID="324554965">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord8\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_04" ID="{90278AC8-E244-4782-8768-93A604A5B98B}" ShortID="190456631">
+											<Language>SFX</Language>
+											<AudioFile>MusicalFeedback\Chord8\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{AED5118D-1165-4D37-809F-49EF90EEAFDC}"/>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Int_Land_Chord" ID="{620CA30A-4340-455E-A7A3-6F62C52DB2F0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
+												<CustomState Name="" ID="{2205E3EE-EEAE-48BE-BCC9-69E92995EA2A}" ShortID="831770923">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+												<CustomState Name="" ID="{1F37403E-236E-4AA7-A049-E097EF4A451A}" ShortID="531638894">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
+												<CustomState Name="" ID="{1861A765-E321-4161-9F34-B5922C6A1B75}" ShortID="889681585">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
+												<CustomState Name="" ID="{ABB88D42-9592-444A-98D2-A789826BF9D9}" ShortID="980676107">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
+												<CustomState Name="" ID="{E8738E19-B714-4791-9203-87E172F83001}" ShortID="521020011">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
+												<CustomState Name="" ID="{FBAD5703-D107-49DF-851E-D373D3A0A29B}" ShortID="519168842">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
+												<CustomState Name="" ID="{DB84EE21-C50E-478F-A36E-C7ED081F1B08}" ShortID="202058194">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
+												<CustomState Name="" ID="{21696F3F-C386-41FF-80A4-7D48571AC3DF}" ShortID="138204634">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="96"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C5C35CB7-F162-4F6D-A466-BCD546D88F7D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{65CDFC11-D6B5-47C0-807A-834EF0A4B6E0}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_01" ID="{2093DBF5-3449-4983-8586-938C76C21265}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3207.75"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_01" ID="{D83D93B9-15DF-47BF-BDEC-96B3577AEC91}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D541134A-6DF2-468E-8693-B13720F48E1C}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_02" ID="{21CE4AE9-C612-4539-BD5A-C48CEBC81AA2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3173.3125"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_02" ID="{BDFD3EE5-B620-454E-A165-0BADD425DB78}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2AFA6976-1080-4F8F-9442-D10BF5E4EB32}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_03" ID="{20147467-8BA7-4142-BCE5-00AE8625F1A0}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3173.3125"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_03" ID="{AE6EDA07-4CD6-4C82-99F2-C077CBEB9D85}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B862A75D-38EE-400A-AE94-C208C4B46934}">
+											<ClipList>
+												<MusicClip Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_04" ID="{AEA1E419-24FA-4028-8696-646FD96A86CC}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3176.10416666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_04" ID="{90278AC8-E244-4782-8768-93A604A5B98B}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
