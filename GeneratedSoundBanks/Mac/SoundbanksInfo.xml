@@ -69,10 +69,6 @@
 			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_04.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_Wildlife_Crypets_04_E37C7245.wem</Path>
 		</File>
-		<File Id="383694609" Language="SFX">
-			<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_1Pre_2Post.wav</ShortName>
-			<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_1Pre_2Post_592D8723.wem</Path>
-		</File>
 		<File Id="397287134" Language="SFX">
 			<ShortName>TheLastBeat_Mus_Land_Combat_Perc_Pal2Part2_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_Perc_Pal2Part2_1Pre_2Post_592D8723.wem</Path>
@@ -128,6 +124,10 @@
 		<File Id="828054436" Language="SFX">
 			<ShortName>TLB_AMB_Desert_HighWind_01.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_HighWind_01_E37C7245.wem</Path>
+		</File>
+		<File Id="880533134" Language="SFX">
+			<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_Pal1Part1_1Pre_2Post.wav</ShortName>
+			<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_Pal1Part1_1Pre_2Post_592D8723.wem</Path>
 		</File>
 		<File Id="889974946" Language="SFX">
 			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_01.wav</ShortName>
@@ -216,7 +216,6 @@
 				<File Id="359854272"/>
 				<File Id="370827187"/>
 				<File Id="375337560"/>
-				<File Id="383694609"/>
 				<File Id="397287134"/>
 				<File Id="406290098"/>
 				<File Id="447676650"/>
@@ -231,6 +230,7 @@
 				<File Id="747859082"/>
 				<File Id="796615516"/>
 				<File Id="828054436"/>
+				<File Id="880533134"/>
 				<File Id="889974946"/>
 				<File Id="901795034"/>
 				<File Id="909919846"/>
@@ -303,6 +303,10 @@
 					<ShortName>TLB_NME_SFX_Enemy_Explosion_02.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_02_E37C7245.wem</Path>
 				</File>
+				<File Id="117809931" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_Pal2_1Pre_2Post.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_Pal2_1Pre_2Post_592D8723.wem</Path>
+				</File>
 				<File Id="127311965" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_06_E37C7245.wem</Path>
@@ -356,6 +360,10 @@
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_02_E37C7245.wem</Path>
 				</File>
+				<File Id="210898463" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord5.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord5_592D8723.wem</Path>
+				</File>
 				<File Id="215866095" Language="SFX">
 					<ShortName>MusicalFeedback\Chord4\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_03.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord4\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_03_592D8723.wem</Path>
@@ -363,6 +371,10 @@
 				<File Id="221589163" Language="SFX">
 					<ShortName>MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_04.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_04_592D8723.wem</Path>
+				</File>
+				<File Id="224853370" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord5.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord5_592D8723.wem</Path>
 				</File>
 				<File Id="233352832" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_02.wav</ShortName>
@@ -372,6 +384,10 @@
 					<ShortName>TheLastBeat_Mus_FB_Blink_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Blink_03_592D8723.wem</Path>
 				</File>
+				<File Id="247285843" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord1.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord1_592D8723.wem</Path>
+				</File>
 				<File Id="262637672" Language="SFX">
 					<ShortName>MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_03.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_03_592D8723.wem</Path>
@@ -379,6 +395,10 @@
 				<File Id="265153136" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Limit_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopC_Limit_Rewind_D4F3E753.wem</Path>
+				</File>
+				<File Id="269231197" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord2.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord2_592D8723.wem</Path>
 				</File>
 				<File Id="270382259" Language="SFX">
 					<ShortName>TLB_NME_SFX_Enemy_Explosion_03.wav</ShortName>
@@ -388,6 +408,10 @@
 					<ShortName>TheLastBeat_Mus_Land_Combat_Perc_Pal1Part1_1Pre_2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Perc_Pal1Part1_1Pre_2Post_592D8723.wem</Path>
 					<PrefetchSize>1033</PrefetchSize>
+				</File>
+				<File Id="284756953" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord7.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord7_592D8723.wem</Path>
 				</File>
 				<File Id="324554965" Language="SFX">
 					<ShortName>MusicalFeedback\Chord8\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_03.wav</ShortName>
@@ -419,14 +443,13 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_02_E37C7245.wem</Path>
 				</File>
-				<File Id="383694609" Language="SFX">
-					<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_1Pre_2Post.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_1Pre_2Post_592D8723.wem</Path>
-					<PrefetchSize>1033</PrefetchSize>
-				</File>
 				<File Id="384910229" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_07.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_07_E37C7245.wem</Path>
+				</File>
+				<File Id="387227425" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord4.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord4_592D8723.wem</Path>
 				</File>
 				<File Id="397287134" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_Perc_Pal2Part2_1Pre_2Post.wav</ShortName>
@@ -466,6 +489,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_Limit_LoopB_1Pre4Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_Limit_LoopB_1Pre4Post_592D8723.wem</Path>
 					<PrefetchSize>729</PrefetchSize>
+				</File>
+				<File Id="472560739" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord1.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord1_592D8723.wem</Path>
 				</File>
 				<File Id="483767187" Language="SFX">
 					<ShortName>TLB_NME_SFX_Bounce_Shield_01.wav</ShortName>
@@ -512,6 +539,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopB_Rewind_D4F3E753.wem</Path>
 				</File>
+				<File Id="570260443" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord3.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord3_592D8723.wem</Path>
+				</File>
 				<File Id="574603556" Language="SFX">
 					<ShortName>MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_02.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_02_592D8723.wem</Path>
@@ -527,6 +558,10 @@
 				<File Id="595950998" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level1_02.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Level1_02_592D8723.wem</Path>
+				</File>
+				<File Id="610031709" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord8.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord8_592D8723.wem</Path>
 				</File>
 				<File Id="644232250" Language="SFX">
 					<ShortName>MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_03.wav</ShortName>
@@ -547,6 +582,10 @@
 				<File Id="654735048" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Trans_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_592D8723.wem</Path>
+				</File>
+				<File Id="658007776" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord3.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord3_592D8723.wem</Path>
 				</File>
 				<File Id="661034656" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_Perc_Pal1Part3_1Pre_2Post.wav</ShortName>
@@ -594,7 +633,7 @@
 				<File Id="747859082" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_Base_Pal2Part1_1Pre_2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Base_Pal2Part1_1Pre_2Post_592D8723.wem</Path>
-					<PrefetchSize>1037</PrefetchSize>
+					<PrefetchSize>1033</PrefetchSize>
 				</File>
 				<File Id="785438933" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_03.wav</ShortName>
@@ -607,6 +646,10 @@
 				<File Id="805811859" Language="SFX">
 					<ShortName>MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_01_592D8723.wem</Path>
+				</File>
+				<File Id="810071912" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord6.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord6_592D8723.wem</Path>
 				</File>
 				<File Id="812632468" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Blink_02.wav</ShortName>
@@ -624,6 +667,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Limit_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopA_Limit_Rewind_D4F3E753.wem</Path>
 				</File>
+				<File Id="843201751" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord6.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord6_592D8723.wem</Path>
+				</File>
 				<File Id="850052255" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopC_Rewind_D4F3E753.wem</Path>
@@ -631,6 +678,10 @@
 				<File Id="859450251" Language="SFX">
 					<ShortName>MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_04.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_04_592D8723.wem</Path>
+				</File>
+				<File Id="869460937" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord2.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord2_592D8723.wem</Path>
 				</File>
 				<File Id="876628623" Language="SFX">
 					<ShortName>MusicalFeedback\Chord7\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_03.wav</ShortName>
@@ -643,6 +694,10 @@
 				<File Id="884722837" Language="SFX">
 					<ShortName>MusicalFeedback\Chord4\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_04.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord4\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord4_04_592D8723.wem</Path>
+				</File>
+				<File Id="894143416" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord7.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord7_592D8723.wem</Path>
 				</File>
 				<File Id="895908363" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Level1_04.wav</ShortName>
@@ -661,6 +716,10 @@
 				<File Id="915179081" Language="SFX">
 					<ShortName>MusicalFeedback\Chord7\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_01.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord7\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord7_01_592D8723.wem</Path>
+				</File>
+				<File Id="966684481" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord4.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord4_592D8723.wem</Path>
 				</File>
 				<File Id="969093831" Language="SFX">
 					<ShortName>MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02.wav</ShortName>
@@ -695,6 +754,10 @@
 				<File Id="1031277549" Language="SFX">
 					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_01.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_01_E37C7245.wem</Path>
+				</File>
+				<File Id="1034545480" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord8.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord8_592D8723.wem</Path>
 				</File>
 				<File Id="1036646483" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_04.wav</ShortName>
