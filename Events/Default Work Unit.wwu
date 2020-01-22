@@ -258,6 +258,40 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Int_MusicFeedbackOn" ID="{0E0616B0-B35F-4035-A4A2-A3D5A9F28DE6}">
+							<ChildrenList>
+								<Action Name="" ID="{2D6458AE-EE45-45FD-914C-E4F429CF28AA}" ShortID="954340437">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Int_MusicFeedbackOff" ID="{8421CA1B-3A08-49B4-846C-56BA900AD2CC}">
+							<ChildrenList>
+								<Action Name="" ID="{66A22CC1-E67F-4925-AFE5-3A2241C1FF3C}" ShortID="226308551">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Stop_All" ID="{27729540-6585-48A7-8D30-6C5160C2D643}">
@@ -355,19 +389,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{536B896D-FE92-482B-9AEF-9C8AE6B33523}" ShortID="681830830">
-									<PropertyList>
-										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}">
@@ -397,7 +418,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="-2"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -425,7 +446,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="-1.66666666666667"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -465,7 +486,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1.66666666666667"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -505,7 +526,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="-1.66666666666667"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -593,40 +614,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="SetFeedbackOn" ID="{F123DAC4-E739-44F3-8973-A4B4E20B8055}">
-					<ChildrenList>
-						<Action Name="" ID="{150B7C01-DDD4-4574-88E5-7F6CBB69D41E}" ShortID="925421162">
-							<PropertyList>
-								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="SetFeedbackOff" ID="{C53FC336-4414-4F0D-AB78-BB53DAF3CA7C}">
-					<ChildrenList>
-						<Action Name="" ID="{7F839450-6E51-4C72-86EC-BD74B026588F}" ShortID="685693107">
-							<PropertyList>
-								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

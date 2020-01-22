@@ -17,23 +17,15 @@
 							<ObjectRef Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="2" Y="0"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="SetFeedbackOn" ID="{F123DAC4-E739-44F3-8973-A4B4E20B8055}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="SetFeedbackOff" ID="{C53FC336-4414-4F0D-AB78-BB53DAF3CA7C}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-							<Position X="4" Y="0"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}"/>
-							<Value>12.4064602960969</Value>
+							<Value>23.8</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}"/>
-							<Value>1</Value>
+							<Value>7.37806484952834E-312</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Int_SyncDucking" ID="{2D151634-A0B6-48A2-9777-0CE68C1A0E43}"/>
@@ -51,15 +43,15 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
 						<CurrentStateRef Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
-						<CurrentStateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
-						<CurrentStateRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+						<CurrentStateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
+						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
 						<CurrentStateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
 						<CurrentStateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
 						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Pal1_Part1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
+						<CurrentSwitchRef Name="Layer1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

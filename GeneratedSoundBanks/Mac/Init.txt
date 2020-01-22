@@ -2,12 +2,12 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	2074789557	MusicLayer			\TheLastBeat\MusicLayer	
 
 Switch	ID	Name	Switch Group			Notes
-	1464426232	Pal1_Part1	MusicLayer			
-	1464426234	Pal1_Part3	MusicLayer			
-	1464426235	Pal1_Part2	MusicLayer			
-	3082199788	Pal2_Part2	MusicLayer			
-	3082199789	Pal2_Part3	MusicLayer			
-	3082199791	Pal2_Part1	MusicLayer			
+	3298531297	Layer1	MusicLayer			
+	3298531298	Layer2	MusicLayer			
+	3298531299	Layer3	MusicLayer			
+	3298531300	Layer4	MusicLayer			
+	3298531301	Layer5	MusicLayer			
+	3298531302	Layer6	MusicLayer			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	960036381	Music_Limit_Switch			\TheLastBeat\MusicState\Music_Limit_Switch	
