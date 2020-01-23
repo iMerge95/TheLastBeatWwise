@@ -2571,7 +2571,6 @@
 														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 														<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
-														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
 													</PropertyList>
 													<TransitionInfo>
 														<TransitionObjectRef Name="TheLastBeat_Mus_Combat_Lands_Trans_Short" ID="{523D5A21-53C0-4C71-B7F9-2318EF33AD57}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
@@ -7577,6 +7576,7 @@
 								<MusicStinger Name="" ID="{1C4A6E27-52E8-4474-9C31-220E04E76593}">
 									<PropertyList>
 										<Property Name="NumSegmentAdvance" Type="int16" Value="0"/>
+										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
 									<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 									<SegmentRef Name="OnBeatRushFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
@@ -7584,6 +7584,7 @@
 								<MusicStinger Name="" ID="{73A6F836-873F-47C2-8D2E-152EAF82B8EA}">
 									<PropertyList>
 										<Property Name="NumSegmentAdvance" Type="int16" Value="0"/>
+										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
 									<TriggerRef Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 									<SegmentRef Name="OnBeatBlinkFB" ID="{F0492A56-2E91-4968-B1EB-A18374508037}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
@@ -9118,10 +9119,16 @@
 							</TransitionList>
 							<StingerList>
 								<MusicStinger Name="" ID="{AB638743-48C0-49F8-B981-F1BD5B79D43C}">
+									<PropertyList>
+										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+									</PropertyList>
 									<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 									<SegmentRef Name="OnBeatRushFB" ID="{DEF6802D-C625-4FD7-97F0-472E0E49A730}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</MusicStinger>
 								<MusicStinger Name="" ID="{5A0B4E8F-96F8-4B6A-9E95-3BE8136FB914}">
+									<PropertyList>
+										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+									</PropertyList>
 									<TriggerRef Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 									<SegmentRef Name="OnBeatBlinkFB" ID="{F0492A56-2E91-4968-B1EB-A18374508037}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 								</MusicStinger>
@@ -9239,7 +9246,7 @@
 										<Property Name="Tempo" Type="Real64" Value="76"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>6</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -9303,7 +9310,7 @@
 														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
 														<CustomState Name="" ID="{4CE572C8-D19E-468F-8257-41F851818B7B}" ShortID="589125146">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -9414,7 +9421,7 @@
 														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
 														<CustomState Name="" ID="{79488F1E-A7F9-4A01-83B6-56C7DB056B83}" ShortID="339309801">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -9487,195 +9494,7 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="01_Great" ID="{9534C3FB-7CA6-4FD2-BD3C-9D1B944068BF}" ShortID="929130311">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{060F83A4-D1CE-4683-9EC6-DA114D26F99D}" ShortID="663241264">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{7DA8A50D-FBB1-4E28-809D-560F087F7CA5}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.999</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{0152CBF3-1BCE-41A0-8AD3-28A069B7ED6A}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{DFD5E64E-D376-4A1E-A946-2260978B981C}" ShortID="985327605">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{E1506839-480A-42B9-B5A5-BFBA53150068}" ShortID="249163475">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{9BDA297F-BAC4-4407-98E9-956A76DD7B36}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{A6BF00EA-97AB-4EA4-901A-74DFD6D95036}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="01_Perfect" ID="{D1300570-D7BF-4B09-941C-B24DAAA72A23}" ShortID="963952926">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{0F5BACB6-D38B-43EE-81B9-5A3E57B94A44}" ShortID="429759929">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{33B88A58-4649-4893-A7DB-1EC8C8E719A3}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.999</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{80FD2A0B-2FE9-418A-8DB5-95E81F489BDB}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{E7BEF5F0-0921-44DF-B865-8D72B87037C6}" ShortID="512516961">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{DCD7D30E-3C48-4170-87B6-1569F52F53C9}" ShortID="116939206">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{A047FF13-BC55-4B91-9E0A-4A2F234F06FB}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{94631010-60C1-4961-843A-74BDCEDECE84}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="02_Great" ID="{C2E172FF-5236-4D38-8FD3-49039696B8DE}" ShortID="5024405">
+										<MusicTrack Name="01_Great" ID="{C2E172FF-5236-4D38-8FD3-49039696B8DE}" ShortID="5024405">
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
@@ -9697,18 +9516,8 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.999</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
 																		<YPos>0</YPos>
-																		<Flags>0</Flags>
+																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>10.999</XPos>
@@ -9739,6 +9548,24 @@
 													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer1_01" ID="{0A190192-680C-4729-8F72-EAB0804CB71E}" ShortID="587249975">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer1_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer1_02" ID="{6AD4351C-464E-4FFC-AA6F-57AD9941E07C}" ShortID="904056142">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer1_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer1_03" ID="{0FF3E904-4319-4742-8A3E-8B9C33C3144E}" ShortID="532448320">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer1_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer1_04" ID="{783DFE57-8110-48AC-9B39-C6CF7DF4BDB4}" ShortID="144480036">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer1_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
 											<PositioningInfo>
 												<Panner Name="" ID="{DE902206-7DCF-438F-96DE-714506C2B666}"/>
 											</PositioningInfo>
@@ -9776,10 +9603,57 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{AD399608-7238-44C7-8A3A-94B04C44826B}"/>
+												<MusicTrackSequence Name="" ID="{AD399608-7238-44C7-8A3A-94B04C44826B}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer1_01" ID="{3AFED20D-1AB2-4ADE-A0A8-F9D2F8528E35}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer1_01" ID="{0A190192-680C-4729-8F72-EAB0804CB71E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{D58F6366-2E65-43A6-8E43-665E545DD138}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer1_02" ID="{DFA50AA9-786F-4CA3-AB7D-4E3D23E89918}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer1_02" ID="{6AD4351C-464E-4FFC-AA6F-57AD9941E07C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{14086897-F63A-4D03-9AC4-0ABAAFFCEBFB}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer1_03" ID="{D9E7F76F-8DD5-4831-AD69-BAFE84439BAA}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer1_03" ID="{0FF3E904-4319-4742-8A3E-8B9C33C3144E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{C9281CF3-379E-4CE6-B07F-AFC8B454736C}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer1_04" ID="{5F9D1C76-C103-4078-B3DF-016876A3869B}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer1_04" ID="{783DFE57-8110-48AC-9B39-C6CF7DF4BDB4}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="02_Perfect" ID="{E1E5EF92-E571-48DD-B25B-6C9B83B5AD02}" ShortID="172143136">
+										<MusicTrack Name="01_Perfect" ID="{E1E5EF92-E571-48DD-B25B-6C9B83B5AD02}" ShortID="172143136">
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
@@ -9788,31 +9662,21 @@
 														<Value>-96</Value>
 													</ValueList>
 													<RTPCList>
-														<RTPC Name="" ID="{FBC0A53A-5CBB-4296-9341-E93C8CC7ECBF}" ShortID="205414176">
+														<RTPC Name="" ID="{824CD107-28A4-4F56-B7E9-1124E2B9CB77}" ShortID="216432634">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{5BDFE901-1976-42E7-A181-AC4B5B00DBF6}">
+															<Curve Name="" ID="{94D73C50-3FF8-4652-A3B3-59E67DA441DB}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.999</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
 																		<YPos>0</YPos>
-																		<Flags>0</Flags>
+																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>10.999</XPos>
@@ -9843,6 +9707,24 @@
 													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_01" ID="{2084B32B-F245-44E0-BABB-D3B34FEB7B92}" ShortID="592487858">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer1_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_02" ID="{94B0A17B-5B2C-4915-9969-4DBD8B1DC5F3}" ShortID="230745976">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer1_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_03" ID="{B9A0E1A2-DFBC-4110-B44A-EA1D62EFEC0C}" ShortID="290128950">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer1_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_04" ID="{E08041F1-EE11-4E46-8744-89676CD64497}" ShortID="365619688">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer1_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
 											<PositioningInfo>
 												<Panner Name="" ID="{860C313B-9338-41F5-8628-F88CCE0ACA9B}"/>
 											</PositioningInfo>
@@ -9880,10 +9762,57 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{441FC73C-8443-4D5D-AC86-2A1297D2A940}"/>
+												<MusicTrackSequence Name="" ID="{441FC73C-8443-4D5D-AC86-2A1297D2A940}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_01" ID="{4EF729B9-14FE-4942-8143-184FFB02F9DC}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_01" ID="{2084B32B-F245-44E0-BABB-D3B34FEB7B92}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{C6301C03-DBCB-43D7-B673-5776A2EC7E17}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_02" ID="{B917425A-496A-4CE8-B2D3-EE2B1705183F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_02" ID="{94B0A17B-5B2C-4915-9969-4DBD8B1DC5F3}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{8713CFF8-F4BB-40DE-8B57-E6AF5F85774D}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_03" ID="{76B58FB0-F215-4BBC-9EFB-652FCF728E80}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_03" ID="{B9A0E1A2-DFBC-4110-B44A-EA1D62EFEC0C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{A5F67BC9-213C-44F7-A2C5-929248C4DEF4}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_04" ID="{0292D144-9F8B-4AD7-9A75-F5375DBBE030}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer1_04" ID="{E08041F1-EE11-4E46-8744-89676CD64497}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="03_Great" ID="{BA79EC38-5F90-4D9B-83A1-3B1968D69784}" ShortID="595204765">
+										<MusicTrack Name="02_Great" ID="{BA79EC38-5F90-4D9B-83A1-3B1968D69784}" ShortID="595204765">
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
@@ -9919,12 +9848,12 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16</XPos>
-																		<YPos>0</YPos>
+																		<XPos>20.999</XPos>
+																		<YPos>-0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16.001</XPos>
+																		<XPos>21</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
@@ -9947,6 +9876,24 @@
 													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer2_01" ID="{7D499458-26E3-454F-B94C-B1A67A6FF5C0}" ShortID="224098613">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer2_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer2_02" ID="{373BFB0E-836F-495A-AD84-2774E9F5C170}" ShortID="861940440">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer2_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer2_03" ID="{A5DBB0C9-07B6-490C-95B5-FC30908F00DF}" ShortID="494347793">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer2_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer2_04" ID="{E01D6D78-4028-419F-9C9B-B6B90035451B}" ShortID="231451550">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer2_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
 											<PositioningInfo>
 												<Panner Name="" ID="{6ACD44B0-3A4D-4B3E-B9D3-0F1517949FD3}"/>
 											</PositioningInfo>
@@ -9984,10 +9931,57 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{094E25A7-2C6F-44FB-8D4B-24ACF15C5001}"/>
+												<MusicTrackSequence Name="" ID="{094E25A7-2C6F-44FB-8D4B-24ACF15C5001}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer2_01" ID="{1733E91B-A73A-4FFD-A480-92A25ECFA2DA}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer2_01" ID="{7D499458-26E3-454F-B94C-B1A67A6FF5C0}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{5611DACD-E092-4FCA-ABF6-256F1FB9E539}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer2_02" ID="{975BF7A0-7D0E-46A3-A21B-696A1B4B8103}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer2_02" ID="{373BFB0E-836F-495A-AD84-2774E9F5C170}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{82204C2B-6B6E-4851-8684-F51521F6E785}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer2_03" ID="{4260FB7A-65E6-4E41-8515-938686813D98}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer2_03" ID="{A5DBB0C9-07B6-490C-95B5-FC30908F00DF}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{A1B7D32C-17E1-4A18-848F-2BEED96D8E6E}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer2_04" ID="{3A1FAB7A-C7CF-4BDD-B857-47E54ACAB994}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer2_04" ID="{E01D6D78-4028-419F-9C9B-B6B90035451B}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="03_Perfect" ID="{FED7FADD-662B-42E4-A082-E495D459C93D}" ShortID="363256368">
+										<MusicTrack Name="02_Perfect" ID="{FED7FADD-662B-42E4-A082-E495D459C93D}" ShortID="363256368">
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
@@ -9996,13 +9990,13 @@
 														<Value>-96</Value>
 													</ValueList>
 													<RTPCList>
-														<RTPC Name="" ID="{D4E0082A-230A-47FD-84AF-9918B0FE4C5A}" ShortID="394783395">
+														<RTPC Name="" ID="{9FD9F9BD-734C-4ADA-8685-E162B651A6C7}" ShortID="669537615">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{EA85102C-C4C3-498C-BF95-1571DD5E711A}">
+															<Curve Name="" ID="{3EAFE0F4-8445-45AD-9F7B-9219A6FB7698}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -10023,12 +10017,12 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16</XPos>
-																		<YPos>0</YPos>
+																		<XPos>20.999</XPos>
+																		<YPos>-0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16.001</XPos>
+																		<XPos>21</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
@@ -10051,6 +10045,24 @@
 													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_01" ID="{19DFE646-342E-4568-801A-E0F5B1B473D9}" ShortID="1004356013">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer2_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_02" ID="{08629EB1-0D25-4D1B-94EC-D9E878A136E8}" ShortID="1024682353">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer2_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_03" ID="{EA6EBF59-C064-4713-8F4C-2F2B362E0D5C}" ShortID="591655354">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer2_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_04" ID="{D3FCD38B-04E2-4827-A3C5-6EAB2B9382E2}" ShortID="108241621">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer2_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
 											<PositioningInfo>
 												<Panner Name="" ID="{9C5BE429-473E-4A3A-93EC-29F7DB6926CF}"/>
 											</PositioningInfo>
@@ -10088,406 +10100,57 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{B8F0BEA7-B75F-416D-AD80-8B54067C1CB4}"/>
+												<MusicTrackSequence Name="" ID="{B8F0BEA7-B75F-416D-AD80-8B54067C1CB4}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_01" ID="{6ACC9486-D55C-47C8-B777-2DAD05F8E460}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_01" ID="{19DFE646-342E-4568-801A-E0F5B1B473D9}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{ED8A4850-6A3E-464A-A3AB-069C1AD9ADAE}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_02" ID="{28122FF8-471E-4D39-8F41-4FF15F11B841}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_02" ID="{08629EB1-0D25-4D1B-94EC-D9E878A136E8}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{F534D1A0-9C2B-47DF-8339-3ED61F07E179}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_03" ID="{D98607B4-7798-4006-B624-C6D69576EBC6}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_03" ID="{EA6EBF59-C064-4713-8F4C-2F2B362E0D5C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{7904C01D-7293-43CC-82E5-5567B7FC64D1}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_04" ID="{ECF8810E-96A3-4D67-87DC-AA5170DEC797}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_04" ID="{D3FCD38B-04E2-4827-A3C5-6EAB2B9382E2}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="04_Great" ID="{DAB3B249-5C83-4A22-B117-AB097A665D70}" ShortID="48492104">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{7F0BFA46-EA28-4EFD-84CA-7CA7FBC827AD}" ShortID="415235527">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{B4997C66-9920-4A1D-A414-EA4B7129C26C}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>16</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>16.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.001</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{9BC2D1A2-A75B-4790-8DCB-D0138FB796EC}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{E7C15A04-0354-4F7A-9510-B1240B7FB78F}" ShortID="1041779672">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{996C961A-2C40-4628-8EA2-2CBF3FE26787}" ShortID="927073230">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{14111C32-5A9D-4EEB-AED6-04D9E6907817}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{185B3771-DEF8-4117-996D-D5CA7B3227B0}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="04_Perfect" ID="{B06131CF-0FE2-4A45-9EB5-5B1BD6F7175E}" ShortID="917589072">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{C220D226-2E69-4754-B0EE-6B0670FDE934}" ShortID="931706884">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{0B134757-F590-4BD1-88DF-A523B1C4C9CA}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>16</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>16.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.001</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{DC5D8179-6796-4790-8240-85C9973E3945}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{59519AFD-5FE6-4729-85E4-73EE3DA774D3}" ShortID="149287038">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{035C4E0A-76C2-4F6C-B4C5-67F40FBC76FC}" ShortID="281545744">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{5808F875-BD9A-4CE8-9C60-FCA9F1A15B2F}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{F11B86B6-CD9D-43FA-A911-074F9C8981AF}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="06_Perfect" ID="{A71540BE-19FC-43E4-9AF1-0E05068EA2DF}" ShortID="211183963">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{3CEDF67F-5979-4B71-B152-E998CE6D63C9}" ShortID="70004159">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{612846DB-6501-49C8-B094-D2F409185A4C}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{602914CE-E0E2-4455-84E1-E29A89C46E9D}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{94733E46-3FA1-4BAE-A1FF-7C3E2F65CE09}" ShortID="405529076">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{3F147210-386D-44CF-BE5E-4A4A722FFD88}" ShortID="876485858">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{720B92BE-9083-4403-BFE1-E6BAF0750E38}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{D2256640-C8E0-472C-A36C-B5EFF40A38BD}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="06_Great" ID="{2F87D481-7B5A-4241-8A9E-D962F897CD47}" ShortID="364741315">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{8310F4BA-D1E6-41E7-8580-E286B14D8314}" ShortID="683727889">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{6134AB93-A78E-479A-B490-DF0A2647E353}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{89AEC9C2-90EB-49A0-A892-6A72A97DE926}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{03D9292C-5A66-4373-B17E-4E70F5C0C0ED}" ShortID="662197648">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{F4364F85-5F95-47B4-A24E-4A7C95071762}" ShortID="33482191">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{79E68B76-B265-461A-A388-8293F1CC92D8}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{385C2036-A33B-40A6-B63A-C775C9BE00F7}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="05_Great" ID="{0A9BDF47-A374-4328-AEA3-E121A9CAB92B}" ShortID="490470268">
+										<MusicTrack Name="03_Great" ID="{0A9BDF47-A374-4328-AEA3-E121A9CAB92B}" ShortID="490470268">
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
@@ -10523,18 +10186,8 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>26</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26.001</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
 																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -10551,6 +10204,24 @@
 													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer3_01" ID="{3B75BD6F-DD26-4866-A6D1-269F4184BB88}" ShortID="501699646">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer3_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer3_02" ID="{5288A2AC-302E-45FD-BBA8-E9818CAF2F85}" ShortID="26860908">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer3_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer3_03" ID="{84A59B49-30C1-44BC-8440-44226A119A8F}" ShortID="735808641">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer3_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer3_04" ID="{C2219261-BD31-4A71-A823-D5B3B55B713C}" ShortID="1036199977">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer3_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
 											<PositioningInfo>
 												<Panner Name="" ID="{F8982212-E97B-4F6C-95B6-55159DAE6137}"/>
 											</PositioningInfo>
@@ -10584,14 +10255,62 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
+													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{C77AEF0D-6CA2-459F-9A87-FDCDA7E8F856}"/>
+												<MusicTrackSequence Name="" ID="{C77AEF0D-6CA2-459F-9A87-FDCDA7E8F856}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer3_01" ID="{77AF0DC2-65D7-40A5-B049-969A7756A90B}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer3_01" ID="{3B75BD6F-DD26-4866-A6D1-269F4184BB88}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{66D6DA09-61B9-4982-BDB4-F882F21EA6DF}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer3_02" ID="{284E1B84-59BA-4843-82FC-937D31C2A0F2}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer3_02" ID="{5288A2AC-302E-45FD-BBA8-E9818CAF2F85}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{E33852A9-D133-4144-9A46-B4C771C06237}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer3_03" ID="{D0C21372-4B39-48F9-A72B-1EC97B3E00D1}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer3_03" ID="{84A59B49-30C1-44BC-8440-44226A119A8F}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{63012DE6-351E-44AC-BB59-1372372F8B91}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer3_04" ID="{3D15FBDE-955A-4DB8-AAEC-5A50B05B7E83}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer3_04" ID="{C2219261-BD31-4A71-A823-D5B3B55B713C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="05_Perfect" ID="{087D9CF1-C52C-44B0-9B6E-9DD2028A16EF}" ShortID="188042297">
+										<MusicTrack Name="03_Perfect" ID="{087D9CF1-C52C-44B0-9B6E-9DD2028A16EF}" ShortID="188042297">
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
@@ -10600,13 +10319,13 @@
 														<Value>-96</Value>
 													</ValueList>
 													<RTPCList>
-														<RTPC Name="" ID="{E7EBFC63-BA34-4D8C-9B24-2DF5C6928F52}" ShortID="510194623">
+														<RTPC Name="" ID="{679964E2-E7D1-4590-9E83-B6441DE4BD34}" ShortID="997526174">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{0BB093A8-A938-471C-83C8-A9F60E04A2F2}">
+															<Curve Name="" ID="{3646E9E9-11C9-4087-ADB7-C48FFD8357E7}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -10627,18 +10346,8 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>26</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26.001</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
 																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -10655,6 +10364,24 @@
 													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_01" ID="{703716DA-3CB7-4618-9A2F-1A458772CC9F}" ShortID="157648377">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer3_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_02" ID="{099D43AD-C6C9-487A-8258-1476D648818E}" ShortID="523298002">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer3_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_03" ID="{8C3C8CE8-F486-485A-AB0E-DE22CB8508ED}" ShortID="366537706">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer3_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_04" ID="{4036A918-349A-4F89-9D94-B0DDF1D8D0FD}" ShortID="656498732">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer3_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
 											<PositioningInfo>
 												<Panner Name="" ID="{14F1388E-C0A0-4A83-B013-31D0A10AD702}"/>
 											</PositioningInfo>
@@ -10688,11 +10415,59 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
+													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{1259612C-9F6C-47B5-A8C6-2F84FAF3A581}"/>
+												<MusicTrackSequence Name="" ID="{1259612C-9F6C-47B5-A8C6-2F84FAF3A581}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_01" ID="{EB3D4DF5-9EBB-4E4E-B3B8-31D6A54A231F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_01" ID="{703716DA-3CB7-4618-9A2F-1A458772CC9F}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{5582F3BC-E710-42EE-B7A4-AB03F33EBE62}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_02" ID="{9F81884E-AA32-48E6-AC59-54570CB30630}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_02" ID="{099D43AD-C6C9-487A-8258-1476D648818E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{B4F0AAF0-B684-45F6-94FD-BBAD2E0D1FE5}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_03" ID="{6DE91438-B162-4812-A879-DF807090F8A8}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_03" ID="{8C3C8CE8-F486-485A-AB0E-DE22CB8508ED}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{EC7D6179-289E-4B49-BCA9-2DBBDEFF5F54}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_04" ID="{E47C9D8C-F98B-4515-9ACA-02477189945E}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_04" ID="{4036A918-349A-4F89-9D94-B0DDF1D8D0FD}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
 									</ChildrenList>
@@ -10715,11 +10490,6 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -10733,6 +10503,11 @@
 										<MusicTrack Name="TheLastBeat_Mus_FB_Blink" ID="{1874E0E1-965B-4E68-95E5-07AFD4ECBB57}" ShortID="901918248">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
@@ -10821,17 +10596,14 @@
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
 													<RTPCList>
-														<RTPC Name="" ID="{709EB07C-CCFC-44B6-9CA4-EEA0150786B5}" ShortID="849850449">
+														<RTPC Name="" ID="{B07E0E74-0078-4ED0-90DD-2B1EC35DA30E}" ShortID="625724402">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{CC9459B3-14D5-4B73-98BB-1311651C08AA}">
+															<Curve Name="" ID="{F9DB4D11-E27B-46DD-80CF-71DB299CE7AD}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -10840,110 +10612,6 @@
 																		<XPos>0</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.999</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{E96EE636-F560-49C1-A106-9C76C41886F7}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{398025CF-0F4B-4085-AF2C-FFD44E33787A}" ShortID="996405879">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{B1763F8C-ABD5-4FDF-B7EF-F5E93748B3F5}" ShortID="80211818">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{90738CBA-5F46-4B52-A6AD-A2B5FAA4CBF8}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{157A884E-ADA9-4C19-A965-BE51F3755BEC}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="02_Blink" ID="{115988F0-0429-494D-ACBC-171982056015}" ShortID="745001797">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{26FAE605-6A9F-44D4-BBDE-D736C56A429B}" ShortID="582799005">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{6D340D83-4F98-4178-8EE6-7D4A3029C327}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.999</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>10.999</XPos>
@@ -10974,36 +10642,29 @@
 													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer1_01" ID="{71F6915B-E17D-4EC4-AB82-0FB84765421D}" ShortID="142229939">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer1_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer1_02" ID="{8FC6BF72-1F46-4843-A58B-2769BB0A5584}" ShortID="694222174">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer1_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer1_04" ID="{A5657B7B-99B5-49F0-B0F3-2759E50D00BD}" ShortID="199733513">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer1_04.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer1_03" ID="{47DAC504-F3B5-4315-A275-67AB80B15537}" ShortID="374812733">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer1_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{64E3B897-C74E-4D16-BFE9-ACCDD17741EA}"/>
+												<Panner Name="" ID="{E96EE636-F560-49C1-A106-9C76C41886F7}"/>
 											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{97BA9239-7475-45FD-9240-F18A95021EE6}" ShortID="535186049">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{4E2F920B-801C-4178-B809-10DF4D0645EC}" ShortID="694871062">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{C5BC05C0-C88E-4595-8B68-7C21E7B0766F}">
+												<MusicTransition Name="Root" ID="{90738CBA-5F46-4B52-A6AD-A2B5FAA4CBF8}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -11011,327 +10672,72 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{91BCB538-C4C1-4329-A743-12A2793508A7}"/>
+												<MusicTrackSequence Name="" ID="{157A884E-ADA9-4C19-A965-BE51F3755BEC}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer1_01" ID="{0AE4F3B1-7EF8-4E4C-83EE-2E9CD2966C22}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer1_01" ID="{71F6915B-E17D-4EC4-AB82-0FB84765421D}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{B854E288-CEE1-40AD-AF64-3F3B41B6D9CE}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer1_02" ID="{73673276-86AC-4A30-AEE6-B6BA599ADA90}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer1_02" ID="{8FC6BF72-1F46-4843-A58B-2769BB0A5584}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{6CC0F6E0-58FB-4539-8C8D-6C947734B5DF}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer1_03" ID="{A42506C4-11A3-41A5-8113-B3BB3889F909}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer1_03" ID="{47DAC504-F3B5-4315-A275-67AB80B15537}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{0E55E2B8-83EE-44EF-8B6C-8A13C4FC6301}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer1_04" ID="{6AA304FF-8027-43C0-9D5C-1449B8CDD831}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer1_04" ID="{A5657B7B-99B5-49F0-B0F3-2759E50D00BD}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="06_Blink" ID="{57D08C25-7E8E-47BF-9E97-EF1D61ECD442}" ShortID="568266493">
+										<MusicTrack Name="02_Blink" ID="{115988F0-0429-494D-ACBC-171982056015}" ShortID="745001797">
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-96</Value>
+														<Value>-9</Value>
 													</ValueList>
 													<RTPCList>
-														<RTPC Name="" ID="{583778D2-CD68-4AA5-9C9A-5F1ED811B09D}" ShortID="946940535">
+														<RTPC Name="" ID="{7B7A1EB8-88E1-44D2-AD79-7EC01570B35B}" ShortID="563316759">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{C7EAB843-7E43-4F81-951D-FD59C14A747E}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{43BC65C5-BBCC-4FD1-ACA0-0BB2A316B094}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{B43261A2-F8BD-4FD4-9E63-023B894D807E}" ShortID="696982680">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{D8A5FF74-89B1-4B34-8563-C1F47BD511C4}" ShortID="1041761282">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{FB8B6AF3-2BF9-42D1-AC79-9304252EC7C8}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{610ACEF4-DFC6-4117-A38A-06A9BCFA1D29}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="05_Blink" ID="{87192515-5B19-4657-B8D4-300C5B250DA7}" ShortID="844236820">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{2CAF0397-58BD-4DA3-A772-565EBD1A11AC}" ShortID="679425485">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{0738D136-5363-4DB4-AE16-F32F2D03192D}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>26.001</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{3D59C544-FC95-4009-8327-7B8F1FC29808}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{A17EC913-E5B9-44F0-9389-3A16C1241F8F}" ShortID="393392396">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{E2AF0C0A-16E8-48AA-BA1E-42CFB06731FE}" ShortID="1057661596">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{AE0D86BE-5CAC-4BF4-BA8F-C86EEC5A9F19}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{3CB0C734-FCA2-4128-B5E6-EAC00F602748}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="04_Blink" ID="{5F5EBA5E-6848-484E-AF46-256CB5199944}" ShortID="414129159">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{3A0D64A4-DE29-454B-817A-51C7335FE2BC}" ShortID="774756835">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{42925001-F122-4995-9783-1D3D742650CD}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>16</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>16.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.001</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{0C1845BC-29FA-465F-A672-85ABD404513A}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{159799A4-F3FB-47FF-850A-C3C6A942CCBF}" ShortID="659003777">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{0A344AC0-A5DE-4A03-9E2E-321EE55BE8C6}" ShortID="717838070">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{4950653D-DC8F-46AC-BF0D-7E47A5D268FF}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{DF4D7C73-D6F2-4FB4-8468-9CDBF9CD9004}"/>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="03_Blink" ID="{B758AA05-D1BD-4BCB-B3E0-6E3556B8F853}" ShortID="465842779">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-													<RTPCList>
-														<RTPC Name="" ID="{29E1239D-2DBC-41FE-8B7A-252FECE471A5}" ShortID="608755711">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{195FF09E-2DEB-4849-89EF-44095B6CE525}">
+															<Curve Name="" ID="{043682E4-0731-409E-8F36-198335A4F907}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -11352,12 +10758,12 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16</XPos>
-																		<YPos>0</YPos>
+																		<XPos>20.999</XPos>
+																		<YPos>-0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16.001</XPos>
+																		<XPos>21</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
@@ -11380,34 +10786,161 @@
 													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer2_01" ID="{11E72D63-526B-4762-96F9-B59FB4D176D7}" ShortID="908305117">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer2_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer2_02" ID="{F431F735-48D4-4B2C-BC6A-833DAB65DE63}" ShortID="331535426">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer2_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer2_03" ID="{A758237F-F9AE-4FEB-9DA1-94DAB9BE276D}" ShortID="102928810">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer2_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer2_04" ID="{88FB383B-CF39-4F7A-82E6-1F88580D0105}" ShortID="585220493">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer2_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{64E3B897-C74E-4D16-BFE9-ACCDD17741EA}"/>
+											</PositioningInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{C5BC05C0-C88E-4595-8B68-7C21E7B0766F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{91BCB538-C4C1-4329-A743-12A2793508A7}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer2_01" ID="{C4B9CFD8-E2EF-466F-86FB-104E0A01A692}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer2_01" ID="{11E72D63-526B-4762-96F9-B59FB4D176D7}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{8558AB5E-18A3-4D58-9D47-BA93031D5F62}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer2_02" ID="{34D1783C-372E-4E9E-831F-35CCFEF2D366}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer2_02" ID="{F431F735-48D4-4B2C-BC6A-833DAB65DE63}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{9FE91E1D-5D98-4D41-83F0-154FB3DEB5ED}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer2_03" ID="{1D6C9112-B01C-4D8A-8A94-D3BFAA97E840}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer2_03" ID="{A758237F-F9AE-4FEB-9DA1-94DAB9BE276D}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{DB5D9F18-3FF4-4A6E-9A10-E22F85F9E185}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer2_04" ID="{55EEDA11-C1DD-4126-AEFD-B24CB1721F7F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer2_04" ID="{88FB383B-CF39-4F7A-82E6-1F88580D0105}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="03_Blink" ID="{B758AA05-D1BD-4BCB-B3E0-6E3556B8F853}" ShortID="465842779">
+											<PropertyList>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{C3FDA80A-2388-4FCC-904E-91AACB85DE7F}" ShortID="210916472">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E999DBDE-AFBD-4BB9-8CE1-7E6E9131AA97}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>21</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>21.001</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer3_01" ID="{2D1BB767-4A58-41A9-862C-696CF18008CD}" ShortID="270112378">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer3_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer3_02" ID="{2B7B0E91-E1B8-4BF9-AE89-7A91C314138F}" ShortID="588790740">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer3_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer3_03" ID="{2D30051B-EB01-40BC-93F3-A9F821195AC1}" ShortID="45298610">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer3_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="TheLastBeat_Mus_BlinkFB_Layer3_04" ID="{8B251643-DF5F-459D-A58D-D00B1B4847A3}" ShortID="872460582">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_BlinkFB_Layer3_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
 											<PositioningInfo>
 												<Panner Name="" ID="{03FB67D7-5561-4135-AD1E-5C1D259D8905}"/>
 											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-														<CustomState Name="" ID="{CB58E046-7774-4629-9716-826AA63B6DAE}" ShortID="900314119">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-														<CustomState Name="" ID="{97F6A5E6-B425-46D4-8F0D-49750D20EF6F}" ShortID="343134583">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="96"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{D82B79C8-634C-4ED2-9774-6662CE94046F}">
 													<PropertyList>
@@ -11417,7 +10950,54 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{B7EBFBE9-B794-45C4-AD0E-FD1EFDDBC864}"/>
+												<MusicTrackSequence Name="" ID="{B7EBFBE9-B794-45C4-AD0E-FD1EFDDBC864}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer3_01" ID="{8FC89ED9-700A-4A29-86F7-C243E285107E}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer3_01" ID="{2D1BB767-4A58-41A9-862C-696CF18008CD}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{6BDA3A06-6670-4FC6-A840-B3B40C136EF9}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer3_02" ID="{29E2F954-B715-4A70-9A4F-16E51620B573}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer3_02" ID="{2B7B0E91-E1B8-4BF9-AE89-7A91C314138F}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{19A7C282-237A-44D1-8E17-883CD642208E}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer3_03" ID="{4441F4DC-C6C3-40BF-A5DA-198EB144541F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer3_03" ID="{2D30051B-EB01-40BC-93F3-A9F821195AC1}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{72FAE493-F613-4767-AA18-2281205237A7}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_BlinkFB_Layer3_04" ID="{FACBE52B-D8D3-44EB-8913-25625B6DF49C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_BlinkFB_Layer3_04" ID="{8B251643-DF5F-459D-A58D-D00B1B4847A3}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
 									</ChildrenList>
