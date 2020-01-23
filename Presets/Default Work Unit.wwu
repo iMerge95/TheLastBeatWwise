@@ -204,7 +204,7 @@
 						<CustomStateList>
 							<CustomState>
 								<StateRef Name="Chord_03" ID="{69046869-2979-4175-8326-CB30C38E66F9}"/>
-								<CustomState Name="" ID="{F968917D-BE1E-490B-8EE2-81553BCC244E}" ShortID="295716706">
+								<CustomState Name="" ID="{F968917D-BE1E-490B-8EE2-81553BCC244E}">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
@@ -212,7 +212,7 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
-								<CustomState Name="" ID="{A4A5E782-5ABE-4736-AB51-778D5F7B4E4D}" ShortID="403512392">
+								<CustomState Name="" ID="{A4A5E782-5ABE-4736-AB51-778D5F7B4E4D}">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
@@ -220,7 +220,7 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
-								<CustomState Name="" ID="{072F126F-8220-40EC-A5DB-ACE89D9A3C4D}" ShortID="863422550">
+								<CustomState Name="" ID="{072F126F-8220-40EC-A5DB-ACE89D9A3C4D}">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
@@ -228,7 +228,7 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
-								<CustomState Name="" ID="{E50585B1-1E9B-4B76-908A-00BCDBAB4A7A}" ShortID="190069015">
+								<CustomState Name="" ID="{E50585B1-1E9B-4B76-908A-00BCDBAB4A7A}">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
@@ -236,7 +236,7 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Chord_07" ID="{ECBD08CF-07D3-47BD-B1F5-0BD70AAF5560}"/>
-								<CustomState Name="" ID="{093BC75C-B1E6-472D-8416-C7F796CAE768}" ShortID="1062398689">
+								<CustomState Name="" ID="{093BC75C-B1E6-472D-8416-C7F796CAE768}">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
@@ -244,7 +244,7 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
-								<CustomState Name="" ID="{597D070B-70BA-4B25-A2BB-86919CC3A719}" ShortID="536731421">
+								<CustomState Name="" ID="{597D070B-70BA-4B25-A2BB-86919CC3A719}">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
@@ -252,7 +252,7 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
-								<CustomState Name="" ID="{B45850CB-C29B-4ED4-A003-F1FC08858B9C}" ShortID="563827475">
+								<CustomState Name="" ID="{B45850CB-C29B-4ED4-A003-F1FC08858B9C}">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
@@ -260,7 +260,109 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
-								<CustomState Name="" ID="{92CE1C48-5718-4F09-BEEE-0F07C28A7638}" ShortID="144719063">
+								<CustomState Name="" ID="{92CE1C48-5718-4F09-BEEE-0F07C28A7638}">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{FEC11681-62F3-4084-9BCB-A4F947ABACB2}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+				</MusicTrack>
+				<MusicTrack Name="Normal" ID="{6D38AE5D-E1CA-4646-8B30-90FEB2F11289}">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="MusicTrackType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+						</Reference>
+					</ReferenceList>
+					<PositioningInfo>
+						<Panner Name="" ID="{3F248787-2439-4D0F-9CDE-06EF66B2B566}"/>
+					</PositioningInfo>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
+								<CustomState Name="" ID="{11F45DD9-DEB8-4354-9012-C68F5AE4C42A}" ShortID="473931212">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
+								<CustomState Name="" ID="{2DF39DCC-B2A2-484F-8FD9-133C0B84D952}" ShortID="649866609">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="96"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</MusicTrack>
+				<MusicTrack Name="Perfect" ID="{282FC639-BF7A-4A8F-9104-5741676565A9}">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="MusicTrackType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+						</Reference>
+					</ReferenceList>
+					<PositioningInfo>
+						<Panner Name="" ID="{F12CD0E9-FFA7-4726-88CE-9EB57CAE75D8}"/>
+					</PositioningInfo>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
+								<CustomState Name="" ID="{7C5E9A79-2914-4225-A36F-BEA6EDC936B9}" ShortID="22681110">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="96"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
+								<CustomState Name="" ID="{0136368A-CCF7-4B02-AAAE-252FFDAAEB9B}" ShortID="1057125280">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
