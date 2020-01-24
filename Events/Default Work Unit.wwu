@@ -443,19 +443,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{68755DAA-CC85-4BDB-AD5C-8B615C481401}" ShortID="1067956534">
-									<PropertyList>
-										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="-2"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_RushFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}">
@@ -522,19 +509,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{8ABCD25C-B873-448D-A80B-B8E5B27DC8C9}" ShortID="825045151">
-									<PropertyList>
-										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="-2"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}">
@@ -565,7 +539,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="2"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
