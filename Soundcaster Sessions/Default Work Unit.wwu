@@ -14,6 +14,10 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -21,11 +25,11 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}"/>
-							<Value>0</Value>
+							<Value>4</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}"/>
-							<Value>7.37806484952834E-312</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Int_SyncDucking" ID="{2D151634-A0B6-48A2-9777-0CE68C1A0E43}"/>
@@ -42,10 +46,9 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
-						<CurrentStateRef Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
+						<CurrentStateRef Name="None" ID="{17AAB246-3100-4F6B-9705-CD1A133A1E2F}"/>
 						<CurrentStateRef Name="Chord_08" ID="{9A95C339-566E-4FF5-B2C5-F53464A6D3D1}"/>
 						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-						<CurrentStateRef Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
 						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 						<CurrentStateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
 						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>

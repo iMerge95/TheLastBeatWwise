@@ -15,7 +15,6 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2305855220	Rewind_Combat_Loop			\TheLastBeat\RewindState\Rewind_Combat_Loop	
 	2355547200	Music_CombatExplo_Switch			\TheLastBeat\MusicState\Music_CombatExplo_Switch	
 	2724869341	Music_Switch			\TheLastBeat\MusicState\Music_Switch	
-	2836345082	InputState			\TheLastBeat\FeedbackState\InputState	
 	2886309763	Int_Land_Chord			\TheLastBeat\FeedbackState\Int_Land_Chord	
 	2996289134	Rewind_State			\TheLastBeat\RewindState\Rewind_State	
 
@@ -36,9 +35,6 @@ State	ID	Name	State Group			Notes
 	0	None	Music_Switch			
 	674522502	Land	Music_Switch			
 	1993352646	Final_Combat	Music_Switch			
-	0	None	InputState			
-	1160234136	Normal	InputState			
-	2161557176	Perfect	InputState			
 	0	None	Int_Land_Chord			
 	852835680	Chord_08	Int_Land_Chord			
 	852835689	Chord_01	Int_Land_Chord			

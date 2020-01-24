@@ -50,13 +50,6 @@
 				</Folder>
 				<Folder Name="FeedbackState" ID="{E702C584-13F3-4447-BBDB-4F7272687C77}" ShortID="1001932425">
 					<ChildrenList>
-						<StateGroup Name="InputState" ID="{0CF13880-505C-48FC-9452-33D7A42453FF}">
-							<ChildrenList>
-								<State Name="None" ID="{07C1ED1F-2FF9-42CF-A229-98F44C43BC1F}"/>
-								<State Name="Normal" ID="{ABBE5628-CE7E-4E1D-993A-E6BA075AA044}"/>
-								<State Name="Perfect" ID="{D4DA1AF3-8BEA-4DDA-BFD5-A2642A439979}"/>
-							</ChildrenList>
-						</StateGroup>
 						<StateGroup Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}">
 							<ChildrenList>
 								<State Name="None" ID="{F2A0C503-2FC4-450F-A65F-539C23CC0B88}"/>

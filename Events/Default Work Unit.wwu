@@ -536,6 +536,57 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{A9E31DD0-3A7E-4736-9790-FAD211A3458E}" ShortID="257566822">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{794EA9BE-309E-4E34-81EC-A004886D44F6}" ShortID="900681766">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OnPerfectRush" ID="{023A8982-4491-4066-853F-E992D2E40AA2}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0BCEDAE7-7FB7-49B8-A580-E80CB0C09DFA}" ShortID="982878688">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1.66666666666667"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D44DD549-352E-4CB3-9E84-83BFD153BBCA}" ShortID="504866704">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MusicFeedback" ID="{E44C583A-FB4D-4523-A827-8DAA62360197}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="01_AMB" ID="{7F75DAE9-21AC-469E-B725-97F7BB94CC54}" ShortID="766203885">
