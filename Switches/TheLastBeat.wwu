@@ -70,6 +70,13 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="FootstepsMaterial" ID="{E1B4A8F8-B6EB-4499-A3E5-4FEE02DF5E8E}">
+					<ChildrenList>
+						<Switch Name="Sand" ID="{7955B7FA-2C8A-42A6-AE4C-ABD3F1DBFC0F}"/>
+						<Switch Name="Grass" ID="{3274A8CC-EA98-4228-93D4-F3840091341A}"/>
+						<Switch Name="Rock" ID="{2D892724-C446-4651-8D0D-71B9038633DD}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

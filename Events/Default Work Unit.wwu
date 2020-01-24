@@ -588,6 +588,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_LeftFoot" ID="{CA268FC5-ADBA-419D-B065-BFAA9517F129}">
+							<ChildrenList>
+								<Action Name="" ID="{E587F1AB-6183-492E-8159-8A2D9D32FA65}" ShortID="482040417">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RockyStep" ID="{93955B04-E566-40AF-BA46-99958BAAB97D}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_RightFoot" ID="{14674390-3546-498D-8397-C632091C5328}">
+							<ChildrenList>
+								<Action Name="" ID="{6F8BA046-B652-491D-9ED7-8D65BE8238E5}" ShortID="104005446">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NormalStep" ID="{E738D64D-57C6-452E-B0BF-5ECB42BCC6F8}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="01_AMB" ID="{7F75DAE9-21AC-469E-B725-97F7BB94CC54}" ShortID="766203885">
