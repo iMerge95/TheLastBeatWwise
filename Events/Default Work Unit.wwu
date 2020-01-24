@@ -45,8 +45,9 @@
 								<Action Name="" ID="{45B98434-CE99-4061-A1CD-32E21454D917}" ShortID="799435402">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="Delay" Type="Real64" Value="0.4"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="FadeInCurve" Type="int16" Value="0"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.4"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -446,7 +447,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="-1.66666666666667"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="-2"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -485,7 +486,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="1.66666666666667"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -525,7 +526,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="-1.66666666666667"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="-2"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -564,7 +565,7 @@
 									<PropertyList>
 										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
 										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="1.66666666666667"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>

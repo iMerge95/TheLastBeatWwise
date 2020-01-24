@@ -53,6 +53,27 @@
 									</ReferenceList>
 								</Bus>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
+										<CustomState Name="" ID="{D8751B0B-CAAE-41F0-8970-A48E0C8ED78A}" ShortID="759584902">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="40"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
+										<CustomState Name="" ID="{F7B7DD8B-35E1-440A-AC43-0E5EECBD7283}" ShortID="953073233"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}">
 							<PropertyList>
@@ -77,14 +98,20 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>-30</XPos>
+														<XPos>-40</XPos>
 														<YPos>0</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Log2</SegmentShape>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-12</XPos>
+														<YPos>-9</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-3</YPos>
+														<YPos>-9</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -98,6 +125,55 @@
 									<ObjectRef Name="MusicCrusher" ID="{705745F8-6F6D-4967-B24C-A9404C5BA734}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="AllButPerc" ID="{CC227658-C201-4C50-AEA7-1A5FC0B8B617}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
+												<CustomState Name="" ID="{ACC50BDB-85D3-4318-9159-850504E1D7CF}" ShortID="125346644">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-6"/>
+														<Property Name="Lowpass" Type="int16" Value="50"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
+												<CustomState Name="" ID="{13753554-D5E6-4C63-89AC-74758B9ADDFA}" ShortID="559160898"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+								<Bus Name="Perc" ID="{AF442680-2370-4CE1-9922-D24888BB74FC}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
+												<CustomState Name="" ID="{BDCBD747-BD77-4B63-BF2A-7E313C7BABAD}" ShortID="611771238">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="20"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
+												<CustomState Name="" ID="{92CFBE5C-6A3B-4D90-B42F-62B02C7A810E}" ShortID="257184156"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}">
 							<PropertyList>
@@ -120,29 +196,29 @@
 									</ReferenceList>
 								</Bus>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
+										<CustomState Name="" ID="{855DC401-490E-4920-BCE4-E68D045B543E}" ShortID="1027279553">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="40"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
+										<CustomState Name="" ID="{C7555AE0-5C9F-4D8B-A2E1-78C1443FD9CD}" ShortID="682497256"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
-								<CustomState Name="" ID="{AA1475CC-E5A5-4641-AEA7-C592EF7D08D3}" ShortID="976172901">
-									<PropertyList>
-										<Property Name="Lowpass" Type="int16" Value="40"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
-								<CustomState Name="" ID="{0D322DDF-BFEF-46D2-B3FF-3474BECAB17D}" ShortID="710773587"/>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

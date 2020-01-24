@@ -49,7 +49,10 @@ State	ID	Name	State Group			Notes
 	1673109572	Rewind	Rewind_State			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	976172901	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+	125346644	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\AllButPerc		
+	611771238	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Perc		
+	759584902	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
+	1027279553	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MFX		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	758808735	Int_SyncDucking			\TheLastBeat\Int_SyncDucking	
@@ -59,9 +62,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	176430053	SyncFeedBack			\Default Work Unit\Master Audio Bus\MFX\SyncFeedBack	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	931006280	MFX			\Default Work Unit\Master Audio Bus\MFX	
+	1743886701	Perc			\Default Work Unit\Master Audio Bus\Music\Perc	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 	4065441226	GameplaySFX			\Default Work Unit\Master Audio Bus\SFX\GameplaySFX	
+	4285133355	AllButPerc			\Default Work Unit\Master Audio Bus\Music\AllButPerc	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	731829278	MFXRewindVerb			\Default Work Unit\Master Audio Bus\MFX\MFXRewindVerb	
