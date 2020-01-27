@@ -15,9 +15,6 @@
 						<Switch Name="Layer1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
 						<Switch Name="Layer2" ID="{9B1F44F8-8DF1-481C-8538-5D74AE65AE74}"/>
 						<Switch Name="Layer3" ID="{AFE8E263-DBE8-4184-95FA-46BFD5AC9422}"/>
-						<Switch Name="Layer4" ID="{B54FF7A4-3D01-4341-8A6C-D5E0FD91FC74}"/>
-						<Switch Name="Layer5" ID="{6CE90F8A-E8CE-4FC3-8577-AA2076C14162}"/>
-						<Switch Name="Layer6" ID="{009E99D4-18F5-4157-887B-3E16D202238A}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
 						<GameParameterRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}"/>
@@ -37,33 +34,18 @@
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>6</XPos>
+									<XPos>10</XPos>
 									<YPos>2</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>11</XPos>
+									<XPos>20</XPos>
 									<YPos>3</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>16</XPos>
-									<YPos>4</YPos>
-									<Flags>0</Flags>
-								</Point>
-								<Point>
-									<XPos>21</XPos>
-									<YPos>5</YPos>
-									<Flags>0</Flags>
-								</Point>
-								<Point>
-									<XPos>26</XPos>
-									<YPos>6</YPos>
-									<Flags>0</Flags>
-								</Point>
-								<Point>
 									<XPos>30</XPos>
-									<YPos>6</YPos>
+									<YPos>3</YPos>
 									<Flags>37</Flags>
 								</Point>
 							</PointList>
