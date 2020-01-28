@@ -1,17 +1,10 @@
-Switch Group	ID	Name			Wwise Object Path	Notes
-	2074789557	MusicLayer			\TheLastBeat\MusicLayer	
-
-Switch	ID	Name	Switch Group			Notes
-	3298531297	Layer1	MusicLayer			
-	3298531298	Layer2	MusicLayer			
-	3298531299	Layer3	MusicLayer			
-
 State Group	ID	Name			Wwise Object Path	Notes
 	1082318473	Music_CriticLevel			\TheLastBeat\FeedbackState\Music_CriticLevel	
 	2305855220	Rewind_Combat_Loop			\TheLastBeat\RewindState\Rewind_Combat_Loop	
 	2355547200	Music_CombatExplo_Switch			\TheLastBeat\MusicState\Music_CombatExplo_Switch	
 	2724869341	Music_Switch			\TheLastBeat\MusicState\Music_Switch	
 	2886309763	Int_Land_Chord			\TheLastBeat\FeedbackState\Int_Land_Chord	
+	2945091192	Music_Layer			\TheLastBeat\MusicState\Music_Layer	
 	2996289134	Rewind_State			\TheLastBeat\RewindState\Rewind_State	
 
 State	ID	Name	State Group			Notes
@@ -37,6 +30,10 @@ State	ID	Name	State Group			Notes
 	852835693	Chord_05	Int_Land_Chord			
 	852835694	Chord_06	Int_Land_Chord			
 	852835695	Chord_07	Int_Land_Chord			
+	0	None	Music_Layer			
+	3298531297	Layer1	Music_Layer			
+	3298531298	Layer2	Music_Layer			
+	3298531299	Layer3	Music_Layer			
 	0	None	Rewind_State			
 	1160234136	Normal	Rewind_State			
 	1673109572	Rewind	Rewind_State			

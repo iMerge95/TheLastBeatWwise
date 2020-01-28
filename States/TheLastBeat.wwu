@@ -35,6 +35,14 @@
 								<State Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
 							</ChildrenList>
 						</StateGroup>
+						<StateGroup Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}">
+							<ChildrenList>
+								<State Name="None" ID="{00CA620F-04FD-4036-9D34-2CDB9C63BFA2}"/>
+								<State Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+								<State Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+								<State Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FeedbackState" ID="{E702C584-13F3-4447-BBDB-4F7272687C77}" ShortID="1001932425">

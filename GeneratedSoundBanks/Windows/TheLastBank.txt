@@ -35,21 +35,18 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	982447677	FootstepsMaterial			\TheLastBeat\FootstepsMaterial	
-	2074789557	MusicLayer			\TheLastBeat\MusicLayer	
 
 Switch	ID	Name	Switch Group			Notes
 	803837735	Sand	FootstepsMaterial			
 	2144363834	Rock	FootstepsMaterial			
 	4248645337	Grass	FootstepsMaterial			
-	3298531297	Layer1	MusicLayer			
-	3298531298	Layer2	MusicLayer			
-	3298531299	Layer3	MusicLayer			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2305855220	Rewind_Combat_Loop			\TheLastBeat\RewindState\Rewind_Combat_Loop	
 	2355547200	Music_CombatExplo_Switch			\TheLastBeat\MusicState\Music_CombatExplo_Switch	
 	2724869341	Music_Switch			\TheLastBeat\MusicState\Music_Switch	
 	2886309763	Int_Land_Chord			\TheLastBeat\FeedbackState\Int_Land_Chord	
+	2945091192	Music_Layer			\TheLastBeat\MusicState\Music_Layer	
 	2996289134	Rewind_State			\TheLastBeat\RewindState\Rewind_State	
 
 State	ID	Name	State Group			Notes
@@ -72,12 +69,17 @@ State	ID	Name	State Group			Notes
 	852835693	Chord_05	Int_Land_Chord			
 	852835694	Chord_06	Int_Land_Chord			
 	852835695	Chord_07	Int_Land_Chord			
+	0	None	Music_Layer			
+	3298531297	Layer1	Music_Layer			
+	3298531298	Layer2	Music_Layer			
+	3298531299	Layer3	Music_Layer			
 	0	None	Rewind_State			
 	1160234136	Normal	Rewind_State			
 	1673109572	Rewind	Rewind_State			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	2215216	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord8		
+	3910002	Layer1	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\03_Great		
 	21723093	Chord_07	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord3		
 	27734752	Chord_02	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord4		
 	47392181	Combat	Music_CombatExplo_Switch	\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Foosteps		
@@ -103,11 +105,13 @@ Custom State	ID	Name	State Group	Owner		Notes
 	202551109	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord4		
 	202899575	Chord_06	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord1		
 	218023715	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord1		
+	243204479	Layer1	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\02_Great		
 	243315114	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord2		
 	244218355	Chord_02	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord3		
 	244925824	Chord_02	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord7		
 	246696856	Chord_03	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord4		
 	250026889	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord1		
+	252234211	Layer2	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\01_Great		
 	256213052	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord7		
 	261830055	Chord_04	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord2		
 	283040125	Chord_04	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord5		
@@ -117,17 +121,20 @@ Custom State	ID	Name	State Group	Owner		Notes
 	327714088	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord3		
 	333854239	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord7		
 	343566888	Chord_08	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord4		
+	349740791	Layer2	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\03_Perfect		
 	361499265	Chord_08	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord2		
 	367569704	Chord_08	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord6		
 	373360498	Chord_03	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord3		
 	375346235	Chord_03	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord2		
 	378475663	Chord_08	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord2		
+	379605267	Layer3	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\01_Great		
 	383135628	Chord_04	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord6		
 	388698396	Chord_08	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord3		
 	401629997	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord1		
 	405034500	Chord_07	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord5		
 	411739540	Chord_03	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord5		
 	413564771	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord5		
+	416995711	Layer3	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\02_Great		
 	423821938	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord5		
 	427890935	Chord_04	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord6		
 	446282060	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord7		
@@ -164,10 +171,12 @@ Custom State	ID	Name	State Group	Owner		Notes
 	730814818	Chord_03	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord6		
 	731652340	Chord_03	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord2		
 	740953384	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord8		
+	743781202	Layer1	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\02_Perfect		
 	750550579	Chord_07	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord4		
 	773155207	Chord_06	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord5		
 	774225357	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord6		
 	775287346	Chord_02	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord6		
+	776031883	Layer1	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\03_Perfect		
 	779961613	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord3		
 	780676136	Chord_07	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord2		
 	792155527	Chord_04	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord7		
@@ -185,7 +194,9 @@ Custom State	ID	Name	State Group	Owner		Notes
 	889681585	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord8		
 	891485793	Chord_07	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord3		
 	925884032	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord3		
+	931283717	Layer2	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\01_Perfect		
 	939292417	Chord_06	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord2		
+	943608828	Layer3	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\01_Perfect		
 	953383676	Chord_06	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord5		
 	953815230	Chord_04	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord3		
 	956062401	Chord_08	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord5		
@@ -193,6 +204,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	964402957	Chord_06	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord6		
 	964645560	Chord_03	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord1		
 	966434997	Chord_04	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord3		
+	970700818	Layer3	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\02_Perfect		
 	976069006	Chord_07	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord1		
 	976867868	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord2		
 	978639032	Chord_06	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord7		
@@ -200,6 +212,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	990624827	Chord_02	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord1		
 	999315306	Chord_05	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord5		
 	1003875399	Chord_02	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord2		
+	1015487556	Layer2	Music_Layer	\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\03_Great		
 	1017153366	Chord_02	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord7		
 	1021922958	Chord_01	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord6		
 	1027625104	Chord_06	Int_Land_Chord	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord3		
@@ -298,7 +311,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	324554965	Chord8	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\MusicalFeedback\Chord8\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord8_03_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord8		157082
 	331535426	02_Blink	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_BlinkFB_Layer2_02_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatBlinkFB\02_Blink		90706
 	337362431	TLB_AMB_Desert_RHowl_HowlLongB_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlLongB_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowLong1\TLB_AMB_Desert_RHowl_HowlLongB_01		457593
-	338378325	Perc_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer6\Perc_1Pre_2Post		1033
+	338378325	Perc_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Perc_1Pre_2Post		1033
 	350921418	Chord3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\MusicalFeedback\Chord3\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_01_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord3		157366
 	352158969	Base_LoopB_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer1_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopB\Base_LoopB_Layer1		3753
 	365619688	01_Perfect	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_RushFB_Perfect_Layer1_04_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\01_Perfect		80952
@@ -352,6 +365,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	644232250	Chord1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_03_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord1		164370
 	644476924	TLB_AMB_Desert_RHowl_HowlShortA_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlShortA_03_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RHowl\HowlShort3\TLB_AMB_Desert_RHowl_HowlShortA_03		191690
 	644930609	Chord3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\MusicalFeedback\Chord3\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_03_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord3		161801
+	647119512	Base_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Base_1Pre_2Post		1041
 	653150944	Chord3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\MusicalFeedback\Chord3\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_04_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord3		189662
 	654735048	ReverseEvent	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\Reverse_Stop\ReverseEvent		276585
 	656498732	03_Perfect	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_RushFB_Perfect_Layer3_04_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\03_Perfect		86304
@@ -373,7 +387,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	756398144	Perc_LoopA_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer1_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopA\Perc_LoopA_Layer1		977
 	759618755	Perc_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer2_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer2\Land_Combat_Layer2\Perc_1Pre_2Post		1033
 	760224886	TLB_Chara_SFXSand_Rockysteps_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFXSand_Rockysteps_03_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Foosteps\RockyStep\Sand\TLB_Chara_SFXSand_Rockysteps_03		9955
-	763001766	Base_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer6\Base_1Pre_2Post		1041
 	770049209	TLB_Chara_SFXSand_Steps_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFXSand_Steps_02_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Foosteps\NormalStep\Sand\TLB_Chara_SFXSand_Steps_02		14759
 	772276135	Lead_LoopB_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer1_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopB\Lead_LoopB_Layer1		685
 	776663798	TLB_Chara_SFXSand_Steps_05	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFXSand_Steps_05_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Foosteps\NormalStep\Sand\TLB_Chara_SFXSand_Steps_05		17310
@@ -391,7 +404,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	843201751	Chord6	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord6_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord6		161688
 	849535690	Base_LoopC_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer2_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopC\Base_LoopC_Layer2		981
 	850052255	SoundSeed Grain	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopC_Rewind_D4F3E753.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\SFX\MFX\Rewind_MusicSwitch\RewindFinalCombat\Rewind_LoopC\SoundSeed Grain		3254036
-	853178857	Sitar_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer6\Sitar_1Pre_2Post		1037
+	853178857	Sitar_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Sitar_1Pre_2Post		1037
 	859450251	Chord5	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\MusicalFeedback\Chord5\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord5_04_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord5		160341
 	861940440	02_Great	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_RushFB_Great_Layer2_02_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\02_Great		82111
 	869460937	Chord2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord2_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord2		165750
@@ -416,7 +429,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1022370848	Chord3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\MusicalFeedback\Chord3\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord3_02_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer1\Chord3		159208
 	1024682353	02_Perfect	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_RushFB_Perfect_Layer2_02_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\02_Perfect		83989
 	1027509033	Lead_LoopB_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer2_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopB\Lead_LoopB_Layer2		685
-	1027616747	Synth_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Synth_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer6\Synth_1Pre_2Post		1033
+	1027616747	Synth_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Synth_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Synth_1Pre_2Post		1033
 	1031277549	TLB_NME_SFX_Hit_Enemy_Basic_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_NME_SFX_Hit_Enemy_Basic_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Hit_Enemy\TLB_NME_SFX_Hit_Enemy_Basic_01		22716
 	1034545480	Chord8	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord8_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Feeback_Layer2\Chord8		169671
 	1036199977	03_Great	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_RushFB_Great_Layer3_04_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\03_Great		82596
@@ -446,7 +459,7 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	313474517	Perc_LoopC_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer3_1Pre2Post_592D8723.wem	313474517.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopC\Perc_LoopC_Layer3	
 	330102856	TLB_AMB_Desert_HighWind_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_HighWind_02_E37C7245.wem	330102856.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\AmbLoop\HighAmb\TLB_AMB_Desert_HighWind_02	
 	335079225	TLB_AMB_Desert_RWind_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RWind_03_E37C7245.wem	335079225.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_03	
-	338378325	Perc_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer3_1Pre_2Post_592D8723.wem	338378325.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer6\Perc_1Pre_2Post	
+	338378325	Perc_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer3_1Pre_2Post_592D8723.wem	338378325.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Perc_1Pre_2Post	
 	352158969	Base_LoopB_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer1_1Pre2Post_592D8723.wem	352158969.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopB\Base_LoopB_Layer1	
 	359854272	TheLastBeat_Mus_Land_Explo_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Explo_1Pre_2Post_592D8723.wem	359854272.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Explo\TheLastBeat_Mus_Land_Explo_1Pre_2Post\TheLastBeat_Mus_Land_Explo_1Pre_2Post	
 	375337560	TLB_AMB_Desert_Wildlife_Crypets_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_Wildlife_Crypets_04_E37C7245.wem	375337560.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Cryspets\TLB_AMB_Desert_Wildlife_Crypets_04	
@@ -460,6 +473,7 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	560626843	Lead_LoopA_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer2_1Pre2Post_592D8723.wem	560626843.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopA\Lead_LoopA_Layer2	
 	603408749	TLB_AMB_Desert_RWind_07	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RWind_07_E37C7245.wem	603408749.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_07	
 	623855022	Base_LoopB_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer3_1Pre2Post_592D8723.wem	623855022.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopB\Base_LoopB_Layer3	
+	647119512	Base_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post_592D8723.wem	647119512.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Base_1Pre_2Post	
 	668397685	Base_LoopC_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post_592D8723.wem	668397685.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopC\Base_LoopC_Layer3	
 	676930814	Perc_LoopC_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer1_1Pre2Post_592D8723.wem	676930814.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopC\Perc_LoopC_Layer1	
 	715830890	TLB_AMB_Desert_HighWind_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_HighWind_03_E37C7245.wem	715830890.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\AmbLoop\HighAmb\TLB_AMB_Desert_HighWind_03	
@@ -468,14 +482,13 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	736855353	Lead_LoopC_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer3_1Pre2Post_592D8723.wem	736855353.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopC\Lead_LoopC_Layer3	
 	756398144	Perc_LoopA_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer1_1Pre2Post_592D8723.wem	756398144.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopA\Perc_LoopA_Layer1	
 	759618755	Perc_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer2_1Pre_2Post_592D8723.wem	759618755.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer2\Land_Combat_Layer2\Perc_1Pre_2Post	
-	763001766	Base_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post_592D8723.wem	763001766.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer6\Base_1Pre_2Post	
 	772276135	Lead_LoopB_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer1_1Pre2Post_592D8723.wem	772276135.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopB\Lead_LoopB_Layer1	
 	796485053	Lead_LoopC_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post_592D8723.wem	796485053.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopC\Lead_LoopC_Layer1	
 	796615516	TLB_AMB_Desert_LowWind_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_LowWind_03_E37C7245.wem	796615516.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\AmbLoop\LowAmb\TLB_AMB_Desert_LowWind_03	
 	825699549	Perc_LoopB_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer2_1Pre2Post_592D8723.wem	825699549.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopB\Perc_LoopB_Layer2	
 	828054436	TLB_AMB_Desert_HighWind_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_HighWind_01_E37C7245.wem	828054436.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\AmbLoop\HighAmb\TLB_AMB_Desert_HighWind_01	
 	849535690	Base_LoopC_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer2_1Pre2Post_592D8723.wem	849535690.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopC\Base_LoopC_Layer2	
-	853178857	Sitar_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer3_1Pre_2Post_592D8723.wem	853178857.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer6\Sitar_1Pre_2Post	
+	853178857	Sitar_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer3_1Pre_2Post_592D8723.wem	853178857.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Sitar_1Pre_2Post	
 	889974946	TLB_AMB_Desert_Wildlife_Crypets_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_Wildlife_Crypets_01_E37C7245.wem	889974946.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Cryspets\TLB_AMB_Desert_Wildlife_Crypets_01	
 	910250946	Sitar_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer1_1Pre_2Post_592D8723.wem	910250946.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer1\Land_Combat_Layer1\Sitar_1Pre_2Post	
 	915633297	TLB_AMB_Desert_RWind_05	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RWind_05_E37C7245.wem	915633297.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_05	
@@ -483,7 +496,7 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	984312236	Perc_LoopA_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post_592D8723.wem	984312236.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopA\Perc_LoopA_Layer2	
 	995359347	Base_LoopC_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer1_1Pre2Post_592D8723.wem	995359347.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopC\Base_LoopC_Layer1	
 	1027509033	Lead_LoopB_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer2_1Pre2Post_592D8723.wem	1027509033.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopB\Lead_LoopB_Layer2	
-	1027616747	Synth_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Synth_Layer3_1Pre_2Post_592D8723.wem	1027616747.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer6\Synth_1Pre_2Post	
+	1027616747	Synth_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Synth_Layer3_1Pre_2Post_592D8723.wem	1027616747.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Synth_1Pre_2Post	
 	1040353670	Base_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Base_Layer1_1Pre_2Post_592D8723.wem	1040353670.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer1\Land_Combat_Layer1\Base_1Pre_2Post	
 	1060191646	Lead_LoopC_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer2_1Pre2Post_592D8723.wem	1060191646.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopC\Lead_LoopC_Layer2	
 

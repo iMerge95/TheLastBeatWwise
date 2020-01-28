@@ -74,15 +74,15 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
-						<CurrentStateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
-						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+						<CurrentStateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+						<CurrentStateRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+						<CurrentStateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
 						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grass" ID="{3274A8CC-EA98-4228-93D4-F3840091341A}"/>
-						<CurrentSwitchRef Name="Layer1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

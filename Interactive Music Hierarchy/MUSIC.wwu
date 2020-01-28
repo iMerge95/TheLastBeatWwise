@@ -1101,7 +1101,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicSegment Name="Land_Combat_Layer6" ID="{B7563D3E-C10E-4D67-9980-089BE535C514}" ShortID="69616673">
+												<MusicSegment Name="Land_Combat_Layer3" ID="{B7563D3E-C10E-4D67-9980-089BE535C514}" ShortID="69616673">
 													<PropertyList>
 														<Property Name="EndPosition" Type="Real64" Value="120000"/>
 														<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
@@ -1277,7 +1277,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post" ID="{C9027574-E266-4695-8526-F6243730E205}" ShortID="763001766">
+																<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post" ID="{C51FE2A2-30AF-4C29-9403-2FD4DEDD0266}" ShortID="647119512">
 																	<Language>SFX</Language>
 																	<AudioFile>TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post.wav</AudioFile>
 																</AudioFileSource>
@@ -1298,13 +1298,13 @@
 															<SequenceList>
 																<MusicTrackSequence Name="" ID="{22EDF0E8-1A8A-45E3-A36E-D35F2C4C9100}">
 																	<ClipList>
-																		<MusicClip Name="TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post" ID="{DB6FA297-C76C-40F7-A4DA-D4B8E891E915}">
+																		<MusicClip Name="TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post" ID="{D76EB22C-99A2-4692-BDBE-3F9AB26E773E}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="60000"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post" ID="{C9027574-E266-4695-8526-F6243730E205}"/>
+																			<AudioSourceRef Name="TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post" ID="{C51FE2A2-30AF-4C29-9403-2FD4DEDD0266}"/>
 																		</MusicClip>
 																		<MusicEventCue Name="" ID="{D89E19F5-F32E-4B19-B03C-77CEC126AE59}" ShortID="617507292">
 																			<PropertyList>
@@ -1502,7 +1502,7 @@
 																<Property Name="LoopCount" Type="int16" Value="0"/>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 															</PropertyList>
-															<SegmentRef Name="Land_Combat_Layer6" ID="{B7563D3E-C10E-4D67-9980-089BE535C514}"/>
+															<SegmentRef Name="Land_Combat_Layer3" ID="{B7563D3E-C10E-4D67-9980-089BE535C514}"/>
 														</MusicPlaylistItem>
 													</ChildrenList>
 												</MusicPlaylistItem>
@@ -1627,13 +1627,13 @@
 									</TransitionList>
 									<ArgumentList>
 										<ArgumentRef Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}"/>
-										<ArgumentRef Name="MusicLayer" ID="{A68067E3-F81D-4852-9BF9-09C33CE5A862}"/>
+										<ArgumentRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
 									</ArgumentList>
 									<EntryList>
 										<Entry>
 											<Path>
 												<PathElementRef Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
-												<PathElementRef Name="MusicLayer" ID="{A68067E3-F81D-4852-9BF9-09C33CE5A862}"/>
+												<PathElementRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
 											</Path>
 											<AudioNodeInfo>
 												<AudioNodeRef Name="Reverse" ID="{4F4992F8-36C4-46BE-8486-36883B2932F6}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -1641,8 +1641,8 @@
 										</Entry>
 										<Entry>
 											<Path>
-												<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-												<PathElementRef Name="MusicLayer" ID="{A68067E3-F81D-4852-9BF9-09C33CE5A862}"/>
+												<PathElementRef Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}"/>
+												<PathElementRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
 											</Path>
 											<AudioNodeInfo>
 												<AudioNodeRef Name="Land_Combat_Layer1" ID="{7C3A202C-95A7-403B-8BEE-49B3A0B17F9D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -1651,16 +1651,16 @@
 										<Entry>
 											<Path>
 												<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-												<PathElementRef Name="Layer3" ID="{AFE8E263-DBE8-4184-95FA-46BFD5AC9422}"/>
+												<PathElementRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
 											</Path>
 											<AudioNodeInfo>
-												<AudioNodeRef Name="Land_Combat_Layer3" ID="{3206DF80-9B65-4A02-8F52-D0C3D84CD1CC}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+												<AudioNodeRef Name="Land_Combat_Layer1" ID="{7C3A202C-95A7-403B-8BEE-49B3A0B17F9D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
 											</AudioNodeInfo>
 										</Entry>
 										<Entry>
 											<Path>
 												<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-												<PathElementRef Name="Layer2" ID="{9B1F44F8-8DF1-481C-8538-5D74AE65AE74}"/>
+												<PathElementRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
 											</Path>
 											<AudioNodeInfo>
 												<AudioNodeRef Name="Land_Combat_Layer2" ID="{7723845F-7AAA-4ECA-8394-78D1DBCDB379}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -1669,25 +1669,7 @@
 										<Entry>
 											<Path>
 												<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-												<PathElementRef Name="Layer1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
-											</Path>
-											<AudioNodeInfo>
-												<AudioNodeRef Name="Land_Combat_Layer1" ID="{7C3A202C-95A7-403B-8BEE-49B3A0B17F9D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
-											</AudioNodeInfo>
-										</Entry>
-										<Entry>
-											<Path>
-												<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-												<PathElementRef Name="Layer2" ID="{9B1F44F8-8DF1-481C-8538-5D74AE65AE74}"/>
-											</Path>
-											<AudioNodeInfo>
-												<AudioNodeRef Name="Land_Combat_Layer2" ID="{7723845F-7AAA-4ECA-8394-78D1DBCDB379}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
-											</AudioNodeInfo>
-										</Entry>
-										<Entry>
-											<Path>
-												<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-												<PathElementRef Name="Layer3" ID="{AFE8E263-DBE8-4184-95FA-46BFD5AC9422}"/>
+												<PathElementRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
 											</Path>
 											<AudioNodeInfo>
 												<AudioNodeRef Name="Land_Combat_Layer3" ID="{3206DF80-9B65-4A02-8F52-D0C3D84CD1CC}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -1696,10 +1678,28 @@
 										<Entry>
 											<Path>
 												<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-												<PathElementRef Name="Layer1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
+												<PathElementRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
 											</Path>
 											<AudioNodeInfo>
 												<AudioNodeRef Name="Land_Combat_Layer1" ID="{7C3A202C-95A7-403B-8BEE-49B3A0B17F9D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+											</AudioNodeInfo>
+										</Entry>
+										<Entry>
+											<Path>
+												<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+												<PathElementRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+											</Path>
+											<AudioNodeInfo>
+												<AudioNodeRef Name="Land_Combat_Layer2" ID="{7723845F-7AAA-4ECA-8394-78D1DBCDB379}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+											</AudioNodeInfo>
+										</Entry>
+										<Entry>
+											<Path>
+												<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+												<PathElementRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+											</Path>
+											<AudioNodeInfo>
+												<AudioNodeRef Name="Land_Combat_Layer3" ID="{3206DF80-9B65-4A02-8F52-D0C3D84CD1CC}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
 											</AudioNodeInfo>
 										</Entry>
 									</EntryList>
@@ -8230,13 +8230,13 @@
 							</TransitionList>
 							<ArgumentList>
 								<ArgumentRef Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}"/>
-								<ArgumentRef Name="MusicLayer" ID="{A68067E3-F81D-4852-9BF9-09C33CE5A862}"/>
+								<ArgumentRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
 							</ArgumentList>
 							<EntryList>
 								<Entry>
 									<Path>
 										<PathElementRef Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}"/>
-										<PathElementRef Name="MusicLayer" ID="{A68067E3-F81D-4852-9BF9-09C33CE5A862}"/>
+										<PathElementRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="FinalCombat_Layer1" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -8245,7 +8245,7 @@
 								<Entry>
 									<Path>
 										<PathElementRef Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
-										<PathElementRef Name="MusicLayer" ID="{A68067E3-F81D-4852-9BF9-09C33CE5A862}"/>
+										<PathElementRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="Reverse" ID="{6CDB17AA-CEDA-4957-AEB9-A7B4E63F04BC}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -8253,8 +8253,8 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-										<PathElementRef Name="Layer1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
+										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+										<PathElementRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="FinalCombat_Layer1" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -8262,35 +8262,8 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-										<PathElementRef Name="Layer2" ID="{9B1F44F8-8DF1-481C-8538-5D74AE65AE74}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="FinalCombat_Layer2" ID="{56B66EED-9C66-4751-AFB1-290FDA00D88E}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-								<Entry>
-									<Path>
-										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-										<PathElementRef Name="Layer3" ID="{AFE8E263-DBE8-4184-95FA-46BFD5AC9422}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="FinalCombat_Layer3" ID="{B7F070AA-B8FB-462F-8A0E-47B6F5571C86}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-								<Entry>
-									<Path>
 										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-										<PathElementRef Name="Layer3" ID="{AFE8E263-DBE8-4184-95FA-46BFD5AC9422}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="FinalCombat_Layer3" ID="{B7F070AA-B8FB-462F-8A0E-47B6F5571C86}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-								<Entry>
-									<Path>
-										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-										<PathElementRef Name="Layer2" ID="{9B1F44F8-8DF1-481C-8538-5D74AE65AE74}"/>
+										<PathElementRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="FinalCombat_Layer2" ID="{56B66EED-9C66-4751-AFB1-290FDA00D88E}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -8299,10 +8272,37 @@
 								<Entry>
 									<Path>
 										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-										<PathElementRef Name="Layer1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
+										<PathElementRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="FinalCombat_Layer3" ID="{B7F070AA-B8FB-462F-8A0E-47B6F5571C86}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+										<PathElementRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="FinalCombat_Layer1" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+										<PathElementRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="FinalCombat_Layer2" ID="{56B66EED-9C66-4751-AFB1-290FDA00D88E}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+										<PathElementRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="FinalCombat_Layer3" ID="{B7F070AA-B8FB-462F-8A0E-47B6F5571C86}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
 							</EntryList>
@@ -8538,44 +8538,6 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{2CF059E2-E6B5-4837-ADE3-5858B60C30CB}" ShortID="780451010">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{B6F66141-7E1F-4949-A709-A6B171ED8F31}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10.999</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>11</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -8606,6 +8568,35 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{DE902206-7DCF-438F-96DE-714506C2B666}"/>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+														<CustomState Name="" ID="{9D288464-3580-455A-BD1D-EE4B8E9FF330}" ShortID="847601813"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+														<CustomState Name="" ID="{2F97739B-75B9-42E9-95B7-407C3263C18F}" ShortID="252234211">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+														<CustomState Name="" ID="{7A5314A9-6076-4372-9D8A-B97AB3359816}" ShortID="379605267">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{67FBB537-785A-44E0-8A09-E63857E73975}">
 													<PropertyList>
@@ -8669,54 +8660,6 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{0118B5F9-62B7-4683-8DC8-912939257A74}" ShortID="15838711">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{C0921398-8B8F-42F4-A8A2-0632A70578E3}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>11</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>11.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>20.999</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -8747,6 +8690,35 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{6ACD44B0-3A4D-4B3E-B9D3-0F1517949FD3}"/>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+														<CustomState Name="" ID="{304731D9-8BD7-424C-A224-CD355103B349}" ShortID="243204479">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+														<CustomState Name="" ID="{64F994DA-175E-4E91-8E1B-2745E150D3C8}" ShortID="621004339"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+														<CustomState Name="" ID="{CAEFF1D4-8FD0-4B5B-91AF-886CA46C10D2}" ShortID="416995711">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{BC66625C-04BF-4821-8EAE-1FB0AB31FF02}">
 													<PropertyList>
@@ -8810,44 +8782,6 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{1FADF134-63DF-466D-A412-6BC80A31A1CD}" ShortID="1053427661">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{F15272F3-E464-4CBA-99DD-78E6E356D72B}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -8878,6 +8812,35 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{F8982212-E97B-4F6C-95B6-55159DAE6137}"/>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+														<CustomState Name="" ID="{7EFA8392-B710-4FEC-B5AB-46C6058460D2}" ShortID="3910002">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+														<CustomState Name="" ID="{5F9D7A9E-05D9-45E9-B9BF-AD40ED35B172}" ShortID="1015487556">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+														<CustomState Name="" ID="{F57FDFC6-4BEC-48FD-96AE-D9BF4C1C4954}" ShortID="417137488"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{09192FD4-9A11-46C0-99B8-65A62E588CDC}">
 													<PropertyList>
@@ -9487,11 +9450,6 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -9506,44 +9464,6 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{1A0FF07C-0B0B-4D08-ACBE-B92AF1056BA5}" ShortID="245948594">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{1758D747-4A9C-46A1-A5C6-BFD48B95D995}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10.999</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>11</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -9586,6 +9506,35 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{3E0CDC30-23C7-43E9-ACBA-1E0EAA162B4A}"/>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+														<CustomState Name="" ID="{273E4F08-AE7D-454B-927F-D9E81414896A}" ShortID="163751925"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+														<CustomState Name="" ID="{9A9BC623-20FA-41CF-AE31-B989135C453B}" ShortID="931283717">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+														<CustomState Name="" ID="{EF46140B-4E69-418D-A822-4F21955E0DA2}" ShortID="943608828">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{9FA9634F-8135-4380-AA79-38E43F347ADD}">
 													<PropertyList>
@@ -9649,54 +9598,6 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{3DC2FD97-85CB-4C41-8970-1375DE677F99}" ShortID="321192448">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{CB9F1C94-8E68-4D67-BE15-DF9A380C8AD8}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>11</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>11.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>20.999</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -9739,6 +9640,35 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{4EB64DF6-C1B6-44F0-9B11-B491D46C0F85}"/>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+														<CustomState Name="" ID="{F2421961-7DD8-4479-B677-472097B658F3}" ShortID="743781202">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+														<CustomState Name="" ID="{C388CB93-5194-4AB9-ABA0-33685271E8A8}" ShortID="802144202"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+														<CustomState Name="" ID="{B1C7A7AF-E511-4D42-B399-5C701A06651E}" ShortID="970700818">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{88C76B75-B8F2-4E41-8BC4-5FE9BE32A781}">
 													<PropertyList>
@@ -9802,44 +9732,6 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{3D3C8D71-897F-47C9-86C6-820F4B6C3819}" ShortID="887200825">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{D9EF93F3-EDB0-4CBB-B5DD-5A3A1217CCBF}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.001</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -9882,6 +9774,35 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{0A2E4254-2AF5-43DB-B07D-88935C855CB1}"/>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+														<CustomState Name="" ID="{8664EDC9-F766-4608-A7F1-D499DB5A6EE1}" ShortID="776031883">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+														<CustomState Name="" ID="{1C6E5F7D-E23E-4D3A-B7DB-50AB9A15675E}" ShortID="349740791">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+														<CustomState Name="" ID="{8238D409-AD92-44C6-A3D6-5CDE2117832A}" ShortID="942531655"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{31D9618C-AFDB-4463-AAB0-D1072DD097A9}">
 													<PropertyList>

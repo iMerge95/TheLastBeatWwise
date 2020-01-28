@@ -7,51 +7,6 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<SwitchGroup Name="MusicLayer" ID="{A68067E3-F81D-4852-9BF9-09C33CE5A862}">
-					<PropertyList>
-						<Property Name="UseGameParameter" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Switch Name="Layer1" ID="{E1A2A271-B39A-4F86-A20F-625AD31AF659}"/>
-						<Switch Name="Layer2" ID="{9B1F44F8-8DF1-481C-8538-5D74AE65AE74}"/>
-						<Switch Name="Layer3" ID="{AFE8E263-DBE8-4184-95FA-46BFD5AC9422}"/>
-					</ChildrenList>
-					<SwitchOnRTPC>
-						<GameParameterRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}"/>
-						<Curve Name="" ID="{815B5361-5E1C-42FA-A13B-2BA3649D6AD8}">
-							<PropertyList>
-								<Property Name="Flags" Type="int32" Value="65537"/>
-							</PropertyList>
-							<PointList>
-								<Point>
-									<XPos>0</XPos>
-									<YPos>1</YPos>
-									<Flags>5</Flags>
-								</Point>
-								<Point>
-									<XPos>1</XPos>
-									<YPos>1</YPos>
-									<Flags>0</Flags>
-								</Point>
-								<Point>
-									<XPos>10</XPos>
-									<YPos>2</YPos>
-									<Flags>0</Flags>
-								</Point>
-								<Point>
-									<XPos>20</XPos>
-									<YPos>3</YPos>
-									<Flags>0</Flags>
-								</Point>
-								<Point>
-									<XPos>30</XPos>
-									<YPos>3</YPos>
-									<Flags>37</Flags>
-								</Point>
-							</PointList>
-						</Curve>
-					</SwitchOnRTPC>
-				</SwitchGroup>
 				<SwitchGroup Name="FootstepsMaterial" ID="{E1B4A8F8-B6EB-4499-A3E5-4FEE02DF5E8E}">
 					<ChildrenList>
 						<Switch Name="Sand" ID="{7955B7FA-2C8A-42A6-AE4C-ABD3F1DBFC0F}"/>
