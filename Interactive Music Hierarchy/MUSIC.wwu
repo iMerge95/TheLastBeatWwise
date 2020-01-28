@@ -5163,9 +5163,6 @@
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-2</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{07A96F00-A401-4595-9B62-FE3175177F9A}" ShortID="755595313">
 																	<ReferenceList>
@@ -5358,7 +5355,7 @@
 																</MusicClip>
 																<MusicEventCue Name="" ID="{2B7D8786-6B42-4362-BA90-A1BA8A94B02A}" ShortID="683452634">
 																	<PropertyList>
-																		<Property Name="PlayAt" Type="Real64" Value="1578.94736842105"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1973.68421052632"/>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="PostEventTarget">
@@ -5383,6 +5380,34 @@
 															</ValueList>
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{CF958DA4-B2BB-4B75-9717-DF71AFAEAF84}" ShortID="792188797">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{00F9E278-2A85-4A0C-9237-28B79A014C9B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -5399,7 +5424,7 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<PositioningInfo>
-														<Panner Name="" ID="{C4C21856-4FA3-4EAD-B5C4-B0E93E857507}"/>
+														<Panner Name="" ID="{03A68F06-5532-4FE1-987D-CB639F55DF06}"/>
 													</PositioningInfo>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{8CDE9B5F-2DED-4AA6-804C-BC987EEA130A}">
@@ -5577,9 +5602,6 @@
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-2</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{4BEF57DA-3D44-46C5-8152-B5DD53C12C90}" ShortID="1061077022">
 																	<ReferenceList>
@@ -5736,7 +5758,7 @@
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 											</PropertyList>
-											<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+											<TriggerRef Name="MusicFeedback" ID="{E44C583A-FB4D-4523-A827-8DAA62360197}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 											<SegmentRef Name="Land_Feeback_Layer3" ID="{6B9CF970-0511-4450-AEBD-AD22489DB7D7}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 										</MusicStinger>
 									</StingerList>
@@ -5844,7 +5866,7 @@
 																</MusicClip>
 																<MusicEventCue Name="" ID="{26FD09BA-1A62-4701-8A1B-D1EDD51098D4}" ShortID="340998086">
 																	<PropertyList>
-																		<Property Name="PlayAt" Type="Real64" Value="789.473684210526"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1578.94736842105"/>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="PostEventTarget">
@@ -5870,9 +5892,6 @@
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-2</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{8C92D145-2EF8-4F6C-B114-A82B41BA8FBF}" ShortID="977470753">
 																	<ReferenceList>
@@ -6065,7 +6084,7 @@
 																</MusicClip>
 																<MusicEventCue Name="" ID="{A9D72CA1-3339-472E-977E-80F92604A589}" ShortID="110650284">
 																	<PropertyList>
-																		<Property Name="PlayAt" Type="Real64" Value="1578.94736842105"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1973.68421052632"/>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="PostEventTarget">
@@ -6089,10 +6108,42 @@
 																<Value>True</Value>
 															</ValueList>
 														</Property>
+														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{F8AEBEEA-3140-4914-85EF-D2E88AED7221}" ShortID="227518744">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{97EC60D3-F767-40EB-8572-ACC45FEB6C69}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+															<ObjectRef Name="AllButPerc" ID="{CC227658-C201-4C50-AEA7-1A5FC0B8B617}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -6101,6 +6152,9 @@
 															<AudioFile>TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer1_1Pre2Post.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{B2999F81-417C-4061-9E64-61AA4B091B96}"/>
+													</PositioningInfo>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{DBA449A1-17B4-414A-B241-7DD4D12867B0}">
 															<PropertyList>
@@ -6270,9 +6324,6 @@
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-2</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{E10EAB76-E8AF-42B2-AF7C-1E743BECDDE3}" ShortID="423412578">
 																	<ReferenceList>
@@ -6422,7 +6473,7 @@
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 											</PropertyList>
-											<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+											<TriggerRef Name="MusicFeedback" ID="{E44C583A-FB4D-4523-A827-8DAA62360197}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 											<SegmentRef Name="Land_Feeback_Layer3" ID="{6B9CF970-0511-4450-AEBD-AD22489DB7D7}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 										</MusicStinger>
 									</StingerList>
@@ -7124,9 +7175,6 @@
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-2</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{0A307D85-28A0-4289-9D8C-EF63E2A29A45}" ShortID="585153314">
 																	<ReferenceList>
@@ -7380,7 +7428,7 @@
 																</MusicClip>
 																<MusicEventCue Name="" ID="{28E92AFB-A370-4D3A-B741-9AE34A55F15D}" ShortID="826157208">
 																	<PropertyList>
-																		<Property Name="PlayAt" Type="Real64" Value="1578.94736842105"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1973.68421052632"/>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="PostEventTarget">
@@ -7405,6 +7453,34 @@
 															</ValueList>
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{0C15F58D-B386-40AE-BB43-910DB962F5E6}" ShortID="303311077">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{171177F8-38BD-4752-8741-BCCB097F0E78}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -7421,7 +7497,7 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<PositioningInfo>
-														<Panner Name="" ID="{5873DB2A-6A0F-472C-A7F2-E96AE3D8819C}"/>
+														<Panner Name="" ID="{322294DE-3488-4EB3-99ED-D5A472219098}"/>
 													</PositioningInfo>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{BAC6805B-6F2F-4B84-AECF-5105BBE2458E}">
@@ -7599,9 +7675,6 @@
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-2</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{ECEDCBC8-C63E-48E7-A3A6-29113F75CA48}" ShortID="782134802">
 																	<ReferenceList>
@@ -7761,7 +7834,7 @@
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 											</PropertyList>
-											<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+											<TriggerRef Name="MusicFeedback" ID="{E44C583A-FB4D-4523-A827-8DAA62360197}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 											<SegmentRef Name="Land_Feeback_Layer3" ID="{6B9CF970-0511-4450-AEBD-AD22489DB7D7}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 										</MusicStinger>
 									</StingerList>
@@ -7794,23 +7867,6 @@
 									</Playlist>
 								</MusicPlaylistContainer>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Music_Limit_Switch" ID="{2B2DB7C9-CB1E-4537-9C8B-6D2D7E8D30F6}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
-										<CustomState Name="" ID="{BC594821-AD5F-4D09-B9F5-3F8ECD677131}" ShortID="72203679"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
-										<CustomState Name="" ID="{D16AECBF-641C-43FB-95EC-519A91FEED1B}" ShortID="134208241"/>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{D9A29965-26C2-4ED4-98E7-2BD28AA94885}">
 									<PropertyList>
@@ -8168,19 +8224,6 @@
 												<TransitionObjectRef Name="TheLastBeat_Mus_Combat_Lands_Trans_Long" ID="{8C83D6E5-62F6-4683-A519-3CEE52877012}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 											</TransitionInfo>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{FFAEAC0B-BBF7-46F8-A85E-AA9A9A03F32B}">
-											<PropertyList>
-												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
-												<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="1"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
-												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
-												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList/>
-											<TransitionInfo>
-												<TransitionObjectRef Name="TheLastBeat_Mus_Combat_Lands_Trans_Long" ID="{8C83D6E5-62F6-4683-A519-3CEE52877012}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-											</TransitionInfo>
-										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
 								</MusicTransition>
@@ -8296,11 +8339,6 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

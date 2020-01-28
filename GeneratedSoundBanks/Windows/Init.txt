@@ -7,7 +7,6 @@ Switch	ID	Name	Switch Group			Notes
 	3298531299	Layer3	MusicLayer			
 
 State Group	ID	Name			Wwise Object Path	Notes
-	960036381	Music_Limit_Switch			\TheLastBeat\MusicState\Music_Limit_Switch	
 	1082318473	Music_CriticLevel			\TheLastBeat\FeedbackState\Music_CriticLevel	
 	2305855220	Rewind_Combat_Loop			\TheLastBeat\RewindState\Rewind_Combat_Loop	
 	2355547200	Music_CombatExplo_Switch			\TheLastBeat\MusicState\Music_CombatExplo_Switch	
@@ -16,9 +15,6 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2996289134	Rewind_State			\TheLastBeat\RewindState\Rewind_State	
 
 State	ID	Name	State Group			Notes
-	0	None	Music_Limit_Switch			
-	2894236345	Combat_Calm	Music_Limit_Switch			
-	2902872313	Combat_Limit	Music_Limit_Switch			
 	0	None	Music_CriticLevel			
 	2938985745	Critic	Music_CriticLevel			
 	3922556052	NotCritic	Music_CriticLevel			

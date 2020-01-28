@@ -53,7 +53,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Int_MusicComboValue" ID="{FD43448F-F5DB-4024-AD8E-1DD4138A43B5}"/>
-							<Value>18.0912162162162</Value>
+							<Value>2</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}"/>
@@ -74,10 +74,9 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
-						<CurrentStateRef Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
 						<CurrentStateRef Name="Chord_02" ID="{66B31738-3C95-4FBC-B072-43F499E539C2}"/>
-						<CurrentStateRef Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
-						<CurrentStateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 					</CurrentStateList>

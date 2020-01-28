@@ -548,10 +548,6 @@
 					<ShortName>MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_03.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_03_592D8723.wem</Path>
 				</File>
-				<File Id="265153136" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Limit_Rewind.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopC_Limit_Rewind_D4F3E753.wem</Path>
-				</File>
 				<File Id="269231197" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord2.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord2_592D8723.wem</Path>
@@ -660,10 +656,6 @@
 				<File Id="446739704" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Rockysteps_02_E37C7245.wem</Path>
-				</File>
-				<File Id="453391844" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Limit_Rewind.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopB_Limit_Rewind_D4F3E753.wem</Path>
 				</File>
 				<File Id="455365614" Language="SFX">
 					<ShortName>TLB_Chara_SFX_RushFX_01.wav</ShortName>
@@ -972,10 +964,6 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>685</PrefetchSize>
-				</File>
-				<File Id="832934138" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Limit_Rewind.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopA_Limit_Rewind_D4F3E753.wem</Path>
 				</File>
 				<File Id="843201751" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord6.wav</ShortName>

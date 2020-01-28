@@ -24,17 +24,6 @@
 								<State Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="Music_Limit_Switch" ID="{2B2DB7C9-CB1E-4537-9C8B-6D2D7E8D30F6}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<State Name="None" ID="{17AAB246-3100-4F6B-9705-CD1A133A1E2F}"/>
-								<State Name="Combat_Calm" ID="{12A146C7-C493-4809-8FAA-53CD9F4692CB}"/>
-								<State Name="Combat_Limit" ID="{0A350D67-82C6-4877-8378-2E97760B729F}"/>
-							</ChildrenList>
-						</StateGroup>
 						<StateGroup Name="Music_Switch" ID="{CFEC8EF1-66D0-4F1A-A2CF-4790CE6EE7C2}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="24"/>
