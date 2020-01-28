@@ -337,6 +337,63 @@
 						</MusicTransition>
 					</TransitionList>
 				</MusicTrack>
+				<MusicTrack Name="Synth_RTPC" ID="{9BC975CD-8E70-4E2D-BBC4-40BF3CFAB1A7}">
+					<PropertyList>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsZeroLantency" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{2787E1B4-CDE9-4456-BC9D-A78F8B2896D5}" ShortID="220651471">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F25C0FFD-264F-4CBB-8B64-D2FDF05AE3E8}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AllButPerc" ID="{CC227658-C201-4C50-AEA7-1A5FC0B8B617}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+						</Reference>
+					</ReferenceList>
+					<PositioningInfo>
+						<Panner Name="" ID="{ED7A557B-B5B1-4090-97FB-71672121717B}"/>
+					</PositioningInfo>
+				</MusicTrack>
 			</ChildrenList>
 		</WorkUnit>
 	</Presets>
