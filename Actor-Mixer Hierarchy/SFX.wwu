@@ -2653,9 +2653,22 @@
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C9B25680-ECB9-4959-8AA4-4E7006E86B5D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2668,7 +2681,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{A159DF44-7F1E-429F-92E6-C4287B7E5A98}" ShortID="961332383">
+										<Sound Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{C2913D77-D958-48D4-B02E-BEC7E38ECA65}" ShortID="670319311">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2678,17 +2691,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{C2CC2293-69B4-4370-89C9-4BD771A65C70}" ShortID="105120328">
+												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{667CB42A-9C1A-47EE-B1C4-00D030B18272}" ShortID="511183250">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
 													<Language>SFX</Language>
 													<AudioFile>TLB_NME_SFX_Enemy_Explosion_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{C2CC2293-69B4-4370-89C9-4BD771A65C70}" Platform="Linked"/>
+												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{667CB42A-9C1A-47EE-B1C4-00D030B18272}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{CEA79567-87FC-4379-8B30-C1D75AB554E1}" ShortID="1005743210">
+										<Sound Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{77A919CA-1D11-4700-8EF9-64462548DF6B}" ShortID="742790593">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2698,17 +2711,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{A68862AE-4D1E-431B-A453-0CD435CDD9B3}" ShortID="105274701">
+												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{E0AD3275-A14D-4683-8351-CFCCC163D98E}" ShortID="622487687">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
 													<Language>SFX</Language>
 													<AudioFile>TLB_NME_SFX_Enemy_Explosion_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{A68862AE-4D1E-431B-A453-0CD435CDD9B3}" Platform="Linked"/>
+												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{E0AD3275-A14D-4683-8351-CFCCC163D98E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{9B94B992-5E74-4279-B4E9-09FD983B9CB2}" ShortID="136986126">
+										<Sound Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{D3F27DE7-5E2B-4DF6-B951-8ED5EC32E436}" ShortID="166541987">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2718,17 +2731,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{D0D35FA9-BCBF-4273-A386-8715A7B2CBBD}" ShortID="270382259">
+												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{C22F01A7-860B-4BA4-8358-DA330B7D49CB}" ShortID="516000761">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
 													<Language>SFX</Language>
 													<AudioFile>TLB_NME_SFX_Enemy_Explosion_03.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{D0D35FA9-BCBF-4273-A386-8715A7B2CBBD}" Platform="Linked"/>
+												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{C22F01A7-860B-4BA4-8358-DA330B7D49CB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{D6C7DCA3-6E8C-4AEA-93B3-7005A37D15A9}" ShortID="1033987671">
+										<Sound Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{CE631CBF-5056-451D-927D-BECD1167AD07}" ShortID="413970726">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2738,14 +2751,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{EB99D028-6387-4A8E-B515-BBA087F60E57}" ShortID="431518000">
+												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{65FE2FB7-B58A-48C1-9781-D9C8200AA01D}" ShortID="688757732">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
 													<Language>SFX</Language>
 													<AudioFile>TLB_NME_SFX_Enemy_Explosion_04.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{EB99D028-6387-4A8E-B515-BBA087F60E57}" Platform="Linked"/>
+												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{65FE2FB7-B58A-48C1-9781-D9C8200AA01D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

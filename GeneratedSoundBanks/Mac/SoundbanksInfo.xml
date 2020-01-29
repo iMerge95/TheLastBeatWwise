@@ -252,7 +252,7 @@
 				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.491708" DurationMax="0.538813"/>
-				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="3.924625" DurationMax="5.003250"/>
+				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="2.651837" DurationMax="3.755392"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1674468585" Name="Play_LeftFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_LeftFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.224922" DurationMax="0.442757"/>
@@ -408,14 +408,6 @@
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer2_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_BlinkFB_Layer2_03_592D8723.wem</Path>
 				</File>
-				<File Id="105120328" Language="SFX">
-					<ShortName>TLB_NME_SFX_Enemy_Explosion_01.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_01_E37C7245.wem</Path>
-				</File>
-				<File Id="105274701" Language="SFX">
-					<ShortName>TLB_NME_SFX_Enemy_Explosion_02.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_02_E37C7245.wem</Path>
-				</File>
 				<File Id="108241621" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Perfect_Layer2_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_RushFB_Perfect_Layer2_04_592D8723.wem</Path>
@@ -556,10 +548,6 @@
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer3_01.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_BlinkFB_Layer3_01_592D8723.wem</Path>
 				</File>
-				<File Id="270382259" Language="SFX">
-					<ShortName>TLB_NME_SFX_Enemy_Explosion_03.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_03_E37C7245.wem</Path>
-				</File>
 				<File Id="284756953" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord7.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord7_592D8723.wem</Path>
@@ -649,10 +637,6 @@
 					<ShortName>MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_04.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord2\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord2_04_592D8723.wem</Path>
 				</File>
-				<File Id="431518000" Language="SFX">
-					<ShortName>TLB_NME_SFX_Enemy_Explosion_04.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_04_E37C7245.wem</Path>
-				</File>
 				<File Id="446739704" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Rockysteps_02_E37C7245.wem</Path>
@@ -693,6 +677,14 @@
 				<File Id="506682447" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_01_E37C7245.wem</Path>
+				</File>
+				<File Id="511183250" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_01.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_01_E37C7245.wem</Path>
+				</File>
+				<File Id="516000761" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_03.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_03_E37C7245.wem</Path>
 				</File>
 				<File Id="517735757" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_06.wav</ShortName>
@@ -793,6 +785,10 @@
 					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord8.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part2_Chord8_592D8723.wem</Path>
 				</File>
+				<File Id="622487687" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_02.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_02_E37C7245.wem</Path>
+				</File>
 				<File Id="623855022" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer3_1Pre2Post_592D8723.wem</Path>
@@ -840,6 +836,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer1_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>977</PrefetchSize>
+				</File>
+				<File Id="688757732" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_04.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_04_E37C7245.wem</Path>
 				</File>
 				<File Id="694222174" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer1_02.wav</ShortName>
