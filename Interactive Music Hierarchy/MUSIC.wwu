@@ -7871,6 +7871,137 @@
 										</MusicPlaylistItem>
 									</Playlist>
 								</MusicPlaylistContainer>
+								<MusicSegment Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{BEBAED2A-19B7-4DAD-8D03-B64F3DB9C866}" ShortID="1033875928">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="9473.6875"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{93DD6F8E-866D-4B90-A646-88BD12AFBFB7}" ShortID="874748739">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{986617B1-6430-49F1-B913-00C1D8C41E90}" ShortID="973627143">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{83EDEB15-B94F-4D83-B34B-504B4BD00AC1}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{DB9E2828-953C-45CD-873A-0194EAC4585B}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{C0D323F9-3022-423D-AA95-460CC48C24E3}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="3157.8947368421"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9473.6875"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="1479.18877271634"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="-3157.8947368421"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{986617B1-6430-49F1-B913-00C1D8C41E90}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{7967B633-061A-4CEF-9467-AE1C599F1648}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>3.15789</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.4736875</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{65CBF2A5-C8FF-4CC6-A54A-114A379BF7D4}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>3.15789</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.4736875</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{2502F434-790D-4308-AA17-989EFC240C57}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>3.15789</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.4736875</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{9112F73D-C1A5-4ED2-8E56-C6EC159F7387}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="3157.89473684211"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{4502D238-082E-412A-BFCE-F382B7047F9D}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="3157.89473684211"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
 							</ChildrenList>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{D9A29965-26C2-4ED4-98E7-2BD28AA94885}">
@@ -10155,6 +10286,36 @@
 												</PropertyList>
 											</MusicFade>
 										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{0511EBFB-F652-4933-BEF7-A7E0AADE1953}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Music_Final_Combat" ID="{8A59AF12-1618-4DEB-A4C5-B305CBAB71C0}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{BEBAED2A-19B7-4DAD-8D03-B64F3DB9C866}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{9B676AAC-2D10-4D1B-9FDE-AD26C214A815}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
 									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>

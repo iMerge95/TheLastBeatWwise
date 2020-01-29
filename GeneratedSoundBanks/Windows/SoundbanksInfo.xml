@@ -1044,6 +1044,10 @@
 					<ShortName>MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02.wav</ShortName>
 					<Path>SFX\MusicalFeedback\Chord1\TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part1_Chord1_02_592D8723.wem</Path>
 				</File>
+				<File Id="973627143" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post_592D8723.wem</Path>
+				</File>
 				<File Id="984312236" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
