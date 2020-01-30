@@ -3790,7 +3790,7 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Annonce" ID="{0F0D78C3-6CA2-4538-A36E-3336D0D5674F}" ShortID="481459079">
+								<RandomSequenceContainer Name="Call" ID="{0F0D78C3-6CA2-4538-A36E-3336D0D5674F}" ShortID="481459079">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 									</PropertyList>
@@ -3805,6 +3805,35 @@
 											<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TLB_NME_SFX_Call_Attack_WIP_01" ID="{C89C914A-F361-48C4-95E0-A65564C53D23}" ShortID="650867950">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TLB_NME_SFX_Call_Attack_WIP_01" ID="{5E0FF8D0-7290-4414-9761-31792B8F5815}" ShortID="250461261">
+													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>TLB_NME_SFX_Call_Attack_WIP_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TLB_NME_SFX_Call_Attack_WIP_01" ID="{5E0FF8D0-7290-4414-9761-31792B8F5815}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<BlendContainer Name="Hover" ID="{06908305-2BF2-48F8-B6C0-9A866EA74F77}" ShortID="418047375">
 									<ReferenceList>
