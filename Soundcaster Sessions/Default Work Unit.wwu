@@ -49,6 +49,22 @@
 							<ObjectRef Name="Play_Hit_Enemy" ID="{135DBD0F-E0DD-4F9C-A735-5C82E7DE1AD9}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="3" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Presence" ID="{BB0E147B-963A-4F43-90DB-174235FE6FBC}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LeftFoot" ID="{CA268FC5-ADBA-419D-B065-BFAA9517F129}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Presence" ID="{C5EA511A-3FEC-43CD-A73E-94FEE466D287}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_RightFoot" ID="{14674390-3546-498D-8397-C632091C5328}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="5" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -57,6 +73,10 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="CharachterSpeed" ID="{5C4E60DC-A693-45BB-8359-23BC07265CE8}"/>
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -79,10 +99,10 @@
 						<CurrentStateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
 						<CurrentStateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
 						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
-						<CurrentStateRef Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
+						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Grass" ID="{3274A8CC-EA98-4228-93D4-F3840091341A}"/>
+						<CurrentSwitchRef Name="Sand" ID="{7955B7FA-2C8A-42A6-AE4C-ABD3F1DBFC0F}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
