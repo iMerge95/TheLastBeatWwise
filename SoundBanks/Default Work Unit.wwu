@@ -26,7 +26,7 @@
 						<ObjectRef Name="Play_Rewind" ID="{CE03CC97-7D3D-4C7F-9936-3F176E1AB104}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Call_Ennemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Call_Attack_Ennemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="00_Internal" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="03_NME" ID="{869AB398-6F59-4E88-B023-410917D1AAD0}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>

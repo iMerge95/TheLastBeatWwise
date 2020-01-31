@@ -1581,429 +1581,10 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="Skills" ID="{6C9F393D-9C37-49D7-8D9F-F1AC2B4AA907}" ShortID="857317061">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" ShortID="64923741">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{DDE5677B-7BAB-4CFA-881C-018AC8C1662C}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="10"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{07219479-EC2C-4CCD-8AB2-649A124307EC}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="100"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-7</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="TLB_Chara_SFX_RushFX_01" ID="{0A3398DB-53B8-43AE-AFE0-77547C5E19A5}" ShortID="715238614">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_RushFX_01" ID="{2DF78EA6-451E-4911-9C0B-C38E98464A80}" ShortID="455365614">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_Chara_SFX_RushFX_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_RushFX_01" ID="{2DF78EA6-451E-4911-9C0B-C38E98464A80}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_Chara_SFX_RushFX_02" ID="{C4C687BD-B241-4A9F-AA62-A48970C5400E}" ShortID="456545476">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_RushFX_02" ID="{231694E1-ABCA-46B9-A18E-9834E017A976}" ShortID="132776513">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_Chara_SFX_RushFX_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_RushFX_02" ID="{231694E1-ABCA-46B9-A18E-9834E017A976}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_Chara_SFX_RushFX_03" ID="{52B05196-C813-4791-960F-C75F064F1841}" ShortID="962834684">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_RushFX_03" ID="{67615820-CC7D-4B93-BE6E-4F3955165B91}" ShortID="163597197">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_Chara_SFX_RushFX_03.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_RushFX_03" ID="{67615820-CC7D-4B93-BE6E-4F3955165B91}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_Chara_SFX_RushFX_04" ID="{B46BC81B-CC40-44CC-99B3-D758747A5AA7}" ShortID="484113480">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_RushFX_04" ID="{DE5E61A1-65E4-4489-9A8A-E61CE873FC41}" ShortID="575072205">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_Chara_SFX_RushFX_04.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_RushFX_04" ID="{DE5E61A1-65E4-4489-9A8A-E61CE873FC41}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" ShortID="613458410">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="Lowpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{E1843C02-A039-4476-AA4B-78BB648E286B}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="10"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{8F23B9CF-A0E7-4E32-AA6E-3FE5A50734D5}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="100"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="TLB_Chara_SFX_BlinkFX_01" ID="{5B4BD35B-377A-4013-8AA5-325553AE70C4}" ShortID="784584403">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_01" ID="{9B632F3E-E7DB-4CCD-993F-ED3549ADF9C7}" ShortID="506043198">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_Chara_SFX_BlinkFX_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_01" ID="{9B632F3E-E7DB-4CCD-993F-ED3549ADF9C7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_Chara_SFX_BlinkFX_02" ID="{B6DF10D0-3D79-4F7E-BB92-466CC1864E37}" ShortID="866430393">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_02" ID="{ED2C6BD4-BEA3-421B-9A17-7DDA452D2FB6}" ShortID="737147085">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_Chara_SFX_BlinkFX_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_02" ID="{ED2C6BD4-BEA3-421B-9A17-7DDA452D2FB6}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_Chara_SFX_BlinkFX_03" ID="{7B348D26-CFB1-4F39-9DA5-D9CFFAC5D271}" ShortID="538874977">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_03" ID="{DC4FD65B-F0B4-4FAB-A29B-B9E98F75135C}" ShortID="51801871">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_Chara_SFX_BlinkFX_03.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_03" ID="{DC4FD65B-F0B4-4FAB-A29B-B9E98F75135C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="TLB_Chara_SFX_BlinkFX_04" ID="{51E0145C-A26B-494D-8712-CD57D3EA3CB1}" ShortID="507085163">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_04" ID="{32A014F5-882F-4C08-9CBC-4941052F1530}" ShortID="819369873">
-															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>TLB_Chara_SFX_BlinkFX_04.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TLB_Chara_SFX_BlinkFX_04" ID="{32A014F5-882F-4C08-9CBC-4941052F1530}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<SwitchContainer Name="FloorImpact" ID="{A6F52356-4236-41AD-BFA2-141EC45A0D73}" ShortID="969749309">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<RandomSequenceContainer Name="Sand" ID="{EB77E520-6A82-4315-9A36-82A87B53FBCD}" ShortID="100870901">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Rock" ID="{63203F31-68F4-44B0-BE34-4CDAC6F5D0BA}" ShortID="320427634">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-												</RandomSequenceContainer>
-											</ChildrenList>
-											<GroupingInfo>
-												<GroupingBehaviorList>
-													<GroupingBehavior>
-														<ItemRef Name="Sand" ID="{EB77E520-6A82-4315-9A36-82A87B53FBCD}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="Rock" ID="{63203F31-68F4-44B0-BE34-4CDAC6F5D0BA}"/>
-													</GroupingBehavior>
-												</GroupingBehaviorList>
-											</GroupingInfo>
-										</SwitchContainer>
-									</ChildrenList>
-								</ActorMixer>
-								<RandomSequenceContainer Name="Hit_Player" ID="{34A80574-0D81-40B6-8978-667CE3ABC9A2}" ShortID="475112535">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="TLB_Chara_SFX_Hit_01" ID="{702168B0-675F-44E2-AC89-BC83C9845E7E}" ShortID="1002821394">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_Chara_SFX_Hit_01" ID="{D37770C9-8ADA-4AB9-ABF8-424373593E0C}" ShortID="405503307">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_Chara_SFX_Hit_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_Chara_SFX_Hit_01" ID="{D37770C9-8ADA-4AB9-ABF8-424373593E0C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_Chara_SFX_Hit_02" ID="{1D491DC4-CE65-4BEE-A6B2-A5B689AFF9CD}" ShortID="75014909">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_Chara_SFX_Hit_02" ID="{BCC54957-1529-4426-B259-D099085F94E7}" ShortID="737093795">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_Chara_SFX_Hit_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_Chara_SFX_Hit_02" ID="{BCC54957-1529-4426-B259-D099085F94E7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_Chara_SFX_Hit_03" ID="{53857AAB-1F14-4E89-939E-FDD33B0A142E}" ShortID="423680648">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_Chara_SFX_Hit_03" ID="{0DEB3F24-1FF3-4A94-908F-0B1627319E2B}" ShortID="819641697">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_Chara_SFX_Hit_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_Chara_SFX_Hit_03" ID="{0DEB3F24-1FF3-4A94-908F-0B1627319E2B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_Chara_SFX_Hit_04" ID="{D7267857-A829-4787-8D86-AB5D770090E6}" ShortID="935375283">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_Chara_SFX_Hit_04" ID="{3CF7E3AF-E684-4423-9BA7-94F2E265F8FC}" ShortID="94329137">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_Chara_SFX_Hit_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_Chara_SFX_Hit_04" ID="{3CF7E3AF-E684-4423-9BA7-94F2E265F8FC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
 								<ActorMixer Name="Foley" ID="{EF1DAE4F-E757-4874-9C2B-D8AA3D3114EC}" ShortID="1051870870">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2013,7 +1594,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+											<ObjectRef Name="Charachter SFX" ID="{3782A6C2-BAD9-421F-8863-3EF1E677C778}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3537,6 +3118,449 @@
 										</CustomStateList>
 									</StateInfo>
 								</ActorMixer>
+								<ActorMixer Name="Gameplay" ID="{BEBF61B4-497D-490F-AD46-413F5B4433E0}" ShortID="535202687">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Skills" ID="{6C9F393D-9C37-49D7-8D9F-F1AC2B4AA907}" ShortID="857317061">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="MC_Foley" ID="{6566BBAB-B9B7-499A-96FB-58D69713326C}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Rush" ID="{A129A1D6-1305-48A1-A60B-6B8974655F9F}" ShortID="64923741">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{DDE5677B-7BAB-4CFA-881C-018AC8C1662C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{07219479-EC2C-4CCD-8AB2-649A124307EC}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_Chara_SFX_RushFX_01" ID="{0A3398DB-53B8-43AE-AFE0-77547C5E19A5}" ShortID="715238614">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_Chara_SFX_RushFX_01" ID="{2DF78EA6-451E-4911-9C0B-C38E98464A80}" ShortID="455365614">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_Chara_SFX_RushFX_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_Chara_SFX_RushFX_01" ID="{2DF78EA6-451E-4911-9C0B-C38E98464A80}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_Chara_SFX_RushFX_02" ID="{C4C687BD-B241-4A9F-AA62-A48970C5400E}" ShortID="456545476">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_Chara_SFX_RushFX_02" ID="{231694E1-ABCA-46B9-A18E-9834E017A976}" ShortID="132776513">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_Chara_SFX_RushFX_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_Chara_SFX_RushFX_02" ID="{231694E1-ABCA-46B9-A18E-9834E017A976}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_Chara_SFX_RushFX_03" ID="{52B05196-C813-4791-960F-C75F064F1841}" ShortID="962834684">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_Chara_SFX_RushFX_03" ID="{67615820-CC7D-4B93-BE6E-4F3955165B91}" ShortID="163597197">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_Chara_SFX_RushFX_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_Chara_SFX_RushFX_03" ID="{67615820-CC7D-4B93-BE6E-4F3955165B91}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_Chara_SFX_RushFX_04" ID="{B46BC81B-CC40-44CC-99B3-D758747A5AA7}" ShortID="484113480">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_Chara_SFX_RushFX_04" ID="{DE5E61A1-65E4-4489-9A8A-E61CE873FC41}" ShortID="575072205">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_Chara_SFX_RushFX_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_Chara_SFX_RushFX_04" ID="{DE5E61A1-65E4-4489-9A8A-E61CE873FC41}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Blink" ID="{C368DB14-A1AA-451D-9CD4-13C6DEA2A6B2}" ShortID="613458410">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>20</Value>
+															</ValueList>
+														</Property>
+														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+														<Property Name="Lowpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{E1843C02-A039-4476-AA4B-78BB648E286B}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8F23B9CF-A0E7-4E32-AA6E-3FE5A50734D5}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_Chara_SFX_BlinkFX_01" ID="{5B4BD35B-377A-4013-8AA5-325553AE70C4}" ShortID="784584403">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_01" ID="{9B632F3E-E7DB-4CCD-993F-ED3549ADF9C7}" ShortID="506043198">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_Chara_SFX_BlinkFX_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_Chara_SFX_BlinkFX_01" ID="{9B632F3E-E7DB-4CCD-993F-ED3549ADF9C7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_Chara_SFX_BlinkFX_02" ID="{B6DF10D0-3D79-4F7E-BB92-466CC1864E37}" ShortID="866430393">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_02" ID="{ED2C6BD4-BEA3-421B-9A17-7DDA452D2FB6}" ShortID="737147085">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_Chara_SFX_BlinkFX_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_Chara_SFX_BlinkFX_02" ID="{ED2C6BD4-BEA3-421B-9A17-7DDA452D2FB6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_Chara_SFX_BlinkFX_03" ID="{7B348D26-CFB1-4F39-9DA5-D9CFFAC5D271}" ShortID="538874977">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_03" ID="{DC4FD65B-F0B4-4FAB-A29B-B9E98F75135C}" ShortID="51801871">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_Chara_SFX_BlinkFX_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_Chara_SFX_BlinkFX_03" ID="{DC4FD65B-F0B4-4FAB-A29B-B9E98F75135C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_Chara_SFX_BlinkFX_04" ID="{51E0145C-A26B-494D-8712-CD57D3EA3CB1}" ShortID="507085163">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_Chara_SFX_BlinkFX_04" ID="{32A014F5-882F-4C08-9CBC-4941052F1530}" ShortID="819369873">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_Chara_SFX_BlinkFX_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_Chara_SFX_BlinkFX_04" ID="{32A014F5-882F-4C08-9CBC-4941052F1530}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<SwitchContainer Name="FloorImpact" ID="{A6F52356-4236-41AD-BFA2-141EC45A0D73}" ShortID="969749309">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Sand" ID="{EB77E520-6A82-4315-9A36-82A87B53FBCD}" ShortID="100870901">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="Rock" ID="{63203F31-68F4-44B0-BE34-4CDAC6F5D0BA}" ShortID="320427634">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="Sand" ID="{EB77E520-6A82-4315-9A36-82A87B53FBCD}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="Rock" ID="{63203F31-68F4-44B0-BE34-4CDAC6F5D0BA}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+													</GroupingInfo>
+												</SwitchContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<RandomSequenceContainer Name="Hit_Player" ID="{34A80574-0D81-40B6-8978-667CE3ABC9A2}" ShortID="475112535">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="TLB_Chara_SFX_Hit_01" ID="{702168B0-675F-44E2-AC89-BC83C9845E7E}" ShortID="1002821394">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_Hit_01" ID="{D37770C9-8ADA-4AB9-ABF8-424373593E0C}" ShortID="405503307">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_Hit_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_Hit_01" ID="{D37770C9-8ADA-4AB9-ABF8-424373593E0C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_Hit_02" ID="{1D491DC4-CE65-4BEE-A6B2-A5B689AFF9CD}" ShortID="75014909">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_Hit_02" ID="{BCC54957-1529-4426-B259-D099085F94E7}" ShortID="737093795">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_Hit_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_Hit_02" ID="{BCC54957-1529-4426-B259-D099085F94E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_Hit_03" ID="{53857AAB-1F14-4E89-939E-FDD33B0A142E}" ShortID="423680648">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_Hit_03" ID="{0DEB3F24-1FF3-4A94-908F-0B1627319E2B}" ShortID="819641697">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_Hit_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_Hit_03" ID="{0DEB3F24-1FF3-4A94-908F-0B1627319E2B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_Hit_04" ID="{D7267857-A829-4787-8D86-AB5D770090E6}" ShortID="935375283">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_Hit_04" ID="{3CF7E3AF-E684-4423-9BA7-94F2E265F8FC}" ShortID="94329137">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_Hit_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_Hit_04" ID="{3CF7E3AF-E684-4423-9BA7-94F2E265F8FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Enemy" ID="{338C1D4A-3D8C-44A4-9200-9B5074DB5AA8}" ShortID="133303973">
@@ -3558,222 +3582,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Hit_Enemy" ID="{03631A26-5B87-4A1A-8ABC-17A9F2822138}" ShortID="245829564">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="TLB_NME_SFX_Hit_Enemy_Basic_01" ID="{5D2F665D-8C36-46F2-BED2-4765E75367A4}" ShortID="993775280">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Hit_Enemy_Basic_01" ID="{832BD77C-DA7D-4497-A1EF-EE807CBB9105}" ShortID="1031277549">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Hit_Enemy_Basic_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Hit_Enemy_Basic_01" ID="{832BD77C-DA7D-4497-A1EF-EE807CBB9105}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Hit_Enemy_Basic_02" ID="{6916B683-E857-4864-9445-DA57D4C799C7}" ShortID="183674641">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Hit_Enemy_Basic_02" ID="{34CEE487-B459-44FE-928E-14AC67FC4D65}" ShortID="520365903">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Hit_Enemy_Basic_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Hit_Enemy_Basic_02" ID="{34CEE487-B459-44FE-928E-14AC67FC4D65}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Hit_Enemy_Basic_03" ID="{99B22259-BB60-4C54-9A37-A1E507D0A6D1}" ShortID="389175726">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Hit_Enemy_Basic_03" ID="{EDC75392-BDF7-40BA-ACAF-68849BAB141A}" ShortID="797154347">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Hit_Enemy_Basic_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Hit_Enemy_Basic_03" ID="{EDC75392-BDF7-40BA-ACAF-68849BAB141A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Hit_Enemy_Basic_04" ID="{F7F7C007-1446-4235-98F1-C26E1B01B38F}" ShortID="1057404477">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Hit_Enemy_Basic_04" ID="{F4F45B61-139B-4ACE-B8EA-0C454007D26A}" ShortID="366134666">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Hit_Enemy_Basic_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Hit_Enemy_Basic_04" ID="{F4F45B61-139B-4ACE-B8EA-0C454007D26A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Explosion" ID="{49405CB2-3803-464F-8335-4575475A47E0}" ShortID="281053208">
-									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{C9B25680-ECB9-4959-8AA4-4E7006E86B5D}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="300"/>
-															<Property Name="Min" Type="Real64" Value="-300"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{1ED7894B-6D7C-43C0-AD1E-C99B1954380B}" ShortID="953118290">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{4D4B71E5-6284-4C63-A9D9-F5BAE66CDD33}" ShortID="800592173">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Enemy_Explosion_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{4D4B71E5-6284-4C63-A9D9-F5BAE66CDD33}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{059CD30D-541A-44C8-BE0F-C7BCC220DFEC}" ShortID="558221527">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{B768BA12-D9B3-4A75-BD00-E4FE8A74FFBB}" ShortID="181239436">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Enemy_Explosion_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{B768BA12-D9B3-4A75-BD00-E4FE8A74FFBB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{EA7400C7-92A7-44D0-8B90-AE5A4EA45ABC}" ShortID="871856605">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{7B6BED16-07D8-43AE-846F-A74D220C721C}" ShortID="254190867">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Enemy_Explosion_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{7B6BED16-07D8-43AE-846F-A74D220C721C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{DBE14EA3-9722-4003-A23C-AEFD1C301580}" ShortID="777113116">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{42945443-0561-4CF1-82DA-1BD5335C8D5B}" ShortID="634462634">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Enemy_Explosion_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{42945443-0561-4CF1-82DA-1BD5335C8D5B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Death" ID="{1B165AB4-D57C-49C3-9B96-BE9B0EFA1F7D}" ShortID="753774702">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -3790,51 +3598,6 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Call" ID="{0F0D78C3-6CA2-4538-A36E-3336D0D5674F}" ShortID="481459079">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="EnemyAttenuation" ID="{C653802B-E8BE-4C6B-8384-5CC72BBA5436}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="TLB_NME_SFX_Call_Attack_WIP_01" ID="{C89C914A-F361-48C4-95E0-A65564C53D23}" ShortID="650867950">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-15</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Call_Attack_WIP_01" ID="{5E0FF8D0-7290-4414-9761-31792B8F5815}" ShortID="250461261">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Call_Attack_WIP_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Call_Attack_WIP_01" ID="{5E0FF8D0-7290-4414-9761-31792B8F5815}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
 								<BlendContainer Name="Hover" ID="{06908305-2BF2-48F8-B6C0-9A866EA74F77}" ShortID="418047375">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3845,12 +3608,12 @@
 										</Reference>
 									</ReferenceList>
 								</BlendContainer>
-								<RandomSequenceContainer Name="Bounce_Shield" ID="{EEB2E350-3A0F-41C4-8825-7AB775B70AC6}" ShortID="807754440">
+								<ActorMixer Name="Gameplay" ID="{BCC71CEA-FF4C-4B17-82F2-0DC47B2A6CD0}" ShortID="365037869">
 									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3859,92 +3622,694 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+											<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="TLB_NME_SFX_Bounce_Shield_01" ID="{3B05D956-152F-4E5A-BF83-86A0EEBBD071}" ShortID="578410772">
+										<RandomSequenceContainer Name="Explosion" ID="{49405CB2-3803-464F-8335-4575475A47E0}" ShortID="281053208">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C9B25680-ECB9-4959-8AA4-4E7006E86B5D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="EnemyAttenuation" ID="{C653802B-E8BE-4C6B-8384-5CC72BBA5436}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+												</Reference>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+													<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Bounce_Shield_01" ID="{6288E73A-B427-469E-BDA7-3B166E5019B0}" ShortID="483767187">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Bounce_Shield_01.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{1ED7894B-6D7C-43C0-AD1E-C99B1954380B}" ShortID="953118290">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{4D4B71E5-6284-4C63-A9D9-F5BAE66CDD33}" ShortID="800592173">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Enemy_Explosion_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_01" ID="{4D4B71E5-6284-4C63-A9D9-F5BAE66CDD33}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{059CD30D-541A-44C8-BE0F-C7BCC220DFEC}" ShortID="558221527">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{B768BA12-D9B3-4A75-BD00-E4FE8A74FFBB}" ShortID="181239436">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Enemy_Explosion_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_02" ID="{B768BA12-D9B3-4A75-BD00-E4FE8A74FFBB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{EA7400C7-92A7-44D0-8B90-AE5A4EA45ABC}" ShortID="871856605">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{7B6BED16-07D8-43AE-846F-A74D220C721C}" ShortID="254190867">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Enemy_Explosion_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_03" ID="{7B6BED16-07D8-43AE-846F-A74D220C721C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{DBE14EA3-9722-4003-A23C-AEFD1C301580}" ShortID="777113116">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{42945443-0561-4CF1-82DA-1BD5335C8D5B}" ShortID="634462634">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Enemy_Explosion_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_04" ID="{42945443-0561-4CF1-82DA-1BD5335C8D5B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Bounce_Shield_01" ID="{6288E73A-B427-469E-BDA7-3B166E5019B0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Bounce_Shield_02" ID="{C7BCAB73-A8A2-4358-9C7D-F4BF63418A18}" ShortID="622879620">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Hit_Enemy" ID="{03631A26-5B87-4A1A-8ABC-17A9F2822138}" ShortID="245829564">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="EnemyAttenuation" ID="{C653802B-E8BE-4C6B-8384-5CC72BBA5436}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+												</Reference>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+													<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Bounce_Shield_02" ID="{66CB678C-6C71-4A3C-BF89-40CB8E8F9CD9}" ShortID="703900704">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Bounce_Shield_02.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="TLB_NME_SFX_Hit_Enemy_Basic_01" ID="{5D2F665D-8C36-46F2-BED2-4765E75367A4}" ShortID="993775280">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Hit_Enemy_Basic_01" ID="{832BD77C-DA7D-4497-A1EF-EE807CBB9105}" ShortID="1031277549">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Hit_Enemy_Basic_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Hit_Enemy_Basic_01" ID="{832BD77C-DA7D-4497-A1EF-EE807CBB9105}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Hit_Enemy_Basic_02" ID="{6916B683-E857-4864-9445-DA57D4C799C7}" ShortID="183674641">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Hit_Enemy_Basic_02" ID="{34CEE487-B459-44FE-928E-14AC67FC4D65}" ShortID="520365903">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Hit_Enemy_Basic_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Hit_Enemy_Basic_02" ID="{34CEE487-B459-44FE-928E-14AC67FC4D65}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Hit_Enemy_Basic_03" ID="{99B22259-BB60-4C54-9A37-A1E507D0A6D1}" ShortID="389175726">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Hit_Enemy_Basic_03" ID="{EDC75392-BDF7-40BA-ACAF-68849BAB141A}" ShortID="797154347">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Hit_Enemy_Basic_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Hit_Enemy_Basic_03" ID="{EDC75392-BDF7-40BA-ACAF-68849BAB141A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Hit_Enemy_Basic_04" ID="{F7F7C007-1446-4235-98F1-C26E1B01B38F}" ShortID="1057404477">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Hit_Enemy_Basic_04" ID="{F4F45B61-139B-4ACE-B8EA-0C454007D26A}" ShortID="366134666">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Hit_Enemy_Basic_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Hit_Enemy_Basic_04" ID="{F4F45B61-139B-4ACE-B8EA-0C454007D26A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Bounce_Shield_02" ID="{66CB678C-6C71-4A3C-BF89-40CB8E8F9CD9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Bounce_Shield_03" ID="{16AD3644-A913-43AA-B0DD-89668B2AFED5}" ShortID="564096641">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Bounce_Shield" ID="{EEB2E350-3A0F-41C4-8825-7AB775B70AC6}" ShortID="807754440">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="EnemyAttenuation" ID="{C653802B-E8BE-4C6B-8384-5CC72BBA5436}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+												</Reference>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Bounce_Shield_03" ID="{25984C36-5DC6-4F54-A90C-CD31A30BF9DA}" ShortID="100723046">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Bounce_Shield_03.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="TLB_NME_SFX_Bounce_Shield_01" ID="{3B05D956-152F-4E5A-BF83-86A0EEBBD071}" ShortID="578410772">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Bounce_Shield_01" ID="{6288E73A-B427-469E-BDA7-3B166E5019B0}" ShortID="483767187">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Bounce_Shield_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Bounce_Shield_01" ID="{6288E73A-B427-469E-BDA7-3B166E5019B0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Bounce_Shield_02" ID="{C7BCAB73-A8A2-4358-9C7D-F4BF63418A18}" ShortID="622879620">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Bounce_Shield_02" ID="{66CB678C-6C71-4A3C-BF89-40CB8E8F9CD9}" ShortID="703900704">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Bounce_Shield_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Bounce_Shield_02" ID="{66CB678C-6C71-4A3C-BF89-40CB8E8F9CD9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Bounce_Shield_03" ID="{16AD3644-A913-43AA-B0DD-89668B2AFED5}" ShortID="564096641">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Bounce_Shield_03" ID="{25984C36-5DC6-4F54-A90C-CD31A30BF9DA}" ShortID="100723046">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Bounce_Shield_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Bounce_Shield_03" ID="{25984C36-5DC6-4F54-A90C-CD31A30BF9DA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Bounce_Shield_04" ID="{8AFBF17A-0BB9-4F2D-9307-3897995B5337}" ShortID="417239965">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Bounce_Shield_04" ID="{5769C4A2-9122-4C2E-BB08-1BB55596F798}" ShortID="156557215">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Bounce_Shield_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Bounce_Shield_04" ID="{5769C4A2-9122-4C2E-BB08-1BB55596F798}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Bounce_Shield_03" ID="{25984C36-5DC6-4F54-A90C-CD31A30BF9DA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="TLB_NME_SFX_Bounce_Shield_04" ID="{8AFBF17A-0BB9-4F2D-9307-3897995B5337}" ShortID="417239965">
+										</RandomSequenceContainer>
+										<BlendContainer Name="Call_Attack" ID="{C8FD2F4D-3677-4AF7-9F0D-99ADD5AD4B74}" ShortID="548874478">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="EnemyAttenuation" ID="{C653802B-E8BE-4C6B-8384-5CC72BBA5436}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+												</Reference>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+													<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Bounce_Shield_04" ID="{5769C4A2-9122-4C2E-BB08-1BB55596F798}" ShortID="156557215">
-													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>TLB_NME_SFX_Bounce_Shield_04.wav</AudioFile>
-												</AudioFileSource>
+												<RandomSequenceContainer Name="Attack_Hi" ID="{CC182AA9-1E12-48BA-B1AB-9E2595E83916}" ShortID="157135560">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D13BDE8F-7A2E-420C-8F54-ABA3E04B33BD}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{17B30419-F1FD-4A1C-9CB7-6810D793D695}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{51416559-8C92-47CF-B25A-942BB0D47172}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1326955D-7861-45BF-8CFB-339DEC9568B1}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Hi_01" ID="{4F678A0A-DA61-4897-B0E1-93E536DA25AD}" ShortID="415884610">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Hi_01" ID="{C00A786C-A2F4-49AA-B6AA-EA059003D4F9}" ShortID="61377107">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Hi_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Hi_01" ID="{C00A786C-A2F4-49AA-B6AA-EA059003D4F9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Hi_02" ID="{D2C6F1C8-80D0-458F-94CB-B2C70A3CF940}" ShortID="489655630">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Hi_02" ID="{3ACBCE74-875A-4FFE-B21F-B9D337339281}" ShortID="162882995">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Hi_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Hi_02" ID="{3ACBCE74-875A-4FFE-B21F-B9D337339281}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Hi_03" ID="{3602CB47-85FA-4876-A6B0-BA0B22F6EF54}" ShortID="822660627">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Hi_03" ID="{6E2BC213-6BBD-4214-B2BB-59BD616CF220}" ShortID="758847900">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Hi_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Hi_03" ID="{6E2BC213-6BBD-4214-B2BB-59BD616CF220}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Hi_04" ID="{6020FE61-6EAC-426F-A7DA-2A834DB1A314}" ShortID="61768294">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Hi_04" ID="{93CA0C5B-5AA3-4A2C-9CBA-D44406501787}" ShortID="91668788">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Hi_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Hi_04" ID="{93CA0C5B-5AA3-4A2C-9CBA-D44406501787}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Hi_05" ID="{6331A084-3EF2-49D6-B114-09B8F1ADA6C5}" ShortID="646264261">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Hi_05" ID="{44CA5621-7720-4016-B1C7-70666CB8D108}" ShortID="343139646">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Hi_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Hi_05" ID="{44CA5621-7720-4016-B1C7-70666CB8D108}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Attack_Lo" ID="{EC15F009-21F2-445B-92E0-E578529C1F82}" ShortID="649404746">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{37C98434-F9B8-494B-95A2-4137C07A3608}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{E7751EBF-1114-438F-8D22-A2C27F37DD3F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{156349B9-D0CA-4AEC-BF31-9A6035820C38}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-50"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C8D7B828-E44D-49D4-9F06-BDD59EC44C20}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Lo_01" ID="{1F2299DD-F157-4167-974C-264FB59BCC95}" ShortID="472783678">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Lo_01" ID="{234F7869-B573-4541-A8E3-B82E3F94CB48}" ShortID="998446063">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Lo_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Lo_01" ID="{234F7869-B573-4541-A8E3-B82E3F94CB48}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Lo_02" ID="{7A21F8DC-8749-4B7A-B113-689317DA7532}" ShortID="674399731">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Lo_02" ID="{D837C26B-F78D-45A9-9FA7-69AD66FC3C10}" ShortID="50662112">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Lo_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Lo_02" ID="{D837C26B-F78D-45A9-9FA7-69AD66FC3C10}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Lo_03" ID="{1BC38656-60EE-4BAF-ACD3-FDCDA4258257}" ShortID="968260172">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Lo_03" ID="{F1459176-2C9B-4C16-9BEE-95EB922CFAE8}" ShortID="590036782">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Lo_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Lo_03" ID="{F1459176-2C9B-4C16-9BEE-95EB922CFAE8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Lo_04" ID="{14D51797-8724-4915-8464-A41DB13B0608}" ShortID="895753922">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Lo_04" ID="{56EAC78E-0D1C-45DA-8BDA-7F8AAB527FCD}" ShortID="867722684">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Lo_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Lo_04" ID="{56EAC78E-0D1C-45DA-8BDA-7F8AAB527FCD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Call_Attack_Lo_05" ID="{7C945C05-1C8B-4C3C-9137-77111C04158D}" ShortID="668861436">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Call_Attack_Lo_05" ID="{8F7C80DE-EA7C-409F-AD6E-910EC9A4820B}" ShortID="258908247">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Call_Attack_Lo_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Call_Attack_Lo_05" ID="{8F7C80DE-EA7C-409F-AD6E-910EC9A4820B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Bounce_Shield_04" ID="{5769C4A2-9122-4C2E-BB08-1BB55596F798}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</BlendContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

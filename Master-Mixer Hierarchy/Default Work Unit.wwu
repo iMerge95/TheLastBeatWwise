@@ -30,11 +30,11 @@
 														<XPos>0</XPos>
 														<YPos>0</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Exp3</SegmentShape>
+														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
-														<YPos>45</YPos>
+														<YPos>50</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -52,6 +52,8 @@
 										</Reference>
 									</ReferenceList>
 								</Bus>
+								<Bus Name="Environement" ID="{01A6A307-3EC0-46BB-BC0A-93AF18FB4259}"/>
+								<Bus Name="Charachter SFX" ID="{3782A6C2-BAD9-421F-8863-3EF1E677C778}"/>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -101,17 +103,17 @@
 														<XPos>-40</XPos>
 														<YPos>0</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Log3</SegmentShape>
+														<SegmentShape>Log2</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>-12</XPos>
-														<YPos>-9</YPos>
+														<YPos>-6</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Exp2</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-9</YPos>
+														<YPos>-6</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

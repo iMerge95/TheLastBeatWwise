@@ -14,7 +14,7 @@
 						<Property Name="Tempo" Type="Real64" Value="76"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -125,6 +125,11 @@
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideOutput" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="OutputBus">
@@ -318,7 +323,7 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-2</Value>
+																		<Value>-1</Value>
 																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{A9120617-0616-46EC-B52F-0385ADEFFD88}" ShortID="602964966">
@@ -1131,7 +1136,7 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-2</Value>
+																		<Value>-1</Value>
 																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{E440C040-F442-4097-AB3C-C9B2A9D360A3}" ShortID="192178658">
@@ -1213,6 +1218,11 @@
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideOutput" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="OutputBus">
@@ -1405,7 +1415,7 @@
 																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-2</Value>
+																		<Value>-1</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -1712,7 +1722,7 @@
 										<Property Name="Tempo" Type="Real64" Value="76"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3231,7 +3241,7 @@
 										<Property Name="Tempo" Type="Real64" Value="76"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -8715,6 +8725,11 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -9296,6 +9311,11 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -9826,6 +9846,11 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -10108,6 +10133,11 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">

@@ -358,12 +358,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Call_Ennemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}">
+						<Event Name="Play_Call_Attack_Ennemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}">
 							<ChildrenList>
 								<Action Name="" ID="{94C84AAE-D7F7-434B-BB0E-6D7CA8A5B7EC}" ShortID="732345508">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Call" ID="{0F0D78C3-6CA2-4538-A36E-3336D0D5674F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+											<ObjectRef Name="Call_Attack" ID="{C8FD2F4D-3677-4AF7-9F0D-99ADD5AD4B74}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
