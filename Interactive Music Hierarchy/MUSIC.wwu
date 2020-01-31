@@ -1720,11 +1720,6 @@
 										<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3239,11 +3234,6 @@
 										<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4962,8 +4952,8 @@
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{CE15B99D-4435-435D-811B-AD59C6DA3579}">
 														<PropertyList>
-															<Property Name="FadeOffset" Type="Real64" Value="0.8"/>
-															<Property Name="FadeTime" Type="Real64" Value="1.6"/>
+															<Property Name="FadeOffset" Type="Real64" Value="1.2"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
 															<Property Name="FadeType" Type="int16" Value="1"/>
 														</PropertyList>
 													</MusicFade>
@@ -4971,8 +4961,8 @@
 												<DestinationFadeIn>
 													<MusicFade Name="Destination Fade-in" ID="{C1F9477B-77F2-4402-986E-75CEB3B6F2F4}">
 														<PropertyList>
-															<Property Name="FadeOffset" Type="Real64" Value="-0.4"/>
-															<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+															<Property Name="FadeOffset" Type="Real64" Value="-0.6"/>
+															<Property Name="FadeTime" Type="Real64" Value="1.2"/>
 														</PropertyList>
 													</MusicFade>
 												</DestinationFadeIn>
@@ -5303,7 +5293,7 @@
 												<MusicCue Name="Exit Cue" ID="{6DA6D291-BB51-4215-A0F5-BD59DF754C80}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="52126.3157894737"/>
+														<Property Name="TimeMs" Type="Real64" Value="52105.2631578947"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -5528,7 +5518,7 @@
 												<MusicCue Name="Exit Cue" ID="{37B2E6E8-FDB6-4504-8637-E38881C5A654}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="25263.1578947368"/>
+														<Property Name="TimeMs" Type="Real64" Value="25657.8947368421"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -6032,7 +6022,7 @@
 												<MusicCue Name="Exit Cue" ID="{19F0C067-53BB-477D-8D9B-C4B63BD6EECE}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="52126.3157894737"/>
+														<Property Name="TimeMs" Type="Real64" Value="52105.2631578947"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -6250,7 +6240,7 @@
 												<MusicCue Name="Exit Cue" ID="{3E127275-4DF8-4ABB-A518-CDADFFD2F95D}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="25284.2105263158"/>
+														<Property Name="TimeMs" Type="Real64" Value="25657.8947368421"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -6464,7 +6454,7 @@
 												<MusicCue Name="Exit Cue" ID="{D537CD05-5837-42DF-8A16-02A48E355A5B}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="52500"/>
+														<Property Name="TimeMs" Type="Real64" Value="52105.2631578947"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -7315,7 +7305,7 @@
 												<MusicCue Name="Exit Cue" ID="{FECDB6CD-A8DA-49F1-ADB5-D1A8D91DCD53}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="52126.3157894737"/>
+														<Property Name="TimeMs" Type="Real64" Value="52105.2631578947"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -7601,7 +7591,7 @@
 												<MusicCue Name="Exit Cue" ID="{70BAF8BB-2090-4651-B4C1-8EB07E34F920}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="25263.1578947368"/>
+														<Property Name="TimeMs" Type="Real64" Value="25657.8947368421"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -8012,6 +8002,131 @@
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
+								<MusicPlaylistContainer Name="Land_Explo" ID="{F854CB32-2E5F-451F-9581-2874E5E5CB93}" ShortID="821525429">
+									<PropertyList>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="Tempo" Type="Real64" Value="76"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AllButPerc" ID="{CC227658-C201-4C50-AEA7-1A5FC0B8B617}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="TheLastBeat_Mus_Land_Explo_1Pre_2Post" ID="{2E93C72A-5BE4-4CB7-9A51-7266D512CE1C}" ShortID="982744842">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="60000"/>
+												<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="Tempo" Type="Real64" Value="76"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="BitCrusher" CompanyID="64" PluginID="399" PluginType="3">
+													<ObjectRef Name="MusicCrusher" ID="{705745F8-6F6D-4967-B24C-A9404C5BA734}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="TheLastBeat_Mus_Land_Explo_1Pre_2Post" ID="{B8F6FFCB-DE68-4416-83DF-F8741EB85DC4}" ShortID="796874560">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Land_Explo_1Pre_2Post" ID="{E2726AA5-E000-4A6A-9672-DBC7ABC6B891}" ShortID="194652642">
+															<Language>SFX</Language>
+															<AudioFile>TheLastBeat_Mus_Land_Explo_1Pre_2Post.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="359854272"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{AB96F28D-CF0C-4BFD-A146-C8DD64820809}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{9D30DB6F-FBE7-4296-BF99-4E00E7BE9A51}">
+															<ClipList>
+																<MusicClip Name="TheLastBeat_Mus_Land_Explo_1Pre_2Post" ID="{E8C983C4-C261-49F7-B472-16D367152F66}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="60000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="TheLastBeat_Mus_Land_Explo_1Pre_2Post" ID="{E2726AA5-E000-4A6A-9672-DBC7ABC6B891}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{AECB5BA3-9EA2-4D3E-8B7E-4A174D6B6ECA}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="3157.89473684211"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{45CEBEBC-0311-476C-B0B8-A1BB19FF542E}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="53684.2105263158"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{22164660-A333-44C1-87D8-841382E2CBC6}"/>
+									</PositioningInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{55BBD68C-8272-4413-A172-12850D3F1EB5}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{EC700227-65A0-4055-9E59-90204C8C5EAD}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{66992ADB-BA10-4BA4-8E54-BD63EFCAAE07}" ShortID="440711077">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{20F1A672-A0DB-4D94-9A99-CECDBE183CDF}" ShortID="914452341">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="TheLastBeat_Mus_Land_Explo_1Pre_2Post" ID="{2E93C72A-5BE4-4CB7-9A51-7266D512CE1C}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
 							</ChildrenList>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{D9A29965-26C2-4ED4-98E7-2BD28AA94885}">
@@ -8639,38 +8754,11 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-										<PathElementRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="FinalCombat_Layer1" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-								<Entry>
-									<Path>
-										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
-										<PathElementRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="FinalCombat_Layer2" ID="{56B66EED-9C66-4751-AFB1-290FDA00D88E}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-								<Entry>
-									<Path>
-										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
 										<PathElementRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="FinalCombat_Layer3" ID="{B7F070AA-B8FB-462F-8A0E-47B6F5571C86}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-								<Entry>
-									<Path>
-										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
-										<PathElementRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="FinalCombat_Layer1" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
 								<Entry>
@@ -8685,10 +8773,37 @@
 								<Entry>
 									<Path>
 										<PathElementRef Name="None" ID="{614DF0F4-B611-4544-8A7C-A45B570A3E0B}"/>
+										<PathElementRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="FinalCombat_Layer1" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
 										<PathElementRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="FinalCombat_Layer3" ID="{B7F070AA-B8FB-462F-8A0E-47B6F5571C86}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+										<PathElementRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="FinalCombat_Layer2" ID="{56B66EED-9C66-4751-AFB1-290FDA00D88E}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+										<PathElementRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="FinalCombat_Layer1" ID="{723A2696-4609-4EE2-BAFC-425FEC5570C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
 							</EntryList>
@@ -8727,7 +8842,7 @@
 										<Property Name="Tempo" Type="Real64" Value="76"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-1</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -8740,191 +8855,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="TheLastBeat_Mus_FB_Level1" ID="{18046712-6E99-4802-BD77-ABD29521948F}" ShortID="178346896">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-100</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TheLastBeat_Mus_FB_Level1_01" ID="{1742E5A9-57DF-400A-9BA0-A571CB3AC25C}" ShortID="708259722">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_FB_Level1_01.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_FB_Level1_02" ID="{1CC36F03-CF4D-4F74-A02E-34B6B7BA952A}" ShortID="595950998">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_FB_Level1_02.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_FB_Level1_03" ID="{E0B2A497-5CB1-4CF5-B272-95E08A016AD5}" ShortID="127525520">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_FB_Level1_03.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_FB_Level1_04" ID="{2467134A-FABF-4CA1-BD38-C140B0DB4BDB}" ShortID="895908363">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_FB_Level1_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{14A6936C-A3C4-4D2A-A1FF-94E6E3DED810}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{511CA1DF-6A17-4730-B13F-AF21BACDA114}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_FB_Level1_01" ID="{5A2E5218-CF4F-42D9-BCBE-714F15DC4D5C}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="3157.89583333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_FB_Level1_01" ID="{1742E5A9-57DF-400A-9BA0-A571CB3AC25C}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{804D127F-8687-4BD4-85E5-CB8696F98D8E}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_FB_Level1_02" ID="{2CE18F9E-26C5-49B5-AFB6-B05C9FFA490C}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="3157.89583333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_FB_Level1_02" ID="{1CC36F03-CF4D-4F74-A02E-34B6B7BA952A}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{D5992D34-F84E-4A8A-9E5D-17F4C7853131}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_FB_Level1_03" ID="{6AED6B43-9F76-4E1C-80BE-7B9EE5AAE725}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="3157.89583333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_FB_Level1_03" ID="{E0B2A497-5CB1-4CF5-B272-95E08A016AD5}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{2DA639EE-64E0-443F-8266-6675B1DA0B14}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_FB_Level1_04" ID="{61210C7E-E62D-46A6-9B66-E984D2F57E4E}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="3157.89583333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_FB_Level1_04" ID="{2467134A-FABF-4CA1-BD38-C140B0DB4BDB}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="TheLastBeat_Mus_FB_Level3" ID="{53D20EBF-55BA-407F-9C6C-30CF8185E949}" ShortID="190876292">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-100</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TheLastBeat_Mus_FB_Level3_01" ID="{0B65B798-EDF7-4252-8C60-EB81D653968C}" ShortID="6942090">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_FB_Level3_01.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_FB_Level3_02" ID="{A4C1D25C-7E4A-4F24-B8DE-8FAD92359584}" ShortID="1039507179">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_FB_Level3_02.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_FB_Level3_03" ID="{DD34D883-B3C2-494E-B148-803C36C82060}" ShortID="23909745">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_FB_Level3_03.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_FB_Level3_04" ID="{7846AA17-C049-43D1-A038-5968DF8CC623}" ShortID="96808444">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_FB_Level3_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{5653C84A-005A-4D2A-AEFA-7BD442AFCA95}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{F0BFB5EF-D88A-4F2D-BD93-0647D3A9AEB5}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_FB_Level3_01" ID="{8FF4449A-4D53-4D22-B8B6-6E4A29393454}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_FB_Level3_01" ID="{0B65B798-EDF7-4252-8C60-EB81D653968C}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{A5BD3B0D-2007-47C1-BA5A-A8AEE3CD9FB3}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_FB_Level3_02" ID="{DFBA34EC-2242-47F1-A4A7-4124DC579770}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_FB_Level3_02" ID="{A4C1D25C-7E4A-4F24-B8DE-8FAD92359584}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{312085B6-7CAA-4DDF-90AD-E6A910D94EDB}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_FB_Level3_03" ID="{97EC91E8-6496-4BE5-8BD9-C1C0F1C1576B}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_FB_Level3_03" ID="{DD34D883-B3C2-494E-B148-803C36C82060}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{94FF3B0A-AB44-4CA3-9880-50253D043E68}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_FB_Level3_04" ID="{69201806-745E-4B25-8891-F4461CD3F91B}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="3157.91666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_FB_Level3_04" ID="{7846AA17-C049-43D1-A038-5968DF8CC623}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
 										<MusicTrack Name="01_Great" ID="{C2E172FF-5236-4D38-8FD3-49039696B8DE}" ShortID="5024405">
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
@@ -8959,35 +8889,6 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{DE902206-7DCF-438F-96DE-714506C2B666}"/>
 											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-														<CustomState Name="" ID="{9D288464-3580-455A-BD1D-EE4B8E9FF330}" ShortID="847601813"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
-														<CustomState Name="" ID="{2F97739B-75B9-42E9-95B7-407C3263C18F}" ShortID="252234211">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
-														<CustomState Name="" ID="{7A5314A9-6076-4372-9D8A-B97AB3359816}" ShortID="379605267">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{67FBB537-785A-44E0-8A09-E63857E73975}">
 													<PropertyList>
@@ -9042,250 +8943,6 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer1_04" ID="{783DFE57-8110-48AC-9B39-C6CF7DF4BDB4}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="02_Great" ID="{BA79EC38-5F90-4D9B-83A1-3B1968D69784}" ShortID="595204765">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer2_01" ID="{7D499458-26E3-454F-B94C-B1A67A6FF5C0}" ShortID="224098613">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer2_01.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer2_02" ID="{373BFB0E-836F-495A-AD84-2774E9F5C170}" ShortID="861940440">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer2_02.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer2_03" ID="{A5DBB0C9-07B6-490C-95B5-FC30908F00DF}" ShortID="494347793">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer2_03.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer2_04" ID="{E01D6D78-4028-419F-9C9B-B6B90035451B}" ShortID="231451550">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer2_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{6ACD44B0-3A4D-4B3E-B9D3-0F1517949FD3}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-														<CustomState Name="" ID="{304731D9-8BD7-424C-A224-CD355103B349}" ShortID="243204479">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
-														<CustomState Name="" ID="{64F994DA-175E-4E91-8E1B-2745E150D3C8}" ShortID="621004339"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
-														<CustomState Name="" ID="{CAEFF1D4-8FD0-4B5B-91AF-886CA46C10D2}" ShortID="416995711">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{BC66625C-04BF-4821-8EAE-1FB0AB31FF02}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{094E25A7-2C6F-44FB-8D4B-24ACF15C5001}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer2_01" ID="{1733E91B-A73A-4FFD-A480-92A25ECFA2DA}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer2_01" ID="{7D499458-26E3-454F-B94C-B1A67A6FF5C0}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{5611DACD-E092-4FCA-ABF6-256F1FB9E539}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer2_02" ID="{975BF7A0-7D0E-46A3-A21B-696A1B4B8103}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer2_02" ID="{373BFB0E-836F-495A-AD84-2774E9F5C170}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{82204C2B-6B6E-4851-8684-F51521F6E785}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer2_03" ID="{4260FB7A-65E6-4E41-8515-938686813D98}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer2_03" ID="{A5DBB0C9-07B6-490C-95B5-FC30908F00DF}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{A1B7D32C-17E1-4A18-848F-2BEED96D8E6E}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer2_04" ID="{3A1FAB7A-C7CF-4BDD-B857-47E54ACAB994}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer2_04" ID="{E01D6D78-4028-419F-9C9B-B6B90035451B}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="03_Great" ID="{0A9BDF47-A374-4328-AEA3-E121A9CAB92B}" ShortID="490470268">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer3_01" ID="{3B75BD6F-DD26-4866-A6D1-269F4184BB88}" ShortID="501699646">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer3_01.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer3_02" ID="{5288A2AC-302E-45FD-BBA8-E9818CAF2F85}" ShortID="26860908">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer3_02.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer3_03" ID="{84A59B49-30C1-44BC-8440-44226A119A8F}" ShortID="735808641">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer3_03.wav</AudioFile>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Great_Layer3_04" ID="{C2219261-BD31-4A71-A823-D5B3B55B713C}" ShortID="1036199977">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Great_Layer3_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{F8982212-E97B-4F6C-95B6-55159DAE6137}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-														<CustomState Name="" ID="{7EFA8392-B710-4FEC-B5AB-46C6058460D2}" ShortID="3910002">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
-														<CustomState Name="" ID="{5F9D7A9E-05D9-45E9-B9BF-AD40ED35B172}" ShortID="1015487556">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
-														<CustomState Name="" ID="{F57FDFC6-4BEC-48FD-96AE-D9BF4C1C4954}" ShortID="417137488"/>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{09192FD4-9A11-46C0-99B8-65A62E588CDC}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{C77AEF0D-6CA2-459F-9A87-FDCDA7E8F856}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer3_01" ID="{77AF0DC2-65D7-40A5-B049-969A7756A90B}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer3_01" ID="{3B75BD6F-DD26-4866-A6D1-269F4184BB88}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{66D6DA09-61B9-4982-BDB4-F882F21EA6DF}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer3_02" ID="{284E1B84-59BA-4843-82FC-937D31C2A0F2}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer3_02" ID="{5288A2AC-302E-45FD-BBA8-E9818CAF2F85}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{E33852A9-D133-4144-9A46-B4C771C06237}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer3_03" ID="{D0C21372-4B39-48F9-A72B-1EC97B3E00D1}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer3_03" ID="{84A59B49-30C1-44BC-8440-44226A119A8F}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{63012DE6-351E-44AC-BB59-1372372F8B91}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Great_Layer3_04" ID="{3D15FBDE-955A-4DB8-AAEC-5A50B05B7E83}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Great_Layer3_04" ID="{C2219261-BD31-4A71-A823-D5B3B55B713C}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -9846,11 +9503,6 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -9865,6 +9517,11 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -9907,35 +9564,6 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{3E0CDC30-23C7-43E9-ACBA-1E0EAA162B4A}"/>
 											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-														<CustomState Name="" ID="{273E4F08-AE7D-454B-927F-D9E81414896A}" ShortID="163751925"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
-														<CustomState Name="" ID="{9A9BC623-20FA-41CF-AE31-B989135C453B}" ShortID="931283717">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
-														<CustomState Name="" ID="{EF46140B-4E69-418D-A822-4F21955E0DA2}" ShortID="943608828">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{9FA9634F-8135-4380-AA79-38E43F347ADD}">
 													<PropertyList>
@@ -10041,35 +9669,6 @@
 											<PositioningInfo>
 												<Panner Name="" ID="{4EB64DF6-C1B6-44F0-9B11-B491D46C0F85}"/>
 											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-														<CustomState Name="" ID="{F2421961-7DD8-4479-B677-472097B658F3}" ShortID="743781202">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
-														<CustomState Name="" ID="{C388CB93-5194-4AB9-ABA0-33685271E8A8}" ShortID="802144202"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
-														<CustomState Name="" ID="{B1C7A7AF-E511-4D42-B399-5C701A06651E}" ShortID="970700818">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{88C76B75-B8F2-4E41-8BC4-5FE9BE32A781}">
 													<PropertyList>
@@ -10124,145 +9723,6 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer2_04" ID="{8B5C1C8C-6F18-4087-BEE3-2C56900371B5}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="03_Perfect" ID="{58A414D5-2E72-42CC-AC64-EE76F6ABBA75}" ShortID="1010229378">
-											<PropertyList>
-												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SyncFeedBack" ID="{BE40D433-EB51-42A2-8D48-F60406EB2E23}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_01" ID="{1AC9D8EB-7AD7-4920-A95D-DC604BBE6B3E}" ShortID="516819244">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer3_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="157648377"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_02" ID="{28DC0443-9E47-4CA9-A2E2-0E22D83A29A1}" ShortID="608020394">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer3_02.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="523298002"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_03" ID="{3DDF565D-EA57-41F6-838D-6D5F8567AC99}" ShortID="18705530">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer3_03.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="366537706"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_04" ID="{7E57B6D0-A166-431B-BC95-95227AE63AC8}" ShortID="347021154">
-													<Language>SFX</Language>
-													<AudioFile>TheLastBeat_Mus_RushFB_Perfect_Layer3_04.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="656498732"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{0A2E4254-2AF5-43DB-B07D-88935C855CB1}"/>
-											</PositioningInfo>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-														<CustomState Name="" ID="{8664EDC9-F766-4608-A7F1-D499DB5A6EE1}" ShortID="776031883">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
-														<CustomState Name="" ID="{1C6E5F7D-E23E-4D3A-B7DB-50AB9A15675E}" ShortID="349740791">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
-														<CustomState Name="" ID="{8238D409-AD92-44C6-A3D6-5CDE2117832A}" ShortID="942531655"/>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{31D9618C-AFDB-4463-AAB0-D1072DD097A9}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{0956750E-5EDC-4C62-80CC-A43DCD3B4892}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_01" ID="{690F264A-BE80-4667-BC80-69FAC9C924C1}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_01" ID="{1AC9D8EB-7AD7-4920-A95D-DC604BBE6B3E}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{B4B0E831-7E8D-4A57-9C41-413D99194BB4}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_02" ID="{05E6780C-05AE-4A4C-86E3-023C6E9A29F5}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_02" ID="{28DC0443-9E47-4CA9-A2E2-0E22D83A29A1}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{1CAE38AD-37EE-4873-BC42-973696FA4492}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_03" ID="{9F0A9750-A221-4864-86C1-C9C78497F702}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_03" ID="{3DDF565D-EA57-41F6-838D-6D5F8567AC99}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{7928A7DD-7D7C-466E-94C9-715BA4572ADD}">
-													<ClipList>
-														<MusicClip Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_04" ID="{7FCCF5F1-1FC8-499C-A493-B3BB3051FBEF}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="1578.95833333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="TheLastBeat_Mus_RushFB_Perfect_Layer3_04" ID="{7E57B6D0-A166-431B-BC95-95227AE63AC8}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -10377,11 +9837,22 @@
 					</StingerList>
 					<ArgumentList>
 						<ArgumentRef Name="Music_Switch" ID="{CFEC8EF1-66D0-4F1A-A2CF-4790CE6EE7C2}"/>
+						<ArgumentRef Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
 							<Path>
+								<PathElementRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
+								<PathElementRef Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
 								<PathElementRef Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
+								<PathElementRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Music_Final_Combat" ID="{8A59AF12-1618-4DEB-A4C5-B305CBAB71C0}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
@@ -10389,7 +9860,17 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
+								<PathElementRef Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
+								<PathElementRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Music_Switch" ID="{CFEC8EF1-66D0-4F1A-A2CF-4790CE6EE7C2}"/>
+								<PathElementRef Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Music_Land" ID="{B4EF6602-7565-4FDF-8164-A86EC3466F1D}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}" Platform="Linked"/>
