@@ -652,7 +652,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="Play_AmbDesert" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
+						<Event Name="Play_Desert_Ambiance" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="17"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>

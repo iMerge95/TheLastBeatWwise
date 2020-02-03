@@ -62,11 +62,17 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4285133355	AllButPerc			\Default Work Unit\Master Audio Bus\Music\AllButPerc	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	109871156	RevCanyon			\Default Work Unit\Master Audio Bus\SFX\RevCanyon	
+	312281464	RevOpen			\Default Work Unit\Master Audio Bus\SFX\RevOpen	
 	731829278	MFXRewindVerb			\Default Work Unit\Master Audio Bus\MFX\MFXRewindVerb	
+	1729625191	RevBridge			\Default Work Unit\Master Audio Bus\SFX\RevBridge	
 
 Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	2038996943	Plate_Sizzle	Wwise RoomVerb			
 	2245320997	MFXDucking	Wwise Meter			
+	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
+	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 	3946755902	MusicCrusher	BitCrusher			
 
 Audio Devices	ID	Name	Type				Notes

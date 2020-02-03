@@ -78,7 +78,7 @@
 							</CurveUsageInfo>
 						</HighPassFilterUsage>
 						<SpreadUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None">
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 								<Curve Name="Spread" ID="{D0C65F17-F1BA-4D61-8B6B-131A4B921CC3}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="1"/>
@@ -86,13 +86,13 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>50</YPos>
+											<YPos>100</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp3</SegmentShape>
+											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>100</XPos>
-											<YPos>10</YPos>
+											<YPos>-0</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

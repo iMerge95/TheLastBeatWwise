@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	564679353	Stop_Rewind			\Default Work Unit\00_Internal\Rewind\Stop_Rewind	
 	869704911	Play_Rewind			\Default Work Unit\00_Internal\Rewind\Play_Rewind	
 	1468197082	Int_MusicFeedbackOn			\Default Work Unit\00_Internal\Int_MusicFeedbackOn	
+	1555409676	Play_Desert_Ambiance			\Default Work Unit\01_AMB\Play_Desert_Ambiance	
 	1674468585	Play_LeftFoot			\Default Work Unit\02_Player\Play_LeftFoot	
 	1850257856	Int_Chord07			\Default Work Unit\00_Internal\Chord\Int_Chord07	
 	1850257857	Int_Chord06			\Default Work Unit\00_Internal\Chord\Int_Chord06	
@@ -25,7 +26,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3119437920	Play_RushFXOnPerfect			\Default Work Unit\02_Player\Play_RushFXOnPerfect	
 	3191278813	Int_HitMusicFX			\Default Work Unit\00_Internal\Int_HitMusicFX	
 	3485622663	Stop_Presence			\Default Work Unit\02_Player\Stop_Presence	
-	3681445093	Play_AmbDesert			\Default Work Unit\01_AMB\Play_AmbDesert	
 	3723441664	Play_RightFoot			\Default Work Unit\02_Player\Play_RightFoot	
 	3832364417	Play_BlinkFXOffBeat			\Default Work Unit\02_Player\Play_BlinkFXOffBeat	
 	3852757989	Play_RushFXOffBeat			\Default Work Unit\02_Player\Play_RushFXOffBeat	
@@ -71,6 +71,7 @@ State	ID	Name	State Group			Notes
 	1673109572	Rewind	Rewind_State			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	149785987	Explo	Music_CombatExplo_Switch	\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley		
 	181353029	Rewind	Rewind_State	\Actor-Mixer Hierarchy\SFX\ENVIRO		
 	658004266	Rewind	Rewind_State	\Actor-Mixer Hierarchy\SFX\CHARACTER		
 	802022529	Combat	Music_CombatExplo_Switch	\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley		
@@ -297,7 +298,6 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	434161037	Sitar_LoopC_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer1_1Pre2Post_592D8723.wem	434161037.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopC\Sitar_LoopC_Layer1	
 	447676650	TLB_AMB_Desert_RWind_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TLB_AMB_Desert_RWind_01_E37C7245.wem	447676650.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_01	
 	448957707	Sitar_LoopB_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer2_1Pre2Post_592D8723.wem	448957707.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopB\Sitar_LoopB_Layer2	
-	459766620	TLB_AMB_Desert_LowWind_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TLB_AMB_Desert_LowWind_02_E37C7245.wem	459766620.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\AmbLoop\LowAmb\TLB_AMB_Desert_LowWind_02	
 	461703535	Base_LoopA_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post_592D8723.wem	461703535.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopA\Base_LoopA_Layer1	
 	544401336	Perc_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer1_1Pre_2Post_592D8723.wem	544401336.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer1\Land_Combat_Layer1\Perc_1Pre_2Post	
 	554075586	Base_LoopA_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer2_1Pre2Post_592D8723.wem	554075586.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopA\Base_LoopA_Layer2	
@@ -320,7 +320,6 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	772276135	Lead_LoopB_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer1_1Pre2Post_592D8723.wem	772276135.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopB\Lead_LoopB_Layer1	
 	775059201	Sitar_LoopC_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer3_1Pre2Post_592D8723.wem	775059201.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopC\Sitar_LoopC_Layer3	
 	796485053	Lead_LoopC_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post_592D8723.wem	796485053.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopC\Lead_LoopC_Layer1	
-	796615516	TLB_AMB_Desert_LowWind_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TLB_AMB_Desert_LowWind_03_E37C7245.wem	796615516.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\AmbLoop\LowAmb\TLB_AMB_Desert_LowWind_03	
 	818750410	Sitar_LoopB_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer3_1Pre2Post_592D8723.wem	818750410.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopB\Sitar_LoopB_Layer3	
 	825699549	Perc_LoopB_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer2_1Pre2Post_592D8723.wem	825699549.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopB\Perc_LoopB_Layer2	
 	828054436	TLB_AMB_Desert_HighWind_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TLB_AMB_Desert_HighWind_01_E37C7245.wem	828054436.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\AmbLoop\HighAmb\TLB_AMB_Desert_HighWind_01	
@@ -329,7 +328,6 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	889974946	TLB_AMB_Desert_Wildlife_Crypets_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TLB_AMB_Desert_Wildlife_Crypets_01_E37C7245.wem	889974946.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Cryspets\TLB_AMB_Desert_Wildlife_Crypets_01	
 	910250946	Sitar_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer1_1Pre_2Post_592D8723.wem	910250946.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer1\Land_Combat_Layer1\Sitar_1Pre_2Post	
 	915633297	TLB_AMB_Desert_RWind_05	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TLB_AMB_Desert_RWind_05_E37C7245.wem	915633297.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\RWind\TLB_AMB_Desert_RWind_05	
-	979206716	TLB_AMB_Desert_LowWind_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TLB_AMB_Desert_LowWind_01_E37C7245.wem	979206716.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Desert_Ambiance\AmbLoop\LowAmb\TLB_AMB_Desert_LowWind_01	
 	984312236	Perc_LoopA_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post_592D8723.wem	984312236.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopA\Perc_LoopA_Layer2	
 	995359347	Base_LoopC_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer1_1Pre2Post_592D8723.wem	995359347.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopC\Base_LoopC_Layer1	
 	1021642049	Sitar_LoopC_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Mac\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer2_1Pre2Post_592D8723.wem	1021642049.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopC\Sitar_LoopC_Layer2	

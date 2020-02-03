@@ -403,6 +403,22 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SandFall" ID="{0162C896-FAA1-464E-9AD3-C3B954DDC4D8}" ShortID="383957327">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="WildlifeAttenuation" ID="{D0EB1DFA-C26F-4780-8241-176BCE4703D7}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="AmbianceBeds" ID="{B9EB56C6-1494-4C74-923F-DCB8EBC54171}" ShortID="468953344">
@@ -427,7 +443,7 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1228,6 +1244,11 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="LowAmb" ID="{5299A7E3-F9AE-48D5-B720-84CC5F788D06}" ShortID="392345950">
 													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
@@ -1511,6 +1532,2225 @@
 										</BlendContainer>
 									</ChildrenList>
 								</BlendContainer>
+								<BlendContainer Name="Canyon_Ambiance" ID="{82A6EF57-1859-4848-88D6-41A34C542F36}" ShortID="402160340">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="AmbLoop" ID="{8BB4F1F6-89BB-4555-B7DC-5FFFC07E8573}" ShortID="79914300">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="HighAmb" ID="{7AAFB27F-0F05-408C-890A-3D6CC47DAFC4}" ShortID="528428833">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{80791961-94BC-490B-8B56-B3884AAFBF03}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4DF309EE-79A8-4718-B359-3C1F85956BFA}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{CE990EBB-6351-49C9-84B9-05443606236E}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Canyon_WindHi_01" ID="{F56D6B6B-0724-4511-8581-4CCBB9CFF01F}" ShortID="450713152">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_WindHi_01" ID="{F66C619E-3646-4B15-B972-9390D3DDE387}" ShortID="469984427">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_WindHi_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_WindHi_01" ID="{F66C619E-3646-4B15-B972-9390D3DDE387}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_WindHi_02" ID="{1BFAD49A-434B-4803-B0BF-C5949779BE17}" ShortID="732948994">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_WindHi_02" ID="{7A8EA5F6-7301-45E6-96DA-9A66AEDFD091}" ShortID="973496701">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_WindHi_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_WindHi_02" ID="{7A8EA5F6-7301-45E6-96DA-9A66AEDFD091}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_WindHi_03" ID="{31685872-40DE-4827-91BC-9C632876B07D}" ShortID="952825589">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_WindHi_03" ID="{4A18E498-9813-48D9-9E44-67D0F5B6DB11}" ShortID="634391931">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_WindHi_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_WindHi_03" ID="{4A18E498-9813-48D9-9E44-67D0F5B6DB11}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="LowAmb" ID="{26888187-533E-4AC7-96E1-78098A7ACC3B}" ShortID="234666713">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{E235D304-77C2-4833-A17D-B4695739D459}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{3D0ADD29-81DD-46A5-9E9C-7563E03D9BDB}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{357CC109-6C47-4D48-8571-EF5912EBA03F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Canyon_WindLo_01" ID="{4460495C-F83C-42F1-A913-802313C3232D}" ShortID="289725149">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_WindLo_01" ID="{F309F837-3D1E-47F6-BA7B-7B8CA0E3CB65}" ShortID="657792247">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_WindLo_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_WindLo_01" ID="{F309F837-3D1E-47F6-BA7B-7B8CA0E3CB65}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_WindLo_02" ID="{3E4F79AD-2C55-4E78-88A9-7558665C73F4}" ShortID="280482446">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_WindLo_02" ID="{610444A0-E5A5-495E-A859-D0B2E8FEB587}" ShortID="846898411">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_WindLo_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_WindLo_02" ID="{610444A0-E5A5-495E-A859-D0B2E8FEB587}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_WindLo_03" ID="{8C76DA39-1D2A-4A19-B677-86E9E28A2608}" ShortID="884191149">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_WindLo_03" ID="{BC8B5DC5-F8DE-46DB-9417-EE8E98241262}" ShortID="673462257">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_WindLo_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_WindLo_03" ID="{BC8B5DC5-F8DE-46DB-9417-EE8E98241262}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="RWind" ID="{462CD17D-07EF-46C1-B0FE-E1E087546394}" ShortID="913066723">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="RWind1" ID="{D6524362-C49C-4827-85EE-12A4FA4269CF}" ShortID="1021288473">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{81B0C3B5-F360-4305-8F2E-395AC5A558D3}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C599CB9A-E49A-43EB-BDC1-4D7DE56D477C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Canyon_RWind1_01" ID="{23468519-553E-46C3-A2A5-15D93758C5A3}" ShortID="361957257">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind1_01" ID="{3EE7E394-4D95-44CE-B1B2-406D5DD80579}" ShortID="1014833904">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind1_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind1_01" ID="{3EE7E394-4D95-44CE-B1B2-406D5DD80579}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_RWind1_02" ID="{3734AC6E-9380-405F-9EFF-B9969535D7BD}" ShortID="554949827">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind1_02" ID="{B558F5A8-F27F-4274-AFB9-3CD2DD02728C}" ShortID="445366905">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind1_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind1_02" ID="{B558F5A8-F27F-4274-AFB9-3CD2DD02728C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_RWind1_03" ID="{C167D9D9-0422-4E00-9D7F-A29D4FDD0D48}" ShortID="99595649">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind1_03" ID="{6BDB7F21-A03F-4CD2-BE80-EE315B266DB5}" ShortID="297293452">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind1_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind1_03" ID="{6BDB7F21-A03F-4CD2-BE80-EE315B266DB5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_RWind1_04" ID="{83AE4D67-1A14-433D-B624-BFDE890949AF}" ShortID="173612297">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind1_04" ID="{9F5A6D02-6D65-4294-B2A1-D54B87E0B674}" ShortID="923094804">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind1_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind1_04" ID="{9F5A6D02-6D65-4294-B2A1-D54B87E0B674}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{811ABB86-B224-4140-9079-55B1E8E7B765}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RWind_Path" ID="{400A9E51-EFF1-49CB-87ED-F9F860646894}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="10000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>32.91139</XPos>
+																			<YPos>-50.63694</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-39.24051</XPos>
+																			<YPos>-30.57325</YPos>
+																			<Flags>0</Flags>
+																			<Time>10000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_01" ID="{6A002B4F-43FC-49AB-BF5E-F33EC215C605}">
+																	<PropertyList>
+																		<Property Name="AppendOffset" Type="int32" Value="1"/>
+																		<Property Name="Duration" Type="int32" Value="12000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>43.03797</XPos>
+																			<YPos>47.45223</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-36.70886</XPos>
+																			<YPos>-34.3949</YPos>
+																			<Flags>0</Flags>
+																			<Time>12000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_02" ID="{AD9BA592-A973-4E38-9271-C586F1A15FA9}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="15000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>22.1519</XPos>
+																			<YPos>-21.70063</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-40.50633</XPos>
+																			<YPos>25.47771</YPos>
+																			<Flags>0</Flags>
+																			<Time>15000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_03" ID="{7D2506C2-AC13-4E66-BB9A-864EC350D354}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="8000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>1.26582</XPos>
+																			<YPos>28.98089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-1.89873</XPos>
+																			<YPos>-32.21019</YPos>
+																			<Flags>0</Flags>
+																			<Time>8000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_04" ID="{7CDF3BAF-E762-46E3-8A6D-C0657DCD282F}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="9000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-31.01267</XPos>
+																			<YPos>28.98089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>36.07595</XPos>
+																			<YPos>32.48407</YPos>
+																			<Flags>0</Flags>
+																			<Time>9000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_05" ID="{FF21FD61-AF67-4F5C-BD27-E75332EFA7DB}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-25.94937</XPos>
+																			<YPos>-33.4395</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>32.9114</XPos>
+																			<YPos>-14.01274</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RWind2" ID="{D2592F41-15B7-4B40-9DDC-A12BE4BBB46A}" ShortID="318305448">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{7EDFD66B-6E80-4E21-9398-D8BF9D08C229}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F801FCFB-3776-4B5F-8B46-1B854C8C671A}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Canyon_RWind2_01" ID="{D05FB5A4-CBE8-4AC5-A350-87DAC0FB8074}" ShortID="949920920">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind2_01" ID="{2CD4C911-3483-4E5B-ADD1-6D4B3EC9C667}" ShortID="1035994942">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind2_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind2_01" ID="{2CD4C911-3483-4E5B-ADD1-6D4B3EC9C667}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_RWind2_02" ID="{F5AF3DE5-708E-44AB-B68A-E8675C7F8144}" ShortID="156423748">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind2_02" ID="{C145F7BA-8A67-4609-8138-DF3B02C13835}" ShortID="820620401">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind2_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind2_02" ID="{C145F7BA-8A67-4609-8138-DF3B02C13835}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_RWind2_03" ID="{91DD528C-CDE8-4047-84A6-C158195A1808}" ShortID="794464884">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind2_03" ID="{576C506D-8BDC-46B3-A975-FCB3F9394725}" ShortID="351277099">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind2_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind2_03" ID="{576C506D-8BDC-46B3-A975-FCB3F9394725}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_RWind2_04" ID="{04C8C881-1059-4E92-98A6-627B09F2083D}" ShortID="520398312">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind2_04" ID="{53ABA2ED-B283-494D-8D12-58477D4A7DAE}" ShortID="889012155">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind2_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind2_04" ID="{53ABA2ED-B283-494D-8D12-58477D4A7DAE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Canyon_RWind2_05" ID="{CB91C8FC-DEB2-4467-8971-6092D81512BA}" ShortID="553591015">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Canyon_RWind2_05" ID="{94435BE7-C295-423F-AC58-32E833F1080B}" ShortID="436376983">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Canyon_RWind2_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Canyon_RWind2_05" ID="{94435BE7-C295-423F-AC58-32E833F1080B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{80337432-D47F-4622-B27D-81E459CAC06C}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RWind_Path" ID="{10BEC59E-6BC3-41B7-97C4-B3331661AFC2}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="10000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>32.91139</XPos>
+																			<YPos>-50.63694</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-39.24051</XPos>
+																			<YPos>-30.57325</YPos>
+																			<Flags>0</Flags>
+																			<Time>10000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_01" ID="{5B7C874D-1227-43A4-AEBE-60EB50ABFB2C}">
+																	<PropertyList>
+																		<Property Name="AppendOffset" Type="int32" Value="1"/>
+																		<Property Name="Duration" Type="int32" Value="12000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>43.03797</XPos>
+																			<YPos>47.45223</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-36.70886</XPos>
+																			<YPos>-34.3949</YPos>
+																			<Flags>0</Flags>
+																			<Time>12000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_02" ID="{63ACD58A-0282-44F2-B6D9-421AFBD0BC1C}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="15000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>22.1519</XPos>
+																			<YPos>-21.70063</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-40.50633</XPos>
+																			<YPos>25.47771</YPos>
+																			<Flags>0</Flags>
+																			<Time>15000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_03" ID="{BBC20ADD-F237-49CA-B35D-3F08FBFDA5F6}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="8000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>1.26582</XPos>
+																			<YPos>28.98089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-1.89873</XPos>
+																			<YPos>-32.21019</YPos>
+																			<Flags>0</Flags>
+																			<Time>8000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_04" ID="{E9E46B95-3685-43FF-A917-99267DACFB69}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="int32" Value="9000"/>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-31.01267</XPos>
+																			<YPos>28.98089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>36.07595</XPos>
+																			<YPos>32.48407</YPos>
+																			<Flags>0</Flags>
+																			<Time>9000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RWind_Path_05" ID="{BF063E72-F14F-4165-A5C0-3207D9683FDA}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="5"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-25.94937</XPos>
+																			<YPos>-33.4395</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>32.9114</XPos>
+																			<YPos>-14.01274</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="CliffBridge_Ambiance" ID="{555FBAD2-57F9-4F7C-BA1F-2C8B27E48B43}" ShortID="947236960">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="AmbLoop" ID="{6F65833C-7DC7-49D0-A56D-F59CE3C6154C}" ShortID="737527763">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="HighAmb_01" ID="{63DDDB86-03E6-430E-A626-57CAA4F8B9BB}" ShortID="788076117">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F8C19AF2-0D91-4792-85F0-B2975BBFB606}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{5287B06C-92B5-4B8A-A140-60D94C69958F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{3D0E1BC6-D6A6-404F-A9DA-956E1B619E87}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi1_01" ID="{B2FF1140-A111-4C0C-8D2C-02F07751DD27}" ShortID="182663293">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindHi1_01" ID="{E2C4A182-7BDD-4160-B5FB-8068C6A7B40D}" ShortID="546861492">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindHi1_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindHi1_01" ID="{E2C4A182-7BDD-4160-B5FB-8068C6A7B40D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi1_02" ID="{CA5B2807-950E-4FEB-8578-FD6B3F335C40}" ShortID="233057420">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindHi1_02" ID="{E2A6E0BE-5CBA-4A7B-94A6-9E5F379B8D9B}" ShortID="787218365">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindHi1_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindHi1_02" ID="{E2A6E0BE-5CBA-4A7B-94A6-9E5F379B8D9B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi1_03" ID="{A71D1D4A-44CE-4E29-A162-C88DC74380DB}" ShortID="148703378">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindHi1_03" ID="{A5B00EF0-728B-44EC-A134-681E713357AF}" ShortID="768595350">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindHi1_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindHi1_03" ID="{A5B00EF0-728B-44EC-A134-681E713357AF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="LowAmb_01" ID="{FE4A4225-6794-4D53-8548-0D4F895EE800}" ShortID="998191509">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{ABBFFDA0-9732-43B5-BC62-EAF82522AB79}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{51D19035-0A36-4567-A052-23221A776862}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2058571A-26A3-44D7-B96E-11DF1D636C51}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo1_01" ID="{B13780BB-F108-4D3F-8C2C-41B9412C4E6F}" ShortID="333822839">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo1_01" ID="{5DDCC7EE-F7DE-4D27-A791-93A04DF88466}" ShortID="176987593">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo1_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo1_01" ID="{5DDCC7EE-F7DE-4D27-A791-93A04DF88466}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo1_02" ID="{C9F0CB71-5BAE-4888-BD48-DA6EB7E0B20D}" ShortID="140795934">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo1_02" ID="{DF919CC9-A9F6-46CB-A530-D28B338B1AD5}" ShortID="177556018">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo1_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo1_02" ID="{DF919CC9-A9F6-46CB-A530-D28B338B1AD5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo1_03" ID="{E69A3363-703B-40BA-AAA5-1F07481C6B6E}" ShortID="116081972">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo1_03" ID="{3ED53B85-3DEF-46B8-A1CC-AB01CF630B1F}" ShortID="47030121">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo1_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo1_03" ID="{3ED53B85-3DEF-46B8-A1CC-AB01CF630B1F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="HighAmb_02" ID="{44CAC12A-2EAA-49A1-9359-9985D4E0A863}" ShortID="634247222">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4637813A-6825-4F28-92CD-8192B9D9AFE4}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{EF0346AF-BD5A-421A-A30B-46BED9359174}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{33FC5806-EDC6-4C7D-B93B-BCDFB74B8328}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi2_01" ID="{D5DECE33-9001-4057-B6C2-F638C6F3A8AA}" ShortID="173259836">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindHi2_01" ID="{996D8732-425D-4321-86FC-5A930574556A}" ShortID="129619696">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindHi2_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindHi2_01" ID="{996D8732-425D-4321-86FC-5A930574556A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi2_02" ID="{3B0A90FC-7D9F-40A0-9988-765E098C315E}" ShortID="740100425">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindHi2_02" ID="{C575E377-FCB3-49AC-8D9F-2EA978F1E85E}" ShortID="96667540">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindHi2_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindHi2_02" ID="{C575E377-FCB3-49AC-8D9F-2EA978F1E85E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi2_03" ID="{7621F4D9-D2E3-44C5-9A2F-FE3B030F39FB}" ShortID="490382152">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindHi2_03" ID="{E14D30FE-F2A0-4D7E-A92F-02510CBDE101}" ShortID="127030992">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindHi2_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindHi2_03" ID="{E14D30FE-F2A0-4D7E-A92F-02510CBDE101}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="LowAmb_02" ID="{7B379ED7-87F4-4FF1-9C96-FD9E754ED844}" ShortID="661262819">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{04D8D9E2-8D08-4B43-AC10-D661286266D8}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2FF65928-DFE0-4977-98E0-F8F5063888EA}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{DB685DEC-8E3B-4E2B-9997-3C9655CCE1EC}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo2_01" ID="{43847839-8D3F-4CC7-BC64-A42F8D07AFC2}" ShortID="996789013">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo2_01" ID="{0252B3A3-A1CB-4082-99DA-4B39BF55DC1E}" ShortID="165325558">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo2_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo2_01" ID="{0252B3A3-A1CB-4082-99DA-4B39BF55DC1E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo2_02" ID="{7BE4A6FD-DE74-4AFA-8C09-4781C1804583}" ShortID="212968808">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo2_02" ID="{31E9841D-7054-450C-B30F-ECA48A4E3225}" ShortID="165782725">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo2_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo2_02" ID="{31E9841D-7054-450C-B30F-ECA48A4E3225}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo2_03" ID="{FE1F2506-56BD-4275-90E8-D2F575AD3446}" ShortID="372472032">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo2_03" ID="{422A2950-2A4C-4228-BF20-30A7451FBE2C}" ShortID="948530797">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo2_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo2_03" ID="{422A2950-2A4C-4228-BF20-30A7451FBE2C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="LowAmb_03" ID="{0BDAE3D2-5F5F-4CEA-A1B0-860A36BEEBE8}" ShortID="88509352">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{45B1437F-2FD5-4A5F-9548-4DBF777EFCC1}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{5AE33A87-AC9D-4DAA-A9D4-75A1608DDEAD}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{763740DA-59EE-4B53-837A-785F709E9F48}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo3_01" ID="{AE637520-1152-4ADA-97E6-969724B68B16}" ShortID="180709853">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo3_01" ID="{051D16A5-E9FD-41D9-96F3-1FFA050A22E7}" ShortID="769469216">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo3_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo3_01" ID="{051D16A5-E9FD-41D9-96F3-1FFA050A22E7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo3_02" ID="{F4E4071D-05F7-48AE-8ADF-06FB39EC5516}" ShortID="145406237">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo3_02" ID="{8A0CC7C4-DD4C-406D-95F6-1E7D0CB63553}" ShortID="289277316">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo3_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo3_02" ID="{8A0CC7C4-DD4C-406D-95F6-1E7D0CB63553}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo3_03" ID="{D09BAF18-B97D-41E2-8BBE-C5147505F8FE}" ShortID="479667782">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Cliff_Bridge_WindLo3_03" ID="{7DCDA590-71E6-4457-B1E4-0ECC621A5288}" ShortID="269816660">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Cliff_Bridge_WindLo3_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Cliff_Bridge_WindLo3_03" ID="{7DCDA590-71E6-4457-B1E4-0ECC621A5288}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="Oasis_Ambiance" ID="{08A41112-F6EC-4879-8D12-5DE27E2B0570}" ShortID="113333233">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="AmbLoop" ID="{0CD1CAAC-02B0-4BAB-8D56-5147D8E3B5ED}" ShortID="695514212">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Wind1" ID="{218A0AB0-0BBF-4624-985A-6E2C968D1AC0}" ShortID="477898115">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{50725569-4514-451C-8679-A7A62FF5CD8F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B9AC5C02-39D7-42C4-88F4-A9A0B0AB666F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{9F7F83B3-A3DE-4D17-9A17-6C7EF37597E1}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Oasis_Wind1_01" ID="{E0F6D8A8-E573-4379-AF32-FAC9DE8109DF}" ShortID="309148062">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Oasis_Wind1_01" ID="{877DE9E4-AD7C-427A-81F1-84B84C30A3E6}" ShortID="918088604">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Oasis_Wind1_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Oasis_Wind1_01" ID="{877DE9E4-AD7C-427A-81F1-84B84C30A3E6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Oasis_Wind1_02" ID="{08E4C9B4-1C64-4816-8C4D-BC2E88FE273E}" ShortID="409724820">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Oasis_Wind1_02" ID="{10767C98-6196-466B-8D74-F43822F8F918}" ShortID="347113298">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Oasis_Wind1_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Oasis_Wind1_02" ID="{10767C98-6196-466B-8D74-F43822F8F918}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Oasis_Wind1_03" ID="{4DCF48DD-B8DC-4B8A-9040-75E2FB6A7F83}" ShortID="775463678">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Oasis_Wind1_03" ID="{791530B9-981D-43F6-B7D1-07768E9183E8}" ShortID="717987431">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Oasis_Wind1_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Oasis_Wind1_03" ID="{791530B9-981D-43F6-B7D1-07768E9183E8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Oasis_Wind1_04" ID="{5BC479FF-97E8-4659-87D5-F9A20AEE7410}" ShortID="1013984395">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Oasis_Wind1_04" ID="{600B347A-FD09-4A49-84BC-1E695A4972C0}" ShortID="25840943">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Oasis_Wind1_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Oasis_Wind1_04" ID="{600B347A-FD09-4A49-84BC-1E695A4972C0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Wind2" ID="{AADECEBC-3408-4DFC-A5DE-DAC2A087AC36}" ShortID="394385638">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{85FF0A4D-A4E4-43A7-8033-4048B4FDEF46}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BCE7E90C-9AD2-4017-A08E-735A876383D8}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6E54C8D1-C799-4CC1-A226-FD89045B6676}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_AMB_Oasis_Wind2_01" ID="{0143CA55-2FC7-40AE-9534-B687C037855F}" ShortID="612555791">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Oasis_Wind2_01" ID="{E40FBF9D-0BB8-441A-99C0-38DB834BCA08}" ShortID="871707211">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Oasis_Wind2_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Oasis_Wind2_01" ID="{E40FBF9D-0BB8-441A-99C0-38DB834BCA08}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Oasis_Wind2_02" ID="{FD31C2D8-28D3-4BB2-B6CC-F1AD662A4785}" ShortID="603391182">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Oasis_Wind2_02" ID="{BE02B18B-31C2-4EE7-B6B2-A572B2660826}" ShortID="1064159213">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Oasis_Wind2_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Oasis_Wind2_02" ID="{BE02B18B-31C2-4EE7-B6B2-A572B2660826}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Oasis_Wind2_03" ID="{00CBD860-268A-4904-882C-1E203662021E}" ShortID="44502689">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Oasis_Wind2_03" ID="{163052F2-E6D8-432E-A73F-078E98C6B3F8}" ShortID="559449695">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Oasis_Wind2_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Oasis_Wind2_03" ID="{163052F2-E6D8-432E-A73F-078E98C6B3F8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_AMB_Oasis_Wind2_04" ID="{AF8818DD-669F-4F30-A2B2-82557BE44581}" ShortID="819311540">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_AMB_Oasis_Wind2_04" ID="{D510299F-12A3-4BAB-978E-F0FE4170D901}" ShortID="870249509">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_AMB_Oasis_Wind2_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_AMB_Oasis_Wind2_04" ID="{D510299F-12A3-4BAB-978E-F0FE4170D901}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<RandomSequenceContainer Name="RWind" ID="{8F34F8C0-244F-4231-9776-F05B31B09F1B}" ShortID="253162020">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{511ACC3C-23C9-45E4-BC01-0B240A1DF11E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{78DFDF55-B586-48CE-BDA7-5E72695E998E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="TLB_AMB_Oasis_RWind_01" ID="{01E5F60B-256B-4A80-833D-292E62EBD2A2}" ShortID="314419265">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_01" ID="{60FE9635-55BE-4C9E-86B9-559755F19D1E}" ShortID="788685747">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_01" ID="{60FE9635-55BE-4C9E-86B9-559755F19D1E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_02" ID="{8E057113-79DA-4F6F-B1FA-C21C3BA2B13E}" ShortID="34011770">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_02" ID="{7639BF4B-9C56-4B67-81A1-E441446B621D}" ShortID="111505954">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_02" ID="{7639BF4B-9C56-4B67-81A1-E441446B621D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_03" ID="{BD34444E-D2E7-4D70-888A-E20B81B198F2}" ShortID="696335342">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_03" ID="{830C5D9D-3C49-4545-B9B4-9540EAEF79F9}" ShortID="753154423">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_03" ID="{830C5D9D-3C49-4545-B9B4-9540EAEF79F9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_04" ID="{0584787E-4785-4C50-9CFB-64DBF27275C7}" ShortID="58724552">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_04" ID="{BB280A70-3DAA-43B0-A0A5-1E9E3CA512FE}" ShortID="243193760">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_04" ID="{BB280A70-3DAA-43B0-A0A5-1E9E3CA512FE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_05" ID="{6C5EF669-53BB-456C-A233-C9E188D13B4F}" ShortID="249060894">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_05" ID="{B25304E6-FDF2-4BCA-A08D-A6E77BDBF1FC}" ShortID="464554877">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_05" ID="{B25304E6-FDF2-4BCA-A08D-A6E77BDBF1FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_06" ID="{7E9F58A5-DA78-4BBD-90A0-23F02E78FF73}" ShortID="919109111">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_06" ID="{4F318118-3E27-4E9E-A4A8-CA06CCCA4849}" ShortID="43775396">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_06" ID="{4F318118-3E27-4E9E-A4A8-CA06CCCA4849}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_07" ID="{F7500ADB-F118-49E0-8B52-2D8FE01A1E7E}" ShortID="364040024">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_07" ID="{D21A4F62-3FE2-4D5A-A60D-148569D61F76}" ShortID="710571665">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_07" ID="{D21A4F62-3FE2-4D5A-A60D-148569D61F76}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_08" ID="{FCC22BFE-A76D-4C65-A44B-8E02D0BC274D}" ShortID="725809380">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_08" ID="{33EDA281-5635-41B4-9643-3083AB40472E}" ShortID="85343379">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_08" ID="{33EDA281-5635-41B4-9643-3083AB40472E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_09" ID="{4A707FB2-E709-46D9-AA04-E2E30E4BA1B5}" ShortID="952757533">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_09" ID="{3CD2AF9F-EA19-400F-94F5-CD623D4CA3F3}" ShortID="449797422">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_09.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_09" ID="{3CD2AF9F-EA19-400F-94F5-CD623D4CA3F3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_AMB_Oasis_RWind_10" ID="{1142B413-D50E-4339-8E28-C278B019C7C6}" ShortID="752493002">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_AMB_Oasis_RWind_10" ID="{8940A90E-F429-4B85-A72E-92D4396E8A56}" ShortID="883096022">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_AMB\TLB_AMB.RPP"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_AMB_Oasis_RWind_10.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_AMB_Oasis_RWind_10" ID="{8940A90E-F429-4B85-A72E-92D4396E8A56}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{D5AFF6E7-DB8F-4F1F-8CEC-0DABC883B3A9}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RWind_Path" ID="{71AE94FF-CD36-4345-B4A2-AF73FAE97C71}">
+															<PropertyList>
+																<Property Name="Duration" Type="int32" Value="10000"/>
+																<Property Name="RandomX" Type="Real64" Value="5"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>32.91139</XPos>
+																	<YPos>-50.63694</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-39.24051</XPos>
+																	<YPos>-30.57325</YPos>
+																	<Flags>0</Flags>
+																	<Time>10000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RWind_Path_01" ID="{1B31D6A1-6681-440A-97DB-6A2202F499A9}">
+															<PropertyList>
+																<Property Name="AppendOffset" Type="int32" Value="1"/>
+																<Property Name="Duration" Type="int32" Value="12000"/>
+																<Property Name="RandomX" Type="Real64" Value="5"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>43.03797</XPos>
+																	<YPos>47.45223</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-36.70886</XPos>
+																	<YPos>-34.3949</YPos>
+																	<Flags>0</Flags>
+																	<Time>12000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RWind_Path_02" ID="{4E076561-FEAA-41BA-9E26-1EF14E32528C}">
+															<PropertyList>
+																<Property Name="Duration" Type="int32" Value="15000"/>
+																<Property Name="RandomX" Type="Real64" Value="5"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>22.1519</XPos>
+																	<YPos>-21.70063</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-40.50633</XPos>
+																	<YPos>25.47771</YPos>
+																	<Flags>0</Flags>
+																	<Time>15000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RWind_Path_03" ID="{137A1F79-919A-4E0C-9B99-F089761CC41B}">
+															<PropertyList>
+																<Property Name="Duration" Type="int32" Value="8000"/>
+																<Property Name="RandomX" Type="Real64" Value="5"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>1.26582</XPos>
+																	<YPos>28.98089</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-1.89873</XPos>
+																	<YPos>-32.21019</YPos>
+																	<Flags>0</Flags>
+																	<Time>8000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RWind_Path_04" ID="{9E640CFD-7324-47B4-AFF8-36EA66E544AF}">
+															<PropertyList>
+																<Property Name="Duration" Type="int32" Value="9000"/>
+																<Property Name="RandomX" Type="Real64" Value="5"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-31.01267</XPos>
+																	<YPos>28.98089</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>36.07595</XPos>
+																	<YPos>32.48407</YPos>
+																	<Flags>0</Flags>
+																	<Time>9000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RWind_Path_05" ID="{F5E6EBF2-7850-4B38-93EA-BB80BCEBF242}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="5"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-25.94937</XPos>
+																	<YPos>-33.4395</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>32.9114</XPos>
+																	<YPos>-14.01274</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -1685,6 +3925,7 @@
 														<RandomSequenceContainer Name="Sand" ID="{C0C589BE-D72A-4815-BD1D-691B387ECF1D}" ShortID="268515053">
 															<PropertyList>
 																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">

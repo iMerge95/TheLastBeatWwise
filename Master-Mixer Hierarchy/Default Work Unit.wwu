@@ -54,6 +54,27 @@
 								</Bus>
 								<Bus Name="Environement" ID="{01A6A307-3EC0-46BB-BC0A-93AF18FB4259}"/>
 								<Bus Name="Charachter SFX" ID="{3782A6C2-BAD9-421F-8863-3EF1E677C778}"/>
+								<AuxBus Name="RevCanyon" ID="{90E7EB3A-68EE-4E4A-9CFA-0859C4DCC159}">
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Medium_Dark" ID="{626B6E38-739B-4689-819F-F81AD3788BDE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="RevOpen" ID="{31203205-6D74-4B0E-BE03-F971FEA7A7D2}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="RevBridge" ID="{F9CE06CE-366D-4099-B78E-41C3E04408B9}">
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
