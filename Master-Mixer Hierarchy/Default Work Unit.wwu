@@ -176,6 +176,27 @@
 									</StateInfo>
 								</Bus>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo MusicSyncType="3">
+										<StateGroupRef Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+										<CustomState Name="" ID="{93B8756F-6812-4A7C-ACAC-2D9446B7CEE0}" ShortID="279470970">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-6"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+										<CustomState Name="" ID="{C130B85D-210C-41C1-B21E-2593F8A466C8}" ShortID="864271604"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}">
 							<PropertyList>

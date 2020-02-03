@@ -3105,7 +3105,11 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
-												<CustomState Name="" ID="{49BFAF0C-17B6-4A58-B3B5-67093D9DAA44}" ShortID="149785987"/>
+												<CustomState Name="" ID="{49BFAF0C-17B6-4A58-B3B5-67093D9DAA44}" ShortID="149785987">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="2"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>

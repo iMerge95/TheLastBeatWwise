@@ -36,6 +36,7 @@
 				<GameParameter Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}">
 					<PropertyList>
 						<Property Name="FilterTimeDown" Type="Real64" Value="5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 						<Property Name="RTPCRamping" Type="int16" Value="2"/>
