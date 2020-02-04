@@ -462,7 +462,6 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -839,7 +838,6 @@
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -1620,6 +1618,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Canyon_WindHi_01" ID="{F56D6B6B-0724-4511-8581-4CCBB9CFF01F}" ShortID="450713152">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1640,6 +1645,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Canyon_WindHi_02" ID="{1BFAD49A-434B-4803-B0BF-C5949779BE17}" ShortID="732948994">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1660,6 +1672,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Canyon_WindHi_03" ID="{31685872-40DE-4827-91BC-9C632876B07D}" ShortID="952825589">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1745,6 +1764,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Canyon_WindLo_01" ID="{4460495C-F83C-42F1-A913-802313C3232D}" ShortID="289725149">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1765,6 +1791,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Canyon_WindLo_02" ID="{3E4F79AD-2C55-4E78-88A9-7558665C73F4}" ShortID="280482446">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -1785,6 +1818,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Canyon_WindLo_03" ID="{8C76DA39-1D2A-4A19-B677-86E9E28A2608}" ShortID="884191149">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2479,6 +2519,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi1_01" ID="{B2FF1140-A111-4C0C-8D2C-02F07751DD27}" ShortID="182663293">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2499,6 +2546,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi1_02" ID="{CA5B2807-950E-4FEB-8578-FD6B3F335C40}" ShortID="233057420">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2519,6 +2573,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi1_03" ID="{A71D1D4A-44CE-4E29-A162-C88DC74380DB}" ShortID="148703378">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2604,6 +2665,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo1_01" ID="{B13780BB-F108-4D3F-8C2C-41B9412C4E6F}" ShortID="333822839">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2624,6 +2692,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo1_02" ID="{C9F0CB71-5BAE-4888-BD48-DA6EB7E0B20D}" ShortID="140795934">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2644,6 +2719,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo1_03" ID="{E69A3363-703B-40BA-AAA5-1F07481C6B6E}" ShortID="116081972">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2729,6 +2811,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi2_01" ID="{D5DECE33-9001-4057-B6C2-F638C6F3A8AA}" ShortID="173259836">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2749,6 +2838,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi2_02" ID="{3B0A90FC-7D9F-40A0-9988-765E098C315E}" ShortID="740100425">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2769,6 +2865,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindHi2_03" ID="{7621F4D9-D2E3-44C5-9A2F-FE3B030F39FB}" ShortID="490382152">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2854,6 +2957,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo2_01" ID="{43847839-8D3F-4CC7-BC64-A42F8D07AFC2}" ShortID="996789013">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2874,6 +2984,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo2_02" ID="{7BE4A6FD-DE74-4AFA-8C09-4781C1804583}" ShortID="212968808">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2894,6 +3011,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo2_03" ID="{FE1F2506-56BD-4275-90E8-D2F575AD3446}" ShortID="372472032">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2979,6 +3103,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo3_01" ID="{AE637520-1152-4ADA-97E6-969724B68B16}" ShortID="180709853">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -2999,6 +3130,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo3_02" ID="{F4E4071D-05F7-48AE-8ADF-06FB39EC5516}" ShortID="145406237">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3019,6 +3157,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Cliff_Bridge_WindLo3_03" ID="{D09BAF18-B97D-41E2-8BBE-C5147505F8FE}" ShortID="479667782">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3131,6 +3276,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Oasis_Wind1_01" ID="{E0F6D8A8-E573-4379-AF32-FAC9DE8109DF}" ShortID="309148062">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3151,6 +3303,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Oasis_Wind1_02" ID="{08E4C9B4-1C64-4816-8C4D-BC2E88FE273E}" ShortID="409724820">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3171,6 +3330,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Oasis_Wind1_03" ID="{4DCF48DD-B8DC-4B8A-9040-75E2FB6A7F83}" ShortID="775463678">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3191,6 +3357,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Oasis_Wind1_04" ID="{5BC479FF-97E8-4659-87D5-F9A20AEE7410}" ShortID="1013984395">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3276,6 +3449,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="TLB_AMB_Oasis_Wind2_01" ID="{0143CA55-2FC7-40AE-9534-B687C037855F}" ShortID="612555791">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3296,6 +3476,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Oasis_Wind2_02" ID="{FD31C2D8-28D3-4BB2-B6CC-F1AD662A4785}" ShortID="603391182">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3316,6 +3503,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Oasis_Wind2_03" ID="{00CBD860-268A-4904-882C-1E203662021E}" ShortID="44502689">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -3336,6 +3530,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="TLB_AMB_Oasis_Wind2_04" ID="{AF8818DD-669F-4F30-A2B2-82557BE44581}" ShortID="819311540">
+															<PropertyList>
+																<Property Name="IsStreamingEnabled" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>

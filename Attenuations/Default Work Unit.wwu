@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}" PersistMode="Standalone">
 			<ChildrenList>
 				<Attenuation Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" ShortID="910700979">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -19,7 +22,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>30</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -47,7 +50,7 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>30</XPos>
 											<YPos>40</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -69,7 +72,7 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>30</XPos>
 											<YPos>25</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -91,8 +94,14 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
-											<YPos>-0</YPos>
+											<XPos>25</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp3</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>30</XPos>
+											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -113,13 +122,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>39.81191</XPos>
+											<XPos>11.943573</XPos>
 											<YPos>15.88302</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>30</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>

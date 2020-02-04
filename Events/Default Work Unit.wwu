@@ -652,24 +652,6 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="Play_Desert_Ambiance" ID="{6FC78543-A27E-4D51-8D08-D372B433EB9F}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="17"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<Action Name="" ID="{E11A1A78-7F36-471D-ADBB-3F1E5CE9777F}" ShortID="102322380">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="17"/>
@@ -714,6 +696,62 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Cryspets" ID="{56EDAE85-837D-4C08-AA07-BBEE1B7A472E}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Oasis_Ambiance" ID="{007411D6-77C4-4312-9AF1-939A18027A5A}">
+							<ChildrenList>
+								<Action Name="" ID="{3F807E37-99AC-4ABC-BFB4-D33B83C4A824}" ShortID="717443512">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Oasis_Ambiance" ID="{08A41112-F6EC-4879-8D12-5DE27E2B0570}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_CliffBridge_Ambiance" ID="{24B51885-C0DB-4F7B-A938-F8E09BD97E11}">
+							<ChildrenList>
+								<Action Name="" ID="{6EEDA8E1-7873-45EF-B1CC-D1297F1ECCC6}" ShortID="60984855">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CliffBridge_Ambiance" ID="{555FBAD2-57F9-4F7C-BA1F-2C8B27E48B43}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Canyon_Ambiance" ID="{3E04B258-ACC7-4918-BA08-2064D4FC4C62}">
+							<ChildrenList>
+								<Action Name="" ID="{39FD4E5B-CE6C-440A-BF33-2C46DABBA549}" ShortID="69463474">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Canyon_Ambiance" ID="{82A6EF57-1859-4848-88D6-41A34C542F36}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Desert_Ambiance" ID="{EAD6D2A9-B888-40CE-8E5F-64D746E8D2D9}">
+							<ChildrenList>
+								<Action Name="" ID="{375CC26E-474B-4AF5-B620-45B44FAD10CF}" ShortID="954683404">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

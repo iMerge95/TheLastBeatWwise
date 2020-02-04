@@ -17,6 +17,10 @@
 			<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_Layer2_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer2_1Pre_2Post_592D8723.wem</Path>
 		</File>
+		<File Id="25840943" Language="SFX">
+			<ShortName>TLB_AMB_Oasis_Wind1_04.wav</ShortName>
+			<Path>SFX\TLB_AMB_Oasis_Wind1_04_E37C7245.wem</Path>
+		</File>
 		<File Id="37526413" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer2_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
@@ -25,9 +29,17 @@
 			<ShortName>TheLastBeat_Mus_Land_Combat_SitarLead_Layer1_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarLead_Layer1_1Pre_2Post_592D8723.wem</Path>
 		</File>
+		<File Id="47030121" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo1_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo1_03_E37C7245.wem</Path>
+		</File>
 		<File Id="63282434" Language="SFX">
 			<ShortName>TLB_AMB_Desert_RWind_02.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_RWind_02_E37C7245.wem</Path>
+		</File>
+		<File Id="96667540" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindHi2_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindHi2_02_E37C7245.wem</Path>
 		</File>
 		<File Id="100824575" Language="SFX">
 			<ShortName>TheLastBeat_Mus_Land_Combat_Base_Layer2_1Pre_2Post.wav</ShortName>
@@ -41,6 +53,14 @@
 			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_03.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_Wildlife_Crypets_03_E37C7245.wem</Path>
 		</File>
+		<File Id="127030992" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindHi2_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindHi2_03_E37C7245.wem</Path>
+		</File>
+		<File Id="129619696" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindHi2_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindHi2_01_E37C7245.wem</Path>
+		</File>
 		<File Id="141019759" Language="SFX">
 			<ShortName>TLB_AMB_Desert_RWind_04.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_RWind_04_E37C7245.wem</Path>
@@ -48,6 +68,22 @@
 		<File Id="147986051" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer3_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer3_1Pre2Post_592D8723.wem</Path>
+		</File>
+		<File Id="165325558" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo2_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo2_01_E37C7245.wem</Path>
+		</File>
+		<File Id="165782725" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo2_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo2_02_E37C7245.wem</Path>
+		</File>
+		<File Id="176987593" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo1_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo1_01_E37C7245.wem</Path>
+		</File>
+		<File Id="177556018" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo1_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo1_02_E37C7245.wem</Path>
 		</File>
 		<File Id="182145782" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer3_1Pre2Post.wav</ShortName>
@@ -61,9 +97,17 @@
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer1_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer1_1Pre2Post_592D8723.wem</Path>
 		</File>
+		<File Id="269816660" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo3_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo3_03_E37C7245.wem</Path>
+		</File>
 		<File Id="287787520" Language="SFX">
 			<ShortName>TheLastBeat_Mus_Land_Combat_SitarLead_Layer2_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_SitarLead_Layer2_1Pre_2Post_592D8723.wem</Path>
+		</File>
+		<File Id="289277316" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo3_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo3_02_E37C7245.wem</Path>
 		</File>
 		<File Id="313474517" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer3_1Pre2Post.wav</ShortName>
@@ -80,6 +124,10 @@
 		<File Id="338378325" Language="SFX">
 			<ShortName>TheLastBeat_Mus_Land_Combat_Perc_Layer3_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer3_1Pre_2Post_592D8723.wem</Path>
+		</File>
+		<File Id="347113298" Language="SFX">
+			<ShortName>TLB_AMB_Oasis_Wind1_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Oasis_Wind1_02_E37C7245.wem</Path>
 		</File>
 		<File Id="352158969" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer1_1Pre2Post.wav</ShortName>
@@ -117,13 +165,25 @@
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post_592D8723.wem</Path>
 		</File>
+		<File Id="469984427" Language="SFX">
+			<ShortName>TLB_AMB_Canyon_WindHi_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Canyon_WindHi_01_E37C7245.wem</Path>
+		</File>
 		<File Id="544401336" Language="SFX">
 			<ShortName>TheLastBeat_Mus_Land_Combat_Perc_Layer1_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer1_1Pre_2Post_592D8723.wem</Path>
 		</File>
+		<File Id="546861492" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindHi1_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindHi1_01_E37C7245.wem</Path>
+		</File>
 		<File Id="554075586" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer2_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer2_1Pre2Post_592D8723.wem</Path>
+		</File>
+		<File Id="559449695" Language="SFX">
+			<ShortName>TLB_AMB_Oasis_Wind2_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Oasis_Wind2_03_E37C7245.wem</Path>
 		</File>
 		<File Id="560626843" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer2_1Pre2Post.wav</ShortName>
@@ -145,13 +205,25 @@
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer2_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer2_1Pre2Post_592D8723.wem</Path>
 		</File>
+		<File Id="634391931" Language="SFX">
+			<ShortName>TLB_AMB_Canyon_WindHi_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Canyon_WindHi_03_E37C7245.wem</Path>
+		</File>
 		<File Id="647119512" Language="SFX">
 			<ShortName>TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post_592D8723.wem</Path>
 		</File>
+		<File Id="657792247" Language="SFX">
+			<ShortName>TLB_AMB_Canyon_WindLo_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Canyon_WindLo_01_E37C7245.wem</Path>
+		</File>
 		<File Id="668397685" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post_592D8723.wem</Path>
+		</File>
+		<File Id="673462257" Language="SFX">
+			<ShortName>TLB_AMB_Canyon_WindLo_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Canyon_WindLo_03_E37C7245.wem</Path>
 		</File>
 		<File Id="676930814" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer1_1Pre2Post.wav</ShortName>
@@ -164,6 +236,10 @@
 		<File Id="715830890" Language="SFX">
 			<ShortName>TLB_AMB_Desert_HighWind_03.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_HighWind_03_E37C7245.wem</Path>
+		</File>
+		<File Id="717987431" Language="SFX">
+			<ShortName>TLB_AMB_Oasis_Wind1_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Oasis_Wind1_03_E37C7245.wem</Path>
 		</File>
 		<File Id="723176415" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer2_1Pre2Post.wav</ShortName>
@@ -185,6 +261,14 @@
 			<ShortName>TheLastBeat_Mus_Land_Combat_Perc_Layer2_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer2_1Pre_2Post_592D8723.wem</Path>
 		</File>
+		<File Id="768595350" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindHi1_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindHi1_03_E37C7245.wem</Path>
+		</File>
+		<File Id="769469216" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo3_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo3_01_E37C7245.wem</Path>
+		</File>
 		<File Id="771198940" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer1_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer1_1Pre2Post_592D8723.wem</Path>
@@ -196,6 +280,10 @@
 		<File Id="775059201" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer3_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer3_1Pre2Post_592D8723.wem</Path>
+		</File>
+		<File Id="787218365" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindHi1_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindHi1_02_E37C7245.wem</Path>
 		</File>
 		<File Id="796485053" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post.wav</ShortName>
@@ -213,6 +301,10 @@
 			<ShortName>TLB_AMB_Desert_HighWind_01.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_HighWind_01_E37C7245.wem</Path>
 		</File>
+		<File Id="846898411" Language="SFX">
+			<ShortName>TLB_AMB_Canyon_WindLo_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Canyon_WindLo_02_E37C7245.wem</Path>
+		</File>
 		<File Id="849535690" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer2_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer2_1Pre2Post_592D8723.wem</Path>
@@ -220,6 +312,14 @@
 		<File Id="853178857" Language="SFX">
 			<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_Layer3_1Pre_2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer3_1Pre_2Post_592D8723.wem</Path>
+		</File>
+		<File Id="870249509" Language="SFX">
+			<ShortName>TLB_AMB_Oasis_Wind2_04.wav</ShortName>
+			<Path>SFX\TLB_AMB_Oasis_Wind2_04_E37C7245.wem</Path>
+		</File>
+		<File Id="871707211" Language="SFX">
+			<ShortName>TLB_AMB_Oasis_Wind2_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Oasis_Wind2_01_E37C7245.wem</Path>
 		</File>
 		<File Id="889974946" Language="SFX">
 			<ShortName>TLB_AMB_Desert_Wildlife_Crypets_01.wav</ShortName>
@@ -232,6 +332,18 @@
 		<File Id="915633297" Language="SFX">
 			<ShortName>TLB_AMB_Desert_RWind_05.wav</ShortName>
 			<Path>SFX\TLB_AMB_Desert_RWind_05_E37C7245.wem</Path>
+		</File>
+		<File Id="918088604" Language="SFX">
+			<ShortName>TLB_AMB_Oasis_Wind1_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Oasis_Wind1_01_E37C7245.wem</Path>
+		</File>
+		<File Id="948530797" Language="SFX">
+			<ShortName>TLB_AMB_Cliff_Bridge_WindLo2_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Cliff_Bridge_WindLo2_03_E37C7245.wem</Path>
+		</File>
+		<File Id="973496701" Language="SFX">
+			<ShortName>TLB_AMB_Canyon_WindHi_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Canyon_WindHi_02_E37C7245.wem</Path>
 		</File>
 		<File Id="984312236" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post.wav</ShortName>
@@ -261,6 +373,10 @@
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer2_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer2_1Pre2Post_592D8723.wem</Path>
 		</File>
+		<File Id="1064159213" Language="SFX">
+			<ShortName>TLB_AMB_Oasis_Wind2_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Oasis_Wind2_02_E37C7245.wem</Path>
+		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
@@ -284,12 +400,15 @@
 				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.491708" DurationMax="0.538813"/>
 				<Event Id="512965664" Name="Play_Call_Attack_Ennemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Ennemy" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
+				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="3.319334" DurationMax="4.694246"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1674468585" Name="Play_LeftFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_LeftFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.224922" DurationMax="0.442757"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
+				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
 				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.230633" DurationMax="0.473552"/>
@@ -309,22 +428,34 @@
 			<ReferencedStreamedFiles>
 				<File Id="11159091"/>
 				<File Id="22690076"/>
+				<File Id="25840943"/>
 				<File Id="37526413"/>
 				<File Id="45823773"/>
+				<File Id="47030121"/>
 				<File Id="63282434"/>
+				<File Id="96667540"/>
 				<File Id="100824575"/>
 				<File Id="117664790"/>
 				<File Id="125119891"/>
+				<File Id="127030992"/>
+				<File Id="129619696"/>
 				<File Id="141019759"/>
 				<File Id="147986051"/>
+				<File Id="165325558"/>
+				<File Id="165782725"/>
+				<File Id="176987593"/>
+				<File Id="177556018"/>
 				<File Id="182145782"/>
 				<File Id="249965315"/>
 				<File Id="259122784"/>
+				<File Id="269816660"/>
 				<File Id="287787520"/>
+				<File Id="289277316"/>
 				<File Id="313474517"/>
 				<File Id="330102856"/>
 				<File Id="335079225"/>
 				<File Id="338378325"/>
+				<File Id="347113298"/>
 				<File Id="352158969"/>
 				<File Id="359854272"/>
 				<File Id="375337560"/>
@@ -334,35 +465,51 @@
 				<File Id="447676650"/>
 				<File Id="448957707"/>
 				<File Id="461703535"/>
+				<File Id="469984427"/>
 				<File Id="544401336"/>
+				<File Id="546861492"/>
 				<File Id="554075586"/>
+				<File Id="559449695"/>
 				<File Id="560626843"/>
 				<File Id="569645680"/>
 				<File Id="603408749"/>
 				<File Id="623855022"/>
 				<File Id="632908982"/>
+				<File Id="634391931"/>
 				<File Id="647119512"/>
+				<File Id="657792247"/>
 				<File Id="668397685"/>
+				<File Id="673462257"/>
 				<File Id="676930814"/>
 				<File Id="702824721"/>
 				<File Id="715830890"/>
+				<File Id="717987431"/>
 				<File Id="723176415"/>
 				<File Id="736405293"/>
 				<File Id="736855353"/>
 				<File Id="756398144"/>
 				<File Id="759618755"/>
+				<File Id="768595350"/>
+				<File Id="769469216"/>
 				<File Id="771198940"/>
 				<File Id="772276135"/>
 				<File Id="775059201"/>
+				<File Id="787218365"/>
 				<File Id="796485053"/>
 				<File Id="818750410"/>
 				<File Id="825699549"/>
 				<File Id="828054436"/>
+				<File Id="846898411"/>
 				<File Id="849535690"/>
 				<File Id="853178857"/>
+				<File Id="870249509"/>
+				<File Id="871707211"/>
 				<File Id="889974946"/>
 				<File Id="910250946"/>
 				<File Id="915633297"/>
+				<File Id="918088604"/>
+				<File Id="948530797"/>
+				<File Id="973496701"/>
 				<File Id="984312236"/>
 				<File Id="995359347"/>
 				<File Id="1021642049"/>
@@ -370,6 +517,7 @@
 				<File Id="1027616747"/>
 				<File Id="1040353670"/>
 				<File Id="1060191646"/>
+				<File Id="1064159213"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="13719654" Language="SFX">
@@ -397,6 +545,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>977</PrefetchSize>
+				</File>
+				<File Id="43775396" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_06.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_06_E37C7245.wem</Path>
 				</File>
 				<File Id="45298610" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer3_03.wav</ShortName>
@@ -431,6 +583,10 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_E37C7245.wem</Path>
 				</File>
+				<File Id="85343379" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_08.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_08_E37C7245.wem</Path>
+				</File>
 				<File Id="91668788" Language="SFX">
 					<ShortName>TLB_NME_SFX_Call_Attack_Hi_04.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Call_Attack_Hi_04_E37C7245.wem</Path>
@@ -459,6 +615,10 @@
 				<File Id="108241621" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Perfect_Layer2_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_RushFB_Perfect_Layer2_04_592D8723.wem</Path>
+				</File>
+				<File Id="111505954" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_02.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_02_E37C7245.wem</Path>
 				</File>
 				<File Id="117664790" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer3_1Pre2Post.wav</ShortName>
@@ -547,6 +707,10 @@
 					<ShortName>TheLastBeat_Mus_FB_Blink_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Blink_03_592D8723.wem</Path>
 				</File>
+				<File Id="243193760" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_04.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_04_E37C7245.wem</Path>
+				</File>
 				<File Id="254190867" Language="SFX">
 					<ShortName>TLB_NME_SFX_Enemy_Explosion_03.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_03_E37C7245.wem</Path>
@@ -572,6 +736,10 @@
 				<File Id="290128950" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Perfect_Layer1_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_RushFB_Perfect_Layer1_03_592D8723.wem</Path>
+				</File>
+				<File Id="297293452" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind1_03.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind1_03_E37C7245.wem</Path>
 				</File>
 				<File Id="313474517" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer3_1Pre2Post.wav</ShortName>
@@ -606,6 +774,10 @@
 				<File Id="350177278" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Fast_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_HiFoley_Fast_04_E37C7245.wem</Path>
+				</File>
+				<File Id="351277099" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind2_03.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind2_03_E37C7245.wem</Path>
 				</File>
 				<File Id="352158969" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer1_1Pre2Post.wav</ShortName>
@@ -651,9 +823,17 @@
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer1_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>981</PrefetchSize>
 				</File>
+				<File Id="436376983" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind2_05.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind2_05_E37C7245.wem</Path>
+				</File>
 				<File Id="439736303" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Med_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_HiFoley_Med_04_E37C7245.wem</Path>
+				</File>
+				<File Id="445366905" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind1_02.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind1_02_E37C7245.wem</Path>
 				</File>
 				<File Id="446739704" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_02.wav</ShortName>
@@ -664,6 +844,10 @@
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer2_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>709</PrefetchSize>
 				</File>
+				<File Id="449797422" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_09.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_09_E37C7245.wem</Path>
+				</File>
 				<File Id="455365614" Language="SFX">
 					<ShortName>TLB_Chara_SFX_RushFX_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_RushFX_01_E37C7245.wem</Path>
@@ -672,6 +856,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>981</PrefetchSize>
+				</File>
+				<File Id="464554877" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_05.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_05_E37C7245.wem</Path>
 				</File>
 				<File Id="472560739" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_SitarAlt_Pal1Part3_Chord1.wav</ShortName>
@@ -831,6 +1019,10 @@
 					<ShortName>TLB_NME_SFX_Bounce_Shield_02.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Bounce_Shield_02_E37C7245.wem</Path>
 				</File>
+				<File Id="710571665" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_07.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_07_E37C7245.wem</Path>
+				</File>
 				<File Id="723176415" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer2_1Pre2Post_592D8723.wem</Path>
@@ -853,6 +1045,10 @@
 				<File Id="737147085" Language="SFX">
 					<ShortName>TLB_Chara_SFX_BlinkFX_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_BlinkFX_02_E37C7245.wem</Path>
+				</File>
+				<File Id="753154423" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_03.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_03_E37C7245.wem</Path>
 				</File>
 				<File Id="756398144" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer1_1Pre2Post.wav</ShortName>
@@ -907,6 +1103,10 @@
 					<ShortName>TLB_Chara_SFXSand_Steps_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Steps_01_E37C7245.wem</Path>
 				</File>
+				<File Id="788685747" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_01.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_01_E37C7245.wem</Path>
+				</File>
 				<File Id="796485053" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post_592D8723.wem</Path>
@@ -936,6 +1136,10 @@
 				<File Id="819641697" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Hit_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Hit_03_E37C7245.wem</Path>
+				</File>
+				<File Id="820620401" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind2_02.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind2_02_E37C7245.wem</Path>
 				</File>
 				<File Id="825699549" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer2_1Pre2Post.wav</ShortName>
@@ -968,6 +1172,14 @@
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer3_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_BlinkFB_Layer3_04_592D8723.wem</Path>
 				</File>
+				<File Id="883096022" Language="SFX">
+					<ShortName>TLB_AMB_Oasis_RWind_10.wav</ShortName>
+					<Path>SFX\TLB_AMB_Oasis_RWind_10_E37C7245.wem</Path>
+				</File>
+				<File Id="889012155" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind2_04.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind2_04_E37C7245.wem</Path>
+				</File>
 				<File Id="904056142" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Great_Layer1_02.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_RushFB_Great_Layer1_02_592D8723.wem</Path>
@@ -988,6 +1200,10 @@
 				<File Id="914952534" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Rockysteps_01_E37C7245.wem</Path>
+				</File>
+				<File Id="923094804" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind1_04.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind1_04_E37C7245.wem</Path>
 				</File>
 				<File Id="953741041" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_01.wav</ShortName>
@@ -1035,6 +1251,10 @@
 					<ShortName>TheLastBeat_Mus_FB_Blink_01.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Blink_01_592D8723.wem</Path>
 				</File>
+				<File Id="1014833904" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind1_01.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind1_01_E37C7245.wem</Path>
+				</File>
 				<File Id="1021642049" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer2_1Pre2Post_592D8723.wem</Path>
@@ -1061,6 +1281,10 @@
 				<File Id="1033676886" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Med_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_HiFoley_Med_03_E37C7245.wem</Path>
+				</File>
+				<File Id="1035994942" Language="SFX">
+					<ShortName>TLB_AMB_Canyon_RWind2_01.wav</ShortName>
+					<Path>SFX\TLB_AMB_Canyon_RWind2_01_E37C7245.wem</Path>
 				</File>
 				<File Id="1036646483" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_04.wav</ShortName>
