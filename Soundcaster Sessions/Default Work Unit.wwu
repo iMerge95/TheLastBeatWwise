@@ -98,7 +98,7 @@
 						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Grass" ID="{3274A8CC-EA98-4228-93D4-F3840091341A}"/>
+						<CurrentSwitchRef Name="Sand" ID="{7955B7FA-2C8A-42A6-AE4C-ABD3F1DBFC0F}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -78,22 +78,22 @@
 								<Bus Name="Charachter SFX" ID="{3782A6C2-BAD9-421F-8863-3EF1E677C778}"/>
 								<AuxBus Name="RevCanyon" ID="{90E7EB3A-68EE-4E4A-9CFA-0859C4DCC159}">
 									<ReferenceList>
-										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Hall_Medium_Dark" ID="{626B6E38-739B-4689-819F-F81AD3788BDE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+											<ObjectRef Name="Tunnel" ID="{88B2F5E7-703C-4D7B-B897-946069693C4B}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}"/>
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
 								<AuxBus Name="RevOpen" ID="{31203205-6D74-4B0E-BE03-F971FEA7A7D2}">
 									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+											<ObjectRef Name="DistantBuilding_MicsFar" ID="{22EE2792-F5F3-4B26-A6E1-843A0A964677}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}"/>
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
 								<AuxBus Name="RevBridge" ID="{F9CE06CE-366D-4099-B78E-41C3E04408B9}">
 									<ReferenceList>
 										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											<ObjectRef Name="Colossal_Cathedral_Stereo" ID="{512A7648-07B6-486E-9D3E-8B7323C79E8C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 										</Reference>
 									</ReferenceList>
 								</AuxBus>

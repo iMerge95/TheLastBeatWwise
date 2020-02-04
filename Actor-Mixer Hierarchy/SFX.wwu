@@ -459,6 +459,9 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="RevOpen" ID="{31203205-6D74-4B0E-BE03-F971FEA7A7D2}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="RWind" ID="{965F5573-33AF-46FF-8D73-BAF40AF868D5}" ShortID="897918294">
@@ -4055,7 +4058,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4065,6 +4068,9 @@
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="RevOpen" ID="{31203205-6D74-4B0E-BE03-F971FEA7A7D2}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -4113,7 +4119,13 @@
 														<RandomSequenceContainer Name="Sand" ID="{C0C589BE-D72A-4815-BD1D-691B387ECF1D}" ShortID="268515053">
 															<PropertyList>
 																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>6</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -4121,6 +4133,9 @@
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="RevBridge" ID="{F9CE06CE-366D-4099-B78E-41C3E04408B9}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -5630,6 +5645,9 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RevOpen" ID="{31203205-6D74-4B0E-BE03-F971FEA7A7D2}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
