@@ -89,11 +89,11 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
-						<CurrentStateRef Name="Chord_04" ID="{3A4674ED-5710-41D9-95CF-754F73C429A5}"/>
+						<CurrentStateRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
+						<CurrentStateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
 						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
 						<CurrentStateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+						<CurrentStateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
 						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 					</CurrentStateList>
