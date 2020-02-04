@@ -161,6 +161,10 @@
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer2_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer2_1Pre2Post_592D8723.wem</Path>
 		</File>
+		<File Id="459766620" Language="SFX">
+			<ShortName>TLB_AMB_Desert_LowWind_02.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_LowWind_02_E37C7245.wem</Path>
+		</File>
 		<File Id="461703535" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post_592D8723.wem</Path>
@@ -289,6 +293,10 @@
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post_592D8723.wem</Path>
 		</File>
+		<File Id="796615516" Language="SFX">
+			<ShortName>TLB_AMB_Desert_LowWind_03.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_LowWind_03_E37C7245.wem</Path>
+		</File>
 		<File Id="818750410" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer3_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer3_1Pre2Post_592D8723.wem</Path>
@@ -345,6 +353,10 @@
 			<ShortName>TLB_AMB_Canyon_WindHi_02.wav</ShortName>
 			<Path>SFX\TLB_AMB_Canyon_WindHi_02_E37C7245.wem</Path>
 		</File>
+		<File Id="979206716" Language="SFX">
+			<ShortName>TLB_AMB_Desert_LowWind_01.wav</ShortName>
+			<Path>SFX\TLB_AMB_Desert_LowWind_01_E37C7245.wem</Path>
+		</File>
 		<File Id="984312236" Language="SFX">
 			<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post.wav</ShortName>
 			<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
@@ -400,15 +412,15 @@
 				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.491708" DurationMax="0.538813"/>
 				<Event Id="512965664" Name="Play_Call_Attack_Ennemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Ennemy" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
-				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
-				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
-				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
+				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
+				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="3.319334" DurationMax="4.694246"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.768917" DurationMax="0.832958"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1674468585" Name="Play_LeftFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_LeftFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.224922" DurationMax="0.442757"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
-				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
 				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.230633" DurationMax="0.473552"/>
@@ -464,6 +476,7 @@
 				<File Id="434161037"/>
 				<File Id="447676650"/>
 				<File Id="448957707"/>
+				<File Id="459766620"/>
 				<File Id="461703535"/>
 				<File Id="469984427"/>
 				<File Id="544401336"/>
@@ -496,6 +509,7 @@
 				<File Id="775059201"/>
 				<File Id="787218365"/>
 				<File Id="796485053"/>
+				<File Id="796615516"/>
 				<File Id="818750410"/>
 				<File Id="825699549"/>
 				<File Id="828054436"/>
@@ -510,6 +524,7 @@
 				<File Id="918088604"/>
 				<File Id="948530797"/>
 				<File Id="973496701"/>
+				<File Id="979206716"/>
 				<File Id="984312236"/>
 				<File Id="995359347"/>
 				<File Id="1021642049"/>

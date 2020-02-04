@@ -41,6 +41,7 @@ State	ID	Name	State Group			Notes
 Custom State	ID	Name	State Group	Owner		Notes
 	125346644	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\AllButPerc		
 	279470970	Explo	Music_CombatExplo_Switch	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	448183365	Combat	Music_CombatExplo_Switch	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environement		
 	611771238	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Perc		
 	759584902	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
 	1027279553	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MFX		

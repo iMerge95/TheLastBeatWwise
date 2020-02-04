@@ -52,7 +52,29 @@
 										</Reference>
 									</ReferenceList>
 								</Bus>
-								<Bus Name="Environement" ID="{01A6A307-3EC0-46BB-BC0A-93AF18FB4259}"/>
+								<Bus Name="Environement" ID="{01A6A307-3EC0-46BB-BC0A-93AF18FB4259}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+												<CustomState Name="" ID="{C547FFF6-A763-4AD7-A47B-11D35205042B}" ShortID="910058406"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
+												<CustomState Name="" ID="{0E879045-E292-4C26-A895-4F86A61827D8}" ShortID="448183365">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-3"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
 								<Bus Name="Charachter SFX" ID="{3782A6C2-BAD9-421F-8863-3EF1E677C778}"/>
 								<AuxBus Name="RevCanyon" ID="{90E7EB3A-68EE-4E4A-9CFA-0859C4DCC159}">
 									<ReferenceList>
