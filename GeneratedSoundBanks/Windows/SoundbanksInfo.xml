@@ -619,6 +619,10 @@
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Base_Layer2_1Pre_2Post_592D8723.wem</Path>
 					<PrefetchSize>1291</PrefetchSize>
 				</File>
+				<File Id="101091315" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_BC725169.wem</Path>
+				</File>
 				<File Id="102332519" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopA_Rewind_D4F3E753.wem</Path>
@@ -943,6 +947,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopB_Rewind_D4F3E753.wem</Path>
 				</File>
+				<File Id="569254387" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel_BCC8803E.wem</Path>
+				</File>
 				<File Id="569645680" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer1_1Pre2Post_592D8723.wem</Path>
@@ -1220,6 +1228,10 @@
 					<ShortName>TLB_AMB_Canyon_RWind1_04.wav</ShortName>
 					<Path>SFX\TLB_AMB_Canyon_RWind1_04_E37C7245.wem</Path>
 				</File>
+				<File Id="941961704" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar_1933E848.wem</Path>
+				</File>
 				<File Id="953741041" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_LoFoley_01_E37C7245.wem</Path>
@@ -1329,6 +1341,20 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<ExcludedMemoryFiles>
+				<File Id="101091315" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_BC725169.wem</Path>
+				</File>
+				<File Id="569254387" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel_BCC8803E.wem</Path>
+				</File>
+				<File Id="941961704" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar_1933E848.wem</Path>
+				</File>
+			</ExcludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

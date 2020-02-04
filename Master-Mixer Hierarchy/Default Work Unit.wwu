@@ -68,7 +68,7 @@
 												<StateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 												<CustomState Name="" ID="{0E879045-E292-4C26-A895-4F86A61827D8}" ShortID="448183365">
 													<PropertyList>
-														<Property Name="BusVolume" Type="Real64" Value="-3"/>
+														<Property Name="BusVolume" Type="Real64" Value="-6"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>

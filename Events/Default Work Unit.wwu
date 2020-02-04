@@ -369,6 +369,44 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_Hover" ID="{E6049661-D29A-455E-8A7D-7A54FD69D8FD}">
+							<ChildrenList>
+								<Action Name="" ID="{FEB323DA-0407-428D-923E-AA238EAD08D4}" ShortID="579929083">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hover" ID="{06908305-2BF2-48F8-B6C0-9A866EA74F77}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Hover" ID="{E16E01E8-FB6B-4331-9984-72E520180BE7}">
+							<ChildrenList>
+								<Action Name="" ID="{56BDC8BD-CAB8-44B4-AB27-39AC1E819B5A}" ShortID="202762445">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hover" ID="{06908305-2BF2-48F8-B6C0-9A866EA74F77}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Enemy_Attack" ID="{04FDCCBB-E2BA-48BA-8BF1-C02D5A806C0D}">
+							<ChildrenList>
+								<Action Name="" ID="{A7B8C62F-A9BB-4A76-8C07-DBBA958B1D27}" ShortID="374828183">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Attack" ID="{D0E2EDA5-B7DF-4FF6-A782-5848B9CF40DD}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="02_Player" ID="{A32702FF-811B-4538-BD1A-D641BDBDE609}" ShortID="615356457">

@@ -98,7 +98,10 @@ Trigger	ID	Name			Wwise Object Path	Notes
 	3602984935	OnPerfectRush			\TheLastBeat\OnPerfectRush	
 
 Effect plug-ins	ID	Name	Type				Notes
+	1782142158	DistantBuilding_MicsFar	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
 	2245320997	MFXDucking	Wwise Meter			
+	3059984139	Tunnel	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3380986947	Colossal_Cathedral_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	26519407	SoundSeed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\SFX\MFX\Rewind_MusicSwitch\RewindFinalCombat\Rewind_LoopC\SoundSeed Grain	
@@ -389,4 +392,9 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	1040353670	Base_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_Land_Combat_Base_Layer1_1Pre_2Post_592D8723.wem	1040353670.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer1\Land_Combat_Layer1\Base_1Pre_2Post	
 	1060191646	Lead_LoopC_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer2_1Pre2Post_592D8723.wem	1060191646.wem	\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopC\Lead_LoopC_Layer2	
 	1064159213	TLB_AMB_Oasis_Wind2_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Oasis_Wind2_02_E37C7245.wem	1064159213.wem	\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Oasis_Ambiance\AmbLoop\Wind2\TLB_AMB_Oasis_Wind2_02	
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	101091315	Colossal_Cathedral_Stereo	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_BC725169.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects Stereo\Cathedrals and Churches\Colossal_Cathedral_Stereo	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 	1464496
+	569254387	Tunnel	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel_BCC8803E.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Tunnel\Tunnel	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	446752
+	941961704	DistantBuilding_MicsFar	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar_1933E848.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Field\DistantBuilding_MicsFar	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	645568
 

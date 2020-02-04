@@ -69,11 +69,11 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1729625191	RevBridge			\Default Work Unit\Master Audio Bus\SFX\RevBridge	
 
 Effect plug-ins	ID	Name	Type				Notes
-	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	1782142158	DistantBuilding_MicsFar	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
 	2038996943	Plate_Sizzle	Wwise RoomVerb			
 	2245320997	MFXDucking	Wwise Meter			
-	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
-	3442768367	Hall_Large_Dark	Wwise RoomVerb			
+	3059984139	Tunnel	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3380986947	Colossal_Cathedral_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
 	3946755902	MusicCrusher	BitCrusher			
 
 Audio Devices	ID	Name	Type				Notes
