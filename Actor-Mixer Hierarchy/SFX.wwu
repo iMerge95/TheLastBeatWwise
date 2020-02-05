@@ -4030,7 +4030,9 @@
 								<ActorMixer Name="Foley" ID="{EF1DAE4F-E757-4874-9C2B-D8AA3D3114EC}" ShortID="1051870870">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
@@ -5560,6 +5562,9 @@
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{6BBDE1FB-74E0-4CB1-9F06-0DFD11BDF0E5}"/>
+									</PositioningInfo>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -6098,7 +6103,6 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-1</Value>
@@ -6262,6 +6266,27 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<Sound Name="TLB_NME_SFX_HoverSynth_01" ID="{254EBB65-AB9D-4000-83DB-CDC80D41ACAB}" ShortID="313484223">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5A0B9AEB-BA6D-4A58-AC52-A18779F4059E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -6692,7 +6717,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-11</Value>
+														<Value>-16</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -7063,7 +7088,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

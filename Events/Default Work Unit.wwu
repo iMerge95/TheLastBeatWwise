@@ -369,7 +369,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_Hover" ID="{E6049661-D29A-455E-8A7D-7A54FD69D8FD}">
+						<Event Name="Play_Die_Enemy" ID="{E6049661-D29A-455E-8A7D-7A54FD69D8FD}">
 							<ChildrenList>
 								<Action Name="" ID="{FEB323DA-0407-428D-923E-AA238EAD08D4}" ShortID="579929083">
 									<PropertyList>

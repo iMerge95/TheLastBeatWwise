@@ -21,6 +21,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1850257871	Int_Chord08			\Default Work Unit\00_Internal\Chord\Int_Chord08	
 	1962302600	Play_Hover			\Default Work Unit\03_NME\Play_Hover	
 	2257378511	Play_Hit_Player			\Default Work Unit\02_Player\Play_Hit_Player	
+	2374767689	Play_Die_Enemy			\Default Work Unit\03_NME\Play_Die_Enemy	
 	2501149424	Int_MusicFeedbackOff			\Default Work Unit\00_Internal\Int_MusicFeedbackOff	
 	2567002569	Play_RushFXOnBeat			\Default Work Unit\02_Player\Play_RushFXOnBeat	
 	2655647461	Play_BlinkFXOnBeat			\Default Work Unit\02_Player\Play_BlinkFXOnBeat	
@@ -31,7 +32,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3191278813	Int_HitMusicFX			\Default Work Unit\00_Internal\Int_HitMusicFX	
 	3449458560	Play_Oasis_Ambiance			\Default Work Unit\01_AMB\Play_Oasis_Ambiance	
 	3485622663	Stop_Presence			\Default Work Unit\02_Player\Stop_Presence	
-	3535291822	Stop_Hover			\Default Work Unit\03_NME\Stop_Hover	
 	3723441664	Play_RightFoot			\Default Work Unit\02_Player\Play_RightFoot	
 	3832364417	Play_BlinkFXOffBeat			\Default Work Unit\02_Player\Play_BlinkFXOffBeat	
 	3852757989	Play_RushFXOffBeat			\Default Work Unit\02_Player\Play_RushFXOffBeat	
@@ -115,7 +115,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	744873505	SoundSeed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\SFX\MFX\Rewind_MusicSwitch\RewindLand\SoundSeed Grain	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1787050	TLB_NME_SFX_HoverSynth_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_NME_SFX_HoverSynth_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Hover\TLB_NME_SFX_HoverSynth_01		693529
+	1787050	TLB_NME_SFX_HoverSynth_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_NME_SFX_HoverSynth_01_592D8723.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Hover\TLB_NME_SFX_HoverSynth_01		693529
 	13719654	TLB_Chara_SFXSand_Rockysteps_05	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFXSand_Rockysteps_05_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Foosteps\RockyStep\Sand\TLB_Chara_SFXSand_Rockysteps_05		13164
 	13944903	TLB_AMB_Desert_RHowl_HowlLongA_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlLongA_02_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Canyon_Ambiance\RWind\RHowl\HowLong2\TLB_AMB_Desert_RHowl_HowlLongA_02		336824
 	18741063	SoundSeed Grain	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\Plugins\SoundSeed Grain\TheLastBeat_Mus_Land_Combat_Rewind_D4F3E753.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\SFX\MFX\Rewind_MusicSwitch\RewindLand\SoundSeed Grain		3260877

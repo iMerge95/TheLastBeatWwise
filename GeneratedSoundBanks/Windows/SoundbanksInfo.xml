@@ -416,6 +416,7 @@
 				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
+				<Event Id="2374767689" Name="Play_Die_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Die_Enemy" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.319334" DurationMax="4.694246"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.646579" DurationMax="0.990560"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
@@ -436,7 +437,6 @@
 				<Event Id="4276712658" Name="SetRewind_LoopC" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\SetRewind_LoopC" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\01_AMB\Stop_Amb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3535291822" Name="Stop_Hover" ObjectPath="\Events\Default Work Unit\03_NME\Stop_Hover" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3485622663" Name="Stop_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Stop_Presence" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.889631" DurationMax="4.390260"/>
 				<Event Id="564679353" Name="Stop_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Stop_Rewind" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
@@ -540,7 +540,7 @@
 			<IncludedMemoryFiles>
 				<File Id="1787050" Language="SFX">
 					<ShortName>TLB_NME_SFX_HoverSynth_01.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_HoverSynth_01_E37C7245.wem</Path>
+					<Path>SFX\TLB_NME_SFX_HoverSynth_01_592D8723.wem</Path>
 				</File>
 				<File Id="13719654" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_05.wav</ShortName>

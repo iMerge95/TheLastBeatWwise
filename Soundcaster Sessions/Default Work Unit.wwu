@@ -89,13 +89,13 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
-						<CurrentStateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
+						<CurrentStateRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+						<CurrentStateRef Name="Chord_06" ID="{E5208812-E721-48AC-B76D-E1822215AC23}"/>
 						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
 						<CurrentStateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-						<CurrentStateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
-						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
+						<CurrentStateRef Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grass" ID="{3274A8CC-EA98-4228-93D4-F3840091341A}"/>
