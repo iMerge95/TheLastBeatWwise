@@ -16,6 +16,7 @@
 						<StateGroup Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
@@ -27,6 +28,7 @@
 						<StateGroup Name="Music_Switch" ID="{CFEC8EF1-66D0-4F1A-A2CF-4790CE6EE7C2}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
@@ -36,6 +38,9 @@
 							</ChildrenList>
 						</StateGroup>
 						<StateGroup Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<State Name="None" ID="{00CA620F-04FD-4036-9D34-2CDB9C63BFA2}"/>
 								<State Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
@@ -78,6 +83,7 @@
 						<StateGroup Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="13"/>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>

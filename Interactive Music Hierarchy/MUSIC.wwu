@@ -626,9 +626,6 @@
 																	</PropertyCurveList>
 																</MusicClip>
 																<MusicEventCue Name="" ID="{0B40AE6E-DB12-4202-AB5D-39FB70C6CED1}" ShortID="123106633">
-																	<PropertyList>
-																		<Property Name="PlayAt" Type="Real64" Value="394.736842105263"/>
-																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="PostEventTarget">
 																			<ObjectRef Name="Stop_Rewind" ID="{AB2C8862-A024-4FB1-A765-97235054B940}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
@@ -1701,6 +1698,147 @@
 												</MusicPlaylistItem>
 											</Playlist>
 										</MusicPlaylistContainer>
+										<MusicSegment Name="Instant_Reverse_Stop" ID="{F8D760C2-99ED-4F6D-BAD8-03FA895F6996}" ShortID="547177607">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="1195.74120019003"/>
+												<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="Tempo" Type="Real64" Value="76"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AllButPerc" ID="{CC227658-C201-4C50-AEA7-1A5FC0B8B617}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="ReverseEvent" ID="{1CE97D99-ABD4-4D0B-AF63-9A5E3F39176B}" ShortID="54042995">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Combat_Lands_Trans_WIP" ID="{4136FFD1-443A-4F89-97C0-88168B200166}" ShortID="459099570">
+															<Language>SFX</Language>
+															<AudioFile>TheLastBeat_Mus_Combat_Lands_Trans_WIP.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="654735048"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{90F8F2AA-DC33-400F-9F4E-E56BE17C65E6}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{7151085D-9B7A-4936-99CB-5E8C36AF7C6E}">
+															<ClipList>
+																<MusicClip Name="TheLastBeat_Mus_Combat_Lands_Trans_WIP" ID="{49D25AA1-3E99-4D92-A419-541631393C93}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2763.15789473684"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="3958.89909492687"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="800.086165831705"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2763.15789473684"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="TheLastBeat_Mus_Combat_Lands_Trans_WIP" ID="{4136FFD1-443A-4F89-97C0-88168B200166}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{37C55BF6-0163-42D2-973C-1D2B3CBAD285}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.76316</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.9589</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{C85E01D2-4969-43AE-BE40-6F682B2D2C37}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.76316</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.9589</XPos>
+																						<YPos>31.18278</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{B3410530-805F-4FCE-997D-70ACE3CA083D}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.76316</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.9589</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+																<MusicEventCue Name="" ID="{F2D13E15-0B1E-49D4-A0D8-E18D0EE1F611}" ShortID="590179756">
+																	<ReferenceList>
+																		<Reference Name="PostEventTarget">
+																			<ObjectRef Name="Stop_Rewind" ID="{AB2C8862-A024-4FB1-A765-97235054B940}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+																		</Reference>
+																	</ReferenceList>
+																</MusicEventCue>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{CDB1D950-3FD9-4C76-BEF2-23978339C19F}"/>
+											</PositioningInfo>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{CEB4BC63-2FD8-48C9-A6B9-F19759ED63C6}"/>
+												<MusicCue Name="Exit Cue" ID="{665B9319-724A-4A58-B2D0-977E16F431AC}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
 									</ChildrenList>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{10ADFB37-D417-4ED8-B64B-67CF2B117B77}">
@@ -5120,7 +5258,9 @@
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+												<Property Name="PlayTransitionPreEntry" Type="bool" Value="False"/>
 												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="DestinationContextObject">
@@ -5131,7 +5271,7 @@
 												</Reference>
 											</ReferenceList>
 											<TransitionInfo>
-												<TransitionObjectRef Name="TheLastBeat_Mus_Combat_Lands_Trans_Short" ID="{523D5A21-53C0-4C71-B7F9-2318EF33AD57}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+												<TransitionObjectRef Name="Instant_Reverse_Stop" ID="{F8D760C2-99ED-4F6D-BAD8-03FA895F6996}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{CE15B99D-4435-435D-811B-AD59C6DA3579}">
 														<PropertyList>
@@ -10905,6 +11045,34 @@
 												</PropertyList>
 											</MusicFade>
 										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{A6D29DE8-08AB-4890-B06F-7BB63DBBC1B9}">
+									<PropertyList>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Reverse" ID="{4F4992F8-36C4-46BE-8486-36883B2932F6}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Instant_Reverse_Stop" ID="{F8D760C2-99ED-4F6D-BAD8-03FA895F6996}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{CAB4CD00-A8A2-4398-809F-8A310E9F362E}">
+									<PropertyList>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Reverse" ID="{6CDB17AA-CEDA-4957-AEB9-A7B4E63F04BC}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Instant_Reverse_Stop" ID="{F8D760C2-99ED-4F6D-BAD8-03FA895F6996}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
