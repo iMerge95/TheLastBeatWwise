@@ -4,7 +4,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	92132223	Play_WildlifeDesert_1			\Default Work Unit\01_AMB\Play_WildlifeDesert_1	
 	435770000	Stop_Amb			\Default Work Unit\01_AMB\Stop_Amb	
 	452547817	Stop_All			\Default Work Unit\Stop_All	
-	512965664	Play_Call_Attack_Ennemy			\Default Work Unit\03_NME\Play_Call_Attack_Ennemy	
 	564679353	Stop_Rewind			\Default Work Unit\00_Internal\Rewind\Stop_Rewind	
 	831844293	Play_Canyon_Ambiance			\Default Work Unit\01_AMB\Play_Canyon_Ambiance	
 	869704911	Play_Rewind			\Default Work Unit\00_Internal\Rewind\Play_Rewind	
@@ -22,10 +21,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1850257871	Int_Chord08			\Default Work Unit\00_Internal\Chord\Int_Chord08	
 	1962302600	Play_Hover			\Default Work Unit\03_NME\Play_Hover	
 	2257378511	Play_Hit_Player			\Default Work Unit\02_Player\Play_Hit_Player	
-	2257393085	Play_Enemy_Attack			\Default Work Unit\03_NME\Play_Enemy_Attack	
 	2501149424	Int_MusicFeedbackOff			\Default Work Unit\00_Internal\Int_MusicFeedbackOff	
 	2567002569	Play_RushFXOnBeat			\Default Work Unit\02_Player\Play_RushFXOnBeat	
 	2655647461	Play_BlinkFXOnBeat			\Default Work Unit\02_Player\Play_BlinkFXOnBeat	
+	2771612231	Play_Attack_Enemy			\Default Work Unit\03_NME\Play_Attack_Enemy	
+	2860430492	Play_Call_Attack_Enemy			\Default Work Unit\03_NME\Play_Call_Attack_Enemy	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	3119437920	Play_RushFXOnPerfect			\Default Work Unit\02_Player\Play_RushFXOnPerfect	
 	3191278813	Int_HitMusicFX			\Default Work Unit\00_Internal\Int_HitMusicFX	

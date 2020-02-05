@@ -358,7 +358,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Call_Attack_Ennemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}">
+						<Event Name="Play_Call_Attack_Enemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}">
 							<ChildrenList>
 								<Action Name="" ID="{94C84AAE-D7F7-434B-BB0E-6D7CA8A5B7EC}" ShortID="732345508">
 									<ReferenceList>
@@ -396,7 +396,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Enemy_Attack" ID="{04FDCCBB-E2BA-48BA-8BF1-C02D5A806C0D}">
+						<Event Name="Play_Attack_Enemy" ID="{04FDCCBB-E2BA-48BA-8BF1-C02D5A806C0D}">
 							<ChildrenList>
 								<Action Name="" ID="{A7B8C62F-A9BB-4A76-8C07-DBBA958B1D27}" ShortID="374828183">
 									<ReferenceList>

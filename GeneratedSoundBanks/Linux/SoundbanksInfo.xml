@@ -408,14 +408,14 @@
 				<Event Id="3191278813" Name="Int_HitMusicFX" ObjectPath="\Events\Default Work Unit\00_Internal\Int_HitMusicFX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2501149424" Name="Int_MusicFeedbackOff" ObjectPath="\Events\Default Work Unit\00_Internal\Int_MusicFeedbackOff" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1468197082" Name="Int_MusicFeedbackOn" ObjectPath="\Events\Default Work Unit\00_Internal\Int_MusicFeedbackOn" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2771612231" Name="Play_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Attack_Enemy" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.003522" DurationMax="1.513563"/>
 				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.413476" DurationMax="0.640760"/>
-				<Event Id="512965664" Name="Play_Call_Attack_Ennemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Ennemy" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
+				<Event Id="2860430492" Name="Play_Call_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Enemy" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
 				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
-				<Event Id="2257393085" Name="Play_Enemy_Attack" ObjectPath="\Events\Default Work Unit\03_NME\Play_Enemy_Attack" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.003522" DurationMax="1.513563"/>
 				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="3.319334" DurationMax="4.694246"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.646579" DurationMax="0.990560"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>

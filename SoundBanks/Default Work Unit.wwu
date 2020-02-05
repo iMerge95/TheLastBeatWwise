@@ -21,7 +21,7 @@
 						<ObjectRef Name="Play_WildlifeDesert_2" ID="{380D2BAE-6D6F-476C-85FE-2961FC6278D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Colossal_Cathedral_Stereo" ID="{512A7648-07B6-486E-9D3E-8B7323C79E8C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_All" ID="{27729540-6585-48A7-8D30-6C5160C2D643}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Enemy_Attack" ID="{04FDCCBB-E2BA-48BA-8BF1-C02D5A806C0D}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Attack_Enemy" ID="{04FDCCBB-E2BA-48BA-8BF1-C02D5A806C0D}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_WildlifeDesert_1" ID="{CE2105B7-7B17-48D5-AD39-C9A76A41B44E}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RightFoot" ID="{14674390-3546-498D-8397-C632091C5328}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="DistantBuilding_MicsFar" ID="{22EE2792-F5F3-4B26-A6E1-843A0A964677}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" Filter="7" Origin="Manual"/>
@@ -31,7 +31,7 @@
 						<ObjectRef Name="Play_Rewind" ID="{CE03CC97-7D3D-4C7F-9936-3F176E1AB104}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Tunnel" ID="{88B2F5E7-703C-4D7B-B897-946069693C4B}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Call_Attack_Ennemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Call_Attack_Enemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="00_Internal" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="03_NME" ID="{869AB398-6F59-4E88-B023-410917D1AAD0}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>

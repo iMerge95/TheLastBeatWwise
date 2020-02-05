@@ -6072,6 +6072,7 @@
 								</RandomSequenceContainer>
 								<BlendContainer Name="Hover" ID="{06908305-2BF2-48F8-B6C0-9A866EA74F77}" ShortID="418047375">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
@@ -6081,6 +6082,7 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -6099,7 +6101,7 @@
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-1</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{DAEE666F-5C6E-447B-809A-F81123E3F9FB}" ShortID="813832771">
@@ -6136,6 +6138,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="EnemyAttenuation_Hover" ID="{DCD84DB2-17E8-4013-BFBB-623913F6E676}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 										</Reference>
@@ -7058,7 +7063,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -7074,7 +7079,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="TLB_NME_SFX_Attack_01" ID="{1B4A2298-8543-4669-A68B-D26DE69EB5E2}" ShortID="488859745">
+										<Sound Name="TLB_NME_SFX_Attack_01" ID="{7F4C5679-CDDF-4DD5-B270-007E393F957C}" ShortID="255813386">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -7084,17 +7089,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Attack_01" ID="{EB141F8B-7B16-464D-A495-AA231D940443}" ShortID="545082286">
+												<AudioFileSource Name="TLB_NME_SFX_Attack_01" ID="{E1753647-713D-44AE-AD41-67D9281C4F56}" ShortID="307133066">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
 													<Language>SFX</Language>
 													<AudioFile>TLB_NME_SFX_Attack_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Attack_01" ID="{EB141F8B-7B16-464D-A495-AA231D940443}" Platform="Linked"/>
+												<ActiveSource Name="TLB_NME_SFX_Attack_01" ID="{E1753647-713D-44AE-AD41-67D9281C4F56}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="TLB_NME_SFX_Attack_02" ID="{ABAFBAB6-F8D4-463A-BEFE-87BAB1F72827}" ShortID="121325812">
+										<Sound Name="TLB_NME_SFX_Attack_02" ID="{7122CA69-3F70-4600-8CF9-4F16DAEDB344}" ShortID="969234567">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -7104,17 +7109,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Attack_02" ID="{B4D1A1E4-D52B-4B84-9E35-860FB8CADD36}" ShortID="642976431">
+												<AudioFileSource Name="TLB_NME_SFX_Attack_02" ID="{E10A7F5A-A955-4F80-BCB0-3DD90AE87EE4}" ShortID="497894848">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
 													<Language>SFX</Language>
 													<AudioFile>TLB_NME_SFX_Attack_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Attack_02" ID="{B4D1A1E4-D52B-4B84-9E35-860FB8CADD36}" Platform="Linked"/>
+												<ActiveSource Name="TLB_NME_SFX_Attack_02" ID="{E10A7F5A-A955-4F80-BCB0-3DD90AE87EE4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="TLB_NME_SFX_Attack_03" ID="{2E031618-98A4-419E-A91C-67B36F40AAA3}" ShortID="52223669">
+										<Sound Name="TLB_NME_SFX_Attack_03" ID="{5E2A45E1-C773-4310-82EC-EE3C0A4697CF}" ShortID="737808049">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -7124,17 +7129,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Attack_03" ID="{F4254C08-37A3-4746-9193-47A772FE9B29}" ShortID="457181550">
+												<AudioFileSource Name="TLB_NME_SFX_Attack_03" ID="{66CE2CFC-4196-4BB2-8E03-8620D1B347A9}" ShortID="588045476">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
 													<Language>SFX</Language>
 													<AudioFile>TLB_NME_SFX_Attack_03.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Attack_03" ID="{F4254C08-37A3-4746-9193-47A772FE9B29}" Platform="Linked"/>
+												<ActiveSource Name="TLB_NME_SFX_Attack_03" ID="{66CE2CFC-4196-4BB2-8E03-8620D1B347A9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="TLB_NME_SFX_Attack_04" ID="{8D587587-DA1B-4FFF-8563-E98C93C2677F}" ShortID="363609840">
+										<Sound Name="TLB_NME_SFX_Attack_04" ID="{9498CEBE-72FA-4328-9C1D-07B328941A6A}" ShortID="746207309">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -7144,14 +7149,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TLB_NME_SFX_Attack_04" ID="{1DBA59EE-D8DF-4E9E-9B2A-0CEB8CB49515}" ShortID="703199013">
+												<AudioFileSource Name="TLB_NME_SFX_Attack_04" ID="{DD6A8E43-01C3-40E2-AEB6-9E1125F938BB}" ShortID="124602914">
 													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
 													<Language>SFX</Language>
 													<AudioFile>TLB_NME_SFX_Attack_04.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="TLB_NME_SFX_Attack_04" ID="{1DBA59EE-D8DF-4E9E-9B2A-0CEB8CB49515}" Platform="Linked"/>
+												<ActiveSource Name="TLB_NME_SFX_Attack_04" ID="{DD6A8E43-01C3-40E2-AEB6-9E1125F938BB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
