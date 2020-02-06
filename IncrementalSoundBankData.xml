@@ -3,39 +3,39 @@
 	<Platform GUID="{E26443E7-49D3-4015-9F58-4D494F56A8A7}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="2454790614" Timestamp="1580913895"/>
-				<File Name="TheLastBank" Hash="3313360295" Timestamp="1580914875"/>
+				<File Name="Init" Hash="2157482299" Timestamp="1580985083"/>
+				<File Name="TheLastBank" Hash="1914346356" Timestamp="1580985082"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2987935106" Timestamp="1580914875"/>
+				<File Name="" Hash="2987935106" Timestamp="1580985083"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{32CCD176-2951-4604-AA9B-5A96D654F231}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="3074187957" Timestamp="1580913895"/>
-				<File Name="TheLastBank" Hash="3313360295" Timestamp="1580914888"/>
+				<File Name="Init" Hash="2859521564" Timestamp="1580985083"/>
+				<File Name="TheLastBank" Hash="1914346356" Timestamp="1580985083"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3272949101" Timestamp="1580914888"/>
+				<File Name="" Hash="3272949101" Timestamp="1580985083"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{6149A747-0D9B-4C50-8DDF-C903C40E2583}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="2857387166" Timestamp="1580919385"/>
-				<File Name="TheLastBank" Hash="1233425438" Timestamp="1580919385"/>
+				<File Name="Init" Hash="3121616770" Timestamp="1580985079"/>
+				<File Name="TheLastBank" Hash="1914346356" Timestamp="1580985079"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4129574703" Timestamp="1580919385"/>
+				<File Name="" Hash="4129574703" Timestamp="1580985079"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -16,7 +16,7 @@
 						<StateGroup Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="24"/>
-								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>

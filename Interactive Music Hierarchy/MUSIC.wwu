@@ -14,7 +14,7 @@
 						<Property Name="Tempo" Type="Real64" Value="76"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-9</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -41,7 +41,7 @@
 								<Property Name="Tempo" Type="Real64" Value="76"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>4</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -10712,6 +10712,11 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="76"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -11082,6 +11087,7 @@
 					<StingerList>
 						<MusicStinger Name="" ID="{4461BCFC-535C-4EF9-B049-40AF3FA71E8F}">
 							<PropertyList>
+								<Property Name="NumSegmentAdvance" Type="int16" Value="0"/>
 								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 							</PropertyList>
 							<TriggerRef Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
@@ -11089,6 +11095,7 @@
 						</MusicStinger>
 						<MusicStinger Name="" ID="{1D27F23D-B424-4764-9AD4-12B1EB92B154}">
 							<PropertyList>
+								<Property Name="NumSegmentAdvance" Type="int16" Value="0"/>
 								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 							</PropertyList>
 							<TriggerRef Name="OnBeatRush" ID="{5FCBD3FF-B660-4124-A39D-20E0B0DA27D8}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
@@ -11096,6 +11103,7 @@
 						</MusicStinger>
 						<MusicStinger Name="" ID="{0D9CD684-C312-4C92-8B14-0D80CE9E121A}">
 							<PropertyList>
+								<Property Name="NumSegmentAdvance" Type="int16" Value="0"/>
 								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 							</PropertyList>
 							<TriggerRef Name="OnPerfectRush" ID="{023A8982-4491-4066-853F-E992D2E40AA2}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>

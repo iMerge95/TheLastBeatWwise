@@ -2413,7 +2413,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3182,6 +3182,13 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Oasis_Ambiance" ID="{08A41112-F6EC-4879-8D12-5DE27E2B0570}" ShortID="113333233">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -4011,6 +4018,7 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -5612,12 +5620,12 @@
 										<ActorMixer Name="Skills" ID="{6C9F393D-9C37-49D7-8D9F-F1AC2B4AA907}" ShortID="857317061">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="OverrideOutput" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
+												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>5</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -5638,7 +5646,6 @@
 																<ModifierInfo>
 																	<Modifier Name="" ID="{DDE5677B-7BAB-4CFA-881C-018AC8C1662C}">
 																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
 																			<Property Name="Max" Type="Real64" Value="10"/>
 																		</PropertyList>
 																	</Modifier>
@@ -5660,7 +5667,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-7</Value>
+																<Value>-5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -5762,7 +5769,7 @@
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
-																<Value>20</Value>
+																<Value>10</Value>
 															</ValueList>
 														</Property>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
@@ -5771,7 +5778,6 @@
 																<ModifierInfo>
 																	<Modifier Name="" ID="{E1843C02-A039-4476-AA4B-78BB648E286B}">
 																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
 																			<Property Name="Max" Type="Real64" Value="10"/>
 																		</PropertyList>
 																	</Modifier>
@@ -6105,7 +6111,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-1</Value>
+												<Value>-3</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{DAEE666F-5C6E-447B-809A-F81123E3F9FB}" ShortID="813832771">
@@ -7235,7 +7241,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
