@@ -3964,6 +3964,34 @@
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<Sound Name="TheLastBeat_Menu_Amb" ID="{848D5F0D-01C6-4954-8F40-1404741F9F43}" ShortID="159560421">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TheLastBeat_Menu_Amb" ID="{3E1C08B3-492C-4546-AB19-916F9BEF25E0}" ShortID="55722667">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="3000"/>
+										<Property Name="LoopBegin" Type="Real64" Value="5.22182582582583"/>
+										<Property Name="LoopEnd" Type="Real64" Value="56.6241737987988"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>TheLastBeat_Menu_Amb.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TheLastBeat_Menu_Amb" ID="{3E1C08B3-492C-4546-AB19-916F9BEF25E0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>

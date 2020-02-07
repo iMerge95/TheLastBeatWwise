@@ -48,6 +48,15 @@
 								<State Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
 							</ChildrenList>
 						</StateGroup>
+						<StateGroup Name="Menu_Music" ID="{3CE40195-FE48-40DF-8980-276EE7F832E0}">
+							<ChildrenList>
+								<State Name="None" ID="{5A27289B-7D6F-4C1E-8BAC-762D34F64E8F}"/>
+								<State Name="Menu1" ID="{9702AA41-BF50-48B1-BA38-01AE7D89C0A9}"/>
+								<State Name="Menu2" ID="{A237DE7F-4267-40A8-8B5E-4BA9C6C33BF4}"/>
+								<State Name="Menu3" ID="{E6DDD6B2-992E-4C74-B0DF-419E862E214A}"/>
+								<State Name="Menu4" ID="{8FB22EF7-DA61-4181-BBA8-94DEE2B4EC9E}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FeedbackState" ID="{E702C584-13F3-4447-BBDB-4F7272687C77}" ShortID="1001932425">
