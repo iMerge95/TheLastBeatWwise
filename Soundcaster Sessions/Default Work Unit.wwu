@@ -13,6 +13,14 @@
 							<ObjectRef Name="Play_Music_Menu" ID="{3653EBA6-FAA4-4B5C-9AB9-F9E1BC7DE975}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
 							<Position X="1" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

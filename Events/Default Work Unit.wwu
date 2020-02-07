@@ -621,6 +621,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{324A79CB-051F-46AA-9F42-A6FD90A2683D}" ShortID="413778167">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Play_Heal_Player" ID="{0A78D982-20E1-4A25-94FA-BD8035127298}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_LeftFoot" ID="{CA268FC5-ADBA-419D-B065-BFAA9517F129}">
@@ -673,6 +683,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Presence" ID="{A06EC4FB-1EE8-43E8-9108-6662FF8F285D}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Heal_Player" ID="{0A78D982-20E1-4A25-94FA-BD8035127298}">
+							<ChildrenList>
+								<Action Name="" ID="{324DDF54-E19B-486B-A5CD-B0E1D5080497}" ShortID="733919939">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heal_Player" ID="{EDCCD239-F770-47A6-8871-7CAE507A7CBE}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

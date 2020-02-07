@@ -5983,7 +5983,7 @@
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-1</Value>
+														<Value>1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -6074,6 +6074,105 @@
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="TLB_Chara_SFX_Hit_04" ID="{3CF7E3AF-E684-4423-9BA7-94F2E265F8FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Heal_Player" ID="{EDCCD239-F770-47A6-8871-7CAE507A7CBE}" ShortID="719284659">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="TLB_Chara_SFX_Heal_02" ID="{A12F1CD0-3D2D-46C1-A78D-5CC7EB29114E}" ShortID="702356419">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_Heal_02" ID="{BBA23E37-7683-45A9-8E53-BCD9D9631800}" ShortID="1033331055">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_Heal_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_Heal_02" ID="{BBA23E37-7683-45A9-8E53-BCD9D9631800}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_Heal_03" ID="{CA53934D-B396-4976-BC20-378DA9EEA5C2}" ShortID="1055956968">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_Heal_03" ID="{BAF4DCCA-39A4-41B3-B58F-9D752C9B6DA4}" ShortID="844169691">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_Heal_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_Heal_03" ID="{BAF4DCCA-39A4-41B3-B58F-9D752C9B6DA4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_Heal_04" ID="{F858D44A-D17B-4C63-B1AC-6990D7A14129}" ShortID="1053752678">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_Heal_04" ID="{E0AF029B-07C2-4E83-A64B-76349268D0B8}" ShortID="834241788">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_Heal_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_Heal_04" ID="{E0AF029B-07C2-4E83-A64B-76349268D0B8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_Chara_SFX_Heal_01" ID="{8AA6BD2C-C434-4EA9-AA25-A25AEEACABBA}" ShortID="491047093">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_Chara_SFX_Heal_01" ID="{B9B8ADB0-BEA0-4F77-8D40-45EE8FD8541A}" ShortID="964225483">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_Chara_SFX_Heal_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_Chara_SFX_Heal_01" ID="{B9B8ADB0-BEA0-4F77-8D40-45EE8FD8541A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -6409,7 +6508,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
