@@ -10918,6 +10918,70 @@
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
+								<MusicSegment Name="TheLastBeat_Mus_Land_Save" ID="{690FE7A0-A58B-4F0F-9D23-5031936D7D2C}" ShortID="376606393">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="7487.8125"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="TheLastBeat_Mus_Land_Save" ID="{1C98A40F-60CA-456A-AF47-A502CB3E4223}" ShortID="555877241">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TheLastBeat_Mus_Land_Save" ID="{4922F401-D736-4AE1-95C2-F05854F7BA39}" ShortID="667176003">
+													<Language>SFX</Language>
+													<AudioFile>TheLastBeat_Mus_Land_Save.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{53D04B9C-2A6F-480A-B086-231AA7D85ABE}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{AA63D2A3-05F2-4343-AC84-F65BBF4F2A3F}">
+													<ClipList>
+														<MusicClip Name="TheLastBeat_Mus_Land_Save" ID="{21A590DD-0A14-462F-8CCB-DC188002CFE8}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="7487.8125"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="TheLastBeat_Mus_Land_Save" ID="{4922F401-D736-4AE1-95C2-F05854F7BA39}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{DB7AF2F3-2EA5-4A91-8DDA-088885FBE803}"/>
+										<MusicCue Name="Exit Cue" ID="{C1CA3DA1-01FB-4D5B-B6AB-65E003DBF76D}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="7487.8125"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -11071,6 +11135,10 @@
 							</PropertyList>
 							<TriggerRef Name="OnPerfectRush" ID="{023A8982-4491-4066-853F-E992D2E40AA2}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
 							<SegmentRef Name="OnPerfectRushFB" ID="{C2F74589-7FF3-411C-80D8-955CF7ECC1B9}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+						</MusicStinger>
+						<MusicStinger Name="" ID="{4784BE69-6683-4A80-95DE-F7D175E4BA06}">
+							<TriggerRef Name="Save" ID="{05DB8F39-40E4-4599-A565-D4D7781BC5AA}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+							<SegmentRef Name="TheLastBeat_Mus_Land_Save" ID="{690FE7A0-A58B-4F0F-9D23-5031936D7D2C}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 						</MusicStinger>
 					</StingerList>
 					<ArgumentList>
@@ -11701,9 +11769,6 @@
 							</TransitionList>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{E2DCFC1A-1E6D-484C-8FC2-942C6E3138E8}" ShortID="515109263">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{9470125F-F7E4-4F8C-B2CF-F958C34DECB4}" ShortID="588322915">
 											<PropertyList>

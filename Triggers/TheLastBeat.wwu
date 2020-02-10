@@ -11,6 +11,7 @@
 				<Trigger Name="OnBeatBlink" ID="{4C236FD4-A041-471E-A61E-BE5BD845A92C}"/>
 				<Trigger Name="MusicFeedback" ID="{E44C583A-FB4D-4523-A827-8DAA62360197}"/>
 				<Trigger Name="OnPerfectRush" ID="{023A8982-4491-4066-853F-E992D2E40AA2}"/>
+				<Trigger Name="Save" ID="{05DB8F39-40E4-4599-A565-D4D7781BC5AA}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

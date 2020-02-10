@@ -16,6 +16,28 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{7F93BD14-AEC3-4AF2-B860-24F66BB53CEA}" ShortID="787952662">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TheLastBeat_Menu_Amb" ID="{848D5F0D-01C6-4954-8F40-1404741F9F43}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EBBFD7BB-60EF-460D-BA72-A3F88AA18EDC}" ShortID="149477162">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Menu" ID="{F8120158-1154-41CF-B027-387F8DE8954F}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Folder Name="00_Internal" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" ShortID="624468541">
@@ -402,6 +424,45 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Attack" ID="{D0E2EDA5-B7DF-4FF6-A782-5848B9CF40DD}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boss_Rumble" ID="{0006E49B-1A37-4424-8F64-67D9FDB627AD}">
+							<ChildrenList>
+								<Action Name="" ID="{E4D13851-AA75-4FCA-AAB7-A0C1CF020DE5}" ShortID="21549030">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_NME_Boss_Rumble" ID="{C02BD442-E1B5-40E9-8188-06A40466F0D3}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boss_Scream" ID="{7097FDDC-C3A2-4A1F-99FE-7BB9653D70EF}">
+							<ChildrenList>
+								<Action Name="" ID="{36B74754-7F6A-4F88-950A-1ABAE32A536C}" ShortID="418186763">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_NME_Boss_ScreamFredo" ID="{08CE2B30-E317-4931-B5D3-442C5EB44E64}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Nemesis" ID="{95FB1ACA-ECBC-4E52-A7D1-A4F760911904}">
+							<ChildrenList>
+								<Action Name="" ID="{BA7AA38E-84CD-4151-965C-26C0BF3F08A8}" ShortID="1047652594">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_NME_Nemesis" ID="{8E447B1B-2919-4A45-AE0E-DDCA0A9673E5}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -797,6 +858,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Desert_Ambiance" ID="{D8AC9CBB-349F-4FAB-908C-4CAFAA07B75F}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Rumble" ID="{5D70381E-9E5F-4A4B-8DBE-15D74B6D7845}">
+							<ChildrenList>
+								<Action Name="" ID="{4BE27F81-81CC-442B-8514-F12B0F6455AD}" ShortID="334938647">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_AMB_Rumble" ID="{A7B9BE97-F342-4DA3-894D-59287F4C549C}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

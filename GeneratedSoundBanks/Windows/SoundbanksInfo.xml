@@ -411,6 +411,8 @@
 				<Event Id="2771612231" Name="Play_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Attack_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.816616" DurationMax="1.251145"/>
 				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="3815637695" Name="Play_Boss_Rumble" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Rumble" DurationType="Infinite"/>
+				<Event Id="3326215491" Name="Play_Boss_Scream" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Scream" DurationType="OneShot" DurationMin="14.210521" DurationMax="14.210521"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.413476" DurationMax="0.640760"/>
 				<Event Id="2860430492" Name="Play_Call_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
 				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
@@ -425,10 +427,12 @@
 				<Event Id="1674468585" Name="Play_LeftFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_LeftFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.224922" DurationMax="0.442757"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
 				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\Play_Music_Menu" DurationType="Infinite"/>
+				<Event Id="820063214" Name="Play_Nemesis" ObjectPath="\Events\Default Work Unit\03_NME\Play_Nemesis" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
 				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.230633" DurationMax="0.473552"/>
+				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Rumble" DurationType="Infinite"/>
 				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOffBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="3119437920" Name="Play_RushFXOnPerfect" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnPerfect" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
@@ -619,6 +623,10 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_E37C7245.wem</Path>
 				</File>
+				<File Id="83858654" Language="SFX">
+					<ShortName>TLB_NME_Nemesis.wav</ShortName>
+					<Path>SFX\TLB_NME_Nemesis_8991BA83.wem</Path>
+				</File>
 				<File Id="85343379" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_08.wav</ShortName>
 					<Path>SFX\TLB_AMB_Oasis_RWind_08_E37C7245.wem</Path>
@@ -722,6 +730,10 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer3_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>989</PrefetchSize>
+				</File>
+				<File Id="183392366" Language="SFX">
+					<ShortName>TLB_AMB_Rumble.wav</ShortName>
+					<Path>SFX\TLB_AMB_Rumble_5A68F724.wem</Path>
 				</File>
 				<File Id="199733513" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer1_04.wav</ShortName>
@@ -972,6 +984,10 @@
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer2_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>977</PrefetchSize>
 				</File>
+				<File Id="564320662" Language="SFX">
+					<ShortName>TLB_NME_Boss_Rumble.wav</ShortName>
+					<Path>SFX\TLB_NME_Boss_Rumble_70CDE311.wem</Path>
+				</File>
 				<File Id="564576037" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_LoFoley_04_E37C7245.wem</Path>
@@ -1063,6 +1079,10 @@
 				<File Id="654735048" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Trans_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_592D8723.wem</Path>
+				</File>
+				<File Id="667176003" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Save.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Save_592D8723.wem</Path>
 				</File>
 				<File Id="668397685" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post.wav</ShortName>
@@ -1284,6 +1304,10 @@
 				<File Id="953741041" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_LoFoley_01_E37C7245.wem</Path>
+				</File>
+				<File Id="961602446" Language="SFX">
+					<ShortName>TLB_NME_Boss_ScreamFredo.wav</ShortName>
+					<Path>SFX\TLB_NME_Boss_ScreamFredo_E37C7245.wem</Path>
 				</File>
 				<File Id="973627143" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post.wav</ShortName>
