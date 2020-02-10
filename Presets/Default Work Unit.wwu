@@ -355,7 +355,7 @@
 								<Value>-2</Value>
 							</ValueList>
 							<RTPCList>
-								<RTPC Name="" ID="{2787E1B4-CDE9-4456-BC9D-A78F8B2896D5}" ShortID="220651471">
+								<RTPC Name="" ID="{2787E1B4-CDE9-4456-BC9D-A78F8B2896D5}">
 									<ReferenceList>
 										<Reference Name="ControlInput">
 											<ObjectRef Name="Int_MusicComboState" ID="{48E616AD-EC68-40A7-AE9E-19545924AF0D}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
@@ -393,7 +393,93 @@
 					<PositioningInfo>
 						<Panner Name="" ID="{ED7A557B-B5B1-4090-97FB-71672121717B}"/>
 					</PositioningInfo>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{0E8312D6-460C-4FE7-9448-580962701EAA}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
 				</MusicTrack>
+				<ActorMixer Name="Occlusion" ID="{C8917CA3-8CA7-41C2-B620-D63C046DD415}">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{B40F36A0-832C-4F78-8696-E3E9801CEA4D}" ShortID="82226464">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Occlusion" ID="{F8FAD6B1-A1BD-4321-8139-EC9B403882C1}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{1D1FBB95-BCCE-4F2C-9B58-7A600311E7D2}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>50</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{6080F768-AAC7-442A-B4BB-177216380350}" ShortID="311650728">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Occlusion" ID="{F8FAD6B1-A1BD-4321-8139-EC9B403882C1}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{B761BE1D-10E3-4AD3-AF25-3684E95C242F}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-9</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="EnemyAttenuation" ID="{C653802B-E8BE-4C6B-8384-5CC72BBA5436}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</Presets>
