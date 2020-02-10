@@ -3,43 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="24"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{7CCA15BA-20F1-4ABE-89FF-CD74FF961B78}" ShortID="33331983">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Switch" ID="{99BBEE6E-EAB7-408B-8A7E-7BBEBEF60EE0}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{7F93BD14-AEC3-4AF2-B860-24F66BB53CEA}" ShortID="787952662">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TheLastBeat_Menu_Amb" ID="{848D5F0D-01C6-4954-8F40-1404741F9F43}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{EBBFD7BB-60EF-460D-BA72-A3F88AA18EDC}" ShortID="149477162">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Menu" ID="{F8120158-1154-41CF-B027-387F8DE8954F}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="00_Internal" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" ShortID="624468541">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="13"/>
@@ -441,6 +404,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{6B05FB17-608F-4D51-A32D-B8B5B25026B9}" ShortID="107669576">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{BEBAED2A-19B7-4DAD-8D03-B64F3DB9C866}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Boss_Scream" ID="{7097FDDC-C3A2-4A1F-99FE-7BB9653D70EF}">
@@ -451,6 +421,34 @@
 											<ObjectRef Name="TLB_NME_Boss_ScreamFredo" ID="{08CE2B30-E317-4931-B5D3-442C5EB44E64}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0EC4745D-C387-4C2E-9424-DDB9EF9B62FE}" ShortID="241933663">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_AMB_Rumble" ID="{A7B9BE97-F342-4DA3-894D-59287F4C549C}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83C61C0F-4380-4A0C-B678-15523E363D7E}" ShortID="68327464">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<EventActionException Name="" ID="{D0164704-805E-4B2A-9FFA-955525440F87}">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TLB_NME_Boss_ScreamFredo" ID="{08CE2B30-E317-4931-B5D3-442C5EB44E64}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+												</Reference>
+											</ReferenceList>
+										</EventActionException>
+									</ChildrenList>
 								</Action>
 							</ChildrenList>
 						</Event>
@@ -879,38 +877,98 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Music_Menu" ID="{3653EBA6-FAA4-4B5C-9AB9-F9E1BC7DE975}">
+				<Folder Name="04_Music" ID="{8907583F-0F4B-4388-B8C3-F42660FB4B0B}" ShortID="746232647">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="24"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{40F2FD41-C127-4DA7-B886-BF4772C6E3E6}" ShortID="800588882">
+						<Event Name="Stop_Music_Switch" ID="{AD687C74-430F-4D2E-9F7F-C3B0B6CE0274}">
+							<ChildrenList>
+								<Action Name="" ID="{9B7014CC-77E9-4800-88F1-FB40BAE44370}" ShortID="998964747">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Switch" ID="{99BBEE6E-EAB7-408B-8A7E-7BBEBEF60EE0}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Menu1" ID="{9702AA41-BF50-48B1-BA38-01AE7D89C0A9}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{B984AFA7-4F44-4DBB-BF94-C2FC1012DD81}" ShortID="185441538">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Menu" ID="{F8120158-1154-41CF-B027-387F8DE8954F}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{7F41EA1B-6358-47D9-8BF3-5C7CE3939A69}" ShortID="16528864">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TheLastBeat_Menu_Amb" ID="{848D5F0D-01C6-4954-8F40-1404741F9F43}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+							<ChildrenList>
+								<Action Name="" ID="{7CCA15BA-20F1-4ABE-89FF-CD74FF961B78}" ShortID="33331983">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Switch" ID="{99BBEE6E-EAB7-408B-8A7E-7BBEBEF60EE0}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7F93BD14-AEC3-4AF2-B860-24F66BB53CEA}" ShortID="787952662">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TheLastBeat_Menu_Amb" ID="{848D5F0D-01C6-4954-8F40-1404741F9F43}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EBBFD7BB-60EF-460D-BA72-A3F88AA18EDC}" ShortID="149477162">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Menu" ID="{F8120158-1154-41CF-B027-387F8DE8954F}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Music_Menu" ID="{3653EBA6-FAA4-4B5C-9AB9-F9E1BC7DE975}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{40F2FD41-C127-4DA7-B886-BF4772C6E3E6}" ShortID="800588882">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu1" ID="{9702AA41-BF50-48B1-BA38-01AE7D89C0A9}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B984AFA7-4F44-4DBB-BF94-C2FC1012DD81}" ShortID="185441538">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Menu" ID="{F8120158-1154-41CF-B027-387F8DE8954F}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7F41EA1B-6358-47D9-8BF3-5C7CE3939A69}" ShortID="16528864">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TheLastBeat_Menu_Amb" ID="{848D5F0D-01C6-4954-8F40-1404741F9F43}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

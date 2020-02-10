@@ -411,7 +411,7 @@
 				<Event Id="2771612231" Name="Play_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Attack_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.816616" DurationMax="1.251145"/>
 				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
-				<Event Id="3815637695" Name="Play_Boss_Rumble" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Rumble" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="3815637695" Name="Play_Boss_Rumble" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Rumble" DurationType="Infinite"/>
 				<Event Id="3326215491" Name="Play_Boss_Scream" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Scream" DurationType="OneShot" DurationMin="14.210521" DurationMax="14.210521"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.413476" DurationMax="0.640760"/>
 				<Event Id="2860430492" Name="Play_Call_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
@@ -425,9 +425,9 @@
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1962302600" Name="Play_Hover" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hover" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="1674468585" Name="Play_LeftFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_LeftFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.224922" DurationMax="0.442757"/>
-				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
-				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\Play_Music_Menu" DurationType="Infinite"/>
-				<Event Id="820063214" Name="Play_Nemesis" ObjectPath="\Events\Default Work Unit\03_NME\Play_Nemesis" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\04_Music\Play_Music" DurationType="Infinite"/>
+				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\04_Music\Play_Music_Menu" DurationType="Infinite"/>
+				<Event Id="820063214" Name="Play_Nemesis" ObjectPath="\Events\Default Work Unit\03_NME\Play_Nemesis" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
@@ -443,6 +443,7 @@
 				<Event Id="4276712658" Name="SetRewind_LoopC" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\SetRewind_LoopC" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\01_AMB\Stop_Amb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2505149896" Name="Stop_Music_Switch" ObjectPath="\Events\Default Work Unit\04_Music\Stop_Music_Switch" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3485622663" Name="Stop_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Stop_Presence" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="564679353" Name="Stop_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Stop_Rewind" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
@@ -625,7 +626,7 @@
 				</File>
 				<File Id="83858654" Language="SFX">
 					<ShortName>TLB_NME_Nemesis.wav</ShortName>
-					<Path>SFX\TLB_NME_Nemesis_8991BA83.wem</Path>
+					<Path>SFX\TLB_NME_Nemesis_35F8C163.wem</Path>
 				</File>
 				<File Id="85343379" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_08.wav</ShortName>
@@ -733,7 +734,7 @@
 				</File>
 				<File Id="183392366" Language="SFX">
 					<ShortName>TLB_AMB_Rumble.wav</ShortName>
-					<Path>SFX\TLB_AMB_Rumble_5A68F724.wem</Path>
+					<Path>SFX\TLB_AMB_Rumble_68FFD930.wem</Path>
 				</File>
 				<File Id="199733513" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer1_04.wav</ShortName>
@@ -986,7 +987,7 @@
 				</File>
 				<File Id="564320662" Language="SFX">
 					<ShortName>TLB_NME_Boss_Rumble.wav</ShortName>
-					<Path>SFX\TLB_NME_Boss_Rumble_70CDE311.wem</Path>
+					<Path>SFX\TLB_NME_Boss_Rumble_2DDFBCC7.wem</Path>
 				</File>
 				<File Id="564576037" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_04.wav</ShortName>

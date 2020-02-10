@@ -5,13 +5,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	435770000	Stop_Amb			\Default Work Unit\01_AMB\Stop_Amb	
 	452547817	Stop_All			\Default Work Unit\Stop_All	
 	564679353	Stop_Rewind			\Default Work Unit\00_Internal\Rewind\Stop_Rewind	
+	820063214	Play_Nemesis			\Default Work Unit\03_NME\Play_Nemesis	
 	831844293	Play_Canyon_Ambiance			\Default Work Unit\01_AMB\Play_Canyon_Ambiance	
 	869704911	Play_Rewind			\Default Work Unit\00_Internal\Rewind\Play_Rewind	
+	1002643937	Play_Rumble			\Default Work Unit\01_AMB\Play_Rumble	
 	1468197082	Int_MusicFeedbackOn			\Default Work Unit\00_Internal\Int_MusicFeedbackOn	
 	1555409676	Play_Desert_Ambiance			\Default Work Unit\01_AMB\Play_Desert_Ambiance	
 	1559935606	Play_CliffBridge_Ambiance			\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance	
 	1674468585	Play_LeftFoot			\Default Work Unit\02_Player\Play_LeftFoot	
-	1699343283	Play_Music_Menu			\Default Work Unit\Play_Music_Menu	
+	1699343283	Play_Music_Menu			\Default Work Unit\04_Music\Play_Music_Menu	
 	1850257856	Int_Chord07			\Default Work Unit\00_Internal\Chord\Int_Chord07	
 	1850257857	Int_Chord06			\Default Work Unit\00_Internal\Chord\Int_Chord06	
 	1850257858	Int_Chord05			\Default Work Unit\00_Internal\Chord\Int_Chord05	
@@ -24,17 +26,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	2257378511	Play_Hit_Player			\Default Work Unit\02_Player\Play_Hit_Player	
 	2374767689	Play_Die_Enemy			\Default Work Unit\03_NME\Play_Die_Enemy	
 	2501149424	Int_MusicFeedbackOff			\Default Work Unit\00_Internal\Int_MusicFeedbackOff	
+	2505149896	Stop_Music_Switch			\Default Work Unit\04_Music\Stop_Music_Switch	
 	2567002569	Play_RushFXOnBeat			\Default Work Unit\02_Player\Play_RushFXOnBeat	
 	2655647461	Play_BlinkFXOnBeat			\Default Work Unit\02_Player\Play_BlinkFXOnBeat	
 	2771612231	Play_Attack_Enemy			\Default Work Unit\03_NME\Play_Attack_Enemy	
 	2860430492	Play_Call_Attack_Enemy			\Default Work Unit\03_NME\Play_Call_Attack_Enemy	
-	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	2932040671	Play_Music			\Default Work Unit\04_Music\Play_Music	
 	3119437920	Play_RushFXOnPerfect			\Default Work Unit\02_Player\Play_RushFXOnPerfect	
 	3191278813	Int_HitMusicFX			\Default Work Unit\00_Internal\Int_HitMusicFX	
+	3326215491	Play_Boss_Scream			\Default Work Unit\03_NME\Play_Boss_Scream	
 	3449458560	Play_Oasis_Ambiance			\Default Work Unit\01_AMB\Play_Oasis_Ambiance	
 	3450612256	Play_Heal_Player			\Default Work Unit\02_Player\Play_Heal_Player	
 	3485622663	Stop_Presence			\Default Work Unit\02_Player\Stop_Presence	
 	3723441664	Play_RightFoot			\Default Work Unit\02_Player\Play_RightFoot	
+	3815637695	Play_Boss_Rumble			\Default Work Unit\03_NME\Play_Boss_Rumble	
 	3832364417	Play_BlinkFXOffBeat			\Default Work Unit\02_Player\Play_BlinkFXOffBeat	
 	3852757989	Play_RushFXOffBeat			\Default Work Unit\02_Player\Play_RushFXOffBeat	
 	3889018732	Play_Hit_Enemy			\Default Work Unit\03_NME\Play_Hit_Enemy	
@@ -105,6 +110,7 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	1062868308	Modulator Envelope (Custom)				
 
 Trigger	ID	Name			Wwise Object Path	Notes
+	669616846	Save			\TheLastBeat\Save	
 	2234168428	OnBeatRush			\TheLastBeat\OnBeatRush	
 	2384616720	OnBeatBlink			\TheLastBeat\OnBeatBlink	
 	2661784387	MusicFeedback			\TheLastBeat\MusicFeedback	
@@ -142,6 +148,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	61377107	TLB_NME_SFX_Call_Attack_Hi_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_SFX_Call_Attack_Hi_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Gameplay\Call_Attack\Attack_Hi\TLB_NME_SFX_Call_Attack_Hi_01		66426
 	79546478	TLB_Chara_SFX_Presence_HiFoley_Fast_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_Chara_SFX_Presence_HiFoley_Fast_03_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Presence\Presence\FoleyFast\HiFoley\TLB_Chara_SFX_Presence_HiFoley_Fast_03		148073
 	82368658	TLB_AMB_Desert_RHowl_HowlShortA_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortA_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Canyon_Ambiance\RWind\RHowl\HowlShort1\TLB_AMB_Desert_RHowl_HowlShortA_01		160033
+	83858654	TLB_NME_Nemesis	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_Nemesis_35F8C163.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\TLB_NME_Nemesis		1073843
 	85343379	TLB_AMB_Oasis_RWind_08	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Oasis_RWind_08_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Oasis_Ambiance\RWind\TLB_AMB_Oasis_RWind_08		928149
 	91668788	TLB_NME_SFX_Call_Attack_Hi_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_SFX_Call_Attack_Hi_04_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Gameplay\Call_Attack\Attack_Hi\TLB_NME_SFX_Call_Attack_Hi_04		70426
 	94329137	TLB_Chara_SFX_Hit_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_Chara_SFX_Hit_04_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Gameplay\Hit_Player\TLB_Chara_SFX_Hit_04		18628
@@ -166,6 +173,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	176425962	TLB_AMB_Desert_RHowl_HowlShortB_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortB_03_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Canyon_Ambiance\RWind\RHowl\HowlShort3\TLB_AMB_Desert_RHowl_HowlShortB_03		259302
 	181239436	TLB_NME_SFX_Enemy_Explosion_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_SFX_Enemy_Explosion_02_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Gameplay\Explosion\TLB_NME_SFX_Enemy_Explosion_02		159697
 	182145782	Base_LoopA_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer3_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopA\Base_LoopA_Layer3		989
+	183392366	TLB_AMB_Rumble	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Rumble_68FFD930.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\TLB_AMB_Rumble		395260
 	199733513	01_Blink	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_BlinkFB_Layer1_04_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatBlinkFB\01_Blink		86178
 	204464047	TLB_AMB_Desert_Wildlife_GlassHopper_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_02_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_02		86099
 	230745976	01_Perfect	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_RushFB_Perfect_Layer1_02_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnPerfectRushFB\01_Perfect		79147
@@ -225,6 +233,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	554075586	Base_LoopA_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer2_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopA\Base_LoopA_Layer2		981
 	554091354	TLB_AMB_Desert_Wildlife_GlassHopper_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_Wildlife_GlassHopper_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\Emitters\Desert_Wildlife\Glasshoppers\TLB_AMB_Desert_Wildlife_GlassHopper_01		83158
 	560626843	Lead_LoopA_Layer2	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer2_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer2\TheLastBeat_Mus_FinalCombat_Layer2_LoopA\Lead_LoopA_Layer2		977
+	564320662	TLB_NME_Boss_Rumble	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_Boss_Rumble_2DDFBCC7.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Boss\TLB_NME_Boss_Rumble		231244
 	564576037	TLB_Chara_SFX_Presence_LoFoley_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_Chara_SFX_Presence_LoFoley_04_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Presence\Presence\FoleyMed\LoFoley\TLB_Chara_SFX_Presence_LoFoley_04		143653
 	569031140	SoundSeed Grain	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopB_Rewind_D4F3E753.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\SFX\MFX\Rewind_MusicSwitch\RewindFinalCombat\Rewind_LoopB\SoundSeed Grain		1597929
 	569645680	Sitar_LoopA_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer1_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopA\Sitar_LoopA_Layer1		977
@@ -245,7 +254,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	644476924	TLB_AMB_Desert_RHowl_HowlShortA_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlShortA_03_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Canyon_Ambiance\RWind\RHowl\HowlShort3\TLB_AMB_Desert_RHowl_HowlShortA_03		191690
 	647119512	Base_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer3\Land_Combat_Layer3\Base_1Pre_2Post		1041
 	653299848	TLB_Chara_SFX_Heal_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_Chara_SFX_Heal_01_C50845B4.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Gameplay\Heal_Player\TLB_Chara_SFX_Heal_01		91021
-	654735048	ReverseEvent	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\Reverse_Stop\ReverseEvent		276585
+	654735048	ReverseEvent	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Reverse_Stop\ReverseEvent		276585
+	667176003	TheLastBeat_Mus_Land_Save	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_Land_Save_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\TheLastBeat_Mus_Land_Save\TheLastBeat_Mus_Land_Save		365274
 	668397685	Base_LoopC_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopC\Base_LoopC_Layer3		981
 	676930814	Perc_LoopC_Layer1	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer1_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer1\TheLastBeat_Mus_FinalCombat_Layer1_LoopC\Perc_LoopC_Layer1		977
 	694222174	01_Blink	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_BlinkFB_Layer1_02_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatBlinkFB\01_Blink		85760
@@ -296,6 +306,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	914952534	TLB_Chara_SFXSand_Rockysteps_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_Chara_SFXSand_Rockysteps_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Foosteps\RockyStep\Sand\TLB_Chara_SFXSand_Rockysteps_01		11478
 	923094804	TLB_AMB_Canyon_RWind1_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Canyon_RWind1_04_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Canyon_Ambiance\RWind\RWind1\TLB_AMB_Canyon_RWind1_04		943792
 	953741041	TLB_Chara_SFX_Presence_LoFoley_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_Chara_SFX_Presence_LoFoley_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Presence\Presence\FoleyMed\LoFoley\TLB_Chara_SFX_Presence_LoFoley_01		226241
+	961602446	TLB_NME_Boss_ScreamFredo	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_Boss_ScreamFredo_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Boss\TLB_NME_Boss_ScreamFredo		829195
 	973627143	TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post\TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post		502097
 	978415938	TLB_Chara_SFX_Presence_LoFoley_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_Chara_SFX_Presence_LoFoley_02_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Presence\Presence\FoleyMed\LoFoley\TLB_Chara_SFX_Presence_LoFoley_02		153318
 	979298877	TLB_NME_SFX_HoverOrga_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_SFX_HoverOrga_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Hover\HoverOrga\TLB_NME_SFX_HoverOrga_01		253473
