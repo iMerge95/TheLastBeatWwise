@@ -7,11 +7,15 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_BlinkFXOnBeat" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RushFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Desert_Ambiance" ID="{EAD6D2A9-B888-40CE-8E5F-64D746E8D2D9}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_LeftFoot" ID="{CA268FC5-ADBA-419D-B065-BFAA9517F129}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_BlinkFXOffBeat" ID="{1778D619-6AD0-41F1-BBD5-F7AE21258A4F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopA" ID="{EAC9C663-5374-42ED-BB97-5919131A7612}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Oasis_Ambiance" ID="{007411D6-77C4-4312-9AF1-939A18027A5A}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hover" ID="{E16E01E8-FB6B-4331-9984-72E520180BE7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Int_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Presence" ID="{C5EA511A-3FEC-43CD-A73E-94FEE466D287}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Boss_Rumble" ID="{0006E49B-1A37-4424-8F64-67D9FDB627AD}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="02_Player" ID="{A32702FF-811B-4538-BD1A-D641BDBDE609}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Die_Enemy" ID="{E6049661-D29A-455E-8A7D-7A54FD69D8FD}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
@@ -23,7 +27,11 @@
 						<ObjectRef Name="Stop_All" ID="{27729540-6585-48A7-8D30-6C5160C2D643}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Attack_Enemy" ID="{04FDCCBB-E2BA-48BA-8BF1-C02D5A806C0D}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_WildlifeDesert_1" ID="{CE2105B7-7B17-48D5-AD39-C9A76A41B44E}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Canyon_Ambiance" ID="{3E04B258-ACC7-4918-BA08-2064D4FC4C62}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RightFoot" ID="{14674390-3546-498D-8397-C632091C5328}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Boss_Scream" ID="{7097FDDC-C3A2-4A1F-99FE-7BB9653D70EF}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Heal_Player" ID="{0A78D982-20E1-4A25-94FA-BD8035127298}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Rumble" ID="{5D70381E-9E5F-4A4B-8DBE-15D74B6D7845}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="DistantBuilding_MicsFar" ID="{22EE2792-F5F3-4B26-A6E1-843A0A964677}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Music_Menu" ID="{3653EBA6-FAA4-4B5C-9AB9-F9E1BC7DE975}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Explosion" ID="{BE6C7B0C-65C9-4BA5-A94C-673DA4258F75}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
@@ -35,7 +43,11 @@
 						<ObjectRef Name="Play_Call_Attack_Enemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="00_Internal" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Nemesis" ID="{95FB1ACA-ECBC-4E52-A7D1-A4F760911904}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="03_NME" ID="{869AB398-6F59-4E88-B023-410917D1AAD0}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Presence" ID="{BB0E147B-963A-4F43-90DB-174235FE6FBC}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_CliffBridge_Ambiance" ID="{24B51885-C0DB-4F7B-A938-F8E09BD97E11}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit_Enemy" ID="{135DBD0F-E0DD-4F9C-A735-5C82E7DE1AD9}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Rewind" ID="{AB2C8862-A024-4FB1-A765-97235054B940}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

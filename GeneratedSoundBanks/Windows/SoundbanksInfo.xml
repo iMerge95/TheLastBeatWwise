@@ -411,7 +411,7 @@
 				<Event Id="2771612231" Name="Play_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Attack_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.816616" DurationMax="1.251145"/>
 				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
-				<Event Id="3815637695" Name="Play_Boss_Rumble" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Rumble" DurationType="Infinite"/>
+				<Event Id="3815637695" Name="Play_Boss_Rumble" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Rumble" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="3326215491" Name="Play_Boss_Scream" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Scream" DurationType="OneShot" DurationMin="14.210521" DurationMax="14.210521"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.413476" DurationMax="0.640760"/>
 				<Event Id="2860430492" Name="Play_Call_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
