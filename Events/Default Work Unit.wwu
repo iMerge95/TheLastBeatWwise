@@ -621,16 +621,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{BB2F27AB-0774-4F3F-838D-A4A92779BFDB}" ShortID="921725695">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Play_Heal_Player" ID="{0A78D982-20E1-4A25-94FA-BD8035127298}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_LeftFoot" ID="{CA268FC5-ADBA-419D-B065-BFAA9517F129}">

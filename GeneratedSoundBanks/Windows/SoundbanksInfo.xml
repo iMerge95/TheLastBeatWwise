@@ -418,7 +418,7 @@
 				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="2374767689" Name="Play_Die_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Die_Enemy" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.319334" DurationMax="4.694246"/>
-				<Event Id="3450612256" Name="Play_Heal_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Heal_Player" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.500000" DurationMax="1.533250"/>
+				<Event Id="3450612256" Name="Play_Heal_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Heal_Player" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.494061" DurationMax="1.500000"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.646579" DurationMax="0.990560"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1962302600" Name="Play_Hover" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hover" MaxAttenuation="40.000000" DurationType="Infinite"/>
@@ -560,6 +560,10 @@
 					<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_Layer2_1Pre_2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer2_1Pre_2Post_592D8723.wem</Path>
 					<PrefetchSize>1041</PrefetchSize>
+				</File>
+				<File Id="22908897" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Heal_02.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Heal_02_E37C7245.wem</Path>
 				</File>
 				<File Id="37401141" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Fast_02.wav</ShortName>
@@ -840,6 +844,10 @@
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer1_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_BlinkFB_Layer1_03_592D8723.wem</Path>
 				</File>
+				<File Id="376832180" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Heal_04.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Heal_04_E37C7245.wem</Path>
+				</File>
 				<File Id="382079197" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer3_1Pre2Post_592D8723.wem</Path>
@@ -1031,6 +1039,10 @@
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer2_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>977</PrefetchSize>
 				</File>
+				<File Id="633611638" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Heal_03.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Heal_03_E37C7245.wem</Path>
+				</File>
 				<File Id="634462634" Language="SFX">
 					<ShortName>TLB_NME_SFX_Enemy_Explosion_04.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_04_E37C7245.wem</Path>
@@ -1043,6 +1055,10 @@
 					<ShortName>TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post_592D8723.wem</Path>
 					<PrefetchSize>1041</PrefetchSize>
+				</File>
+				<File Id="653299848" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Heal_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Heal_01_C50845B4.wem</Path>
 				</File>
 				<File Id="654735048" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Trans_WIP.wav</ShortName>
@@ -1202,14 +1218,6 @@
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>685</PrefetchSize>
 				</File>
-				<File Id="834241788" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Heal_04.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Heal_04_E37C7245.wem</Path>
-				</File>
-				<File Id="844169691" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Heal_03.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Heal_03_E37C7245.wem</Path>
-				</File>
 				<File Id="849535690" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer2_1Pre2Post_592D8723.wem</Path>
@@ -1276,10 +1284,6 @@
 				<File Id="953741041" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_LoFoley_01_E37C7245.wem</Path>
-				</File>
-				<File Id="964225483" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Heal_01.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Heal_01_E37C7245.wem</Path>
 				</File>
 				<File Id="973627143" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post.wav</ShortName>
@@ -1349,10 +1353,6 @@
 				<File Id="1031277549" Language="SFX">
 					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_01.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_01_E37C7245.wem</Path>
-				</File>
-				<File Id="1033331055" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Heal_02.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Heal_02_E37C7245.wem</Path>
 				</File>
 				<File Id="1033676886" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Med_03.wav</ShortName>
