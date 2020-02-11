@@ -47,6 +47,7 @@
 						<ObjectRef Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Nemesis" ID="{95FB1ACA-ECBC-4E52-A7D1-A4F760911904}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="03_NME" ID="{869AB398-6F59-4E88-B023-410917D1AAD0}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Death" ID="{CE90D2E2-9F19-4EE3-8883-1C0D334A3193}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Presence" ID="{BB0E147B-963A-4F43-90DB-174235FE6FBC}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_CliffBridge_Ambiance" ID="{24B51885-C0DB-4F7B-A938-F8E09BD97E11}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit_Enemy" ID="{135DBD0F-E0DD-4F9C-A735-5C82E7DE1AD9}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>

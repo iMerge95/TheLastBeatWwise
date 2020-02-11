@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	831844293	Play_Canyon_Ambiance			\Default Work Unit\01_AMB\Play_Canyon_Ambiance	
 	869704911	Play_Rewind			\Default Work Unit\00_Internal\Rewind\Play_Rewind	
 	1002643937	Play_Rumble			\Default Work Unit\01_AMB\Play_Rumble	
+	1172822028	Play_Death			\Default Work Unit\02_Player\Play_Death	
 	1468197082	Int_MusicFeedbackOn			\Default Work Unit\00_Internal\Int_MusicFeedbackOn	
 	1555409676	Play_Desert_Ambiance			\Default Work Unit\01_AMB\Play_Desert_Ambiance	
 	1559935606	Play_CliffBridge_Ambiance			\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance	
@@ -327,6 +328,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	914952534	TLB_Chara_SFXSand_Rockysteps_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFXSand_Rockysteps_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Foosteps\RockyStep\Sand\TLB_Chara_SFXSand_Rockysteps_01		11478
 	923094804	TLB_AMB_Canyon_RWind1_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Canyon_RWind1_04_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Canyon_Ambiance\RWind\RWind1\TLB_AMB_Canyon_RWind1_04		943792
 	929843938	TLB_Chara_SFX_Rock_Rockysteps_06	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFX_Rock_Rockysteps_06_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Foosteps\RockyStep\Rock\TLB_Chara_SFX_Rock_Rockysteps_06		13569
+	950654270	TLB_Chara_SFX_Death	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFX_Death_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Gameplay\TLB_Chara_SFX_Death		291499
 	953741041	TLB_Chara_SFX_Presence_LoFoley_01	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFX_Presence_LoFoley_01_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Foley\Presence\Presence\FoleyMed\LoFoley\TLB_Chara_SFX_Presence_LoFoley_01		226241
 	961602446	TLB_NME_Boss_ScreamFredo	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_NME_Boss_ScreamFredo_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Boss\TLB_NME_Boss_ScreamFredo		829195
 	973627143	TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post\TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post		502097
