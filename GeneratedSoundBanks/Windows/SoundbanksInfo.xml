@@ -415,29 +415,29 @@
 				<Event Id="3326215491" Name="Play_Boss_Scream" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Scream" DurationType="OneShot" DurationMin="14.210521" DurationMax="14.210521"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.413476" DurationMax="0.640760"/>
 				<Event Id="2860430492" Name="Play_Call_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
-				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
-				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
-				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
+				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="2374767689" Name="Play_Die_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Die_Enemy" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.319334" DurationMax="4.694246"/>
 				<Event Id="3450612256" Name="Play_Heal_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Heal_Player" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.494061" DurationMax="1.500000"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.646579" DurationMax="0.990560"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1962302600" Name="Play_Hover" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hover" MaxAttenuation="40.000000" DurationType="Infinite"/>
-				<Event Id="1674468585" Name="Play_LeftFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_LeftFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.224922" DurationMax="0.442757"/>
+				<Event Id="1674468585" Name="Play_LeftFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_LeftFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.224922" DurationMax="0.624210"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\04_Music\Play_Music" DurationType="Infinite"/>
 				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\04_Music\Play_Music_Menu" DurationType="Infinite"/>
 				<Event Id="820063214" Name="Play_Nemesis" ObjectPath="\Events\Default Work Unit\03_NME\Play_Nemesis" MaxAttenuation="50.000000" DurationType="Infinite"/>
-				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="40.000000" DurationType="Infinite"/>
+				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
-				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.230633" DurationMax="0.473552"/>
+				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.176939" DurationMax="0.473552"/>
 				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Rumble" DurationType="Infinite"/>
 				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOffBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="3119437920" Name="Play_RushFXOnPerfect" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnPerfect" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
-				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
-				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_1" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_2" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4276712659" Name="SetRewind_LoopB" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\SetRewind_LoopB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4276712658" Name="SetRewind_LoopC" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\SetRewind_LoopC" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -570,6 +570,10 @@
 					<ShortName>TLB_Chara_SFX_Heal_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Heal_02_E37C7245.wem</Path>
 				</File>
+				<File Id="28675373" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Rockysteps_03.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Rockysteps_03_E37C7245.wem</Path>
+				</File>
 				<File Id="37401141" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Fast_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_HiFoley_Fast_02_E37C7245.wem</Path>
@@ -653,6 +657,10 @@
 					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_BC725169.wem</Path>
 				</File>
+				<File Id="101211115" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_RockySteps_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_RockySteps_01_E37C7245.wem</Path>
+				</File>
 				<File Id="102332519" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopA_Rewind_D4F3E753.wem</Path>
@@ -682,9 +690,17 @@
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_06.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_06_E37C7245.wem</Path>
 				</File>
+				<File Id="129710762" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_Steps_05.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_Steps_05_E37C7245.wem</Path>
+				</File>
 				<File Id="132776513" Language="SFX">
 					<ShortName>TLB_Chara_SFX_RushFX_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_RushFX_02_E37C7245.wem</Path>
+				</File>
+				<File Id="140465439" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Steps_02.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Steps_02_E37C7245.wem</Path>
 				</File>
 				<File Id="142229939" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer1_01.wav</ShortName>
@@ -807,6 +823,10 @@
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Fast_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_HiFoley_Fast_01_E37C7245.wem</Path>
 				</File>
+				<File Id="319944710" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Steps_04.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Steps_04_E37C7245.wem</Path>
+				</File>
 				<File Id="327364611" Language="SFX">
 					<ShortName>TLB_NME_SFX_HoverOrga_03.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_HoverOrga_03_E37C7245.wem</Path>
@@ -861,6 +881,10 @@
 					<ShortName>TLB_Chara_SFX_Heal_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Heal_04_E37C7245.wem</Path>
 				</File>
+				<File Id="381781212" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Steps_06.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Steps_06_E37C7245.wem</Path>
+				</File>
 				<File Id="382079197" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer3_1Pre2Post_592D8723.wem</Path>
@@ -879,6 +903,18 @@
 					<ShortName>TLB_Chara_SFX_Hit_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Hit_01_E37C7245.wem</Path>
 				</File>
+				<File Id="405716667" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_Steps_02.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_Steps_02_E37C7245.wem</Path>
+				</File>
+				<File Id="410568223" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Rockysteps_02.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Rockysteps_02_E37C7245.wem</Path>
+				</File>
+				<File Id="432711646" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_Steps_04.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_Steps_04_E37C7245.wem</Path>
+				</File>
 				<File Id="434161037" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer1_1Pre2Post_592D8723.wem</Path>
@@ -887,6 +923,10 @@
 				<File Id="436376983" Language="SFX">
 					<ShortName>TLB_AMB_Canyon_RWind2_05.wav</ShortName>
 					<Path>SFX\TLB_AMB_Canyon_RWind2_05_E37C7245.wem</Path>
+				</File>
+				<File Id="436668362" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_RockySteps_04.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_RockySteps_04_E37C7245.wem</Path>
 				</File>
 				<File Id="439736303" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Med_04.wav</ShortName>
@@ -913,6 +953,10 @@
 					<ShortName>TLB_Chara_SFX_RushFX_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_RushFX_01_E37C7245.wem</Path>
 				</File>
+				<File Id="459618550" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_Steps_06.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_Steps_06_E37C7245.wem</Path>
+				</File>
 				<File Id="461703535" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post_592D8723.wem</Path>
@@ -930,6 +974,10 @@
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_LoFoley_03_E37C7245.wem</Path>
 				</File>
+				<File Id="483696245" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Rockysteps_05.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Rockysteps_05_E37C7245.wem</Path>
+				</File>
 				<File Id="483767187" Language="SFX">
 					<ShortName>TLB_NME_SFX_Bounce_Shield_01.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Bounce_Shield_01_E37C7245.wem</Path>
@@ -945,6 +993,10 @@
 				<File Id="506682447" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_01_E37C7245.wem</Path>
+				</File>
+				<File Id="511931210" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_RockySteps_02.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_RockySteps_02_E37C7245.wem</Path>
 				</File>
 				<File Id="517735757" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_06.wav</ShortName>
@@ -1046,6 +1098,10 @@
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Rockysteps_04_E37C7245.wem</Path>
 				</File>
+				<File Id="615759272" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Steps_05.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Steps_05_E37C7245.wem</Path>
+				</File>
 				<File Id="623855022" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer3_1Pre2Post_592D8723.wem</Path>
@@ -1073,6 +1129,10 @@
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Base_Layer3_1Pre_2Post_592D8723.wem</Path>
 					<PrefetchSize>1041</PrefetchSize>
 				</File>
+				<File Id="652982730" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_RockySteps_03.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_RockySteps_03_E37C7245.wem</Path>
+				</File>
 				<File Id="653299848" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Heal_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Heal_01_C50845B4.wem</Path>
@@ -1080,6 +1140,14 @@
 				<File Id="654735048" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Combat_Lands_Trans_WIP.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Combat_Lands_Trans_WIP_592D8723.wem</Path>
+				</File>
+				<File Id="658049521" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Rockysteps_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Rockysteps_01_E37C7245.wem</Path>
+				</File>
+				<File Id="662528893" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Rockysteps_04.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Rockysteps_04_E37C7245.wem</Path>
 				</File>
 				<File Id="667176003" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Save.wav</ShortName>
@@ -1111,6 +1179,10 @@
 				<File Id="710571665" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_07.wav</ShortName>
 					<Path>SFX\TLB_AMB_Oasis_RWind_07_E37C7245.wem</Path>
+				</File>
+				<File Id="711988900" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_RockySteps_06.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_RockySteps_06_E37C7245.wem</Path>
 				</File>
 				<File Id="723176415" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer2_1Pre2Post.wav</ShortName>
@@ -1277,6 +1349,10 @@
 					<ShortName>TLB_AMB_Canyon_RWind2_04.wav</ShortName>
 					<Path>SFX\TLB_AMB_Canyon_RWind2_04_E37C7245.wem</Path>
 				</File>
+				<File Id="901319028" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_RockySteps_05.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_RockySteps_05_E37C7245.wem</Path>
+				</File>
 				<File Id="904056142" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Great_Layer1_02.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_RushFB_Great_Layer1_02_592D8723.wem</Path>
@@ -1290,6 +1366,10 @@
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer1_1Pre_2Post_592D8723.wem</Path>
 					<PrefetchSize>1037</PrefetchSize>
 				</File>
+				<File Id="911235283" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Steps_03.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Steps_03_E37C7245.wem</Path>
+				</File>
 				<File Id="914952534" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Rockysteps_01_E37C7245.wem</Path>
@@ -1297,6 +1377,10 @@
 				<File Id="923094804" Language="SFX">
 					<ShortName>TLB_AMB_Canyon_RWind1_04.wav</ShortName>
 					<Path>SFX\TLB_AMB_Canyon_RWind1_04_E37C7245.wem</Path>
+				</File>
+				<File Id="929843938" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Rockysteps_06.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Rockysteps_06_E37C7245.wem</Path>
 				</File>
 				<File Id="941961704" Language="SFX">
 					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar.wav</ShortName>
@@ -1313,6 +1397,10 @@
 				<File Id="973627143" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post_592D8723.wem</Path>
+				</File>
+				<File Id="975599305" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Rock_Steps_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Rock_Steps_01_E37C7245.wem</Path>
 				</File>
 				<File Id="978415938" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_02.wav</ShortName>
@@ -1331,6 +1419,10 @@
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>977</PrefetchSize>
 				</File>
+				<File Id="994551806" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_Steps_03.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_Steps_03_E37C7245.wem</Path>
+				</File>
 				<File Id="995308825" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_05.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_05_E37C7245.wem</Path>
@@ -1343,6 +1435,10 @@
 				<File Id="998446063" Language="SFX">
 					<ShortName>TLB_NME_SFX_Call_Attack_Lo_01.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Call_Attack_Lo_01_E37C7245.wem</Path>
+				</File>
+				<File Id="1003121413" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Grass_Steps_01.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Grass_Steps_01_E37C7245.wem</Path>
 				</File>
 				<File Id="1004356013" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Perfect_Layer2_01.wav</ShortName>

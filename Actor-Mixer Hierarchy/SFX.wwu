@@ -83,7 +83,7 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>Exp2</SegmentShape>
 													</Point>
@@ -543,7 +543,7 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>Exp2</SegmentShape>
 													</Point>
@@ -4324,6 +4324,128 @@
 																	<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_Chara_SFX_Rock_Steps_01" ID="{59757564-0681-443C-9FD3-2CAD8BBF2222}" ShortID="500094384">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Steps_01" ID="{84AB64C0-76E0-420A-9AE3-B9468A077A37}" ShortID="975599305">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Steps_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Steps_01" ID="{84AB64C0-76E0-420A-9AE3-B9468A077A37}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Steps_02" ID="{82D68482-3C23-47EB-BDCA-30A2A9EDAC0B}" ShortID="3647490">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Steps_02" ID="{5252CBA9-DFF4-4C65-8857-A44FDA569F6C}" ShortID="140465439">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Steps_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Steps_02" ID="{5252CBA9-DFF4-4C65-8857-A44FDA569F6C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Steps_03" ID="{847BC28C-727F-43BB-8642-CA1B354FA526}" ShortID="347791348">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Steps_03" ID="{900C98B4-C0B2-443C-B5E0-92C83C2C8963}" ShortID="911235283">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Steps_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Steps_03" ID="{900C98B4-C0B2-443C-B5E0-92C83C2C8963}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Steps_04" ID="{252E0B6B-C94B-4358-8139-4532130D7630}" ShortID="503052152">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Steps_04" ID="{1DC44FD9-9AF4-4F0C-96C4-552A6AB23CA1}" ShortID="319944710">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Steps_04.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Steps_04" ID="{1DC44FD9-9AF4-4F0C-96C4-552A6AB23CA1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Steps_05" ID="{38118450-6326-4EE8-B9C1-28C85EFEEBBE}" ShortID="560619278">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Steps_05" ID="{BBE8E4A7-3748-4C5B-91E2-234D011E00F0}" ShortID="615759272">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Steps_05.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Steps_05" ID="{BBE8E4A7-3748-4C5B-91E2-234D011E00F0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Steps_06" ID="{F7D825F9-4699-4C7A-BB4F-013EE625CE19}" ShortID="200133651">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Steps_06" ID="{6C52E480-EF50-47B4-8810-E2C9C4DADEC8}" ShortID="381781212">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Steps_06.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Steps_06" ID="{6C52E480-EF50-47B4-8810-E2C9C4DADEC8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="Sand" ID="{C0C589BE-D72A-4815-BD1D-691B387ECF1D}" ShortID="268515053">
 															<PropertyList>
@@ -4473,6 +4595,13 @@
 														<RandomSequenceContainer Name="Grass" ID="{A57D7734-F27A-4B02-AD59-4B1283FCC158}" ShortID="284716783">
 															<PropertyList>
 																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{FC91677C-CA4E-4918-A6DF-7CFBA8484B9B}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -4482,6 +4611,128 @@
 																	<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_Chara_SFX_Grass_Steps_01" ID="{B71D653A-7625-44E5-BCA4-B8F0CD02D056}" ShortID="48919721">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_Steps_01" ID="{D102DF19-1A15-4011-B56D-151E6F37B4C7}" ShortID="1003121413">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_Steps_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_Steps_01" ID="{D102DF19-1A15-4011-B56D-151E6F37B4C7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_Steps_02" ID="{D402E89E-7952-4318-A4C9-99AEC1E70636}" ShortID="623584326">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_Steps_02" ID="{C4C627D5-7D2A-4701-9745-6A3856384C19}" ShortID="405716667">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_Steps_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_Steps_02" ID="{C4C627D5-7D2A-4701-9745-6A3856384C19}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_Steps_03" ID="{E2452117-C6FF-483B-A8EF-9B26F69ABC83}" ShortID="713202201">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_Steps_03" ID="{7C56F9FB-97CC-42B3-B57B-59FB682A6844}" ShortID="994551806">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_Steps_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_Steps_03" ID="{7C56F9FB-97CC-42B3-B57B-59FB682A6844}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_Steps_04" ID="{056A68CD-ECFE-4457-91F5-91B6CA5EB239}" ShortID="434597360">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_Steps_04" ID="{5CD224EB-90CC-4C2E-BD5B-049F2B1D869C}" ShortID="432711646">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_Steps_04.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_Steps_04" ID="{5CD224EB-90CC-4C2E-BD5B-049F2B1D869C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_Steps_05" ID="{FB4F3D33-20C1-4E4B-A89C-FCE40AA0CB85}" ShortID="579477264">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_Steps_05" ID="{0DBD6C43-39AA-42A8-A5AF-79976A930467}" ShortID="129710762">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_Steps_05.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_Steps_05" ID="{0DBD6C43-39AA-42A8-A5AF-79976A930467}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_Steps_06" ID="{DA73D926-C753-467D-9BEE-C361876E0473}" ShortID="756929108">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_Steps_06" ID="{D0197395-2BBD-40CE-87CF-96FF42597060}" ShortID="459618550">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_Steps_06.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_Steps_06" ID="{D0197395-2BBD-40CE-87CF-96FF42597060}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 													</ChildrenList>
 													<GroupingInfo>
@@ -4497,6 +4748,18 @@
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Rock" ID="{2D892724-C446-4651-8D0D-71B9038633DD}"/>
+																<ItemList>
+																	<ItemRef Name="Rock" ID="{3FC40027-1F51-4E3C-A054-D4AD80B8F3FE}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Grass" ID="{3274A8CC-EA98-4228-93D4-F3840091341A}"/>
+																<ItemList>
+																	<ItemRef Name="Grass" ID="{A57D7734-F27A-4B02-AD59-4B1283FCC158}"/>
+																</ItemList>
+															</Grouping>
 															<Grouping>
 																<SwitchRef Name="Sand" ID="{7955B7FA-2C8A-42A6-AE4C-ABD3F1DBFC0F}"/>
 																<ItemList>
@@ -4679,6 +4942,128 @@
 																	<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_Chara_SFX_Grass_RockySteps_01" ID="{BA79B8BF-BF6A-4172-B85A-85D984DBBCEB}" ShortID="943741362">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_RockySteps_01" ID="{A2F9AAB0-F5AD-403C-A346-345B2C32C8B8}" ShortID="101211115">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_RockySteps_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_RockySteps_01" ID="{A2F9AAB0-F5AD-403C-A346-345B2C32C8B8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_RockySteps_02" ID="{6FB0A489-CA84-48CA-A12F-6653DFB771F8}" ShortID="666191405">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_RockySteps_02" ID="{E601F32B-0F3D-4EB1-9EE0-9F4EE0F8039C}" ShortID="511931210">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_RockySteps_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_RockySteps_02" ID="{E601F32B-0F3D-4EB1-9EE0-9F4EE0F8039C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_RockySteps_03" ID="{94B47CC5-B4E6-4F3D-A3C9-E013D2231B00}" ShortID="976314723">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_RockySteps_03" ID="{5653E204-E72D-48DB-93BD-1E2B01437574}" ShortID="652982730">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_RockySteps_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_RockySteps_03" ID="{5653E204-E72D-48DB-93BD-1E2B01437574}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_RockySteps_04" ID="{717AC823-A15C-4C7F-B8B3-37DD8F78D9F5}" ShortID="641150596">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_RockySteps_04" ID="{547C4F23-CBF4-4852-8540-D0A3A83D15B2}" ShortID="436668362">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_RockySteps_04.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_RockySteps_04" ID="{547C4F23-CBF4-4852-8540-D0A3A83D15B2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_RockySteps_05" ID="{3137C2CD-EF1A-4E67-A81C-0B0F1005B024}" ShortID="858572732">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_RockySteps_05" ID="{56A9521B-E729-472E-A25A-BB4779F4A9AE}" ShortID="901319028">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_RockySteps_05.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_RockySteps_05" ID="{56A9521B-E729-472E-A25A-BB4779F4A9AE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Grass_RockySteps_06" ID="{25AD7A7D-6C49-4C13-8C64-D2F42487CCE7}" ShortID="772047122">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Grass_RockySteps_06" ID="{2629043B-9411-4532-89B5-AF29A4CD5768}" ShortID="711988900">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Grass_RockySteps_06.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Grass_RockySteps_06" ID="{2629043B-9411-4532-89B5-AF29A4CD5768}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="Rock" ID="{B0E95E77-FE17-4618-B6EB-391A8EEBEE67}" ShortID="90165040">
 															<ReferenceList>
@@ -4689,6 +5074,128 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="TLB_Chara_SFX_Rock_Rockysteps_01" ID="{CF7BED43-41B6-4275-AFE9-A7843DC01CBC}" ShortID="493225343">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Rockysteps_01" ID="{2696714F-1526-4FFD-BB29-21C1FEECEED8}" ShortID="658049521">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Rockysteps_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Rockysteps_01" ID="{2696714F-1526-4FFD-BB29-21C1FEECEED8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Rockysteps_02" ID="{4AE179EE-167E-4FCE-AFC8-71AE54197811}" ShortID="301464829">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Rockysteps_02" ID="{55F6990A-EE7D-40A0-BDB3-6B0C249A136A}" ShortID="410568223">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Rockysteps_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Rockysteps_02" ID="{55F6990A-EE7D-40A0-BDB3-6B0C249A136A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Rockysteps_03" ID="{BEF509B3-93D0-4A1C-95F3-20EE66458522}" ShortID="931993749">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Rockysteps_03" ID="{01A1F80B-802B-45AF-9B90-945A68961382}" ShortID="28675373">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Rockysteps_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Rockysteps_03" ID="{01A1F80B-802B-45AF-9B90-945A68961382}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Rockysteps_04" ID="{3B8A973F-475D-4FAE-AA44-5A13F44EA026}" ShortID="559674477">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Rockysteps_04" ID="{84223DAA-AAE0-4B53-B52A-A162453D4CE5}" ShortID="662528893">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Rockysteps_04.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Rockysteps_04" ID="{84223DAA-AAE0-4B53-B52A-A162453D4CE5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Rockysteps_05" ID="{6190C715-5981-4847-B171-56FE3B7B254C}" ShortID="777036419">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Rockysteps_05" ID="{056D4420-45E3-4698-B405-CEF79DD9FC9C}" ShortID="483696245">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Rockysteps_05.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Rockysteps_05" ID="{056D4420-45E3-4698-B405-CEF79DD9FC9C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="TLB_Chara_SFX_Rock_Rockysteps_06" ID="{A315A285-C748-4999-A4BD-BE75822937FC}" ShortID="420661211">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="TLB_Chara_SFX_Rock_Rockysteps_06" ID="{E71755B0-E31C-49CE-90A0-8FE0038FA2B1}" ShortID="929843938">
+																			<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>TLB_Chara_SFX_Rock_Rockysteps_06.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="TLB_Chara_SFX_Rock_Rockysteps_06" ID="{E71755B0-E31C-49CE-90A0-8FE0038FA2B1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 													</ChildrenList>
 													<GroupingInfo>
@@ -4704,6 +5211,18 @@
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Rock" ID="{2D892724-C446-4651-8D0D-71B9038633DD}"/>
+																<ItemList>
+																	<ItemRef Name="Rock" ID="{B0E95E77-FE17-4618-B6EB-391A8EEBEE67}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Grass" ID="{3274A8CC-EA98-4228-93D4-F3840091341A}"/>
+																<ItemList>
+																	<ItemRef Name="Grass" ID="{ACF33067-ADA7-4CFF-8B81-5E632D47C71B}"/>
+																</ItemList>
+															</Grouping>
 															<Grouping>
 																<SwitchRef Name="Sand" ID="{7955B7FA-2C8A-42A6-AE4C-ABD3F1DBFC0F}"/>
 																<ItemList>
@@ -5812,7 +6331,6 @@
 														<Value>5</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -6130,7 +6648,6 @@
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -6231,6 +6748,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Heal_Player" ID="{EDCCD239-F770-47A6-8871-7CAE507A7CBE}" ShortID="719284659">
 											<PropertyList>
+												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-8</Value>
@@ -6333,6 +6851,31 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<Sound Name="TLB_Chara_SFX_Death" ID="{1C20B4A3-B85D-466E-B4A9-1BB7A2EBD7F3}" ShortID="484371804">
+											<PropertyList>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TLB_Chara_SFX_Death" ID="{988B2AA5-690B-40D8-922A-00D0D70BD274}" ShortID="950654270">
+													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>TLB_Chara_SFX_Death.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TLB_Chara_SFX_Death" ID="{988B2AA5-690B-40D8-922A-00D0D70BD274}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
@@ -6387,7 +6930,7 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>Exp2</SegmentShape>
 													</Point>
