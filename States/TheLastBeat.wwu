@@ -116,6 +116,13 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<StateGroup Name="Pause" ID="{71E4EFBF-A56E-41D6-80CB-53C0A065538F}">
+					<ChildrenList>
+						<State Name="None" ID="{B32BF948-3BC9-4747-911C-5E596FED098A}"/>
+						<State Name="Pause" ID="{416C7847-2BA2-4A51-90F1-653BE24B91FA}"/>
+						<State Name="Resume" ID="{A7182A91-9C0E-4D39-8058-FB959ACA9D75}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -6306,7 +6306,9 @@
 								</ActorMixer>
 								<ActorMixer Name="Gameplay" ID="{BEBF61B4-497D-490F-AD46-413F5B4433E0}" ShortID="535202687">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-1</Value>
@@ -6314,6 +6316,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="AmbAttenuation" ID="{5D35D639-9A4A-48A2-903C-BE5472C9312E}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 										</Reference>
@@ -6873,6 +6878,33 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="TLB_Chara_SFX_Death" ID="{988B2AA5-690B-40D8-922A-00D0D70BD274}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="TLB_Chara_SFX_RewindAcquired" ID="{9518D3EC-2710-487B-A4A8-6702AAD682AF}" ShortID="917465104">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TLB_Chara_SFX_RewindAcquired" ID="{E22592D9-EA55-4479-9B75-25FC995A75B2}" ShortID="537916491">
+													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>TLB_Chara_SFX_RewindAcquired.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TLB_Chara_SFX_RewindAcquired" ID="{E22592D9-EA55-4479-9B75-25FC995A75B2}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

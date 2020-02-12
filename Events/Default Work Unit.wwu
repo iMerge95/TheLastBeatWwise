@@ -795,6 +795,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_RewindAcquired" ID="{AEB89FBD-1241-42BE-92C5-E99F43EF5725}">
+							<ChildrenList>
+								<Action Name="" ID="{5C3BD642-6840-4987-A95B-4860A55DB51A}" ShortID="248116473">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_Chara_SFX_RewindAcquired" ID="{9518D3EC-2710-487B-A4A8-6702AAD682AF}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="01_AMB" ID="{7F75DAE9-21AC-469E-B725-97F7BB94CC54}" ShortID="766203885">

@@ -110,6 +110,9 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="Pause" ID="{71E4EFBF-A56E-41D6-80CB-53C0A065538F}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
@@ -119,6 +122,19 @@
 												<Property Name="Lowpass" Type="int16" Value="40"/>
 											</PropertyList>
 										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Pause" ID="{416C7847-2BA2-4A51-90F1-653BE24B91FA}"/>
+										<CustomState Name="" ID="{A6B2D6D6-225E-4782-874C-4160ABA28AE7}" ShortID="204910806">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="40"/>
+												<Property Name="Volume" Type="Real64" Value="-6"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Resume" ID="{A7182A91-9C0E-4D39-8058-FB959ACA9D75}"/>
+										<CustomState Name="" ID="{2FACCD6D-1030-41DE-AD01-D57058F6A27A}" ShortID="235719607"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
@@ -231,6 +247,9 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="Music_CombatExplo_Switch" ID="{529CA8CF-094C-49C8-B1E7-8CAAC8C6AFB2}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="Pause" ID="{71E4EFBF-A56E-41D6-80CB-53C0A065538F}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
@@ -240,6 +259,19 @@
 												<Property Name="BusVolume" Type="Real64" Value="-7"/>
 											</PropertyList>
 										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Pause" ID="{416C7847-2BA2-4A51-90F1-653BE24B91FA}"/>
+										<CustomState Name="" ID="{ECCAF7EC-2512-4568-99B9-6A58073903F7}" ShortID="550964955">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="40"/>
+												<Property Name="Volume" Type="Real64" Value="-3"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Resume" ID="{A7182A91-9C0E-4D39-8058-FB959ACA9D75}"/>
+										<CustomState Name="" ID="{4DA480C6-20DB-4994-8EEE-7004400AFD33}" ShortID="251985030"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
@@ -274,6 +306,9 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="Music_CriticLevel" ID="{A81F88E0-FA85-4EFE-ADC3-070962111216}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="Pause" ID="{71E4EFBF-A56E-41D6-80CB-53C0A065538F}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
@@ -285,12 +320,26 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
+										<StateRef Name="Pause" ID="{416C7847-2BA2-4A51-90F1-653BE24B91FA}"/>
+										<CustomState Name="" ID="{54ECDD3C-CC57-4F98-83C1-004B2D4D4078}" ShortID="36146570">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="40"/>
+												<Property Name="Volume" Type="Real64" Value="-3"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Resume" ID="{A7182A91-9C0E-4D39-8058-FB959ACA9D75}"/>
+										<CustomState Name="" ID="{F866301D-2A78-48C7-96F5-5F82393DA7D8}" ShortID="931092808"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
 										<CustomState Name="" ID="{C7555AE0-5C9F-4D8B-A2E1-78C1443FD9CD}" ShortID="682497256"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
 						</Bus>
+						<Bus Name="UI" ID="{3735C510-70B0-4675-94A5-EDD20EB95446}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

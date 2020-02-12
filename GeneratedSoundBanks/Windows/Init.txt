@@ -6,6 +6,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2886309763	Int_Land_Chord			\TheLastBeat\FeedbackState\Int_Land_Chord	
 	2945091192	Music_Layer			\TheLastBeat\MusicState\Music_Layer	
 	2996289134	Rewind_State			\TheLastBeat\RewindState\Rewind_State	
+	3092587493	Pause			\TheLastBeat\Pause	
 	4055567060	Menu_Music			\TheLastBeat\MusicState\Menu_Music	
 
 State	ID	Name	State Group			Notes
@@ -39,6 +40,9 @@ State	ID	Name	State Group			Notes
 	0	None	Rewind_State			
 	1160234136	Normal	Rewind_State			
 	1673109572	Rewind	Rewind_State			
+	0	None	Pause			
+	953277036	Resume	Pause			
+	3092587493	Pause	Pause			
 	0	None	Menu_Music			
 	2604644577	Menu1	Menu_Music			
 	2604644578	Menu2	Menu_Music			
@@ -46,9 +50,12 @@ State	ID	Name	State Group			Notes
 	2604644580	Menu4	Menu_Music			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	36146570	Pause	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MFX		
 	125346644	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\AllButPerc		
+	204910806	Pause	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
 	279470970	Explo	Music_CombatExplo_Switch	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	448183365	Combat	Music_CombatExplo_Switch	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environement		
+	550964955	Pause	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	611771238	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Perc		
 	759584902	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
 	1027279553	Critic	Music_CriticLevel	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MFX		
@@ -62,6 +69,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	433111961	Charachter SFX			\Default Work Unit\Master Audio Bus\SFX\Charachter SFX	
 	931006280	MFX			\Default Work Unit\Master Audio Bus\MFX	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	1743886701	Perc			\Default Work Unit\Master Audio Bus\Music\Perc	
 	3038312493	Environement			\Default Work Unit\Master Audio Bus\SFX\Environement	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
