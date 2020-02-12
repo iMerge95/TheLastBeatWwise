@@ -11,6 +11,7 @@
 						<ObjectRef Name="Play_LeftFoot" ID="{CA268FC5-ADBA-419D-B065-BFAA9517F129}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_BlinkFXOffBeat" ID="{1778D619-6AD0-41F1-BBD5-F7AE21258A4F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_ExplosionBurst" ID="{96F8770B-8D45-42AB-AD79-12086FDCF0CE}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Save" ID="{AEB89FBD-1241-42BE-92C5-E99F43EF5725}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopA" ID="{EAC9C663-5374-42ED-BB97-5919131A7612}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Oasis_Ambiance" ID="{007411D6-77C4-4312-9AF1-939A18027A5A}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hover" ID="{E16E01E8-FB6B-4331-9984-72E520180BE7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>

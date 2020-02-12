@@ -795,9 +795,58 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_RewindAcquired" ID="{AEB89FBD-1241-42BE-92C5-E99F43EF5725}">
+						<Event Name="Play_Save" ID="{AEB89FBD-1241-42BE-92C5-E99F43EF5725}">
 							<ChildrenList>
 								<Action Name="" ID="{5C3BD642-6840-4987-A95B-4860A55DB51A}" ShortID="248116473">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_Chara_SFX_Save" ID="{66C060E7-6D4F-4CDA-9A55-3571A91C56D7}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{51878B84-E149-4506-9AB7-7C73E1487CF4}" ShortID="248702973">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="11"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2844FF24-0FA9-4BFB-B5A0-7C5A2D265CAC}" ShortID="833170025">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Save" ID="{05DB8F39-40E4-4599-A565-D4D7781BC5AA}" WorkUnitID="{4B1CC71A-8FBB-4ABE-AB71-ADCE22D346FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BCEBB151-637F-4295-9554-F5C24C1B5E62}" ShortID="732887223">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="11"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Volume" Type="Real64" Value="6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{ABE243A9-EF4C-4559-ADBD-6958BC087749}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ObtainRewind" ID="{915FE2A8-FFA4-4533-B620-D86DB5E5C7E9}">
+							<ChildrenList>
+								<Action Name="" ID="{B1DD416B-A9D2-453C-9341-9D90B72FC04E}" ShortID="644518077">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="TLB_Chara_SFX_RewindAcquired" ID="{9518D3EC-2710-487B-A4A8-6702AAD682AF}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>

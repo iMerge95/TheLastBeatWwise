@@ -431,14 +431,15 @@
 				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\04_Music\Play_Music_Menu" DurationType="Infinite"/>
 				<Event Id="820063214" Name="Play_Nemesis" ObjectPath="\Events\Default Work Unit\03_NME\Play_Nemesis" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
+				<Event Id="2044305208" Name="Play_ObtainRewind" ObjectPath="\Events\Default Work Unit\02_Player\Play_ObtainRewind" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
-				<Event Id="3146762127" Name="Play_RewindAcquired" ObjectPath="\Events\Default Work Unit\02_Player\Play_RewindAcquired" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
 				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.176939" DurationMax="0.473552"/>
 				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Rumble" DurationType="Infinite"/>
 				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOffBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="3119437920" Name="Play_RushFXOnPerfect" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnPerfect" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="119088225" Name="Play_Save" ObjectPath="\Events\Default Work Unit\02_Player\Play_Save" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
 				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_1" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_2" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>

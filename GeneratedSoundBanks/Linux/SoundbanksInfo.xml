@@ -409,8 +409,8 @@
 				<Event Id="2501149424" Name="Int_MusicFeedbackOff" ObjectPath="\Events\Default Work Unit\00_Internal\Int_MusicFeedbackOff" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1468197082" Name="Int_MusicFeedbackOn" ObjectPath="\Events\Default Work Unit\00_Internal\Int_MusicFeedbackOn" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2771612231" Name="Play_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Attack_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.816616" DurationMax="1.251145"/>
-				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
-				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="3815637695" Name="Play_Boss_Rumble" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Rumble" DurationType="Infinite"/>
 				<Event Id="3326215491" Name="Play_Boss_Scream" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Scream" DurationType="OneShot" DurationMin="14.210521" DurationMax="14.210521"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.413476" DurationMax="0.640760"/>
@@ -422,7 +422,7 @@
 				<Event Id="2374767689" Name="Play_Die_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Die_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.655463" DurationMax="4.694246"/>
 				<Event Id="753153999" Name="Play_ExplosionBurst" ObjectPath="\Events\Default Work Unit\03_NME\Play_ExplosionBurst" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.504721" DurationMax="2.467602"/>
 				<Event Id="2737378052" Name="Play_ExplosionRise" ObjectPath="\Events\Default Work Unit\03_NME\Play_ExplosionRise" MaxAttenuation="50.000000" DurationType="Infinite"/>
-				<Event Id="3450612256" Name="Play_Heal_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Heal_Player" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.494061" DurationMax="1.500000"/>
+				<Event Id="3450612256" Name="Play_Heal_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Heal_Player" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.494061" DurationMax="1.500000"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.646579" DurationMax="0.990560"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1962302600" Name="Play_Hover" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hover" MaxAttenuation="40.000000" DurationType="Infinite"/>
@@ -435,9 +435,10 @@
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
 				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.176939" DurationMax="0.473552"/>
 				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Rumble" DurationType="Infinite"/>
-				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOffBeat" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
-				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
-				<Event Id="3119437920" Name="Play_RushFXOnPerfect" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnPerfect" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOffBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="3119437920" Name="Play_RushFXOnPerfect" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnPerfect" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="119088225" Name="Play_Save" ObjectPath="\Events\Default Work Unit\02_Player\Play_Save" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
 				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_1" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_2" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -1035,6 +1036,10 @@
 				<File Id="532448320" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Great_Layer1_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_RushFB_Great_Layer1_03_592D8723.wem</Path>
+				</File>
+				<File Id="537916491" Language="SFX">
+					<ShortName>TLB_Chara_SFX_RewindAcquired.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_RewindAcquired_E37C7245.wem</Path>
 				</File>
 				<File Id="543873349" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_03.wav</ShortName>

@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	5903894	Play_Bounce_Shield			\Default Work Unit\03_NME\Play_Bounce_Shield	
 	92132220	Play_WildlifeDesert_2			\Default Work Unit\01_AMB\Play_WildlifeDesert_2	
 	92132223	Play_WildlifeDesert_1			\Default Work Unit\01_AMB\Play_WildlifeDesert_1	
+	119088225	Play_Save			\Default Work Unit\02_Player\Play_Save	
 	435770000	Stop_Amb			\Default Work Unit\01_AMB\Stop_Amb	
 	452547817	Stop_All			\Default Work Unit\Stop_All	
 	564679353	Stop_Rewind			\Default Work Unit\00_Internal\Rewind\Stop_Rewind	
@@ -25,6 +26,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1850257862	Int_Chord01			\Default Work Unit\00_Internal\Chord\Int_Chord01	
 	1850257871	Int_Chord08			\Default Work Unit\00_Internal\Chord\Int_Chord08	
 	1962302600	Play_Hover			\Default Work Unit\03_NME\Play_Hover	
+	2044305208	Play_ObtainRewind			\Default Work Unit\02_Player\Play_ObtainRewind	
 	2257378511	Play_Hit_Player			\Default Work Unit\02_Player\Play_Hit_Player	
 	2374767689	Play_Die_Enemy			\Default Work Unit\03_NME\Play_Die_Enemy	
 	2501149424	Int_MusicFeedbackOff			\Default Work Unit\00_Internal\Int_MusicFeedbackOff	
@@ -36,7 +38,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2860430492	Play_Call_Attack_Enemy			\Default Work Unit\03_NME\Play_Call_Attack_Enemy	
 	2932040671	Play_Music			\Default Work Unit\04_Music\Play_Music	
 	3119437920	Play_RushFXOnPerfect			\Default Work Unit\02_Player\Play_RushFXOnPerfect	
-	3146762127	Play_RewindAcquired			\Default Work Unit\02_Player\Play_RewindAcquired	
 	3191278813	Int_HitMusicFX			\Default Work Unit\00_Internal\Int_HitMusicFX	
 	3326215491	Play_Boss_Scream			\Default Work Unit\03_NME\Play_Boss_Scream	
 	3449458560	Play_Oasis_Ambiance			\Default Work Unit\01_AMB\Play_Oasis_Ambiance	
@@ -252,7 +253,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	524460581	TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Gameplay\ExplosionRise\Loop3\TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04		30475
 	531001905	TheLastBeat_Mus_FB_Blink	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_FB_Blink_04_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatBlinkFB\TheLastBeat_Mus_FB_Blink		156724
 	532448320	01_Great	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_RushFB_Great_Layer1_03_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\01_Great		78913
-	537916491	TLB_Chara_SFX_RewindAcquired	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFX_RewindAcquired_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Gameplay\TLB_Chara_SFX_RewindAcquired		422014
+	537916491	TLB_Chara_SFX_Save	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_Chara_SFX_RewindAcquired_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Player\Gameplay\TLB_Chara_SFX_Save		422014
 	543873349	TLB_AMB_Desert_RHowl_HowlLongA_03	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_AMB_Desert_RHowl_HowlLongA_03_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Canyon_Ambiance\RWind\RHowl\HowLong3\TLB_AMB_Desert_RHowl_HowlLongA_03		393556
 	544401336	Perc_1Pre_2Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer1_1Pre_2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Land\Land_Combat\Land_Combat_Layer1\Land_Combat_Layer1\Perc_1Pre_2Post		1029
 	544432716	TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Gameplay\ExplosionRise\Loop2\TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04		65977
