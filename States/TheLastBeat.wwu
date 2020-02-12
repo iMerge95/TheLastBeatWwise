@@ -35,6 +35,7 @@
 								<State Name="None" ID="{0DC44D38-B177-4C3F-AB4E-EC1E6D8D0868}"/>
 								<State Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 								<State Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
+								<State Name="Outro" ID="{4EC82B4E-05E8-4D05-9065-DBF1C74CEB28}"/>
 							</ChildrenList>
 						</StateGroup>
 						<StateGroup Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}">

@@ -22,6 +22,7 @@ State	ID	Name	State Group			Notes
 	0	None	Music_Switch			
 	674522502	Land	Music_Switch			
 	1993352646	Final_Combat	Music_Switch			
+	4184794294	Outro	Music_Switch			
 	0	None	Int_Land_Chord			
 	852835680	Chord_08	Int_Land_Chord			
 	852835689	Chord_01	Int_Land_Chord			

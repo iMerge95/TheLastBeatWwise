@@ -935,7 +935,13 @@
 								<Action Name="" ID="{9B7014CC-77E9-4800-88F1-FB40BAE44370}" ShortID="998964747">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="4"/>
+										<Property Name="Delay" Type="Real64" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

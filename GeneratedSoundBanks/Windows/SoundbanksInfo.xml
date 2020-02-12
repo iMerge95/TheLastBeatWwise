@@ -721,6 +721,10 @@
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer3_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>893</PrefetchSize>
 				</File>
+				<File Id="150679022" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Outro.wav</ShortName>
+					<Path>SFX\TheLastBeat_Mus_Land_Outro_592D8723.wem</Path>
+				</File>
 				<File Id="151833563" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongB_02_E37C7245.wem</Path>

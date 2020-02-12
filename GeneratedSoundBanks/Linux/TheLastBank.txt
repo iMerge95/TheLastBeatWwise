@@ -78,6 +78,7 @@ State	ID	Name	State Group			Notes
 	0	None	Music_Switch			
 	674522502	Land	Music_Switch			
 	1993352646	Final_Combat	Music_Switch			
+	4184794294	Outro	Music_Switch			
 	0	None	Music_Layer			
 	3298531297	Layer1	Music_Layer			
 	3298531298	Layer2	Music_Layer			
@@ -174,6 +175,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	144457879	TheLastBeat_Mus_Menu_Layer4_0Pre_4Post	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_Menu_Layer4_0Pre_4Post_D79FB2B7.wem		\Interactive Music Hierarchy\MUSIC\Music_Menu\Menu_Layer4\TheLastBeat_Mus_Menu_Layer4_0Pre_4Post\TheLastBeat_Mus_Menu_Layer4_0Pre_4Post		2608368
 	144480036	01_Great	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_RushFB_Great_Layer1_04_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\MusicFB\OnBeatRushFB\01_Great		78170
 	147986051	Lead_LoopA_Layer3	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer3_1Pre2Post_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\Music_Final_Combat\FinalCombat_Layer3\TheLastBeat_Mus_FinalCombat_Layer3_LoopA\Lead_LoopA_Layer3		893
+	150679022	TheLastBeat_Mus_Land_Outro	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TheLastBeat_Mus_Land_Outro_592D8723.wem		\Interactive Music Hierarchy\MUSIC\Music_Switch\TheLastBeat_Mus_Land_Outro\TheLastBeat_Mus_Land_Outro		861504
 	151833563	TLB_AMB_Desert_RHowl_HowlLongB_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_AMB_Desert_RHowl_HowlLongB_02_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\ENVIRO\AmbianceBeds\Canyon_Ambiance\RWind\RHowl\HowLong2\TLB_AMB_Desert_RHowl_HowlLongB_02		460790
 	156557215	TLB_NME_SFX_Bounce_Shield_04	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_SFX_Bounce_Shield_04_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Gameplay\Bounce_Shield\TLB_NME_SFX_Bounce_Shield_04		17036
 	162882995	TLB_NME_SFX_Call_Attack_Hi_02	C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\SFX\TLB_NME_SFX_Call_Attack_Hi_02_E37C7245.wem		\Actor-Mixer Hierarchy\SFX\CHARACTER\Enemy\Gameplay\Call_Attack\Attack_Hi\TLB_NME_SFX_Call_Attack_Hi_02		64767
