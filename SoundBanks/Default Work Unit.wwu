@@ -10,6 +10,7 @@
 						<ObjectRef Name="Play_Desert_Ambiance" ID="{EAD6D2A9-B888-40CE-8E5F-64D746E8D2D9}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_LeftFoot" ID="{CA268FC5-ADBA-419D-B065-BFAA9517F129}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_BlinkFXOffBeat" ID="{1778D619-6AD0-41F1-BBD5-F7AE21258A4F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ExplosionBurst" ID="{96F8770B-8D45-42AB-AD79-12086FDCF0CE}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopA" ID="{EAC9C663-5374-42ED-BB97-5919131A7612}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Oasis_Ambiance" ID="{007411D6-77C4-4312-9AF1-939A18027A5A}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hover" ID="{E16E01E8-FB6B-4331-9984-72E520180BE7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
@@ -21,6 +22,7 @@
 						<ObjectRef Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Bounce_Shield" ID="{B6B39820-C319-4633-A229-29719AD2FF68}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="01_AMB" ID="{7F75DAE9-21AC-469E-B725-97F7BB94CC54}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ExplosionRise" ID="{69FBB385-525F-46D9-9D32-09736B19D629}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Music" ID="{B2990C7C-37CF-4725-92BD-1ED7910EF398}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_WildlifeDesert_2" ID="{380D2BAE-6D6F-476C-85FE-2961FC6278D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Colossal_Cathedral_Stereo" ID="{512A7648-07B6-486E-9D3E-8B7323C79E8C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Filter="7" Origin="Manual"/>
@@ -34,7 +36,6 @@
 						<ObjectRef Name="Play_Rumble" ID="{5D70381E-9E5F-4A4B-8DBE-15D74B6D7845}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="DistantBuilding_MicsFar" ID="{22EE2792-F5F3-4B26-A6E1-843A0A964677}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Music_Menu" ID="{3653EBA6-FAA4-4B5C-9AB9-F9E1BC7DE975}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Explosion" ID="{BE6C7B0C-65C9-4BA5-A94C-673DA4258F75}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopB" ID="{BE79EF32-E2D4-4C05-822A-7BD390259C8C}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopC" ID="{33D6E2D8-B399-4C0D-A248-B3F7AB5E9A67}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Rewind" ID="{CE03CC97-7D3D-4C7F-9936-3F176E1AB104}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>

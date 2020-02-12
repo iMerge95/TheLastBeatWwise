@@ -28,6 +28,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="ExplosionRise" ID="{E51C7035-3440-455C-ADE9-2A31F7F2A60A}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="CharachterSpeed" ID="{5C4E60DC-A693-45BB-8359-23BC07265CE8}"/>
 							<Value>1</Value>
 						</RTPCValue>
@@ -47,12 +51,12 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
 						<CurrentStateRef Name="Menu1" ID="{9702AA41-BF50-48B1-BA38-01AE7D89C0A9}"/>
-						<CurrentStateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
+						<CurrentStateRef Name="Chord_05" ID="{E72B023E-6B68-44FF-AC98-5680778F495A}"/>
 						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
 						<CurrentStateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
-						<CurrentStateRef Name="Explo" ID="{27436C5D-6601-4595-8978-127E7759C22E}"/>
+						<CurrentStateRef Name="Combat" ID="{35DE1513-8E2D-4E94-9322-EC89914AE87B}"/>
 						<CurrentStateRef Name="NotCritic" ID="{F4DDBB76-9C6B-4F6F-933F-C30513D7BF66}"/>
-						<CurrentStateRef Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
+						<CurrentStateRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grass" ID="{3274A8CC-EA98-4228-93D4-F3840091341A}"/>

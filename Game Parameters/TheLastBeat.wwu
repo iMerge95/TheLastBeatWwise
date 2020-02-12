@@ -57,6 +57,13 @@
 						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="ExplosionRise" ID="{E51C7035-3440-455C-ADE9-2A31F7F2A60A}">
+					<PropertyList>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1.2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

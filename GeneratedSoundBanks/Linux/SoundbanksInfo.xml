@@ -420,7 +420,8 @@
 				<Event Id="1172822028" Name="Play_Death" ObjectPath="\Events\Default Work Unit\02_Player\Play_Death" DurationType="OneShot" DurationMin="5.713354" DurationMax="5.713354"/>
 				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="2374767689" Name="Play_Die_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Die_Enemy" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="4030404899" Name="Play_Explosion" ObjectPath="\Events\Default Work Unit\03_NME\Play_Explosion" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.319334" DurationMax="4.694246"/>
+				<Event Id="753153999" Name="Play_ExplosionBurst" ObjectPath="\Events\Default Work Unit\03_NME\Play_ExplosionBurst" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.504721" DurationMax="2.467602"/>
+				<Event Id="2737378052" Name="Play_ExplosionRise" ObjectPath="\Events\Default Work Unit\03_NME\Play_ExplosionRise" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="3450612256" Name="Play_Heal_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Heal_Player" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.494061" DurationMax="1.500000"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.646579" DurationMax="0.990560"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
@@ -582,7 +583,7 @@
 				<File Id="37526413" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="43775396" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_06.wav</ShortName>
@@ -681,7 +682,7 @@
 				<File Id="117664790" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="124602914" Language="SFX">
 					<ShortName>TLB_NME_SFX_Attack_04.wav</ShortName>
@@ -718,7 +719,7 @@
 				<File Id="147986051" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>893</PrefetchSize>
 				</File>
 				<File Id="151833563" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongB_02.wav</ShortName>
@@ -736,18 +737,18 @@
 					<ShortName>TLB_Chara_SFX_RushFX_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_RushFX_03_E37C7245.wem</Path>
 				</File>
+				<File Id="170922726" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_ExplosionBurst_03.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_ExplosionBurst_03_E37C7245.wem</Path>
+				</File>
 				<File Id="176425962" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortB_03.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortB_03_E37C7245.wem</Path>
 				</File>
-				<File Id="181239436" Language="SFX">
-					<ShortName>TLB_NME_SFX_Enemy_Explosion_02.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_02_E37C7245.wem</Path>
-				</File>
 				<File Id="182145782" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>989</PrefetchSize>
+					<PrefetchSize>901</PrefetchSize>
 				</File>
 				<File Id="183392366" Language="SFX">
 					<ShortName>TLB_AMB_Rumble.wav</ShortName>
@@ -773,13 +774,13 @@
 					<ShortName>TheLastBeat_Mus_FB_Blink_03.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Blink_03_592D8723.wem</Path>
 				</File>
+				<File Id="237999095" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_04.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop1_04_E37C7245.wem</Path>
+				</File>
 				<File Id="243193760" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_04.wav</ShortName>
 					<Path>SFX\TLB_AMB_Oasis_RWind_04_E37C7245.wem</Path>
-				</File>
-				<File Id="254190867" Language="SFX">
-					<ShortName>TLB_NME_SFX_Enemy_Explosion_03.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_03_E37C7245.wem</Path>
 				</File>
 				<File Id="258908247" Language="SFX">
 					<ShortName>TLB_NME_SFX_Call_Attack_Lo_05.wav</ShortName>
@@ -788,7 +789,7 @@
 				<File Id="259122784" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>685</PrefetchSize>
+					<PrefetchSize>637</PrefetchSize>
 				</File>
 				<File Id="270112378" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer3_01.wav</ShortName>
@@ -814,7 +815,7 @@
 				<File Id="313474517" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="315144591" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Med_01.wav</ShortName>
@@ -857,10 +858,14 @@
 					<ShortName>TLB_AMB_Canyon_RWind2_03.wav</ShortName>
 					<Path>SFX\TLB_AMB_Canyon_RWind2_03_E37C7245.wem</Path>
 				</File>
+				<File Id="352147604" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop2_01.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop2_01_E37C7245.wem</Path>
+				</File>
 				<File Id="352158969" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>3753</PrefetchSize>
+					<PrefetchSize>1942</PrefetchSize>
 				</File>
 				<File Id="365619688" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Perfect_Layer1_04.wav</ShortName>
@@ -889,12 +894,12 @@
 				<File Id="382079197" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>685</PrefetchSize>
+					<PrefetchSize>641</PrefetchSize>
 				</File>
 				<File Id="383911143" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>893</PrefetchSize>
 				</File>
 				<File Id="384910229" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_07.wav</ShortName>
@@ -912,6 +917,10 @@
 					<ShortName>TLB_Chara_SFX_Rock_Rockysteps_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Rock_Rockysteps_02_E37C7245.wem</Path>
 				</File>
+				<File Id="431305883" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_02.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop3_02_E37C7245.wem</Path>
+				</File>
 				<File Id="432711646" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Grass_Steps_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Grass_Steps_04_E37C7245.wem</Path>
@@ -919,7 +928,7 @@
 				<File Id="434161037" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>893</PrefetchSize>
 				</File>
 				<File Id="436376983" Language="SFX">
 					<ShortName>TLB_AMB_Canyon_RWind2_05.wav</ShortName>
@@ -944,7 +953,7 @@
 				<File Id="448957707" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>709</PrefetchSize>
+					<PrefetchSize>637</PrefetchSize>
 				</File>
 				<File Id="449797422" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_09.wav</ShortName>
@@ -961,7 +970,7 @@
 				<File Id="461703535" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>4996</PrefetchSize>
 				</File>
 				<File Id="464554877" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_05.wav</ShortName>
@@ -987,6 +996,10 @@
 					<ShortName>TLB_NME_SFX_Attack_02.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Attack_02_E37C7245.wem</Path>
 				</File>
+				<File Id="498162724" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_ExplosionBurst_04.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_ExplosionBurst_04_E37C7245.wem</Path>
+				</File>
 				<File Id="506043198" Language="SFX">
 					<ShortName>TLB_Chara_SFX_BlinkFX_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_BlinkFX_01_E37C7245.wem</Path>
@@ -1007,6 +1020,10 @@
 					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_02.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_02_E37C7245.wem</Path>
 				</File>
+				<File Id="524460581" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04_E37C7245.wem</Path>
+				</File>
 				<File Id="531001905" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Blink_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FB_Blink_04_592D8723.wem</Path>
@@ -1024,10 +1041,18 @@
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Perc_Layer1_1Pre_2Post_592D8723.wem</Path>
 					<PrefetchSize>1029</PrefetchSize>
 				</File>
+				<File Id="544432716" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04_E37C7245.wem</Path>
+				</File>
+				<File Id="552180614" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_03.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop3_03_E37C7245.wem</Path>
+				</File>
 				<File Id="554075586" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Base_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="554091354" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_01.wav</ShortName>
@@ -1036,7 +1061,7 @@
 				<File Id="560626843" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="564320662" Language="SFX">
 					<ShortName>TLB_NME_Boss_Rumble.wav</ShortName>
@@ -1057,7 +1082,7 @@
 				<File Id="569645680" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>889</PrefetchSize>
 				</File>
 				<File Id="575072205" Language="SFX">
 					<ShortName>TLB_Chara_SFX_RushFX_04.wav</ShortName>
@@ -1106,20 +1131,16 @@
 				<File Id="623855022" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>5978</PrefetchSize>
+					<PrefetchSize>641</PrefetchSize>
 				</File>
 				<File Id="632908982" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>889</PrefetchSize>
 				</File>
 				<File Id="633611638" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Heal_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Heal_03_E37C7245.wem</Path>
-				</File>
-				<File Id="634462634" Language="SFX">
-					<ShortName>TLB_NME_SFX_Enemy_Explosion_04.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_04_E37C7245.wem</Path>
 				</File>
 				<File Id="644476924" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_03.wav</ShortName>
@@ -1157,12 +1178,12 @@
 				<File Id="668397685" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>4815</PrefetchSize>
 				</File>
 				<File Id="676930814" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="694222174" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer1_02.wav</ShortName>
@@ -1171,7 +1192,7 @@
 				<File Id="702824721" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>889</PrefetchSize>
 				</File>
 				<File Id="703900704" Language="SFX">
 					<ShortName>TLB_NME_SFX_Bounce_Shield_02.wav</ShortName>
@@ -1188,7 +1209,7 @@
 				<File Id="723176415" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Base_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>5924</PrefetchSize>
+					<PrefetchSize>641</PrefetchSize>
 				</File>
 				<File Id="723281426" Language="SFX">
 					<ShortName>TLB_NME_SFX_HoverOrga_02.wav</ShortName>
@@ -1197,12 +1218,12 @@
 				<File Id="736405293" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>685</PrefetchSize>
+					<PrefetchSize>657</PrefetchSize>
 				</File>
 				<File Id="736855353" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>893</PrefetchSize>
 				</File>
 				<File Id="737093795" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Hit_02.wav</ShortName>
@@ -1219,7 +1240,7 @@
 				<File Id="756398144" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="758847900" Language="SFX">
 					<ShortName>TLB_NME_SFX_Call_Attack_Hi_03.wav</ShortName>
@@ -1234,6 +1255,10 @@
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Rockysteps_03_E37C7245.wem</Path>
 				</File>
+				<File Id="770009256" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_ExplosionBurst_01.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_ExplosionBurst_01_E37C7245.wem</Path>
+				</File>
 				<File Id="770049209" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Steps_02.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Steps_02_E37C7245.wem</Path>
@@ -1241,21 +1266,25 @@
 				<File Id="771198940" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>709</PrefetchSize>
+					<PrefetchSize>637</PrefetchSize>
 				</File>
 				<File Id="772276135" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>685</PrefetchSize>
+					<PrefetchSize>637</PrefetchSize>
 				</File>
 				<File Id="775059201" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>893</PrefetchSize>
 				</File>
 				<File Id="776663798" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Steps_05.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Steps_05_E37C7245.wem</Path>
+				</File>
+				<File Id="777067210" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_02.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop1_02_E37C7245.wem</Path>
 				</File>
 				<File Id="782845730" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Steps_04.wav</ShortName>
@@ -1276,15 +1305,11 @@
 				<File Id="796485053" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>893</PrefetchSize>
 				</File>
 				<File Id="797154347" Language="SFX">
 					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_03.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_03_E37C7245.wem</Path>
-				</File>
-				<File Id="800592173" Language="SFX">
-					<ShortName>TLB_NME_SFX_Enemy_Explosion_01.wav</ShortName>
-					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_01_E37C7245.wem</Path>
 				</File>
 				<File Id="812632468" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FB_Blink_02.wav</ShortName>
@@ -1293,7 +1318,7 @@
 				<File Id="818750410" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Sitar_Layer3_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>685</PrefetchSize>
+					<PrefetchSize>637</PrefetchSize>
 				</File>
 				<File Id="819369873" Language="SFX">
 					<ShortName>TLB_Chara_SFX_BlinkFX_04.wav</ShortName>
@@ -1310,12 +1335,12 @@
 				<File Id="825699549" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>685</PrefetchSize>
+					<PrefetchSize>641</PrefetchSize>
 				</File>
 				<File Id="849535690" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="850052255" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Rewind.wav</ShortName>
@@ -1350,6 +1375,14 @@
 					<ShortName>TLB_AMB_Canyon_RWind2_04.wav</ShortName>
 					<Path>SFX\TLB_AMB_Canyon_RWind2_04_E37C7245.wem</Path>
 				</File>
+				<File Id="892829718" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_ExplosionBurst_02.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_ExplosionBurst_02_E37C7245.wem</Path>
+				</File>
+				<File Id="901192798" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop2_02.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop2_02_E37C7245.wem</Path>
+				</File>
 				<File Id="901319028" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Grass_RockySteps_05.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Grass_RockySteps_05_E37C7245.wem</Path>
@@ -1374,6 +1407,10 @@
 				<File Id="914952534" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Rockysteps_01_E37C7245.wem</Path>
+				</File>
+				<File Id="916566198" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_01.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop3_01_E37C7245.wem</Path>
 				</File>
 				<File Id="923094804" Language="SFX">
 					<ShortName>TLB_AMB_Canyon_RWind1_04.wav</ShortName>
@@ -1422,7 +1459,7 @@
 				<File Id="984312236" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Perc_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>977</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="994551806" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Grass_Steps_03.wav</ShortName>
@@ -1435,11 +1472,15 @@
 				<File Id="995359347" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer1_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="998446063" Language="SFX">
 					<ShortName>TLB_NME_SFX_Call_Attack_Lo_01.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Call_Attack_Lo_01_E37C7245.wem</Path>
+				</File>
+				<File Id="1001841879" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop2_03.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop2_03_E37C7245.wem</Path>
 				</File>
 				<File Id="1003121413" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Grass_Steps_01.wav</ShortName>
@@ -1460,7 +1501,11 @@
 				<File Id="1021642049" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Sitar_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>889</PrefetchSize>
+				</File>
+				<File Id="1021650992" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_03.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop1_03_E37C7245.wem</Path>
 				</File>
 				<File Id="1024682353" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Perfect_Layer2_02.wav</ShortName>
@@ -1469,7 +1514,7 @@
 				<File Id="1027509033" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>685</PrefetchSize>
+					<PrefetchSize>637</PrefetchSize>
 				</File>
 				<File Id="1027616747" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_Synth_Layer3_1Pre_2Post.wav</ShortName>
@@ -1501,6 +1546,10 @@
 					<ShortName>TheLastBeat_Mus_Menu_Layer2_1Pre_2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Menu_Layer2_1Pre_2Post_D79FB2B7.wem</Path>
 				</File>
+				<File Id="1047413621" Language="SFX">
+					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_01.wav</ShortName>
+					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop1_01_E37C7245.wem</Path>
+				</File>
 				<File Id="1049194023" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Steps_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Steps_03_E37C7245.wem</Path>
@@ -1508,7 +1557,7 @@
 				<File Id="1060191646" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer2_1Pre2Post_592D8723.wem</Path>
-					<PrefetchSize>981</PrefetchSize>
+					<PrefetchSize>4649</PrefetchSize>
 				</File>
 				<File Id="1062671059" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_01.wav</ShortName>

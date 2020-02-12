@@ -313,21 +313,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Explosion" ID="{BE6C7B0C-65C9-4BA5-A94C-673DA4258F75}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<Action Name="" ID="{F1E1E895-75CF-44A0-8C62-C73F5842ABB6}" ShortID="378465790">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Explosion" ID="{49405CB2-3803-464F-8335-4575475A47E0}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Bounce_Shield" ID="{B6B39820-C319-4633-A229-29719AD2FF68}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
@@ -461,6 +446,39 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="TLB_NME_Nemesis" ID="{8E447B1B-2919-4A45-AE0E-DDCA0A9673E5}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ExplosionRise" ID="{69FBB385-525F-46D9-9D32-09736B19D629}">
+							<ChildrenList>
+								<Action Name="" ID="{9CDEB7E5-F7C2-4DED-B1DF-FBB20FF6ED68}" ShortID="102431885">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ExplosionRise" ID="{273CDB7E-80A0-403E-8252-075BD199E23E}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ExplosionBurst" ID="{96F8770B-8D45-42AB-AD79-12086FDCF0CE}">
+							<ChildrenList>
+								<Action Name="" ID="{E6547B25-A0F1-4775-8FC5-0D8D5DD7FD39}" ShortID="984273442">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ExplosionBurst" ID="{B9CBDCE1-2478-44DF-BC57-7FD7DA9BFD7C}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{988BC214-1F70-473B-B56A-5A18D4BAD5A5}" ShortID="223761366">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ExplosionRise" ID="{273CDB7E-80A0-403E-8252-075BD199E23E}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

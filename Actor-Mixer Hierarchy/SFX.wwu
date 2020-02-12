@@ -7240,9 +7240,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Explosion" ID="{49405CB2-3803-464F-8335-4575475A47E0}" ShortID="281053208">
+										<RandomSequenceContainer Name="OdlExplosion" ID="{49405CB2-3803-464F-8335-4575475A47E0}" ShortID="281053208">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
@@ -7955,6 +7960,701 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</BlendContainer>
+										<BlendContainer Name="ExplosionRise" ID="{273CDB7E-80A0-403E-8252-075BD199E23E}" ShortID="210926364">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D8D9304F-9C1F-4E03-BACE-B2E44F0909B3}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Loop1" ID="{2577D785-3406-4502-93ED-91EFC0E869B2}" ShortID="60112741">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{19F36149-71F2-4DBD-A5CA-9B63E3FC81C0}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="50"/>
+																			<Property Name="Min" Type="Real64" Value="-50"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_01" ID="{37755846-3DB4-40EC-84D7-478BA06BCFA0}" ShortID="705608543">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_01" ID="{5C4DEE0C-9E2A-4ED4-BE43-3876EFEF1B13}" ShortID="1047413621">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_01" ID="{5C4DEE0C-9E2A-4ED4-BE43-3876EFEF1B13}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_02" ID="{A889E4C8-C586-455D-A534-E4020CEC9369}" ShortID="309820493">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_02" ID="{C83DD6E1-CDA4-468D-85D4-1D7581FAA8F1}" ShortID="777067210">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_02" ID="{C83DD6E1-CDA4-468D-85D4-1D7581FAA8F1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_03" ID="{F702A61F-BF2B-4387-AA7A-FDE3CC7FE1EC}" ShortID="425961323">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_03" ID="{2BA96025-14C2-4280-874A-489F7C7C2B53}" ShortID="1021650992">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_03" ID="{2BA96025-14C2-4280-874A-489F7C7C2B53}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_04" ID="{BE0016D0-E6BA-49B7-86CE-838E15ACB4B7}" ShortID="757527292">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_04" ID="{7699762C-2ADC-408C-B415-A97AB998ED2D}" ShortID="237999095">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop1_04" ID="{7699762C-2ADC-408C-B415-A97AB998ED2D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Loop2" ID="{C51105D6-479F-4ABC-A839-C349C6AD6214}" ShortID="702656936">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{036BE74B-BCBD-4187-BF94-91BF4E389828}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="50"/>
+																			<Property Name="Min" Type="Real64" Value="-50"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="EnemyAttenuation" ID="{C653802B-E8BE-4C6B-8384-5CC72BBA5436}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_01" ID="{9308AA7E-E1FE-4DF8-B7BF-5682BFF33326}" ShortID="240108210">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_01" ID="{36DBA301-C8AB-40DF-93A9-18EC002C8F5A}" ShortID="352147604">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop2_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_01" ID="{36DBA301-C8AB-40DF-93A9-18EC002C8F5A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_02" ID="{B6E4D0EB-39A1-4C62-91E0-C7EA5FA5DE44}" ShortID="284835858">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_02" ID="{5442FA4B-987C-4D4C-B939-BC800B3D6D33}" ShortID="901192798">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop2_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_02" ID="{5442FA4B-987C-4D4C-B939-BC800B3D6D33}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_03" ID="{821FD23F-DE1A-4D48-A122-6CA8DA19FD44}" ShortID="145063736">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_03" ID="{27C0074A-6974-453E-AC74-1ECE174C3425}" ShortID="1001841879">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop2_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_03" ID="{27C0074A-6974-453E-AC74-1ECE174C3425}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04" ID="{A5D5BAB7-F6A9-4811-8801-924D3F5F0790}" ShortID="1031887915">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04" ID="{BFC9DB61-240A-41C6-915B-6B34CE1A488D}" ShortID="544432716">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop2_04" ID="{BFC9DB61-240A-41C6-915B-6B34CE1A488D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Loop3" ID="{20BB521B-12D5-4296-853D-10707397E538}" ShortID="129445109">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{FD3D7CF3-3283-4E50-BFB6-CE3C7F1A09E9}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="50"/>
+																			<Property Name="Min" Type="Real64" Value="-50"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="EnemyAttenuation" ID="{C653802B-E8BE-4C6B-8384-5CC72BBA5436}" WorkUnitID="{369AA777-E9B1-4A91-B7C6-DFB980D18E56}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_01" ID="{7123AC17-74EA-4E5F-8C2F-2BE4A9A10E6A}" ShortID="724289966">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_01" ID="{25F682A5-D847-4617-B200-A27073833A88}" ShortID="916566198">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_01" ID="{25F682A5-D847-4617-B200-A27073833A88}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_02" ID="{C8F89814-320C-4CF9-AB76-2E5D918F5B4B}" ShortID="298156953">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_02" ID="{71C4C2F9-FB5A-4D8D-BEC8-7AF340EFEF76}" ShortID="431305883">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_02" ID="{71C4C2F9-FB5A-4D8D-BEC8-7AF340EFEF76}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_03" ID="{AE1C5612-2521-4B3E-A1E3-3CDFF50A2D14}" ShortID="1057771611">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_03" ID="{49034AB3-7176-40C6-B84C-B3194DCE3022}" ShortID="552180614">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_03" ID="{49034AB3-7176-40C6-B84C-B3194DCE3022}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04" ID="{7F109C51-98F5-4A98-8A14-A956E1094A8F}" ShortID="601685254">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04" ID="{D9FE4586-1432-433D-BE06-CD2042B6231C}" ShortID="524460581">
+																	<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="TLB_NME_SFX_Enemy_Explosion_RiseLoop3_04" ID="{D9FE4586-1432-433D-BE06-CD2042B6231C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="ExplosionRiseLoop1" ID="{E375EEA5-3AE6-43D6-A233-A5299D82CC01}" ShortID="204835516">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<RTPCList>
+																<RTPC Name="" ID="{88667F7D-3A2E-4707-96AD-8BF4253EA6A5}" ShortID="209015360">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="ExplosionRise" ID="{E51C7035-3440-455C-ADE9-2A31F7F2A60A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{77A08AE4-83B9-4B59-A994-84F17A01B5D2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>2000</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{58428CEB-770A-401E-A3D2-CF4B94CB625B}" ShortID="403965790">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="ExplosionRise" ID="{E51C7035-3440-455C-ADE9-2A31F7F2A60A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{F188A473-23F6-4462-BB76-1BAD346FB56F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-3</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>3</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="Loop1" ID="{2577D785-3406-4502-93ED-91EFC0E869B2}"/>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+												<BlendTrack Name="ExplosionRiseLoop2" ID="{A4A29EB6-A850-4AAD-93DD-A02EB678B0A0}" ShortID="151800779">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<RTPCList>
+																<RTPC Name="" ID="{E3B54B93-07B8-44C9-A2E2-AA54229363F2}" ShortID="14648597">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="ExplosionRise" ID="{E51C7035-3440-455C-ADE9-2A31F7F2A60A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{49F3D2B3-354F-4CC6-B83B-08681BD034F9}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>2000</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{453F792D-FFAE-487D-977E-181FE6C64252}" ShortID="789671724">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="ExplosionRise" ID="{E51C7035-3440-455C-ADE9-2A31F7F2A60A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{DB688A9A-A5FF-4260-85A2-04DB700C248F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>-6</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>3</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="Loop2" ID="{C51105D6-479F-4ABC-A839-C349C6AD6214}"/>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+												<BlendTrack Name="ExplosionRiseLoop3" ID="{41C75BE0-C414-4A1D-9A35-E20026A4CD6E}" ShortID="211104627">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<RTPCList>
+																<RTPC Name="" ID="{0ABF57EC-81EA-4AFD-AA37-38CE9D1E3F5B}" ShortID="395428035">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="ExplosionRise" ID="{E51C7035-3440-455C-ADE9-2A31F7F2A60A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{D6B63A4F-22AB-4D13-A1B3-9B18EC85CFBC}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>2000</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{86B3472B-EEAE-4539-92DE-DFAB3E89CAA6}" ShortID="631666471">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="ExplosionRise" ID="{E51C7035-3440-455C-ADE9-2A31F7F2A60A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{A3A4EC6D-58DF-4B98-B5C7-A96C64168B4A}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>-6</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="Loop3" ID="{20BB521B-12D5-4296-853D-10707397E538}"/>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<RandomSequenceContainer Name="ExplosionBurst" ID="{B9CBDCE1-2478-44DF-BC57-7FD7DA9BFD7C}" ShortID="377688612">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{74D66D8C-DC07-4BB8-B4E0-274B68A433DF}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="TLB_NME_SFX_Enemy_ExplosionBurst_01" ID="{086DF551-054D-47E5-A8CB-76159B4AE20A}" ShortID="842818803">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Enemy_ExplosionBurst_01" ID="{A8A6DEDD-6EFB-4D97-919F-2B688776E7A3}" ShortID="770009256">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Enemy_ExplosionBurst_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Enemy_ExplosionBurst_01" ID="{A8A6DEDD-6EFB-4D97-919F-2B688776E7A3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Enemy_ExplosionBurst_02" ID="{D32EEF29-824A-4D55-9E18-42891B7BDCDD}" ShortID="841351781">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Enemy_ExplosionBurst_02" ID="{C120D0DE-FE0E-40F0-8466-92A9E306CB07}" ShortID="892829718">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Enemy_ExplosionBurst_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Enemy_ExplosionBurst_02" ID="{C120D0DE-FE0E-40F0-8466-92A9E306CB07}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Enemy_ExplosionBurst_03" ID="{5D447EBB-990E-40D1-A495-7AA5C3A2A452}" ShortID="674276777">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Enemy_ExplosionBurst_03" ID="{39F5FEE2-4649-41E6-88A5-59198416B3F5}" ShortID="170922726">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Enemy_ExplosionBurst_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Enemy_ExplosionBurst_03" ID="{39F5FEE2-4649-41E6-88A5-59198416B3F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="TLB_NME_SFX_Enemy_ExplosionBurst_04" ID="{16681EE0-E4E7-49C1-8827-3515739E0C3B}" ShortID="305991610">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TLB_NME_SFX_Enemy_ExplosionBurst_04" ID="{AF0665E3-5B2C-4B9D-8FBD-CA34AC68C44E}" ShortID="498162724">
+															<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_NME_SFX\TLB_NME_SFX.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>TLB_NME_SFX_Enemy_ExplosionBurst_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TLB_NME_SFX_Enemy_ExplosionBurst_04" ID="{AF0665E3-5B2C-4B9D-8FBD-CA34AC68C44E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 								<RandomSequenceContainer Name="Attack" ID="{D0E2EDA5-B7DF-4FF6-A782-5848B9CF40DD}" ShortID="351008205">
