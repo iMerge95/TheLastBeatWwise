@@ -35,7 +35,7 @@
 						<ActorMixer Name="Emitters" ID="{D7F432ED-5AD4-498A-A2C7-789E401E2015}" ShortID="821289854">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="Color" Type="int16" Value="17"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{9A88B1BF-868A-4618-BDBD-1476196F10D4}" ShortID="673159585">
@@ -495,7 +495,7 @@
 						<ActorMixer Name="AmbianceBeds" ID="{B9EB56C6-1494-4C74-923F-DCB8EBC54171}" ShortID="468953344">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="Color" Type="int16" Value="17"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{8FF2A558-6571-4F22-AC6F-19EADEBD85ED}" ShortID="951090612">
@@ -4167,14 +4167,179 @@
 					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{8C697ED2-F1BE-4029-A976-AD4380CEC313}" ShortID="581846516">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+							<ObjectRef Name="UI" ID="{3735C510-70B0-4675-94A5-EDD20EB95446}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Circle" ID="{E5182872-CAE2-4BD3-A977-DB63DEB99811}" ShortID="347478566">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3223243D-917F-4C18-A427-3E1E090E6440}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TLB_SXF_UI_Circle_01" ID="{15EDC1BC-88FA-46B9-BED7-20630B9E90F6}" ShortID="421412839">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TLB_SXF_UI_Circle_01" ID="{4C603507-5C4A-42B4-9D43-3669FC2860AD}" ShortID="918068013">
+											<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_UI\TLB_SFX_UI.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>TLB_SXF_UI_Circle_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TLB_SXF_UI_Circle_01" ID="{4C603507-5C4A-42B4-9D43-3669FC2860AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TLB_SXF_UI_Circle_02" ID="{9F3498E3-0933-49DE-A6E1-B69FE6A10C0F}" ShortID="851431054">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TLB_SXF_UI_Circle_02" ID="{10786136-9197-4D34-8B38-826FE45E44E5}" ShortID="84242020">
+											<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_UI\TLB_SFX_UI.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>TLB_SXF_UI_Circle_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TLB_SXF_UI_Circle_02" ID="{10786136-9197-4D34-8B38-826FE45E44E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TLB_SXF_UI_Circle_03" ID="{AAC8AFD2-AF20-4E64-9BA2-4BBFC66FEB04}" ShortID="250614763">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TLB_SXF_UI_Circle_03" ID="{9BAF3B23-BD72-4188-A4BB-931425E8D445}" ShortID="444637073">
+											<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_UI\TLB_SFX_UI.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>TLB_SXF_UI_Circle_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TLB_SXF_UI_Circle_03" ID="{9BAF3B23-BD72-4188-A4BB-931425E8D445}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TLB_SXF_UI_Circle_04" ID="{96254B57-BD61-4E1B-A6F2-20B6F7D36650}" ShortID="282256773">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TLB_SXF_UI_Circle_04" ID="{3FC2AB2C-8377-4903-86B8-2CEE8140F78F}" ShortID="70328037">
+											<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_UI\TLB_SFX_UI.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>TLB_SXF_UI_Circle_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TLB_SXF_UI_Circle_04" ID="{3FC2AB2C-8377-4903-86B8-2CEE8140F78F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="TLB_SXF_UI_Back" ID="{F9420DBE-05D5-4047-B0A6-C71249DAAED1}" ShortID="1043503165">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TLB_SXF_UI_Back" ID="{C9C15DE8-A24E-4117-8345-D715BA7F97B3}" ShortID="607131031">
+									<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_UI\TLB_SFX_UI.rpp"</Comment>
+									<Language>SFX</Language>
+									<AudioFile>TLB_SXF_UI_Back.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TLB_SXF_UI_Back" ID="{C9C15DE8-A24E-4117-8345-D715BA7F97B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="TLB_SXF_UI_Enter" ID="{349F491A-C554-4BA1-B8DD-A7DED863EB79}" ShortID="872807569">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TLB_SXF_UI_Enter" ID="{4B8ED296-F1E9-465C-BE32-B19824D5EE40}" ShortID="602785085">
+									<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_SFX_UI\TLB_SFX_UI.rpp"</Comment>
+									<Language>SFX</Language>
+									<AudioFile>TLB_SXF_UI_Enter.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TLB_SXF_UI_Enter" ID="{4B8ED296-F1E9-465C-BE32-B19824D5EE40}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="CHARACTER" ID="{82B777F3-B70D-41A5-855A-5F4021303DE3}" ShortID="315501490">
 					<PropertyList>

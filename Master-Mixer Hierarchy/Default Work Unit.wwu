@@ -339,7 +339,12 @@
 								</CustomStateList>
 							</StateInfo>
 						</Bus>
-						<Bus Name="UI" ID="{3735C510-70B0-4675-94A5-EDD20EB95446}"/>
+						<Bus Name="UI" ID="{3735C510-70B0-4675-94A5-EDD20EB95446}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="15"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

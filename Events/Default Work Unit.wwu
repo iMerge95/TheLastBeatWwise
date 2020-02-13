@@ -1082,6 +1082,47 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="05_UI" ID="{49A0AD65-AA9A-4329-B12B-07B22B1B24AE}" ShortID="449349383">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Circle" ID="{CA42BDCA-C768-45F8-B8DB-67D454F07530}">
+							<ChildrenList>
+								<Action Name="" ID="{FB4611B6-7192-4D31-92D1-2943C515AC28}" ShortID="61142861">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Circle" ID="{E5182872-CAE2-4BD3-A977-DB63DEB99811}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_TLB_SXF_UI_Enter" ID="{1B97EEA7-2A1C-44C2-A4BF-C9BEB08AD782}">
+							<ChildrenList>
+								<Action Name="" ID="{374D0CF9-B49F-47E6-9B27-FAC7B815B2F1}" ShortID="669431294">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_SXF_UI_Enter" ID="{349F491A-C554-4BA1-B8DD-A7DED863EB79}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_TLB_SXF_UI_Back" ID="{7CAF4189-231C-4E66-8B34-DBBA14FADD44}">
+							<ChildrenList>
+								<Action Name="" ID="{818FE3A4-8992-494E-B982-9481DB0350DA}" ShortID="414335463">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_SXF_UI_Back" ID="{F9420DBE-05D5-4047-B0A6-C71249DAAED1}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

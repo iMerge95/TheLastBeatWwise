@@ -14,13 +14,16 @@
 						<ObjectRef Name="Play_Save" ID="{AEB89FBD-1241-42BE-92C5-E99F43EF5725}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SetRewind_LoopA" ID="{EAC9C663-5374-42ED-BB97-5919131A7612}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Oasis_Ambiance" ID="{007411D6-77C4-4312-9AF1-939A18027A5A}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="05_UI" ID="{49A0AD65-AA9A-4329-B12B-07B22B1B24AE}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hover" ID="{E16E01E8-FB6B-4331-9984-72E520180BE7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Int_HitMusicFX" ID="{F4BADF99-0834-436C-AF6C-4FA0D57CBEBB}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Presence" ID="{C5EA511A-3FEC-43CD-A73E-94FEE466D287}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Boss_Rumble" ID="{0006E49B-1A37-4424-8F64-67D9FDB627AD}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_TLB_SXF_UI_Enter" ID="{1B97EEA7-2A1C-44C2-A4BF-C9BEB08AD782}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="02_Player" ID="{A32702FF-811B-4538-BD1A-D641BDBDE609}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Die_Enemy" ID="{E6049661-D29A-455E-8A7D-7A54FD69D8FD}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Amb" ID="{E8BD5CAA-A13A-457F-A352-282ECCFF51D7}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Circle" ID="{CA42BDCA-C768-45F8-B8DB-67D454F07530}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Bounce_Shield" ID="{B6B39820-C319-4633-A229-29719AD2FF68}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="01_AMB" ID="{7F75DAE9-21AC-469E-B725-97F7BB94CC54}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_ExplosionRise" ID="{69FBB385-525F-46D9-9D32-09736B19D629}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
@@ -48,6 +51,7 @@
 						<ObjectRef Name="00_Internal" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Nemesis" ID="{95FB1ACA-ECBC-4E52-A7D1-A4F760911904}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_TLB_SXF_UI_Back" ID="{7CAF4189-231C-4E66-8B34-DBBA14FADD44}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="03_NME" ID="{869AB398-6F59-4E88-B023-410917D1AAD0}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Death" ID="{CE90D2E2-9F19-4EE3-8883-1C0D334A3193}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Presence" ID="{BB0E147B-963A-4F43-90DB-174235FE6FBC}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>

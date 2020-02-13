@@ -416,6 +416,7 @@
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.413476" DurationMax="0.640760"/>
 				<Event Id="2860430492" Name="Play_Call_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Call_Attack_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.253688" DurationMax="1.785394"/>
 				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
+				<Event Id="2523859946" Name="Play_Circle" ObjectPath="\Events\Default Work Unit\05_UI\Play_Circle" DurationType="OneShot" DurationMin="0.497120" DurationMax="0.502896"/>
 				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="1172822028" Name="Play_Death" ObjectPath="\Events\Default Work Unit\02_Player\Play_Death" DurationType="OneShot" DurationMin="5.713354" DurationMax="5.713354"/>
 				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
@@ -440,6 +441,8 @@
 				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="3119437920" Name="Play_RushFXOnPerfect" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnPerfect" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="119088225" Name="Play_Save" ObjectPath="\Events\Default Work Unit\02_Player\Play_Save" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
+				<Event Id="2626509817" Name="Play_TLB_SXF_UI_Back" ObjectPath="\Events\Default Work Unit\05_UI\Play_TLB_SXF_UI_Back" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
+				<Event Id="3722529794" Name="Play_TLB_SXF_UI_Enter" ObjectPath="\Events\Default Work Unit\05_UI\Play_TLB_SXF_UI_Enter" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_1" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="92132220" Name="Play_WildlifeDesert_2" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_2" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="4276712656" Name="SetRewind_LoopA" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\SetRewind_LoopA" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -624,6 +627,10 @@
 					<ShortName>TLB_NME_SFX_Call_Attack_Hi_01.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Call_Attack_Hi_01_E37C7245.wem</Path>
 				</File>
+				<File Id="70328037" Language="SFX">
+					<ShortName>TLB_SXF_UI_Circle_04.wav</ShortName>
+					<Path>SFX\TLB_SXF_UI_Circle_04_E37C7245.wem</Path>
+				</File>
 				<File Id="79546478" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Fast_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_HiFoley_Fast_03_E37C7245.wem</Path>
@@ -635,6 +642,10 @@
 				<File Id="83858654" Language="SFX">
 					<ShortName>TLB_NME_Nemesis.wav</ShortName>
 					<Path>SFX\TLB_NME_Nemesis_35F8C163.wem</Path>
+				</File>
+				<File Id="84242020" Language="SFX">
+					<ShortName>TLB_SXF_UI_Circle_02.wav</ShortName>
+					<Path>SFX\TLB_SXF_UI_Circle_02_E37C7245.wem</Path>
 				</File>
 				<File Id="85343379" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_08.wav</ShortName>
@@ -948,6 +959,10 @@
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Med_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_HiFoley_Med_04_E37C7245.wem</Path>
 				</File>
+				<File Id="444637073" Language="SFX">
+					<ShortName>TLB_SXF_UI_Circle_03.wav</ShortName>
+					<Path>SFX\TLB_SXF_UI_Circle_03_E37C7245.wem</Path>
+				</File>
 				<File Id="445366905" Language="SFX">
 					<ShortName>TLB_AMB_Canyon_RWind1_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Canyon_RWind1_02_E37C7245.wem</Path>
@@ -1130,9 +1145,17 @@
 					<ShortName>TheLastBeat_Mus_RushFB_Perfect_Layer1_01.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_RushFB_Perfect_Layer1_01_592D8723.wem</Path>
 				</File>
+				<File Id="602785085" Language="SFX">
+					<ShortName>TLB_SXF_UI_Enter.wav</ShortName>
+					<Path>SFX\TLB_SXF_UI_Enter_E37C7245.wem</Path>
+				</File>
 				<File Id="605321880" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Rockysteps_04_E37C7245.wem</Path>
+				</File>
+				<File Id="607131031" Language="SFX">
+					<ShortName>TLB_SXF_UI_Back.wav</ShortName>
+					<Path>SFX\TLB_SXF_UI_Back_E37C7245.wem</Path>
 				</File>
 				<File Id="614897375" Language="SFX">
 					<ShortName>TLB_NME_SFX_Death_04.wav</ShortName>
@@ -1437,6 +1460,10 @@
 				<File Id="916566198" Language="SFX">
 					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop3_01.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Enemy_Explosion_RiseLoop3_01_E37C7245.wem</Path>
+				</File>
+				<File Id="918068013" Language="SFX">
+					<ShortName>TLB_SXF_UI_Circle_01.wav</ShortName>
+					<Path>SFX\TLB_SXF_UI_Circle_01_E37C7245.wem</Path>
 				</File>
 				<File Id="923094804" Language="SFX">
 					<ShortName>TLB_AMB_Canyon_RWind1_04.wav</ShortName>
