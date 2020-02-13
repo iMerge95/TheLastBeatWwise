@@ -4600,7 +4600,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4648,6 +4648,11 @@
 														<RandomSequenceContainer Name="Rock" ID="{3FC40027-1F51-4E3C-A054-D4AD80B8F3FE}" ShortID="1047218119">
 															<PropertyList>
 																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -4787,7 +4792,7 @@
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>6</Value>
+																		<Value>4</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -4934,6 +4939,11 @@
 																			<Modifier Name="" ID="{FC91677C-CA4E-4918-A6DF-7CFBA8484B9B}"/>
 																		</ModifierInfo>
 																	</ModifierList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
 																</Property>
 															</PropertyList>
 															<ReferenceList>
@@ -5132,6 +5142,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<RandomSequenceContainer Name="Sand" ID="{888324E3-3E67-41FD-B981-5EF5AA1EE2E5}" ShortID="549114196">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>4</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -5266,6 +5283,11 @@
 														<RandomSequenceContainer Name="Grass" ID="{ACF33067-ADA7-4CFF-8B81-5E632D47C71B}" ShortID="523010311">
 															<PropertyList>
 																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -5399,6 +5421,13 @@
 															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="Rock" ID="{B0E95E77-FE17-4618-B6EB-391A8EEBEE67}" ShortID="90165040">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
