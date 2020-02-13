@@ -4386,6 +4386,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4499,6 +4504,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="TLB_SXF_UI_Enter" ID="{349F491A-C554-4BA1-B8DD-A7DED863EB79}" ShortID="872807569">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -10080,22 +10092,28 @@
 				</ActorMixer>
 				<Sound Name="TLB_SFX_Logo" ID="{FD0A470C-69AC-4526-AB2B-E5E1EFAE405B}" ShortID="1013649933">
 					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>5</Value>
+								<Value>7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+							<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+							<ObjectRef Name="SFX" ID="{7B8F5E5E-5457-4EBA-AD80-56421D0DD6C3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="TLB_SFX_Logo" ID="{1FA907AE-0391-4572-B7EA-4243C5F6009F}" ShortID="913521172">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="1.2046332046332"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.736164736164736"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>TLB_SFX_Logo.wav</AudioFile>
 						</AudioFileSource>
