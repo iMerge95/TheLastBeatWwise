@@ -50,7 +50,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
-						<CurrentStateRef Name="None" ID="{5A27289B-7D6F-4C1E-8BAC-762D34F64E8F}"/>
+						<CurrentStateRef Name="Menu3" ID="{E6DDD6B2-992E-4C74-B0DF-419E862E214A}"/>
 						<CurrentStateRef Name="Chord_01" ID="{C946E6B6-5275-44E7-AB3D-2CB7820FF5FF}"/>
 						<CurrentStateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
 						<CurrentStateRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
