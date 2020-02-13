@@ -48,6 +48,7 @@
 						<ObjectRef Name="Tunnel" ID="{88B2F5E7-703C-4D7B-B897-946069693C4B}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Call_Attack_Enemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Logo" ID="{ECF48506-FD1C-4DE9-BAEB-A9C8E867F188}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="00_Internal" ID="{6E4E8521-B1CA-4E48-8CC9-00669ED219AF}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Nemesis" ID="{95FB1ACA-ECBC-4E52-A7D1-A4F760911904}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>

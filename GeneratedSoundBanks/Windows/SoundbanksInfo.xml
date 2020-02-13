@@ -428,6 +428,7 @@
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1962302600" Name="Play_Hover" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hover" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="1674468585" Name="Play_LeftFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_LeftFoot" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.224922" DurationMax="0.624210"/>
+				<Event Id="4132018675" Name="Play_Logo" ObjectPath="\Events\Default Work Unit\Play_Logo" DurationType="OneShot" DurationMin="6.500000" DurationMax="6.500000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\04_Music\Play_Music" DurationType="Infinite"/>
 				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\04_Music\Play_Music_Menu" DurationType="Infinite"/>
 				<Event Id="820063214" Name="Play_Nemesis" ObjectPath="\Events\Default Work Unit\03_NME\Play_Nemesis" MaxAttenuation="50.000000" DurationType="Infinite"/>
@@ -1452,6 +1453,10 @@
 				<File Id="911235283" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Rock_Steps_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Rock_Steps_03_E37C7245.wem</Path>
+				</File>
+				<File Id="913521172" Language="SFX">
+					<ShortName>TLB_SFX_Logo.wav</ShortName>
+					<Path>SFX\TLB_SFX_Logo_10C4C929.wem</Path>
 				</File>
 				<File Id="914952534" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Rockysteps_01.wav</ShortName>

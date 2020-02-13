@@ -982,6 +982,45 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Sandfall" ID="{177430EB-8670-4B81-B34A-F1053B93093A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{37EC1DC4-D09B-4AF1-BD7B-3D7141C45BA7}" ShortID="857128245">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_AMB_Ponctual Amb_Sandfall" ID="{A22128A0-A5E2-4478-9BE8-1C94607697C1}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SandLoop" ID="{047528F6-A708-43F1-8C68-EA30BD1F2E17}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{8910E1F0-C0C1-4A6D-9580-68DC04D3F67C}" ShortID="84016030">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_AMB_Ponctual Amb_SandLoop" ID="{E5D3A5FC-ECDF-419A-8EE3-168F25C74D25}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Foliage" ID="{BAAC7E74-4E0F-487A-83D0-062428997E75}">
+							<ChildrenList>
+								<Action Name="" ID="{4B81962B-EFC2-40E0-A8D4-BCAFA9CC094C}" ShortID="646537065">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Foliage" ID="{68A3AAF4-5B0E-4082-B630-C8C3E88BC35E}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="04_Music" ID="{8907583F-0F4B-4388-B8C3-F42660FB4B0B}" ShortID="746232647">
@@ -1123,6 +1162,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Logo" ID="{ECF48506-FD1C-4DE9-BAEB-A9C8E867F188}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{22783FAA-8223-42B2-9202-8D9FAB76BAE2}" ShortID="648701530">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TLB_SFX_Logo" ID="{FD0A470C-69AC-4526-AB2B-E5E1EFAE405B}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
