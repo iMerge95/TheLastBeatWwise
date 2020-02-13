@@ -841,6 +841,10 @@
 					<ShortName>TLB_AMB_Canyon_RWind1_03.wav</ShortName>
 					<Path>SFX\TLB_AMB_Canyon_RWind1_03_E37C7245.wem</Path>
 				</File>
+				<File Id="303447393" Language="SFX">
+					<ShortName>TLB_NME_Boss_Scream.wav</ShortName>
+					<Path>SFX\TLB_NME_Boss_Scream_E37C7245.wem</Path>
+				</File>
 				<File Id="307133066" Language="SFX">
 					<ShortName>TLB_NME_SFX_Attack_01.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Attack_01_E37C7245.wem</Path>
@@ -1512,10 +1516,6 @@
 				<File Id="953741041" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_LoFoley_01.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_LoFoley_01_E37C7245.wem</Path>
-				</File>
-				<File Id="961602446" Language="SFX">
-					<ShortName>TLB_NME_Boss_ScreamFredo.wav</ShortName>
-					<Path>SFX\TLB_NME_Boss_ScreamFredo_E37C7245.wem</Path>
 				</File>
 				<File Id="973627143" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post.wav</ShortName>

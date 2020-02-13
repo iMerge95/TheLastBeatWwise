@@ -155,6 +155,11 @@
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -308,6 +313,11 @@
 													</ModifierList>
 												</Property>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -494,7 +504,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4648,11 +4658,6 @@
 														<RandomSequenceContainer Name="Rock" ID="{3FC40027-1F51-4E3C-A054-D4AD80B8F3FE}" ShortID="1047218119">
 															<PropertyList>
 																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>5</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -4792,7 +4797,7 @@
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>4</Value>
+																		<Value>-1</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -4942,7 +4947,7 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>3</Value>
+																		<Value>-1</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -5145,7 +5150,7 @@
 															<PropertyList>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>4</Value>
+																		<Value>-1</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -5285,7 +5290,7 @@
 																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>3</Value>
+																		<Value>-1</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -5421,13 +5426,6 @@
 															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="Rock" ID="{B0E95E77-FE17-4618-B6EB-391A8EEBEE67}" ShortID="90165040">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>5</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -9364,6 +9362,11 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -10076,6 +10079,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<Sound Name="TLB_SFX_Logo" ID="{FD0A470C-69AC-4526-AB2B-E5E1EFAE405B}" ShortID="1013649933">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>

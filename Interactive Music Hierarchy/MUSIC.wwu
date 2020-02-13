@@ -13050,7 +13050,7 @@
 								<Property Name="Tempo" Type="Real64" Value="76"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>10</Value>
+										<Value>9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -13088,11 +13088,10 @@
 											<ClipList>
 												<MusicClip Name="TheLastBeat_Mus_Land_Outro" ID="{3A7B8B21-3C94-4CD0-B179-5A36EBC34073}">
 													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="7894.73684210526"/>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="9473.68421052631"/>
 														<Property Name="EndTrimOffset" Type="Real64" Value="18947.3684210526"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="1556.86472902098"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="-2960.52631578947"/>
+														<Property Name="PlayAt" Type="Real64" Value="-9473.68421052631"/>
 													</PropertyList>
 													<AudioSourceRef Name="TheLastBeat_Mus_Land_Outro" ID="{F856CFAA-4775-40B3-99DC-C28DAB92606F}"/>
 													<PropertyCurveList>
@@ -13103,7 +13102,7 @@
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>7.89474</XPos>
+																		<XPos>9.47368</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
@@ -13122,7 +13121,7 @@
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>7.89474</XPos>
+																		<XPos>9.47368</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
@@ -13141,7 +13140,7 @@
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>7.89474</XPos>
+																		<XPos>9.47368</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
@@ -13166,13 +13165,13 @@
 							<CueList>
 								<MusicCue Name="Entry Cue" ID="{9F3934A6-FEBB-4856-B3C3-BC9D00DCABB5}">
 									<PropertyList>
-										<Property Name="TimeMs" Type="Real64" Value="6513.15789473684"/>
+										<Property Name="TimeMs" Type="Real64" Value="8.5265128291212E-14"/>
 									</PropertyList>
 								</MusicCue>
 								<MusicCue Name="Exit Cue" ID="{BCF65659-9514-42A2-8C62-45E473AB692E}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="9671.05263157895"/>
+										<Property Name="TimeMs" Type="Real64" Value="3157.8947368421"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -13304,8 +13303,9 @@
 								<MusicTransition Name="Transition" ID="{E99B0B96-7231-44B3-912B-F4EDAC5C89C0}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
@@ -13317,12 +13317,21 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{52D28B18-A020-42CE-8A40-AFBBFCF5376F}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="2"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="0"/>
+													<Property Name="FadeOffset" Type="Real64" Value="3"/>
+													<Property Name="FadeTime" Type="Real64" Value="6"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
 										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{10FD4061-383B-4403-864B-A341C02E9F28}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
@@ -13416,6 +13425,11 @@
 						<Property Name="GridFrequencyPreset" Type="int16" Value="64"/>
 						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 						<Property Name="Tempo" Type="Real64" Value="53"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

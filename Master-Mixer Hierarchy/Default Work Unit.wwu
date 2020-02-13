@@ -299,6 +299,27 @@
 											<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
 										</Reference>
 									</ReferenceList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Rewind_State" ID="{57C1E87E-4B7E-4779-839F-EFDBBD4510E8}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Normal" ID="{3312FE86-28D1-4709-846E-24F51CF5B8DD}"/>
+												<CustomState Name="" ID="{530D50E0-614A-46A3-8FCC-C5D481569124}" ShortID="513654329"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Rewind" ID="{0508EAD4-5946-4B97-85BC-01228336570C}"/>
+												<CustomState Name="" ID="{C75EB33E-8F94-4159-B0C3-BC32F481AD95}" ShortID="269495403">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="40"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</Bus>
 							</ChildrenList>
 							<StateInfo>

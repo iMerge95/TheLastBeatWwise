@@ -410,18 +410,7 @@
 								<Action Name="" ID="{36B74754-7F6A-4F88-950A-1ABAE32A536C}" ShortID="418186763">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="TLB_NME_Boss_ScreamFredo" ID="{08CE2B30-E317-4931-B5D3-442C5EB44E64}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{0EC4745D-C387-4C2E-9424-DDB9EF9B62FE}" ShortID="241933663">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="TLB_AMB_Rumble" ID="{A7B9BE97-F342-4DA3-894D-59287F4C549C}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+											<ObjectRef Name="TLB_NME_Boss_Scream" ID="{29B20171-D78F-4D01-8C0C-86A2224EE32B}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -436,7 +425,7 @@
 										<EventActionException Name="" ID="{D0164704-805E-4B2A-9FFA-955525440F87}">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="TLB_NME_Boss_ScreamFredo" ID="{08CE2B30-E317-4931-B5D3-442C5EB44E64}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+													<ObjectRef Name="TLB_NME_Boss_Scream" ID="{29B20171-D78F-4D01-8C0C-86A2224EE32B}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 												</Reference>
 											</ReferenceList>
 										</EventActionException>
@@ -1034,8 +1023,7 @@
 								<Action Name="" ID="{9B7014CC-77E9-4800-88F1-FB40BAE44370}" ShortID="998964747">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="Delay" Type="Real64" Value="8"/>
-										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="12"/>
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
@@ -1045,6 +1033,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_Switch" ID="{99BBEE6E-EAB7-408B-8A7E-7BBEBEF60EE0}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0AD27B9D-31B8-4464-BA25-C58A050C896D}" ShortID="329857292">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Outro" ID="{4EC82B4E-05E8-4D05-9065-DBF1C74CEB28}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
