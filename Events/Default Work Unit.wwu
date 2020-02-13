@@ -1093,16 +1093,6 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<Action Name="" ID="{40F2FD41-C127-4DA7-B886-BF4772C6E3E6}" ShortID="800588882">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Menu1" ID="{9702AA41-BF50-48B1-BA38-01AE7D89C0A9}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{B984AFA7-4F44-4DBB-BF94-C2FC1012DD81}" ShortID="185441538">
 									<ReferenceList>
 										<Reference Name="Target">
