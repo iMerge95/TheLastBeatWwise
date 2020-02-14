@@ -240,6 +240,13 @@
 									</StateInfo>
 								</Bus>
 								<Bus Name="Perc" ID="{AF442680-2370-4CE1-9922-D24888BB74FC}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -387,6 +394,27 @@
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Pause" ID="{71E4EFBF-A56E-41D6-80CB-53C0A065538F}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Pause" ID="{416C7847-2BA2-4A51-90F1-653BE24B91FA}"/>
+										<CustomState Name="" ID="{4CD54619-506D-4E32-A748-F5F16BDE8300}" ShortID="374575694">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-3"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Resume" ID="{A7182A91-9C0E-4D39-8058-FB959ACA9D75}"/>
+										<CustomState Name="" ID="{F049865D-A436-47A6-AEC6-7F9944D9354E}" ShortID="422061826"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 					</ChildrenList>
 				</Bus>
