@@ -4629,7 +4629,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -7311,6 +7311,30 @@
 												<ActiveSource Name="TLB_Chara_SFX_Death" ID="{83F4EF40-4886-4683-8055-DF03DF4443C9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="TLB_Chara_SFX_Respawn" ID="{9584484A-9307-4228-BB32-67DB0239A1EB}" ShortID="49110877">
+											<PropertyList>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TLB_Chara_SFX_Respawn" ID="{B3F29A5F-7312-49F5-8E63-C5D52F12E31E}" ShortID="347291237">
+													<Comment>REAPROJ:"C:\Users\ELE5b7ebad5608f2\Documents\REAPER Media\TheLastSound\TLB_Chara_SFX\TLB_Chara_SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>TLB_Chara_SFX_Respawn.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TLB_Chara_SFX_Respawn" ID="{B3F29A5F-7312-49F5-8E63-C5D52F12E31E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
@@ -8924,7 +8948,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>3</XPos>
+																				<XPos>2</XPos>
 																				<YPos>2000</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -8952,12 +8976,12 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>1</XPos>
+																				<XPos>0.666666666666667</XPos>
 																				<YPos>0</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>3</XPos>
+																				<XPos>2</XPos>
 																				<YPos>3</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -8994,7 +9018,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>3</XPos>
+																				<XPos>2</XPos>
 																				<YPos>2000</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -9022,12 +9046,12 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>1</XPos>
+																				<XPos>0.666666666666667</XPos>
 																				<YPos>-6</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>3</XPos>
+																				<XPos>2</XPos>
 																				<YPos>3</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -9064,7 +9088,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>3</XPos>
+																				<XPos>2</XPos>
 																				<YPos>2000</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -9092,12 +9116,12 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>2</XPos>
+																				<XPos>1.33333333333333</XPos>
 																				<YPos>-6</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>3</XPos>
+																				<XPos>2</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>

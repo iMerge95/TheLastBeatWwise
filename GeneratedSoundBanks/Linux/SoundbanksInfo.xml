@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ELE5b7ebad5608f2\Documents\TheLastBeat\TheLastBeatWwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ELE5b7ebad5608f2\Documents\TheLastBeat\TheLastBeatWwise\.cache\Linux\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ELE5b7ebad5608f2\Documents\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Linux\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Linux\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ELE5b7ebad5608f2\Documents\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -418,7 +418,7 @@
 				<Event Id="831844293" Name="Play_Canyon_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Canyon_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="2523859946" Name="Play_Circle" ObjectPath="\Events\Default Work Unit\05_UI\Play_Circle" DurationType="OneShot" DurationMin="0.497120" DurationMax="0.502896"/>
 				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
-				<Event Id="1172822028" Name="Play_Death" ObjectPath="\Events\Default Work Unit\02_Player\Play_Death" DurationType="OneShot" DurationMin="5.713354" DurationMax="5.713354"/>
+				<Event Id="1172822028" Name="Play_Death" ObjectPath="\Events\Default Work Unit\02_Player\Play_Death" DurationType="OneShot" DurationMin="5.000000" DurationMax="5.000000"/>
 				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="2374767689" Name="Play_Die_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Die_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.365749" DurationMax="5.269114"/>
 				<Event Id="753153999" Name="Play_ExplosionBurst" ObjectPath="\Events\Default Work Unit\03_NME\Play_ExplosionBurst" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.504721" DurationMax="2.467602"/>
@@ -436,6 +436,7 @@
 				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="2044305208" Name="Play_ObtainRewind" ObjectPath="\Events\Default Work Unit\02_Player\Play_ObtainRewind" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="50.000000" DurationType="Infinite"/>
+				<Event Id="365318234" Name="Play_Respawn" ObjectPath="\Events\Default Work Unit\02_Player\Play_Respawn" DurationType="OneShot" DurationMin="4.500000" DurationMax="4.500000"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
 				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.176939" DurationMax="0.473552"/>
 				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Rumble" DurationType="Infinite"/>
@@ -891,6 +892,10 @@
 					<ShortName>TLB_NME_SFX_Call_Attack_Hi_05.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Call_Attack_Hi_05_E37C7245.wem</Path>
 				</File>
+				<File Id="347291237" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Respawn.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Respawn_E37C7245.wem</Path>
+				</File>
 				<File Id="350177278" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Fast_04.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Presence_HiFoley_Fast_04_E37C7245.wem</Path>
@@ -945,6 +950,10 @@
 				<File Id="384910229" Language="SFX">
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_07.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_07_E37C7245.wem</Path>
+				</File>
+				<File Id="394630338" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Death.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Death_E37C7245.wem</Path>
 				</File>
 				<File Id="405503307" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Hit_01.wav</ShortName>
@@ -1508,10 +1517,6 @@
 				<File Id="941961704" Language="SFX">
 					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar_1933E848.wem</Path>
-				</File>
-				<File Id="950654270" Language="SFX">
-					<ShortName>TLB_Chara_SFX_Death.wav</ShortName>
-					<Path>SFX\TLB_Chara_SFX_Death_E37C7245.wem</Path>
 				</File>
 				<File Id="952090535" Language="SFX">
 					<ShortName>TLB_AMB_Ponctual Amb_Foliage_03.wav</ShortName>

@@ -399,7 +399,7 @@
 								<Action Name="" ID="{6B05FB17-608F-4D51-A32D-B8B5B25026B9}" ShortID="107669576">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{BEBAED2A-19B7-4DAD-8D03-B64F3DB9C866}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
+											<ObjectRef Name="TheLastBeat_Mus_Land_Outro" ID="{855AED1F-D941-4759-A3FC-4620A25D60C8}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -857,6 +857,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Respawn" ID="{5414A685-C018-4C7F-B983-F313EB5E892F}">
+							<ChildrenList>
+								<Action Name="" ID="{219C4557-4E23-430D-B5F0-581299B78F53}" ShortID="1012349638">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TLB_Chara_SFX_Respawn" ID="{9584484A-9307-4228-BB32-67DB0239A1EB}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="01_AMB" ID="{7F75DAE9-21AC-469E-B725-97F7BB94CC54}" ShortID="766203885">
@@ -1036,12 +1047,8 @@
 								<Action Name="" ID="{9B7014CC-77E9-4800-88F1-FB40BAE44370}" ShortID="998964747">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="12"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
+										<Property Name="Delay" Type="Real64" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="8"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1053,6 +1060,11 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
 										<Property Name="Delay" Type="Real64" Value="5"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

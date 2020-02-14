@@ -5955,7 +5955,7 @@
 												<Property Name="EndPosition" Type="Real64" Value="33266.7291894603"/>
 												<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
-												<Property Name="Tempo" Type="Real64" Value="176"/>
+												<Property Name="Tempo" Type="Real64" Value="88"/>
 												<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
 											</PropertyList>
 											<ReferenceList>
@@ -7391,10 +7391,11 @@
 																<Value>True</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+															<ObjectRef Name="Perc" ID="{AF442680-2370-4CE1-9922-D24888BB74FC}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -8180,7 +8181,7 @@
 												<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
-												<Property Name="Tempo" Type="Real64" Value="176"/>
+												<Property Name="Tempo" Type="Real64" Value="88"/>
 												<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
 											</PropertyList>
 											<ReferenceList>
@@ -8467,10 +8468,11 @@
 																<Value>True</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+															<ObjectRef Name="Perc" ID="{AF442680-2370-4CE1-9922-D24888BB74FC}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -9964,7 +9966,7 @@
 												<Property Name="EndPosition" Type="Real64" Value="33266.7291894603"/>
 												<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
-												<Property Name="Tempo" Type="Real64" Value="176"/>
+												<Property Name="Tempo" Type="Real64" Value="88"/>
 												<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
 											</PropertyList>
 											<ReferenceList>
@@ -11112,11 +11114,6 @@
 								<MusicSegment Name="TheLastBeat_Mus_FinalCombat_TransFromLand_1Pre2Post" ID="{BEBAED2A-19B7-4DAD-8D03-B64F3DB9C866}" ShortID="1033875928">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="11258.9745813397"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -13047,10 +13044,11 @@
 								<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="76"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>9</Value>
+										<Value>12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -13064,6 +13062,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="TheLastBeat_Mus_Land_Outro" ID="{4B942EA4-10E9-4F17-AA52-4EF254252DCB}" ShortID="1030444990">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
@@ -13090,6 +13095,7 @@
 													<PropertyList>
 														<Property Name="BeginTrimOffset" Type="Real64" Value="9473.68421052631"/>
 														<Property Name="EndTrimOffset" Type="Real64" Value="18947.3684210526"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="3097.16706730769"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 														<Property Name="PlayAt" Type="Real64" Value="-9473.68421052631"/>
 													</PropertyList>
@@ -13286,20 +13292,6 @@
 										<TransitionObjectRef Name="Instant_Reverse_Stop" ID="{F8D760C2-99ED-4F6D-BAD8-03FA895F6996}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
 									</TransitionInfo>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{CAB4CD00-A8A2-4398-809F-8A310E9F362E}">
-									<PropertyList>
-										<Property Name="SourceContextType" Type="int16" Value="2"/>
-										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="SourceContextObject">
-											<ObjectRef Name="Reverse" ID="{6CDB17AA-CEDA-4957-AEB9-A7B4E63F04BC}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-										</Reference>
-									</ReferenceList>
-									<TransitionInfo>
-										<TransitionObjectRef Name="Instant_Reverse_Stop" ID="{F8D760C2-99ED-4F6D-BAD8-03FA895F6996}" WorkUnitID="{9D6BEEC5-4E36-4856-BB17-14AD66A5C49E}"/>
-									</TransitionInfo>
-								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{E99B0B96-7231-44B3-912B-F4EDAC5C89C0}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
@@ -13318,8 +13310,8 @@
 											<MusicFade Name="Source Fade-out" ID="{52D28B18-A020-42CE-8A40-AFBBFCF5376F}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="0"/>
-													<Property Name="FadeOffset" Type="Real64" Value="3"/>
-													<Property Name="FadeTime" Type="Real64" Value="6"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="5"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -13328,7 +13320,7 @@
 											<MusicFade Name="Destination Fade-in" ID="{10FD4061-383B-4403-864B-A341C02E9F28}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
 										</DestinationFadeIn>

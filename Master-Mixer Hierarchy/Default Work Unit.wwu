@@ -148,7 +148,7 @@
 										<StateRef Name="Pause" ID="{416C7847-2BA2-4A51-90F1-653BE24B91FA}"/>
 										<CustomState Name="" ID="{A6B2D6D6-225E-4782-874C-4160ABA28AE7}" ShortID="204910806">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="40"/>
+												<Property Name="Lowpass" Type="int16" Value="45"/>
 												<Property Name="Volume" Type="Real64" Value="-6"/>
 											</PropertyList>
 										</CustomState>
@@ -286,7 +286,7 @@
 										<StateRef Name="Pause" ID="{416C7847-2BA2-4A51-90F1-653BE24B91FA}"/>
 										<CustomState Name="" ID="{ECCAF7EC-2512-4568-99B9-6A58073903F7}" ShortID="550964955">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="40"/>
+												<Property Name="Lowpass" Type="int16" Value="45"/>
 												<Property Name="Volume" Type="Real64" Value="-3"/>
 											</PropertyList>
 										</CustomState>
@@ -366,7 +366,7 @@
 										<StateRef Name="Pause" ID="{416C7847-2BA2-4A51-90F1-653BE24B91FA}"/>
 										<CustomState Name="" ID="{54ECDD3C-CC57-4F98-83C1-004B2D4D4078}" ShortID="36146570">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="40"/>
+												<Property Name="Lowpass" Type="int16" Value="45"/>
 												<Property Name="Volume" Type="Real64" Value="-3"/>
 											</PropertyList>
 										</CustomState>

@@ -436,6 +436,7 @@
 				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="2044305208" Name="Play_ObtainRewind" ObjectPath="\Events\Default Work Unit\02_Player\Play_ObtainRewind" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="50.000000" DurationType="Infinite"/>
+				<Event Id="365318234" Name="Play_Respawn" ObjectPath="\Events\Default Work Unit\02_Player\Play_Respawn" DurationType="OneShot" DurationMin="4.500000" DurationMax="4.500000"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
 				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.176939" DurationMax="0.473552"/>
 				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Rumble" DurationType="Infinite"/>
@@ -890,6 +891,10 @@
 				<File Id="343139646" Language="SFX">
 					<ShortName>TLB_NME_SFX_Call_Attack_Hi_05.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Call_Attack_Hi_05_E37C7245.wem</Path>
+				</File>
+				<File Id="347291237" Language="SFX">
+					<ShortName>TLB_Chara_SFX_Respawn.wav</ShortName>
+					<Path>SFX\TLB_Chara_SFX_Respawn_E37C7245.wem</Path>
 				</File>
 				<File Id="350177278" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Presence_HiFoley_Fast_04.wav</ShortName>
