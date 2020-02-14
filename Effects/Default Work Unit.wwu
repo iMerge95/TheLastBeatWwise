@@ -45,6 +45,37 @@
 	<GameParameter Name="Int_SyncDucking" ID="{2D151634-A0B6-48A2-9777-0CE68C1A0E43}"/>
 </PluginData>
 				</Effect>
+				<Effect Name="AmbEQ" ID="{494D3266-C9F6-473A-B693-33248AC9DB66}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="404"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="8000"/>
+						<Property Name="GainBand2" Type="Real32" Value="-6"/>
+						<Property Name="GainBand3" Type="Real32" Value="3"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="GameplayEQ" ID="{621210A6-76FF-4F23-9E6E-1DCB1DA0C094}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="250"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="1000"/>
+						<Property Name="GainBand2" Type="Real32" Value="-6"/>
+						<Property Name="GainBand3" Type="Real32" Value="6"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="CharacterEQ" ID="{7D6149B0-7FD9-4B47-B16C-F1BF08096BA1}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="250"/>
+						<Property Name="GainBand2" Type="Real32" Value="-3"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

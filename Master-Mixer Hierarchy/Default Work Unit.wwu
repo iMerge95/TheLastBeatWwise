@@ -50,9 +50,17 @@
 										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 											<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
 										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="GameplayEQ" ID="{621210A6-76FF-4F23-9E6E-1DCB1DA0C094}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+										</Reference>
 									</ReferenceList>
 								</Bus>
 								<Bus Name="Environement" ID="{01A6A307-3EC0-46BB-BC0A-93AF18FB4259}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="AmbEQ" ID="{494D3266-C9F6-473A-B693-33248AC9DB66}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+										</Reference>
+									</ReferenceList>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -75,7 +83,13 @@
 										</CustomStateList>
 									</StateInfo>
 								</Bus>
-								<Bus Name="Charachter SFX" ID="{3782A6C2-BAD9-421F-8863-3EF1E677C778}"/>
+								<Bus Name="Charachter SFX" ID="{3782A6C2-BAD9-421F-8863-3EF1E677C778}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="CharacterEQ" ID="{7D6149B0-7FD9-4B47-B16C-F1BF08096BA1}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
 								<AuxBus Name="RevCanyon" ID="{90E7EB3A-68EE-4E4A-9CFA-0859C4DCC159}">
 									<PropertyList>
 										<Property Name="OutputBusHighpass" Type="int16">
