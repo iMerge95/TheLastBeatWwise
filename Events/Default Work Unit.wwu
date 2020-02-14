@@ -775,10 +775,23 @@
 						</Event>
 						<Event Name="Play_Death" ID="{CE90D2E2-9F19-4EE3-8883-1C0D334A3193}">
 							<ChildrenList>
+								<Action Name="" ID="{46BA6F70-9C4B-49EB-9BEE-596FF77149B6}" ShortID="214691386">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeInCurve" Type="int16" Value="0"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Int_MusicCrusher" ID="{5F3A685D-0638-4CE9-9FE2-9471A79B243A}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{C30B51AF-7B09-4EC3-8BDE-7816D7618756}" ShortID="743630204">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="TLB_Chara_SFX_Death" ID="{1C20B4A3-B85D-466E-B4A9-1BB7A2EBD7F3}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
+											<ObjectRef Name="TLB_Chara_SFX_Death" ID="{D0F199C5-14DF-4CBD-B325-8AA1F2D2E93E}" WorkUnitID="{30D1FE2D-D79A-44B0-BFF9-BA86F23F6D4C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
