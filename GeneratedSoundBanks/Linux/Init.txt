@@ -83,12 +83,17 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	312281464	RevOpen			\Default Work Unit\Master Audio Bus\SFX\RevOpen	
 	731829278	MFXRewindVerb			\Default Work Unit\Master Audio Bus\MFX\MFXRewindVerb	
 	1729625191	RevBridge			\Default Work Unit\Master Audio Bus\SFX\RevBridge	
+	3488654956	RevClose			\Default Work Unit\Master Audio Bus\SFX\RevClose	
 
 Effect plug-ins	ID	Name	Type				Notes
+	147717240	LongDeepAlley	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	338980147	GameplayEQ	Wwise Parametric EQ			
+	361504441	Large_Bright_Space_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms
+	1372211304	CharacterEQ	Wwise Parametric EQ			
 	1782142158	DistantBuilding_MicsFar	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
 	2038996943	Plate_Sizzle	Wwise RoomVerb			
 	2245320997	MFXDucking	Wwise Meter			
-	3059984139	Tunnel	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2699318881	AmbEQ	Wwise Parametric EQ			
 	3380986947	Colossal_Cathedral_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
 	3946755902	MusicCrusher	BitCrusher			
 

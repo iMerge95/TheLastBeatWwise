@@ -99,8 +99,8 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-											<ObjectRef Name="Tunnel" ID="{88B2F5E7-703C-4D7B-B897-946069693C4B}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}"/>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="LongDeepAlley" ID="{C1DFB6E9-5626-4094-BC45-97997340CBE6}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}"/>
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
@@ -115,6 +115,13 @@
 									<ReferenceList>
 										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
 											<ObjectRef Name="Colossal_Cathedral_Stereo" ID="{512A7648-07B6-486E-9D3E-8B7323C79E8C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="RevClose" ID="{C2CE4AA2-3679-424F-BD20-C67901DEE9DB}">
+									<ReferenceList>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Large_Bright_Space_Stereo" ID="{550CC1B9-D5A2-4E69-BC22-8EF3C4F0645C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
@@ -180,7 +187,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>-40</XPos>
+														<XPos>-45</XPos>
 														<YPos>0</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log2</SegmentShape>
@@ -244,7 +251,8 @@
 												<StateRef Name="Critic" ID="{6E6FF6E2-2EE8-42C8-9334-80AC3FAC41EE}"/>
 												<CustomState Name="" ID="{BDCBD747-BD77-4B63-BF2A-7E313C7BABAD}" ShortID="611771238">
 													<PropertyList>
-														<Property Name="Lowpass" Type="int16" Value="20"/>
+														<Property Name="BusVolume" Type="Real64" Value="3"/>
+														<Property Name="Lowpass" Type="int16" Value="10"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>

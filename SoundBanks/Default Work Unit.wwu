@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_BlinkFXOnBeat" ID="{DADAA236-3F2A-403E-B025-A216B7C4125D}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RushFXOnBeat" ID="{255B5C08-E22A-405A-A1D3-06BCD171B283}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="LongDeepAlley" ID="{C1DFB6E9-5626-4094-BC45-97997340CBE6}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Desert_Ambiance" ID="{EAD6D2A9-B888-40CE-8E5F-64D746E8D2D9}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_LeftFoot" ID="{CA268FC5-ADBA-419D-B065-BFAA9517F129}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_BlinkFXOffBeat" ID="{1778D619-6AD0-41F1-BBD5-F7AE21258A4F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
@@ -45,7 +46,6 @@
 						<ObjectRef Name="Play_Rewind" ID="{CE03CC97-7D3D-4C7F-9936-3F176E1AB104}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RushFXOffBeat" ID="{164BF52F-3D91-4CF9-9315-546F884B8F0F}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Music_Switch" ID="{AD687C74-430F-4D2E-9F7F-C3B0B6CE0274}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Tunnel" ID="{88B2F5E7-703C-4D7B-B897-946069693C4B}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Call_Attack_Enemy" ID="{E5100DE3-681E-4DAF-8C32-A55FCBBDC013}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit_Player" ID="{22D41AE1-6C52-4DDF-AA71-8DF8F2766567}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Logo" ID="{ECF48506-FD1C-4DE9-BAEB-A9C8E867F188}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
@@ -53,6 +53,7 @@
 						<ObjectRef Name="Play_RushFXOnPerfect" ID="{646879DF-E2A7-4E4E-B537-E877B5EE9BC3}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Nemesis" ID="{95FB1ACA-ECBC-4E52-A7D1-A4F760911904}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_TLB_SXF_UI_Back" ID="{7CAF4189-231C-4E66-8B34-DBBA14FADD44}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Large_Bright_Space_Stereo" ID="{550CC1B9-D5A2-4E69-BC22-8EF3C4F0645C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="03_NME" ID="{869AB398-6F59-4E88-B023-410917D1AAD0}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Death" ID="{CE90D2E2-9F19-4EE3-8883-1C0D334A3193}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Presence" ID="{BB0E147B-963A-4F43-90DB-174235FE6FBC}" WorkUnitID="{0ED55887-0C9A-42A8-A9CE-CCD260C5AF42}" Filter="7" Origin="Manual"/>

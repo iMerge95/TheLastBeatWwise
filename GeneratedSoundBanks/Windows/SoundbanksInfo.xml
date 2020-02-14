@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ELE5b7ebad5608f2\Documents\TheLastBeat\TheLastBeatWwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ELE5b7ebad5608f2\Documents\TheLastBeat\TheLastBeatWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ELE5b7ebad5608f2\Documents\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ELE5b7ebad5608f2\Documents\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -409,8 +409,8 @@
 				<Event Id="2501149424" Name="Int_MusicFeedbackOff" ObjectPath="\Events\Default Work Unit\00_Internal\Int_MusicFeedbackOff" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1468197082" Name="Int_MusicFeedbackOn" ObjectPath="\Events\Default Work Unit\00_Internal\Int_MusicFeedbackOn" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2771612231" Name="Play_Attack_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Attack_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.816616" DurationMax="1.251145"/>
-				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
-				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="3832364417" Name="Play_BlinkFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOffBeat" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
+				<Event Id="2655647461" Name="Play_BlinkFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_BlinkFXOnBeat" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.031301" DurationMax="1.369687"/>
 				<Event Id="3815637695" Name="Play_Boss_Rumble" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Rumble" DurationType="Infinite"/>
 				<Event Id="3326215491" Name="Play_Boss_Scream" ObjectPath="\Events\Default Work Unit\03_NME\Play_Boss_Scream" DurationType="OneShot" DurationMin="14.210521" DurationMax="14.210521"/>
 				<Event Id="5903894" Name="Play_Bounce_Shield" ObjectPath="\Events\Default Work Unit\03_NME\Play_Bounce_Shield" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.413476" DurationMax="0.640760"/>
@@ -420,11 +420,11 @@
 				<Event Id="1559935606" Name="Play_CliffBridge_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_CliffBridge_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="1172822028" Name="Play_Death" ObjectPath="\Events\Default Work Unit\02_Player\Play_Death" DurationType="OneShot" DurationMin="5.713354" DurationMax="5.713354"/>
 				<Event Id="1555409676" Name="Play_Desert_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Desert_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
-				<Event Id="2374767689" Name="Play_Die_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Die_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.655463" DurationMax="4.694246"/>
+				<Event Id="2374767689" Name="Play_Die_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Die_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.365749" DurationMax="5.269114"/>
 				<Event Id="753153999" Name="Play_ExplosionBurst" ObjectPath="\Events\Default Work Unit\03_NME\Play_ExplosionBurst" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.504721" DurationMax="2.467602"/>
 				<Event Id="2737378052" Name="Play_ExplosionRise" ObjectPath="\Events\Default Work Unit\03_NME\Play_ExplosionRise" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="3773549739" Name="Play_Foliage" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Foliage" MaxAttenuation="30.000000" DurationType="Infinite"/>
-				<Event Id="3450612256" Name="Play_Heal_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Heal_Player" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="1.494061" DurationMax="1.500000"/>
+				<Event Id="3450612256" Name="Play_Heal_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Heal_Player" DurationType="OneShot" DurationMin="1.494061" DurationMax="1.500000"/>
 				<Event Id="3889018732" Name="Play_Hit_Enemy" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hit_Enemy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.646579" DurationMax="0.990560"/>
 				<Event Id="2257378511" Name="Play_Hit_Player" ObjectPath="\Events\Default Work Unit\02_Player\Play_Hit_Player" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="1962302600" Name="Play_Hover" ObjectPath="\Events\Default Work Unit\03_NME\Play_Hover" MaxAttenuation="40.000000" DurationType="Infinite"/>
@@ -434,17 +434,17 @@
 				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\04_Music\Play_Music_Menu" DurationType="Infinite"/>
 				<Event Id="820063214" Name="Play_Nemesis" ObjectPath="\Events\Default Work Unit\03_NME\Play_Nemesis" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="3449458560" Name="Play_Oasis_Ambiance" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Oasis_Ambiance" MaxAttenuation="50.000000" DurationType="Infinite"/>
-				<Event Id="2044305208" Name="Play_ObtainRewind" ObjectPath="\Events\Default Work Unit\02_Player\Play_ObtainRewind" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
+				<Event Id="2044305208" Name="Play_ObtainRewind" ObjectPath="\Events\Default Work Unit\02_Player\Play_ObtainRewind" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
 				<Event Id="4155730121" Name="Play_Presence" ObjectPath="\Events\Default Work Unit\02_Player\Play_Presence" MaxAttenuation="50.000000" DurationType="Infinite"/>
 				<Event Id="869704911" Name="Play_Rewind" ObjectPath="\Events\Default Work Unit\00_Internal\Rewind\Play_Rewind" DurationType="Unknown"/>
 				<Event Id="3723441664" Name="Play_RightFoot" ObjectPath="\Events\Default Work Unit\02_Player\Play_RightFoot" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.176939" DurationMax="0.473552"/>
 				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Rumble" DurationType="Infinite"/>
-				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOffBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
-				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
-				<Event Id="3119437920" Name="Play_RushFXOnPerfect" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnPerfect" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="3852757989" Name="Play_RushFXOffBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOffBeat" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="2567002569" Name="Play_RushFXOnBeat" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnBeat" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
+				<Event Id="3119437920" Name="Play_RushFXOnPerfect" ObjectPath="\Events\Default Work Unit\02_Player\Play_RushFXOnPerfect" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.706490" DurationMax="0.793008"/>
 				<Event Id="338566603" Name="Play_Sandfall" ObjectPath="\Events\Default Work Unit\01_AMB\Play_Sandfall" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="5.572288" DurationMax="7.880404"/>
 				<Event Id="3537254066" Name="Play_SandLoop" ObjectPath="\Events\Default Work Unit\01_AMB\Play_SandLoop" MaxAttenuation="30.000000" DurationType="Infinite"/>
-				<Event Id="119088225" Name="Play_Save" ObjectPath="\Events\Default Work Unit\02_Player\Play_Save" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
+				<Event Id="119088225" Name="Play_Save" ObjectPath="\Events\Default Work Unit\02_Player\Play_Save" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="7.002000" DurationMax="7.002000"/>
 				<Event Id="2626509817" Name="Play_TLB_SXF_UI_Back" ObjectPath="\Events\Default Work Unit\05_UI\Play_TLB_SXF_UI_Back" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="3722529794" Name="Play_TLB_SXF_UI_Enter" ObjectPath="\Events\Default Work Unit\05_UI\Play_TLB_SXF_UI_Enter" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="92132223" Name="Play_WildlifeDesert_1" ObjectPath="\Events\Default Work Unit\01_AMB\Play_WildlifeDesert_1" MaxAttenuation="30.000000" DurationType="Infinite"/>
@@ -783,6 +783,10 @@
 					<ShortName>TLB_AMB_Rumble.wav</ShortName>
 					<Path>SFX\TLB_AMB_Rumble_68FFD930.wem</Path>
 				</File>
+				<File Id="198373678" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_LongDeepAlley.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_LongDeepAlley_00AD0D88.wem</Path>
+				</File>
 				<File Id="199733513" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer1_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_BlinkFB_Layer1_04_592D8723.wem</Path>
@@ -1120,10 +1124,6 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Rewind.wav</ShortName>
 					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopB_Rewind_D4F3E753.wem</Path>
 				</File>
-				<File Id="569254387" Language="SFX">
-					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel_BCC8803E.wem</Path>
-				</File>
 				<File Id="569645680" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer1_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer1_1Pre2Post_592D8723.wem</Path>
@@ -1279,6 +1279,10 @@
 				<File Id="723281426" Language="SFX">
 					<ShortName>TLB_NME_SFX_HoverOrga_02.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_HoverOrga_02_E37C7245.wem</Path>
+				</File>
+				<File Id="733994131" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Berlin Teldex.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_EBD55DB2.wem</Path>
 				</File>
 				<File Id="736405293" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Lead_Layer3_1Pre2Post.wav</ShortName>
@@ -1659,9 +1663,13 @@
 					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_BC725169.wem</Path>
 				</File>
-				<File Id="569254387" Language="SFX">
-					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel_BCC8803E.wem</Path>
+				<File Id="198373678" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_LongDeepAlley.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_LongDeepAlley_00AD0D88.wem</Path>
+				</File>
+				<File Id="733994131" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Berlin Teldex.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_EBD55DB2.wem</Path>
 				</File>
 				<File Id="941961704" Language="SFX">
 					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar.wav</ShortName>

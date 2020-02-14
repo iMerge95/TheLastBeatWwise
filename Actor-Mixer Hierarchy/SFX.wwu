@@ -1456,6 +1456,13 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Canyon_Ambiance" ID="{82A6EF57-1859-4848-88D6-41A34C542F36}" ShortID="402160340">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
@@ -4634,7 +4641,7 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="RevOpen" ID="{31203205-6D74-4B0E-BE03-F971FEA7A7D2}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+													<ObjectRef Name="RevBridge" ID="{F9CE06CE-366D-4099-B78E-41C3E04408B9}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -6682,11 +6689,6 @@
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -6703,7 +6705,19 @@
 										<ActorMixer Name="Skills" ID="{6C9F393D-9C37-49D7-8D9F-F1AC2B4AA907}" ShortID="857317061">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>5</Value>
 													</ValueList>
@@ -6747,9 +6761,15 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="UserAuxSendVolume0" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>1</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -6759,9 +6779,6 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="RevOpen" ID="{31203205-6D74-4B0E-BE03-F971FEA7A7D2}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -6879,6 +6896,16 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="UserAuxSendVolume0" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -6971,48 +6998,6 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
-												<SwitchContainer Name="FloorImpact" ID="{A6F52356-4236-41AD-BFA2-141EC45A0D73}" ShortID="969749309">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<RandomSequenceContainer Name="Sand" ID="{EB77E520-6A82-4315-9A36-82A87B53FBCD}" ShortID="100870901">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-																</Reference>
-															</ReferenceList>
-														</RandomSequenceContainer>
-														<RandomSequenceContainer Name="Rock" ID="{63203F31-68F4-44B0-BE34-4CDAC6F5D0BA}" ShortID="320427634">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-																</Reference>
-															</ReferenceList>
-														</RandomSequenceContainer>
-													</ChildrenList>
-													<GroupingInfo>
-														<GroupingBehaviorList>
-															<GroupingBehavior>
-																<ItemRef Name="Sand" ID="{EB77E520-6A82-4315-9A36-82A87B53FBCD}"/>
-															</GroupingBehavior>
-															<GroupingBehavior>
-																<ItemRef Name="Rock" ID="{63203F31-68F4-44B0-BE34-4CDAC6F5D0BA}"/>
-															</GroupingBehavior>
-														</GroupingBehaviorList>
-													</GroupingInfo>
-												</SwitchContainer>
 											</ChildrenList>
 										</ActorMixer>
 										<RandomSequenceContainer Name="Hit_Player" ID="{34A80574-0D81-40B6-8978-667CE3ABC9A2}" ShortID="475112535">
@@ -7120,10 +7105,12 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Heal_Player" ID="{EDCCD239-F770-47A6-8871-7CAE507A7CBE}" ShortID="719284659">
 											<PropertyList>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-8</Value>
+														<Value>-13</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -7350,6 +7337,11 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{54DDFC48-1970-4804-AF98-4E90E7CC6669}" ShortID="529001823">
@@ -7380,7 +7372,9 @@
 									</RTPCList>
 								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{9F3593F7-1B4A-44CB-986E-7D9694C41FE7}" ShortID="458527210">
@@ -7421,6 +7415,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RevCanyon" ID="{90E7EB3A-68EE-4E4A-9CFA-0859C4DCC159}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Death" ID="{1B165AB4-D57C-49C3-9B96-BE9B0EFA1F7D}" ShortID="753774702">
@@ -7441,7 +7438,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -7569,7 +7566,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-4</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{DAEE666F-5C6E-447B-809A-F81123E3F9FB}" ShortID="813832771">
@@ -7795,7 +7792,24 @@
 								</BlendContainer>
 								<ActorMixer Name="Gameplay" ID="{BCC71CEA-FF4C-4B17-82F2-0DC47B2A6CD0}" ShortID="365037869">
 									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -7803,6 +7817,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="GameplaySFX" ID="{9CD9270F-7BBD-48C4-9829-10CD1CFF7661}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="RevBridge" ID="{F9CE06CE-366D-4099-B78E-41C3E04408B9}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -9244,7 +9261,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -9345,6 +9362,11 @@
 								<ActorMixer Name="Boss" ID="{C50A491D-C0E1-4DD1-A758-2EC861514CCC}" ShortID="60449918">
 									<PropertyList>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -9529,7 +9551,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
