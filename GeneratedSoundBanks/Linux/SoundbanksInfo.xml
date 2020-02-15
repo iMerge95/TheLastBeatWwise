@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Linux\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Linux\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ELE5b7ebad5608f2\Documents\PROJET M2\TheLastBeat\TheLastBeatWwise\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -569,10 +569,6 @@
 					<ShortName>TLB_AMB_Desert_RHowl_HowlLongA_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlLongA_02_E37C7245.wem</Path>
 				</File>
-				<File Id="18741063" Language="SFX">
-					<ShortName>TheLastBeat_Mus_Land_Combat_Rewind.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Land_Combat_Rewind_D4F3E753.wem</Path>
-				</File>
 				<File Id="22690076" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_Layer2_1Pre_2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_Land_Combat_Sitar_Layer2_1Pre_2Post_592D8723.wem</Path>
@@ -686,8 +682,8 @@
 					<Path>SFX\TLB_Chara_SFX_Grass_RockySteps_01_E37C7245.wem</Path>
 				</File>
 				<File Id="102332519" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Rewind.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopA_Rewind_D4F3E753.wem</Path>
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer1.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer1_D4F3E753.wem</Path>
 				</File>
 				<File Id="102928810" Language="SFX">
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer2_03.wav</ShortName>
@@ -736,7 +732,7 @@
 				</File>
 				<File Id="144457879" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Menu_Layer4_0Pre_4Post.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_Menu_Layer4_0Pre_4Post_D79FB2B7.wem</Path>
+					<Path>SFX\TheLastBeat_Mus_Menu_Layer4_0Pre_4Post_592D8723.wem</Path>
 				</File>
 				<File Id="144480036" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Great_Layer1_04.wav</ShortName>
@@ -921,6 +917,10 @@
 					<ShortName>TLB_NME_SFX_Hit_Enemy_Basic_04.wav</ShortName>
 					<Path>SFX\TLB_NME_SFX_Hit_Enemy_Basic_04_E37C7245.wem</Path>
 				</File>
+				<File Id="370733753" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer3.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer3_D4F3E753.wem</Path>
+				</File>
 				<File Id="371081650" Language="SFX">
 					<ShortName>TLB_AMB_Desert_RHowl_HowlShortA_02.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_RHowl_HowlShortA_02_E37C7245.wem</Path>
@@ -954,6 +954,10 @@
 				<File Id="394630338" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Death.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFX_Death_E37C7245.wem</Path>
+				</File>
+				<File Id="394985942" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_Rewind_Layer3.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Land_Combat_Rewind_Layer3_D4F3E753.wem</Path>
 				</File>
 				<File Id="405503307" Language="SFX">
 					<ShortName>TLB_Chara_SFX_Hit_01.wav</ShortName>
@@ -1116,6 +1120,10 @@
 					<ShortName>TLB_AMB_Desert_Wildlife_GlassHopper_01.wav</ShortName>
 					<Path>SFX\TLB_AMB_Desert_Wildlife_GlassHopper_01_E37C7245.wem</Path>
 				</File>
+				<File Id="559020015" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer2.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer2_D4F3E753.wem</Path>
+				</File>
 				<File Id="560626843" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer2_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopA_Lead_Layer2_1Pre2Post_592D8723.wem</Path>
@@ -1130,8 +1138,8 @@
 					<Path>SFX\TLB_Chara_SFX_Presence_LoFoley_04_E37C7245.wem</Path>
 				</File>
 				<File Id="569031140" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FinalCombat_LoopB_Rewind.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopB_Rewind_D4F3E753.wem</Path>
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer1.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer1_D4F3E753.wem</Path>
 				</File>
 				<File Id="569645680" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopA_Sitar_Layer1_1Pre2Post.wav</ShortName>
@@ -1173,6 +1181,10 @@
 				<File Id="592487858" Language="SFX">
 					<ShortName>TheLastBeat_Mus_RushFB_Perfect_Layer1_01.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_RushFB_Perfect_Layer1_01_592D8723.wem</Path>
+				</File>
+				<File Id="597406207" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer2.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer2_D4F3E753.wem</Path>
 				</File>
 				<File Id="602785085" Language="SFX">
 					<ShortName>TLB_SXF_UI_Enter.wav</ShortName>
@@ -1249,6 +1261,14 @@
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_FinalCombat_LoopC_Base_Layer3_1Pre2Post_592D8723.wem</Path>
 					<PrefetchSize>4815</PrefetchSize>
+				</File>
+				<File Id="671016610" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_Rewind_Layer1.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Land_Combat_Rewind_Layer1_D4F3E753.wem</Path>
+				</File>
+				<File Id="671249130" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer3.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer3_D4F3E753.wem</Path>
 				</File>
 				<File Id="676930814" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Perc_Layer1_1Pre2Post.wav</ShortName>
@@ -1425,8 +1445,8 @@
 					<PrefetchSize>897</PrefetchSize>
 				</File>
 				<File Id="850052255" Language="SFX">
-					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Rewind.wav</ShortName>
-					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_LoopC_Rewind_D4F3E753.wem</Path>
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer1.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer1_D4F3E753.wem</Path>
 				</File>
 				<File Id="853178857" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Land_Combat_Sitar_Layer3_1Pre_2Post.wav</ShortName>
@@ -1435,7 +1455,7 @@
 				</File>
 				<File Id="867430853" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Menu_Layer3_1Pre_2Post.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_Menu_Layer3_1Pre_2Post_D79FB2B7.wem</Path>
+					<Path>SFX\TheLastBeat_Mus_Menu_Layer3_1Pre_2Post_592D8723.wem</Path>
 				</File>
 				<File Id="867722684" Language="SFX">
 					<ShortName>TLB_NME_SFX_Call_Attack_Lo_04.wav</ShortName>
@@ -1445,13 +1465,17 @@
 					<ShortName>TheLastBeat_Mus_BlinkFB_Layer3_04.wav</ShortName>
 					<Path>SFX\TheLastBeat_Mus_BlinkFB_Layer3_04_592D8723.wem</Path>
 				</File>
+				<File Id="875691433" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer3.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer3_D4F3E753.wem</Path>
+				</File>
 				<File Id="883096022" Language="SFX">
 					<ShortName>TLB_AMB_Oasis_RWind_10.wav</ShortName>
 					<Path>SFX\TLB_AMB_Oasis_RWind_10_E37C7245.wem</Path>
 				</File>
 				<File Id="885969198" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Menu_Layer1_1Pre_2Post.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_Menu_Layer1_1Pre_2Post_D79FB2B7.wem</Path>
+					<Path>SFX\TheLastBeat_Mus_Menu_Layer1_1Pre_2Post_592D8723.wem</Path>
 				</File>
 				<File Id="889012155" Language="SFX">
 					<ShortName>TLB_AMB_Canyon_RWind2_04.wav</ShortName>
@@ -1517,6 +1541,10 @@
 				<File Id="941961704" Language="SFX">
 					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar_1933E848.wem</Path>
+				</File>
+				<File Id="949121028" Language="SFX">
+					<ShortName>TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer2.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer2_D4F3E753.wem</Path>
 				</File>
 				<File Id="952090535" Language="SFX">
 					<ShortName>TLB_AMB_Ponctual Amb_Foliage_03.wav</ShortName>
@@ -1638,7 +1666,7 @@
 				</File>
 				<File Id="1047322038" Language="SFX">
 					<ShortName>TheLastBeat_Mus_Menu_Layer2_1Pre_2Post.wav</ShortName>
-					<Path>SFX\TheLastBeat_Mus_Menu_Layer2_1Pre_2Post_D79FB2B7.wem</Path>
+					<Path>SFX\TheLastBeat_Mus_Menu_Layer2_1Pre_2Post_592D8723.wem</Path>
 				</File>
 				<File Id="1047413621" Language="SFX">
 					<ShortName>TLB_NME_SFX_Enemy_Explosion_RiseLoop1_01.wav</ShortName>
@@ -1647,6 +1675,10 @@
 				<File Id="1049194023" Language="SFX">
 					<ShortName>TLB_Chara_SFXSand_Steps_03.wav</ShortName>
 					<Path>SFX\TLB_Chara_SFXSand_Steps_03_E37C7245.wem</Path>
+				</File>
+				<File Id="1059157809" Language="SFX">
+					<ShortName>TheLastBeat_Mus_Land_Combat_Rewind_Layer2.wav</ShortName>
+					<Path>Plugins\SoundSeed Grain\TheLastBeat_Mus_Land_Combat_Rewind_Layer2_D4F3E753.wem</Path>
 				</File>
 				<File Id="1060191646" Language="SFX">
 					<ShortName>TheLastBeat_Mus_FinalCombat_LoopC_Lead_Layer2_1Pre2Post.wav</ShortName>

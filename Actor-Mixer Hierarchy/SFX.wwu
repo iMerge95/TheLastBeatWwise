@@ -9420,11 +9420,6 @@
 											<PropertyList>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -11251,9 +11246,27 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
+												<SwitchRef Name="None" ID="{00CA620F-04FD-4036-9D34-2CDB9C63BFA2}"/>
+												<ItemList>
+													<ItemRef Name="RewindFinalCombatLayer1" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
+												<ItemList>
+													<ItemRef Name="RewindFinalCombatLayer2" ID="{73DEADF4-C504-4F4D-B523-B99B2BA3EC8B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
 												<ItemList>
 													<ItemRef Name="RewindFinalCombatLayer1" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+												<ItemList>
+													<ItemRef Name="RewindFinalCombatLayer3" ID="{B1C654E7-10BB-4399-905E-81908E6CBE3E}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
