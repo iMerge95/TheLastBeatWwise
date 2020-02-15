@@ -9576,170 +9576,43 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="RewindLand" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}" ShortID="51842842">
-									<PropertyList>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsZeroLantency" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<SwitchContainer Name="LandLayerSwitch" ID="{4DBBDE52-B33A-4F4F-9FF4-BC7C83FCA665}" ShortID="417862229">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-											<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="SoundSeed Grain" ID="{6EA005D4-3E5E-48A3-94D4-093EA0555EDF}" ShortID="744873505" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
-											<PropertyList>
-												<Property Name="Attack" Type="Real32" Value="0"/>
-												<Property Name="Duration" Type="Real32" Value="3156"/>
-												<Property Name="DurationLink" Type="int32" Value="1"/>
-												<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
-												<Property Name="EnvelopeType" Type="int32" Value="1"/>
-												<Property Name="FilterQ" Type="Real32" Value="0.91"/>
-												<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-												<Property Name="GrainTime" Type="Real32" Value="3156"/>
-												<Property Name="MarkerSelect" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{537194E5-0755-4DD4-84CF-6D60E001F5A8}" ShortID="1003520847">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{8B82CE87-2285-4D03-880F-24C634C0029B}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>55</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
-												<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
-												<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
-												<Property Name="ModRate1" Type="Real32" Value="2.5"/>
-												<Property Name="ModRate2" Type="Real32" Value="5"/>
-												<Property Name="ModSelect2" Type="int32" Value="0"/>
-												<Property Name="ModWaveform2" Type="int32" Value="11"/>
-												<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
-												<Property Name="OutputLevel" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{E32C3B9F-A84D-4010-871C-C4821F3806A1}" ShortID="935362010">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<Custom>
-																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{3A0E86B3-4224-47E0-BD44-D37762E7BDCF}" ShortID="188989972">
-																			<PropertyList>
-																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
-																			</PropertyList>
-																		</ModulatorEnvelope>
-																	</Custom>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{D9E76C2C-4D21-42CF-9862-AEDD4F519C20}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-96</YPos>
-																		<Flags>21</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>53</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Release" Type="Real32" Value="0"/>
-												<Property Name="Speed" Type="Real32" Value="-1"/>
-											</PropertyList>
-											<ChildrenList>
-												<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_Rewind" ID="{2DDD993C-A2B2-4107-9ED6-5681850ED54D}" ShortID="18741063">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
-													<Language>SoundSeed Grain</Language>
-													<AudioFile>TheLastBeat_Mus_Land_Combat_Rewind.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SoundSeed Grain" ID="{6EA005D4-3E5E-48A3-94D4-093EA0555EDF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<SwitchContainer Name="RewindFinalCombat" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}" ShortID="114725975">
-									<PropertyList>
-										<Property Name="Color" Type="int16" Value="13"/>
-										<Property Name="OverrideColor" Type="bool" Value="True"/>
-										<Property Name="UserAuxSendVolume0" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
-										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-											<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+											<ObjectRef Name="None" ID="{00CA620F-04FD-4036-9D34-2CDB9C63BFA2}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Rewind_Combat_Loop" ID="{40CD7EC0-1E9C-40A9-9220-E3C18B25B534}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+											<ObjectRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Rewind_LoopA" ID="{30D14836-FC82-4ACF-976D-576A34B99588}" ShortID="220551796">
+										<Sound Name="RewindLandLayer1" ID="{D70DC2B0-BBA6-4DB6-AF5B-13D59FF6F101}" ShortID="59357644">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 												</Reference>
 												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
@@ -9747,121 +9620,12 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" ShortID="237569232" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
-													<Comment>BPM76 : beatduration = 789</Comment>
-													<PropertyList>
-														<Property Name="Attack" Type="Real32" Value="0.0001"/>
-														<Property Name="Duration" Type="Real32" Value="3156"/>
-														<Property Name="DurationLink" Type="int32" Value="1"/>
-														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
-														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
-														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
-														<Property Name="GrainTime" Type="Real32" Value="3156"/>
-														<Property Name="MarkerSelect" Type="Real32">
-															<RTPCList>
-																<RTPC Name="" ID="{0CA35633-85F4-4539-B21E-71CAB0C89F90}" ShortID="886653663">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{0E930225-B4FA-4EE4-B173-9DCE547F9E34}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>55</XPos>
-																				<YPos>100</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
-														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
-														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
-														<Property Name="ModRate1" Type="Real32" Value="2.5"/>
-														<Property Name="ModRate2" Type="Real32" Value="5"/>
-														<Property Name="ModSelect2" Type="int32" Value="0"/>
-														<Property Name="ModWaveform2" Type="int32" Value="11"/>
-														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
-														<Property Name="OutputLevel" Type="Real32">
-															<RTPCList>
-																<RTPC Name="" ID="{29E0B4AC-4364-4C8D-A092-4E95995EC2EC}" ShortID="469731031">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<Custom>
-																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E6DD8338-24A2-41F1-A6F8-2A1BDB4AD635}" ShortID="280213685">
-																					<PropertyList>
-																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
-																					</PropertyList>
-																				</ModulatorEnvelope>
-																			</Custom>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{01E62BF0-9D25-4FCE-ACBA-79ED0E83AB9F}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-96</YPos>
-																				<Flags>21</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>1</XPos>
-																				<YPos>0</YPos>
-																				<Flags>53</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="Release" Type="Real32" Value="0"/>
-														<Property Name="Speed" Type="Real32" Value="-1"/>
-													</PropertyList>
-													<ChildrenList>
-														<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_LoopA_Rewind" ID="{3B564906-81AF-4A02-8A00-68B143B93AD0}" ShortID="102332519">
-															<PropertyList>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SoundSeed Grain</Language>
-															<AudioFile>TheLastBeat_Mus_FinalCombat_LoopA_Rewind.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Rewind_LoopB" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}" ShortID="580658983">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
-												</Reference>
-												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="SoundSeed Grain" ID="{99E3C57D-F712-4FF2-AEBF-A9E3D65ECD51}" ShortID="182675873" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+												<SourcePlugin Name="SoundSeed Grain" ID="{2BDB5375-5EA6-4438-9297-26D3867C3EFF}" ShortID="858483455" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
 														<Property Name="Attack" Type="Real32" Value="0"/>
 														<Property Name="Duration" Type="Real32" Value="3156"/>
@@ -9873,13 +9637,13 @@
 														<Property Name="GrainTime" Type="Real32" Value="3156"/>
 														<Property Name="MarkerSelect" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{2FF7FCF7-B517-4CE3-BD67-4829552DEB35}" ShortID="501385313">
+																<RTPC Name="" ID="{FB1EAFA3-4573-4250-9928-366BBDA7CA94}" ShortID="95870908">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{21BAF737-4C26-455F-82F7-C442A87C886D}">
+																	<Curve Name="" ID="{9F6D32F2-F009-403A-8139-F95291606BD8}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="1"/>
 																		</PropertyList>
@@ -9909,11 +9673,11 @@
 														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 														<Property Name="OutputLevel" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{BC8FF5C0-9C7B-4272-8948-DBEB7AB944F5}" ShortID="200715375">
+																<RTPC Name="" ID="{040B45B2-9187-4ABD-8E03-0D1A7326AA8D}" ShortID="83370116">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<Custom>
-																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A51DDEDD-5FF5-42C8-A5B5-2D5034C19B83}" ShortID="661497843">
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{F2E97FDB-B4AB-436A-9394-709940CB2E2C}" ShortID="907382144">
 																					<PropertyList>
 																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 																					</PropertyList>
@@ -9921,7 +9685,7 @@
 																			</Custom>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{2321B214-BCD8-47A5-A89A-621C7A3910A9}">
+																	<Curve Name="" ID="{D448D2B1-5EB3-40A2-98D3-FE72CC87427D}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -9945,25 +9709,42 @@
 														<Property Name="Speed" Type="Real32" Value="-1"/>
 													</PropertyList>
 													<ChildrenList>
-														<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_LoopB_Rewind" ID="{DB4EE075-F1FC-4A6E-8F12-C120B6C870E1}" ShortID="569031140">
+														<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_Rewind_Layer1" ID="{6A4E2703-3754-419D-B1EA-059CEB6BEE86}" ShortID="671016610">
 															<PropertyList>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 															</PropertyList>
 															<Language>SoundSeed Grain</Language>
-															<AudioFile>TheLastBeat_Mus_FinalCombat_LoopB_Rewind.wav</AudioFile>
+															<AudioFile>TheLastBeat_Mus_Land_Combat_Rewind_Layer1.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<Language>SFX</Language>
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="SoundSeed Grain" ID="{99E3C57D-F712-4FF2-AEBF-A9E3D65ECD51}" Platform="Linked"/>
+												<ActiveSource Name="SoundSeed Grain" ID="{2BDB5375-5EA6-4438-9297-26D3867C3EFF}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Rewind_LoopC" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}" ShortID="947305448">
+										<Sound Name="RewindLandLayer2" ID="{E8CABEA3-95A4-4951-B277-C391FB1D6ED0}" ShortID="596128731">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
 												</Reference>
 												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
@@ -9971,9 +9752,12 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="SoundSeed Grain" ID="{4A688137-681C-467E-B8EA-8735FDB583C3}" ShortID="26519407" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+												<SourcePlugin Name="SoundSeed Grain" ID="{A8146031-CE2B-4BC4-896F-8EBEDF73B8D2}" ShortID="186020646" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
 														<Property Name="Attack" Type="Real32" Value="0"/>
 														<Property Name="Duration" Type="Real32" Value="3156"/>
@@ -9985,13 +9769,13 @@
 														<Property Name="GrainTime" Type="Real32" Value="3156"/>
 														<Property Name="MarkerSelect" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{812A2F69-72CB-4447-A57F-C17B7507D5C8}" ShortID="286640087">
+																<RTPC Name="" ID="{C2AE94B2-4C15-4D8D-8D53-FFC72C67858A}" ShortID="1063454615">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{788EEDCE-438F-4930-BE26-73839FF0FB54}">
+																	<Curve Name="" ID="{5A7C49B1-E6E6-440C-8690-F26F73C4860C}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="1"/>
 																		</PropertyList>
@@ -10021,11 +9805,11 @@
 														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
 														<Property Name="OutputLevel" Type="Real32">
 															<RTPCList>
-																<RTPC Name="" ID="{40ACA0D2-D51A-40D9-8D21-8C14DE4FB337}" ShortID="359622285">
+																<RTPC Name="" ID="{77F27556-F5A1-480A-B6C6-9C6D3ABE7066}" ShortID="845500581">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<Custom>
-																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A53113BE-0A7A-423E-8440-B0C8F92C6580}" ShortID="1062868308">
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{31F9BFD3-902F-4F07-A0C9-29574C477067}" ShortID="418460917">
 																					<PropertyList>
 																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
 																					</PropertyList>
@@ -10033,7 +9817,7 @@
 																			</Custom>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{A9B7A5D0-0207-48BD-903C-ADD5C2D445AE}">
+																	<Curve Name="" ID="{28ABC61D-8E43-4E61-826D-25425A081D9B}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -10057,51 +9841,1419 @@
 														<Property Name="Speed" Type="Real32" Value="-1"/>
 													</PropertyList>
 													<ChildrenList>
-														<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_LoopC_Rewind" ID="{BE39FCFF-AA24-44DF-995F-84CE12A62927}" ShortID="850052255">
+														<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_Rewind_Layer2" ID="{1C531172-3A5F-4131-9BE8-4730DB779388}" ShortID="1059157809">
 															<PropertyList>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 															</PropertyList>
 															<Language>SoundSeed Grain</Language>
-															<AudioFile>TheLastBeat_Mus_FinalCombat_LoopC_Rewind.wav</AudioFile>
+															<AudioFile>TheLastBeat_Mus_Land_Combat_Rewind_Layer2.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<Language>SFX</Language>
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="SoundSeed Grain" ID="{4A688137-681C-467E-B8EA-8735FDB583C3}" Platform="Linked"/>
+												<ActiveSource Name="SoundSeed Grain" ID="{A8146031-CE2B-4BC4-896F-8EBEDF73B8D2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RewindLandLayer3" ID="{475147F0-4E6A-45F3-AA00-E6307B17F73A}" ShortID="683098384">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="SoundSeed Grain" ID="{11F99594-CC86-4E67-9E12-F64EF5335FB2}" ShortID="44182434" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+													<PropertyList>
+														<Property Name="Attack" Type="Real32" Value="0"/>
+														<Property Name="Duration" Type="Real32" Value="3156"/>
+														<Property Name="DurationLink" Type="int32" Value="1"/>
+														<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+														<Property Name="EnvelopeType" Type="int32" Value="1"/>
+														<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+														<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+														<Property Name="GrainTime" Type="Real32" Value="3156"/>
+														<Property Name="MarkerSelect" Type="Real32" Value="59.59781">
+															<RTPCList>
+																<RTPC Name="" ID="{93819824-1507-4A32-9226-BBEFBAC56AC8}" ShortID="10840855">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{C795B7F6-C5D2-44EF-AC82-0D90F3AC3E3A}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>55</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+														<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+														<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+														<Property Name="ModRate2" Type="Real32" Value="5"/>
+														<Property Name="ModSelect2" Type="int32" Value="0"/>
+														<Property Name="ModWaveform2" Type="int32" Value="11"/>
+														<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+														<Property Name="OutputLevel" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{A48F6B4A-9224-4A7B-AAF6-8C0577C1FD12}" ShortID="242220241">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom>
+																				<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{85B78E1A-C960-409E-9934-5E6DE26742DF}" ShortID="211612790">
+																					<PropertyList>
+																						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																					</PropertyList>
+																				</ModulatorEnvelope>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{CF62D5B5-7532-49F5-876C-C0F4C2BEE5B6}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="Release" Type="Real32" Value="0"/>
+														<Property Name="Speed" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<ChildrenList>
+														<AudioFileSource Name="TheLastBeat_Mus_Land_Combat_Rewind_Layer3" ID="{780D5DAB-149A-4ADF-B78C-9DE623012D33}" ShortID="394985942">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SoundSeed Grain</Language>
+															<AudioFile>TheLastBeat_Mus_Land_Combat_Rewind_Layer3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SoundSeed Grain" ID="{11F99594-CC86-4E67-9E12-F64EF5335FB2}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Rewind_LoopA" ID="{30D14836-FC82-4ACF-976D-576A34B99588}"/>
+												<ItemRef Name="RewindLandLayer2" ID="{E8CABEA3-95A4-4951-B277-C391FB1D6ED0}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Rewind_LoopC" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}"/>
+												<ItemRef Name="RewindLandLayer1" ID="{D70DC2B0-BBA6-4DB6-AF5B-13D59FF6F101}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Rewind_LoopB" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}"/>
+												<ItemRef Name="RewindLandLayer3" ID="{475147F0-4E6A-45F3-AA00-E6307B17F73A}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
+												<SwitchRef Name="None" ID="{00CA620F-04FD-4036-9D34-2CDB9C63BFA2}"/>
 												<ItemList>
-													<ItemRef Name="Rewind_LoopB" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}"/>
+													<ItemRef Name="RewindLandLayer1" ID="{D70DC2B0-BBA6-4DB6-AF5B-13D59FF6F101}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+												<SwitchRef Name="Layer2" ID="{FA4BCB18-7E62-4976-8D34-24375F2BA9D5}"/>
 												<ItemList>
-													<ItemRef Name="Rewind_LoopA" ID="{30D14836-FC82-4ACF-976D-576A34B99588}"/>
+													<ItemRef Name="RewindLandLayer2" ID="{E8CABEA3-95A4-4951-B277-C391FB1D6ED0}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
+												<SwitchRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
 												<ItemList>
-													<ItemRef Name="Rewind_LoopC" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}"/>
+													<ItemRef Name="RewindLandLayer1" ID="{D70DC2B0-BBA6-4DB6-AF5B-13D59FF6F101}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Layer3" ID="{9CB5BFBF-B3E3-4F51-A178-BE17C905B133}"/>
+												<ItemList>
+													<ItemRef Name="RewindLandLayer3" ID="{475147F0-4E6A-45F3-AA00-E6307B17F73A}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="FinalCombatLayerSwitch" ID="{CFF68F58-B2D8-4CBA-93F6-0FADF4C511F6}" ShortID="174421586">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{00CA620F-04FD-4036-9D34-2CDB9C63BFA2}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Music_Layer" ID="{BA20BA1D-656E-49B1-877C-F81AD9263C48}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="RewindFinalCombatLayer1" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}" ShortID="114725975">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="13"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Rewind_Combat_Loop" ID="{40CD7EC0-1E9C-40A9-9220-E3C18B25B534}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rewind_LoopA" ID="{30D14836-FC82-4ACF-976D-576A34B99588}" ShortID="220551796">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" ShortID="237569232" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<Comment>BPM76 : beatduration = 789</Comment>
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0.0001"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32" Value="21.75503">
+																	<RTPCList>
+																		<RTPC Name="" ID="{0CA35633-85F4-4539-B21E-71CAB0C89F90}" ShortID="886653663">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{0E930225-B4FA-4EE4-B173-9DCE547F9E34}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{29E0B4AC-4364-4C8D-A092-4E95995EC2EC}" ShortID="469731031">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E6DD8338-24A2-41F1-A6F8-2A1BDB4AD635}" ShortID="280213685">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{01E62BF0-9D25-4FCE-ACBA-79ED0E83AB9F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer1" ID="{3B564906-81AF-4A02-8A00-68B143B93AD0}" ShortID="102332519">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{77FDB56C-300A-4E3E-B9AE-1EE2BFDBEA60}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rewind_LoopB" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}" ShortID="580658983">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{99E3C57D-F712-4FF2-AEBF-A9E3D65ECD51}" ShortID="182675873" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="EnvelopeType" Type="int32" Value="1"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{2FF7FCF7-B517-4CE3-BD67-4829552DEB35}" ShortID="501385313">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{21BAF737-4C26-455F-82F7-C442A87C886D}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{BC8FF5C0-9C7B-4272-8948-DBEB7AB944F5}" ShortID="200715375">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A51DDEDD-5FF5-42C8-A5B5-2D5034C19B83}" ShortID="661497843">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{2321B214-BCD8-47A5-A89A-621C7A3910A9}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer1" ID="{DB4EE075-F1FC-4A6E-8F12-C120B6C870E1}" ShortID="569031140">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{99E3C57D-F712-4FF2-AEBF-A9E3D65ECD51}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rewind_LoopC" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}" ShortID="947305448">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{4A688137-681C-467E-B8EA-8735FDB583C3}" ShortID="26519407" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="EnvelopeType" Type="int32" Value="1"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{812A2F69-72CB-4447-A57F-C17B7507D5C8}" ShortID="286640087">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{788EEDCE-438F-4930-BE26-73839FF0FB54}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{40ACA0D2-D51A-40D9-8D21-8C14DE4FB337}" ShortID="359622285">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A53113BE-0A7A-423E-8440-B0C8F92C6580}" ShortID="1062868308">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{A9B7A5D0-0207-48BD-903C-ADD5C2D445AE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer1" ID="{BE39FCFF-AA24-44DF-995F-84CE12A62927}" ShortID="850052255">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{4A688137-681C-467E-B8EA-8735FDB583C3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopA" ID="{30D14836-FC82-4ACF-976D-576A34B99588}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopC" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopB" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopB" ID="{AE23F3E7-6DCD-474C-BA65-807D7ACF4FFB}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopA" ID="{30D14836-FC82-4ACF-976D-576A34B99588}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopC" ID="{9636BBB1-F9F3-42F3-9DE2-063DFDCF556D}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="RewindFinalCombatLayer2" ID="{73DEADF4-C504-4F4D-B523-B99B2BA3EC8B}" ShortID="68376174">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="13"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Rewind_Combat_Loop" ID="{40CD7EC0-1E9C-40A9-9220-E3C18B25B534}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rewind_LoopA" ID="{A479B412-CD36-4C41-9534-1237E369D03C}" ShortID="975961170">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{1EB090DE-0383-4415-8B5C-FAC38D9239D5}" ShortID="689577287" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<Comment>BPM76 : beatduration = 789</Comment>
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0.0001"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32" Value="21.75503">
+																	<RTPCList>
+																		<RTPC Name="" ID="{F9F2F807-B3EC-458B-935D-F691564A8AF1}" ShortID="844607375">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{B111B421-FA04-4070-97FA-2EF4115303ED}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{37C54A80-4BB4-43B7-8F9A-C9792AB168A3}" ShortID="242831960">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{90BC9892-F6B4-471F-A5DB-9576EC79F280}" ShortID="361807993">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{F35C8C41-4C68-4B04-96E3-1DE96DE4F63A}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer2" ID="{DB809F08-D5A3-4DB1-A5C2-32FC71CAFC9B}" ShortID="559020015">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{1EB090DE-0383-4415-8B5C-FAC38D9239D5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rewind_LoopB" ID="{82FF3AC4-B76E-4634-8D9D-75FA632E156E}" ShortID="96829162">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{1E941DB8-D161-4EA5-A143-C082DBD7FD50}" ShortID="550461522" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="EnvelopeType" Type="int32" Value="1"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{7065B8A9-6443-43E2-8DEB-101D2811206F}" ShortID="244751905">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{CCCCFA91-B615-4711-8A65-8F8712629266}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{86FA19C9-8AFB-4312-A24D-198E47909A04}" ShortID="137406434">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A89B8772-A929-4ADE-9DBD-BA19188C9348}" ShortID="931851176">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{98E1FBE8-8342-4C88-8B7B-68031879C552}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer2" ID="{CE9E279B-FE6F-4C6D-A3BD-D019733A24AB}" ShortID="597406207">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{1E941DB8-D161-4EA5-A143-C082DBD7FD50}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rewind_LoopC" ID="{8167DBA5-475F-4085-9C74-F73714233534}" ShortID="925094958">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{6874F5F7-E444-4A05-8822-388901161BA2}" ShortID="542765522" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="EnvelopeType" Type="int32" Value="1"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{0EEC0CB0-BD82-4A3D-8FE7-EC76431D3061}" ShortID="773143532">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{336894C5-DBC0-407C-BE20-FC9F53924DC3}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{6285DF67-8131-426C-93A0-F6A28D6BE11E}" ShortID="587840946">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{C6795887-B92D-4E45-A601-C614532BBC96}" ShortID="748664121">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{E2D284D1-9276-4F4B-976D-64B4F8D1ADB8}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer2" ID="{4E81B06D-4FA7-440B-97BA-00B1EF2A0F71}" ShortID="949121028">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{6874F5F7-E444-4A05-8822-388901161BA2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopA" ID="{A479B412-CD36-4C41-9534-1237E369D03C}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopC" ID="{8167DBA5-475F-4085-9C74-F73714233534}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopB" ID="{82FF3AC4-B76E-4634-8D9D-75FA632E156E}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopB" ID="{82FF3AC4-B76E-4634-8D9D-75FA632E156E}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopA" ID="{A479B412-CD36-4C41-9534-1237E369D03C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopC" ID="{8167DBA5-475F-4085-9C74-F73714233534}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="RewindFinalCombatLayer3" ID="{B1C654E7-10BB-4399-905E-81908E6CBE3E}" ShortID="660674907">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="13"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="TLB Conversion" ID="{16101BFB-B984-4FCF-9080-03B201376B5B}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Rewind_Combat_Loop" ID="{40CD7EC0-1E9C-40A9-9220-E3C18B25B534}" WorkUnitID="{B22476F9-0A97-40EC-8836-5C8371D57A2E}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="MFXRewindVerb" ID="{09EDA182-6936-4FEE-8471-7F8FD1429698}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rewind_LoopA" ID="{6AB82436-B57C-4D82-A3E5-0040683CD486}" ShortID="665249195">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{0144A004-6656-48E1-B859-4794D267BCD8}" ShortID="502588012" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<Comment>BPM76 : beatduration = 789</Comment>
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0.0001"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32" Value="21.75503">
+																	<RTPCList>
+																		<RTPC Name="" ID="{538E3B9A-FDB7-49F0-975A-645E3B2BA67F}" ShortID="465524259">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{BA8A804E-13D0-432D-8015-FAA4D3B3FCE5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{4BC4EF10-48EB-4840-B5EA-3D75AE6A64CE}" ShortID="1004409354">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{A0E209E8-A9BE-493C-A412-8084D520E073}" ShortID="22964199">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{F8DEB540-D24B-4A9F-95BF-0DC44B6D7174}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer3" ID="{171BEEDA-5F10-44D6-807D-91BE36C9C85C}" ShortID="370733753">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopA_Layer3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{0144A004-6656-48E1-B859-4794D267BCD8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rewind_LoopB" ID="{CF1E52E5-B6A0-4527-801B-336B9049A56A}" ShortID="968752223">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{1CAD8420-D256-43B1-90E3-146ECE9F31F8}" ShortID="969057717" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="EnvelopeType" Type="int32" Value="1"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{266A1F1E-F6A1-4B32-9C67-D80451F92B14}" ShortID="638300408">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{1FDB3FD1-85BF-4BB6-9845-2EA244FDB422}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{66D6D793-7BF3-40E7-A496-7A85DA1F4F26}" ShortID="1047080023">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{CDD7F3F9-F6A8-43D8-8FBE-E72AE4FDF877}" ShortID="328093546">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{51224F89-C34C-4545-BE46-7E365277C453}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer3" ID="{7B1F7D83-D8EA-41FA-9A8D-8292388B9E2E}" ShortID="875691433">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopB_Layer3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{1CAD8420-D256-43B1-90E3-146ECE9F31F8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rewind_LoopC" ID="{48B06E6D-67A6-474E-94C6-82969E173CDE}" ShortID="153906554">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E6ADDFDD-1E0B-4DDB-8B8D-07694F852714}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="MFXDucking" ID="{0EF7ED21-46EE-4F39-92DB-C3ACE03F06B0}" WorkUnitID="{9F63DC3F-ADFC-4715-A647-7D192BBE69C8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MFX" ID="{E28D8A14-E40A-45F2-9713-43639A8D5388}" WorkUnitID="{538FF353-F748-4409-93A6-6F9C8647D632}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Grain" ID="{458C97F6-3568-47FF-A4BA-0F9EA7E845EA}" ShortID="752119452" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+															<PropertyList>
+																<Property Name="Attack" Type="Real32" Value="0"/>
+																<Property Name="Duration" Type="Real32" Value="2720"/>
+																<Property Name="DurationLink" Type="int32" Value="1"/>
+																<Property Name="DurationMultiplier" Type="Real32" Value="2"/>
+																<Property Name="EnvelopeType" Type="int32" Value="1"/>
+																<Property Name="FilterQ" Type="Real32" Value="0.91"/>
+																<Property Name="GrainRate" Type="Real32" Value="1.25"/>
+																<Property Name="GrainTime" Type="Real32" Value="2720"/>
+																<Property Name="MarkerSelect" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{77FAF05B-66A6-45CD-B3C2-01FFEDE8B4CF}" ShortID="731275815">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="MusicPosition" ID="{9DB28F95-78C1-4B1A-B607-3C42DBDAFA7C}" WorkUnitID="{EFA22B0E-D749-46A9-8A71-F885A9D96179}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{A85381A9-E5AB-4D75-8832-B3EF8A77C38C}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>55</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="ModPeriod1" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod2" Type="Real32" Value="5000"/>
+																<Property Name="ModPeriod3" Type="Real32" Value="2500"/>
+																<Property Name="ModRate1" Type="Real32" Value="2.5"/>
+																<Property Name="ModRate2" Type="Real32" Value="5"/>
+																<Property Name="ModSelect2" Type="int32" Value="0"/>
+																<Property Name="ModWaveform2" Type="int32" Value="11"/>
+																<Property Name="OutputChannelConfig" Type="int32" Value="12546"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{B9F03F7C-95C5-47A5-A03F-B3D964838457}" ShortID="820641980">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{E264756E-1C29-4133-AB16-94E798C16FAB}" ShortID="972173241">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{98414108-2D83-4A3E-AE8B-F0554110F29F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Release" Type="Real32" Value="0"/>
+																<Property Name="Speed" Type="Real32" Value="-1"/>
+															</PropertyList>
+															<ChildrenList>
+																<AudioFileSource Name="TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer3" ID="{09F454FC-64AC-4F41-909B-752711FA1A82}" ShortID="671249130">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SoundSeed Grain</Language>
+																	<AudioFile>TheLastBeat_Mus_FinalCombat_Rewind_LoopC_Layer3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Grain" ID="{458C97F6-3568-47FF-A4BA-0F9EA7E845EA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopA" ID="{6AB82436-B57C-4D82-A3E5-0040683CD486}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopC" ID="{48B06E6D-67A6-474E-94C6-82969E173CDE}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Rewind_LoopB" ID="{CF1E52E5-B6A0-4527-801B-336B9049A56A}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="LoopB" ID="{0FB46690-CF65-49DE-ADCA-A9E06C1A2F63}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopB" ID="{CF1E52E5-B6A0-4527-801B-336B9049A56A}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="LoopA" ID="{151557B4-9DD1-4E12-9300-EF175CF6C815}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopA" ID="{6AB82436-B57C-4D82-A3E5-0040683CD486}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="LoopC" ID="{DAF8B5DE-018D-49D9-BF60-EE11F839B852}"/>
+														<ItemList>
+															<ItemRef Name="Rewind_LoopC" ID="{48B06E6D-67A6-474E-94C6-82969E173CDE}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="RewindFinalCombatLayer1" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="RewindFinalCombatLayer3" ID="{B1C654E7-10BB-4399-905E-81908E6CBE3E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="RewindFinalCombatLayer2" ID="{73DEADF4-C504-4F4D-B523-B99B2BA3EC8B}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Layer1" ID="{B3BE4F58-DAF4-46A4-AE6E-A171D887D3E9}"/>
+												<ItemList>
+													<ItemRef Name="RewindFinalCombatLayer1" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -10111,29 +11263,29 @@
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="RewindFinalCombat" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
+										<ItemRef Name="LandLayerSwitch" ID="{4DBBDE52-B33A-4F4F-9FF4-BC7C83FCA665}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="RewindLand" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}"/>
+										<ItemRef Name="FinalCombatLayerSwitch" ID="{CFF68F58-B2D8-4CBA-93F6-0FADF4C511F6}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Land" ID="{E54C0E30-B0BA-4F36-ACDF-927A6AF053C6}"/>
 										<ItemList>
-											<ItemRef Name="RewindLand" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}"/>
+											<ItemRef Name="LandLayerSwitch" ID="{4DBBDE52-B33A-4F4F-9FF4-BC7C83FCA665}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="None" ID="{0DC44D38-B177-4C3F-AB4E-EC1E6D8D0868}"/>
 										<ItemList>
-											<ItemRef Name="RewindLand" ID="{22E235F4-6061-4A01-8B09-60B2B3CFA049}"/>
+											<ItemRef Name="LandLayerSwitch" ID="{4DBBDE52-B33A-4F4F-9FF4-BC7C83FCA665}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Final_Combat" ID="{D54E4A7C-27EB-4588-82A8-514B2014E356}"/>
 										<ItemList>
-											<ItemRef Name="RewindFinalCombat" ID="{A5DED86C-09C4-4823-A860-0C918CC2380E}"/>
+											<ItemRef Name="FinalCombatLayerSwitch" ID="{CFF68F58-B2D8-4CBA-93F6-0FADF4C511F6}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
